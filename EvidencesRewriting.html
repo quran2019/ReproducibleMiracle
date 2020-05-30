@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Evidences on Rewriting | Reproducible Miracle</title>
+  <meta name="description" content="This book demonstrates 19 based encodings available in authentic Quran text using Text Analytics and Probability approaches." />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Evidences on Rewriting | Reproducible Miracle" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book demonstrates 19 based encodings available in authentic Quran text using Text Analytics and Probability approaches." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Evidences on Rewriting | Reproducible Miracle" />
+  
+  <meta name="twitter:description" content="This book demonstrates 19 based encodings available in authentic Quran text using Text Analytics and Probability approaches." />
+  
+
+<meta name="author" content="Gökmen Altay" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Evidences.html">
+<link rel="next" href="OtherEvidences.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.7/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Reproducible Miracle</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction for book</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#a-more-technical-example"><i class="fa fa-check"></i><b>2.1</b> A more technical example</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#decoding-the-encoding"><i class="fa fa-check"></i><b>2.2</b> Decoding the encoding</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#related-verses-of-unchanged-quran-and-motivation"><i class="fa fa-check"></i><b>2.3</b> Related verses of unchanged Quran and motivation</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#summary"><i class="fa fa-check"></i><b>2.4</b> Summary</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#can-we-believe-quran-without-a-19-based-system"><i class="fa fa-check"></i><b>2.5</b> Can we believe Quran without a 19 based system?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="text.html"><a href="text.html"><i class="fa fa-check"></i><b>3</b> About the Text of Quran</a><ul>
+<li class="chapter" data-level="3.1" data-path="text.html"><a href="text.html#Fetchingtext"><i class="fa fa-check"></i><b>3.1</b> Fetching Quran’s Text into R</a></li>
+<li class="chapter" data-level="3.2" data-path="text.html"><a href="text.html#numcatgypes"><i class="fa fa-check"></i><b>3.2</b> The categories of the main descriptive numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="text.html"><a href="text.html#textcv"><i class="fa fa-check"></i><b>3.3</b> Number of chapters and verses, and sanity checks on the text</a></li>
+<li class="chapter" data-level="3.4" data-path="text.html"><a href="text.html#numbered-and-unnumbered-verses-of-quran"><i class="fa fa-check"></i><b>3.4</b> Numbered and Unnumbered Verses of Quran</a></li>
+<li class="chapter" data-level="3.5" data-path="text.html"><a href="text.html#texttm"><i class="fa fa-check"></i><b>3.5</b> Some text mining</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="text.html"><a href="text.html#textTMuw"><i class="fa fa-check"></i><b>3.5.1</b> The number of unique words in Quran</a></li>
+<li class="chapter" data-level="3.5.2" data-path="text.html"><a href="text.html#textTMul"><i class="fa fa-check"></i><b>3.5.2</b> The number of letters in unique words of Quran</a></li>
+<li class="chapter" data-level="3.5.3" data-path="text.html"><a href="text.html#Basmalatab1"><i class="fa fa-check"></i><b>3.5.3</b> Table of unique words of the Basmala verse</a></li>
+<li class="chapter" data-level="3.5.4" data-path="text.html"><a href="text.html#textTMuwW"><i class="fa fa-check"></i><b>3.5.4</b> Number of words and letters in Quran</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="text.html"><a href="text.html#all-numbers-in-quran-chapter-verse-word-and-letter."><i class="fa fa-check"></i><b>3.6</b> All Numbers in Quran: Chapter, Verse, Word and Letter.</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="text.html"><a href="text.html#Fact1"><i class="fa fa-check"></i><b>3.6.1</b> Fact: The 7 main numbers of the text of Quran</a></li>
+<li class="chapter" data-level="3.6.2" data-path="text.html"><a href="text.html#FactUniques"><i class="fa fa-check"></i><b>3.6.2</b> Fact: The unique descriptive numbers of the text of Quran</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="text.html"><a href="text.html#Coulditbe"><i class="fa fa-check"></i><b>3.7</b> Could these numbers be counted and designed by the people?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="RulesProbs.html"><a href="RulesProbs.html"><i class="fa fa-check"></i><b>4</b> Rules &amp; Probabilities</a><ul>
+<li class="chapter" data-level="4.1" data-path="RulesProbs.html"><a href="RulesProbs.html#Rules"><i class="fa fa-check"></i><b>4.1</b> Rules</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="RulesProbs.html"><a href="RulesProbs.html#Rule1div19"><i class="fa fa-check"></i><b>4.1.1</b> Rule: Mathematical operations for testing</a></li>
+<li class="chapter" data-level="4.1.2" data-path="RulesProbs.html"><a href="RulesProbs.html#RuleCombine"><i class="fa fa-check"></i><b>4.1.2</b> Rule: Combining multiple numbers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="RulesProbs.html"><a href="RulesProbs.html#Rule3obtaintext"><i class="fa fa-check"></i><b>4.1.3</b> Rule: Obtaining the numbers from text</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="RulesProbs.html"><a href="RulesProbs.html#Probs"><i class="fa fa-check"></i><b>4.2</b> Probabilities</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="RulesProbs.html"><a href="RulesProbs.html#P1"><i class="fa fa-check"></i><b>4.2.1</b> Probability P1:</a></li>
+<li class="chapter" data-level="4.2.2" data-path="RulesProbs.html"><a href="RulesProbs.html#P2"><i class="fa fa-check"></i><b>4.2.2</b> Probability P2:</a></li>
+<li class="chapter" data-level="4.2.3" data-path="RulesProbs.html"><a href="RulesProbs.html#P3"><i class="fa fa-check"></i><b>4.2.3</b> Probability P3:</a></li>
+<li class="chapter" data-level="4.2.4" data-path="RulesProbs.html"><a href="RulesProbs.html#Test19"><i class="fa fa-check"></i><b>4.2.4</b> The Test 19</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="RulesProbs.html"><a href="RulesProbs.html#Rfuncs"><i class="fa fa-check"></i><b>4.3</b> Some R Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Evidences.html"><a href="Evidences.html"><i class="fa fa-check"></i><b>5</b> Evidences of Nineteen</a><ul>
+<li class="chapter" data-level="5.1" data-path="Evidences.html"><a href="Evidences.html#EvMAINs"><i class="fa fa-check"></i><b>5.1</b> Evidence: Integrity and intactness of all the main numbers</a></li>
+<li class="chapter" data-level="5.2" data-path="Evidences.html"><a href="Evidences.html#EVuniquee"><i class="fa fa-check"></i><b>5.2</b> Evidence: The unique numbers</a></li>
+<li class="chapter" data-level="5.3" data-path="Evidences.html"><a href="Evidences.html#EvAlls"><i class="fa fa-check"></i><b>5.3</b> Evidence: All the numbers</a></li>
+<li class="chapter" data-level="5.4" data-path="Evidences.html"><a href="Evidences.html#EvPerChapter1"><i class="fa fa-check"></i><b>5.4</b> Evidence: All the numbers per chapter</a></li>
+<li class="chapter" data-level="5.5" data-path="Evidences.html"><a href="Evidences.html#EvPerVerse2"><i class="fa fa-check"></i><b>5.5</b> Evidence: All the numbers per verse</a></li>
+<li class="chapter" data-level="5.6" data-path="Evidences.html"><a href="Evidences.html#EvPariVersessChap"><i class="fa fa-check"></i><b>5.6</b> Evidence: Pairing general verse and chapters</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="Evidences.html"><a href="Evidences.html#EvPerLettersConcat"><i class="fa fa-check"></i><b>5.6.1</b> Fact: Per letters concatenation</a></li>
+<li class="chapter" data-level="5.6.2" data-path="Evidences.html"><a href="Evidences.html#EvOverallConcateProb"><i class="fa fa-check"></i><b>5.6.2</b> Overall probability of the concatenation evidences</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="Evidences.html"><a href="Evidences.html#EvAllVerses"><i class="fa fa-check"></i><b>5.7</b> Evidence of the order of each and every verses</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="Evidences.html"><a href="Evidences.html#EvAllVersesDiscuss"><i class="fa fa-check"></i><b>5.7.1</b> Discussion on this evidence</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="Evidences.html"><a href="Evidences.html#Evsubform1"><i class="fa fa-check"></i><b>5.8</b> Evidences on the order of each words with letters</a><ul>
+<li class="chapter" data-level="5.8.1" data-path="Evidences.html"><a href="Evidences.html#Evsubform1fact"><i class="fa fa-check"></i><b>5.8.1</b> Fact: Harmony among verse, words and letters</a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="Evidences.html"><a href="Evidences.html#EVcombineindividuals"><i class="fa fa-check"></i><b>5.9</b> Facts: on individual categories</a><ul>
+<li class="chapter" data-level="5.9.1" data-path="Evidences.html"><a href="Evidences.html#EVchapters"><i class="fa fa-check"></i><b>5.9.1</b> Fact: The Chapters</a></li>
+<li class="chapter" data-level="5.9.2" data-path="Evidences.html"><a href="Evidences.html#EVverses"><i class="fa fa-check"></i><b>5.9.2</b> Fact: The Verses</a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="Evidences.html"><a href="Evidences.html#EvTotals"><i class="fa fa-check"></i><b>5.10</b> Evidence: Totals</a><ul>
+<li class="chapter" data-level="5.10.1" data-path="Evidences.html"><a href="Evidences.html#EvTotalsMain"><i class="fa fa-check"></i><b>5.10.1</b> Evidence: Totals of the main descriptive numbers</a></li>
+<li class="chapter" data-level="5.10.2" data-path="Evidences.html"><a href="Evidences.html#EvTotalsChapter"><i class="fa fa-check"></i><b>5.10.2</b> Evidence: Totals in chapter resolution</a></li>
+<li class="chapter" data-level="5.10.3" data-path="Evidences.html"><a href="Evidences.html#EvTotalsVerse"><i class="fa fa-check"></i><b>5.10.3</b> Evidence: Totals in verse resolution</a></li>
+<li class="chapter" data-level="5.10.4" data-path="Evidences.html"><a href="Evidences.html#EvTotalsPerChapters"><i class="fa fa-check"></i><b>5.10.4</b> Evidence: Totals per chapter numbers</a></li>
+<li class="chapter" data-level="5.10.5" data-path="Evidences.html"><a href="Evidences.html#EvTotalsPerVersess"><i class="fa fa-check"></i><b>5.10.5</b> Evidence: Totals per verse numbers</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="Evidences.html"><a href="Evidences.html#FactOtherss"><i class="fa fa-check"></i><b>5.11</b> Fact: Others</a><ul>
+<li class="chapter" data-level="5.11.1" data-path="Evidences.html"><a href="Evidences.html#FactTotals"><i class="fa fa-check"></i><b>5.11.1</b> Fact: Totals</a></li>
+<li class="chapter" data-level="5.11.2" data-path="Evidences.html"><a href="Evidences.html#FactChapVerse"><i class="fa fa-check"></i><b>5.11.2</b> Fact: Relation between chapters and Verses</a></li>
+<li class="chapter" data-level="5.11.3" data-path="Evidences.html"><a href="Evidences.html#FactGenVerLet"><i class="fa fa-check"></i><b>5.11.3</b> Fact: Relation between general verse indices and letters</a></li>
+<li class="chapter" data-level="5.11.4" data-path="Evidences.html"><a href="Evidences.html#FactSumLetChap"><i class="fa fa-check"></i><b>5.11.4</b> Fact: Relation between letters sum at chapter level</a></li>
+<li class="chapter" data-level="5.11.5" data-path="Evidences.html"><a href="Evidences.html#FactChapWordLetterrs"><i class="fa fa-check"></i><b>5.11.5</b> Fact: Relation between words and letters along with chapter indices</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="Evidences.html"><a href="Evidences.html#EvSilence"><i class="fa fa-check"></i><b>5.12</b> Evidence to silence: Harmony among Chapters, Verses and Words</a></li>
+<li class="chapter" data-level="5.13" data-path="Evidences.html"><a href="Evidences.html#EvChapWords"><i class="fa fa-check"></i><b>5.13</b> Evidence: Harmony among Chapters and Words</a></li>
+<li class="chapter" data-level="5.14" data-path="Evidences.html"><a href="Evidences.html#EvChapVersWordSumms"><i class="fa fa-check"></i><b>5.14</b> Evidence: Harmony among Chapters, Verses and Words at verse level</a></li>
+<li class="chapter" data-level="5.15" data-path="Evidences.html"><a href="Evidences.html#EvSilence2"><i class="fa fa-check"></i><b>5.15</b> Evidence to silence 2: Harmony among Chapters, Verses and Words</a><ul>
+<li class="chapter" data-level="5.15.1" data-path="Evidences.html"><a href="Evidences.html#FactofEvSilence"><i class="fa fa-check"></i><b>5.15.1</b> Fact</a></li>
+</ul></li>
+<li class="chapter" data-level="5.16" data-path="Evidences.html"><a href="Evidences.html#EvVerseWordsFatiha"><i class="fa fa-check"></i><b>5.16</b> Evidence: Harmony between Verses and Words</a></li>
+<li class="chapter" data-level="5.17" data-path="Evidences.html"><a href="Evidences.html#EvVerseWordsSumFatiha"><i class="fa fa-check"></i><b>5.17</b> Evidence: Verses and Words Sum</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html"><i class="fa fa-check"></i><b>6</b> Evidences on Rewriting</a><ul>
+<li class="chapter" data-level="6.1" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#Decode1"><i class="fa fa-check"></i><b>6.1</b> The Ultimate Evidence: Rewriting the full text by main descriptive numbers per verse</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#Decode2"><i class="fa fa-check"></i><b>6.1.1</b> Evidence: Rewriting the full text by main descriptive numbers per verse index</a></li>
+<li class="chapter" data-level="6.1.2" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#RewrByVerseIndx"><i class="fa fa-check"></i><b>6.1.2</b> Evidence: Rewrite the full text by word and letter numbers per verse regarding verse indices</a></li>
+<li class="chapter" data-level="6.1.3" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#RewrByVerseIndxLetters"><i class="fa fa-check"></i><b>6.1.3</b> Evidence: The general verse indices and others</a></li>
+<li class="chapter" data-level="6.1.4" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVperCperV"><i class="fa fa-check"></i><b>6.1.4</b> Evidences: Rewriting per chapter</a></li>
+<li class="chapter" data-level="6.1.5" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVperCatperchapters"><i class="fa fa-check"></i><b>6.1.5</b> Facts: Rewriting per category at chapter level</a></li>
+<li class="chapter" data-level="6.1.6" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVrewriteVerseSums"><i class="fa fa-check"></i><b>6.1.6</b> Evidences: Rewriting of Quran at verse level with sums</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#DecodeAbjad1"><i class="fa fa-check"></i><b>6.2</b> Evidences with Abjad numbers</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVAbjCVwords"><i class="fa fa-check"></i><b>6.2.1</b> Evidences: Replacing each word by its Abjad and re-write the full text of Quran</a></li>
+<li class="chapter" data-level="6.2.2" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVAbjVersPair"><i class="fa fa-check"></i><b>6.2.2</b> Evidences: Pairing verses with Abjad of both text types of Quran</a></li>
+<li class="chapter" data-level="6.2.3" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVAbjCVVersPair"><i class="fa fa-check"></i><b>6.2.3</b> Evidences: Pairing verses with Abjad of both text types of Quran with chapter and verse indices</a></li>
+<li class="chapter" data-level="6.2.4" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVAbjGenIndxVersPair"><i class="fa fa-check"></i><b>6.2.4</b> Evidences: Pairing verses with Abjad of both text types of Quran with general indices</a></li>
+<li class="chapter" data-level="6.2.5" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVAbjNatharmony"><i class="fa fa-check"></i><b>6.2.5</b> Evidences: Harmony of all the numbers: Natural and Abjad</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVrewriteBasedonWords"><i class="fa fa-check"></i><b>6.3</b> Evidences: Rewriting Quran based on words</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl"><i class="fa fa-check"></i><b>6.3.1</b> Evidences: Rewriting Quran based on words and chapters at verse level numbers</a></li>
+<li class="chapter" data-level="6.3.2" data-path="EvidencesRewriting.html"><a href="EvidencesRewriting.html#EVrewriteChapWordsChaplvl"><i class="fa fa-check"></i><b>6.3.2</b> Evidences: Rewriting Quran based on words and chapters at chapter level numbers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="OtherEvidences.html"><a href="OtherEvidences.html"><i class="fa fa-check"></i><b>7</b> Other Evidences</a><ul>
+<li class="chapter" data-level="7.1" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvonBasmala"><i class="fa fa-check"></i><b>7.1</b> Evidences on Basmala</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="OtherEvidences.html"><a href="OtherEvidences.html#BasmalaFreq"><i class="fa fa-check"></i><b>7.1.1</b> Basmala and frequency of its words</a></li>
+<li class="chapter" data-level="7.1.2" data-path="OtherEvidences.html"><a href="OtherEvidences.html#Ev1Basmala"><i class="fa fa-check"></i><b>7.1.2</b> Evidence on Basmala words 1</a></li>
+<li class="chapter" data-level="7.1.3" data-path="OtherEvidences.html"><a href="OtherEvidences.html#Ev2Basmala"><i class="fa fa-check"></i><b>7.1.3</b> Evidence on Basmala words 2</a></li>
+<li class="chapter" data-level="7.1.4" data-path="OtherEvidences.html"><a href="OtherEvidences.html#Ev0Basmala"><i class="fa fa-check"></i><b>7.1.4</b> Evidence on individual Basmala words harmony in whole Quran</a></li>
+<li class="chapter" data-level="7.1.5" data-path="OtherEvidences.html"><a href="OtherEvidences.html#ProbBasmala"><i class="fa fa-check"></i><b>7.1.5</b> Overall Probability on Basmala</a></li>
+<li class="chapter" data-level="7.1.6" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvBasmalaLett"><i class="fa fa-check"></i><b>7.1.6</b> Known evidence on Basmala letters</a></li>
+<li class="chapter" data-level="7.1.7" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvBasmalaNum"><i class="fa fa-check"></i><b>7.1.7</b> Known evidence on Basmala numbers</a></li>
+<li class="chapter" data-level="7.1.8" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvBasmalaIndividuals"><i class="fa fa-check"></i><b>7.1.8</b> Evidence on individual Basmala words</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvSomeWords"><i class="fa fa-check"></i><b>7.2</b> Evidence on some words</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAl-zikr"><i class="fa fa-check"></i><b>7.2.1</b> Evidence on the word Zikr</a></li>
+<li class="chapter" data-level="7.2.2" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvOtherWords"><i class="fa fa-check"></i><b>7.2.2</b> Facts on other related words</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositions"><i class="fa fa-check"></i><b>7.3</b> Evidence on Allah word positions and frequencies</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositionsiboth"><i class="fa fa-check"></i><b>7.3.1</b> Evidence on Allah word positions and frequencies in both text types</a></li>
+<li class="chapter" data-level="7.3.2" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositionwithsum"><i class="fa fa-check"></i><b>7.3.2</b> Evidence on Allah word positions and frequencies with sum</a></li>
+<li class="chapter" data-level="7.3.3" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositionwtConcat"><i class="fa fa-check"></i><b>7.3.3</b> Evidence on Allah word positions and frequencies with concatenation</a></li>
+<li class="chapter" data-level="7.3.4" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositionVerseIndex"><i class="fa fa-check"></i><b>7.3.4</b> Evidence on Allah word positions and frequencies on verse indices only</a></li>
+<li class="chapter" data-level="7.3.5" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositionChapSpecVerses"><i class="fa fa-check"></i><b>7.3.5</b> Evidence on Allah word positions and frequencies with Chapter and Special verse indices</a></li>
+<li class="chapter" data-level="7.3.6" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvAllahPositionGenChapSpecVerses2"><i class="fa fa-check"></i><b>7.3.6</b> Evidence with General verse indices, Chapter and Special verse indices</a></li>
+<li class="chapter" data-level="7.3.7" data-path="OtherEvidences.html"><a href="OtherEvidences.html#ProbEvAllahPositions"><i class="fa fa-check"></i><b>7.3.7</b> Probability of the Evidences on Allah word positions and frequencies</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvSuraTavba"><i class="fa fa-check"></i><b>7.4</b> Evidence on Chapter At-Tawbah</a></li>
+<li class="chapter" data-level="7.5" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvChapContmult19"><i class="fa fa-check"></i><b>7.5</b> Evidences on Chapters with multiple of 19 content</a></li>
+<li class="chapter" data-level="7.6" data-path="OtherEvidences.html"><a href="OtherEvidences.html#EvVerseContmult19"><i class="fa fa-check"></i><b>7.6</b> Evidences on words content</a></li>
+<li class="chapter" data-level="7.7" data-path="OtherEvidences.html"><a href="OtherEvidences.html#Probofnovels"><i class="fa fa-check"></i><b>7.7</b> Overall Probability of all the novel Evidences</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html"><i class="fa fa-check"></i><b>8</b> Discussions and Copyrights</a><ul>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-rewiew"><i class="fa fa-check"></i>Reviews, feedback and contact</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-future"><i class="fa fa-check"></i>Future works</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-nonmuslims"><i class="fa fa-check"></i>My personal message to non-Muslim readers</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-tradition"><i class="fa fa-check"></i>The gap between Quran and the traditional Muslim belief</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-source"><i class="fa fa-check"></i>The source of Islam religion</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-sects"><i class="fa fa-check"></i>The sects among traditional Muslims</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-bad-ex"><i class="fa fa-check"></i>A bad example of the tradition despite Quran</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-violnace"><i class="fa fa-check"></i>No violence in Islam</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-ageforthy"><i class="fa fa-check"></i>At my age 40, I became a Muslim of Quran</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-discoverydate"><i class="fa fa-check"></i>The discovery date of this system</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-relvves"><i class="fa fa-check"></i>Some relevant verses</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-science"><i class="fa fa-check"></i>Other scientific related miracles of Quran and other interesting facts</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-Copyrights"><i class="fa fa-check"></i>Copyrights of this book</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="discussions-and-copyrights.html"><a href="discussions-and-copyrights.html#fw-isbn"><i class="fa fa-check"></i>ISBN</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducible Miracle</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="EvidencesRewriting" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Evidences on Rewriting</h1>
+<p>In this chapter, I will present some of the most important evidences I hypothesized and tested and witnessed them to be under the 19 based coding system of the text of Quran. In my opinion, especially Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> is the <strong>ultimate evidence</strong> as the proof that the text of Quran is intact and unchanged and designed under the 19 based coding system. It is because we literally <strong>rewrite</strong> the text of Quran with the corresponding descriptive numbers at finest text resolution and in exact same order of Quran. This chapter mainly provides evidences in the similar rewriting approach in general.</p>
+<div id="Decode1" class="section level2">
+<h2><span class="header-section-number">6.1</span> The Ultimate Evidence: Rewriting the full text by main descriptive numbers per verse</h2>
+<p>In my opinion, this evidence is the ultimate evidence of all that itself proves that whole text of Quran with all of its text structure, size and order is under the 19 based coding system of the text of Quran and thus it is intact and unchanged from the beginning since 632 for the last 1387 years. In a sense, I fully decode the text of Quran by its descriptive numbers. In order to decode the full text of Quran, we need its own text numbers to decode. The way I will decode the text of Quran is simply by re-writing the text of Quran, verse by verse with its counted descriptive numbers in the exact same order of the text from right to left as in Arabic. For these kinds of re-writing evidences, we can add this rule upon general rules such that in order to re-write the text of Quran by its descriptive numbers we need to mimic the Arabic text of Quran that is written from right to left. In order to re-write the full text of Quran in the exact same order, I will utilize from this table that keeps all the descriptor numbers for each and every verse of the full text of Quran in order:</p>
+<div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb356-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">head</span>(unQuran), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb356-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table head of all verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-89">Table 6.1: </span>Table head of all verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">VerseI</th>
+<th align="right">chapter</th>
+<th align="right">verse</th>
+<th align="right">vwords</th>
+<th align="right">vletters</th>
+<th align="left">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">19</td>
+<td align="left">بسم الله الرحمن الرحيم</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+<td align="left">الحمد لله رب العالمين</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="left">الرحمن الرحيم</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="left">مالك يوم الدين</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">19</td>
+<td align="left">إياك نعبد وإياك نستعين</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">19</td>
+<td align="left">اهدنا الصراط المستقيم</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb357-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">tail</span>(unQuran), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb357-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table tail of all verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-89">Table 6.1: </span>Table tail of all verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">VerseI</th>
+<th align="right">chapter</th>
+<th align="right">verse</th>
+<th align="right">vwords</th>
+<th align="right">vletters</th>
+<th align="left">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6343</td>
+<td align="right">114</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">14</td>
+<td align="left">قل أعوذ برب الناس</td>
+</tr>
+<tr class="even">
+<td align="right">6344</td>
+<td align="right">114</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="left">ملك الناس</td>
+</tr>
+<tr class="odd">
+<td align="right">6345</td>
+<td align="right">114</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="left">إله الناس</td>
+</tr>
+<tr class="even">
+<td align="right">6346</td>
+<td align="right">114</td>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">17</td>
+<td align="left">من شر الوسواس الخناس</td>
+</tr>
+<tr class="odd">
+<td align="right">6347</td>
+<td align="right">114</td>
+<td align="right">5</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="left">الذي يوسوس في صدور الناس</td>
+</tr>
+<tr class="even">
+<td align="right">6348</td>
+<td align="right">114</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">13</td>
+<td align="left">من الجنة والناس</td>
+</tr>
+</tbody>
+</table>
+<p>Using all the descriptive numbers per verse, I will re-write the whole text of Quran with the numbers in each row of the table above. I will basically re-write the full text of Quran with numbers in the same order of the words of Quran from right to left as in Arabic. As numbers, I will use the exact chapter index, verse index, number of words and also number of letters of each verse. Since in the whole text of Quran there are 112 unnumbered Basmala verses, I will also take this into account and I will not assign any verse number for the unnumbered Basmalas but still assign their chapter index and word and letter numbers for them just like they are written in the text of Quran. This literally means, re-writing the full text of Quran with the 4 main descriptor numbers of the text. There is only one version of such an hypothesis. Because, I am testing the order and size of each verse at the smallest resolution that is number of letters and words per verse along with all the two other specific descriptor numbers, chapters and verses. Here is the proof with a reproducible R code that re-writes, namely decodes, the full text of Quran by the 4 different descriptor numbers first and then test this big number.</p>
+<div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb358-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran</a>
+<a class="sourceLine" id="cb358-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb358-3" data-line-number="3"> <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb358-4" data-line-number="4">     <span class="cf">if</span>(x<span class="op">$</span>verse[j] <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>){<span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb358-5" data-line-number="5">         tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],x<span class="op">$</span>vwords[j],x<span class="op">$</span>vletters[j])</a>
+<a class="sourceLine" id="cb358-6" data-line-number="6">         }<span class="cf">else</span>{<span class="co">#For unnumbered Basmala verses</span></a>
+<a class="sourceLine" id="cb358-7" data-line-number="7">             tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>vwords[j],x<span class="op">$</span>vletters[j])</a>
+<a class="sourceLine" id="cb358-8" data-line-number="8">             }</a>
+<a class="sourceLine" id="cb358-9" data-line-number="9">     tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)</a>
+<a class="sourceLine" id="cb358-10" data-line-number="10">   }</a>
+<a class="sourceLine" id="cb358-11" data-line-number="11"> tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tv, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb358-12" data-line-number="12"> <span class="co">#I revert the order from right to left as in Arabic.</span></a>
+<a class="sourceLine" id="cb358-13" data-line-number="13"> tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tv) <span class="co"># matches the coding from right to left as in Arabic.</span></a>
+<a class="sourceLine" id="cb358-14" data-line-number="14"> tmpr[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>] <span class="co">#&quot;1146313&quot; &quot;1145520&quot; &quot;1144417&quot; &quot;114328&quot;  ...</span></a></code></pre></div>
+<pre><code>##  [1] &quot;1146313&quot; &quot;1145520&quot; &quot;1144417&quot; &quot;114328&quot;  &quot;114228&quot;  &quot;1141414&quot; &quot;114419&quot; 
+##  [8] &quot;1135515&quot; &quot;1134520&quot; &quot;1133515&quot;</code></pre>
+<div class="sourceCode" id="cb360"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb360-1" data-line-number="1"> <span class="kw">tail</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;16319&quot; &quot;15419&quot; &quot;14312&quot; &quot;13212&quot; &quot;12418&quot; &quot;11419&quot;</code></pre>
+<div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb362-1" data-line-number="1"> tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb362-2" data-line-number="2"> <span class="kw">cat</span>(<span class="st">&quot;The test of divisibility by 19:&quot;</span>)</a></code></pre></div>
+<pre><code>## The test of divisibility by 19:</code></pre>
+<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb364-1" data-line-number="1"> <span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>)) <span class="co">#&quot;0&quot;</span></a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb366-1" data-line-number="1"> <span class="kw">cat</span>(<span class="st">&quot;Number of digits on this big number</span></a>
+<a class="sourceLine" id="cb366-2" data-line-number="2"><span class="st">     is &quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## Number of digits on this big number
+##      is  46900</code></pre>
+<div class="sourceCode" id="cb368"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb368-1" data-line-number="1"> <span class="kw">cat</span>(<span class="st">&quot;The length of the big number is &quot;</span>,</a>
+<a class="sourceLine" id="cb368-2" data-line-number="2">  <span class="kw">nchar</span>(tmpr), <span class="st">&quot; and its digit sum is &quot;</span>,</a>
+<a class="sourceLine" id="cb368-3" data-line-number="3">  <span class="kw">length</span>(<span class="kw">nchar</span>(tmpr)))</a></code></pre></div>
+<pre><code>## The length of the big number is  46900  and its digit sum is  1</code></pre>
+<p>First of all before discussing on the main point, as you can see in the last result, the digit sum of the number of digits of this big number, which is obtained by re-writing the full text of Quran, is exactly 19.</p>
+<p>Back to the main point of the evidence, in my opinion, divisibility by 19 of this big number that represents the re-writing of the text of Quran in every level of detail is the biggest evidence of all, namely ultimate evidence. We <strong>additionally</strong> are witnessing that the digit sum of the number of digits number is exactly 19 and this further assures my opinion on this the greatest evidence of all as we do not normally observe such further assurances.</p>
+<p>From the head and tail outputs of the <em>tmpr</em> object, one can perform a quick check and test the re-writing. Feel free to use the code to reproduce and test the proof given above and critically evaluate it.</p>
+<p>Since we are re-writing the full text of Quran by its own numbers and thus testing the intactness of all the sizes and also the orders of all the descriptive numbers and structure of the text, we can only use the default divisibility by 19 test. So, we have one number and one test! Therefore, the probability of this big number being divisible by 19 is 1/19. And also it is worth emphasizing again that this big number is the only number we can generate to re-write the full text of Quran with the 4 main descriptor numbers of a text at finest text resolution. This big number represents the whole text of Quran with respect to the number of words and letters per verse per chapter and supports the hypothesis that there is no redundant or missing words or letters in each and every verses and their orders and sizes are correct, intact and unchanged since the beginning from 632 until today for the last 1387 years.</p>
+<p>The first column <em>VerseI</em> of the above table is an independently added column by myself to be able to refer each verse independently from the chapter index. It is especially useful to refer to unnumbered Basmala verses as they in fact do not have any number. I placed number 0 to fill the places of the verse index of unnumbered Basmala verses in the <em>verse</em> column but in fact there is no real <strong>0</strong> number representation for those Basmala verses. I already took this into account while re-writing the full text by numbers and skipped those zeros in the concatenation process. I will consider those <em>VerseI</em> indices in another section separately.</p>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> had been available in another article, which is very unlikely, then in such a case, I surely add a citation and update the online version of this book.</p>
+<p>This evidence, Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>, is the ultimate evidence of all in my opinion. Because we literally re-write the full text of Quran in the exact same structure and order using the main descriptor numbers per verse. We used the full text version of Quran, which means including unnumbered and numbered verses. In my opinion, there is no better alternative than this big number to represent Quran with numbers and thus this is the single best number. We witnessed that this number is under the 19 based coding system of the text of Quran. On the other hand, I have observed some other interesting re-writing representations as well but they can only be considered only underneath of this evidence as secondary evidences compare to this one. Therefore, I will provide several sub-sections that present other evidences about re-writing the text of Quran with other numbers from different aspects. Again, those are only follow up evidences and they are only meaningful because we have already witnessed the best re-writing of the text, Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>, as under 19 based coding system of the text of Quran. If Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> was not successful, those follow up subsections would not be as meaningful as now. Because, one could always argue that the best possible re-writing representation did not pass the test, which is not the case right now.</p>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/BigNumber_6.1.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/BigNumber_6.1.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>As the last process to do, let’s add the number of successful evidences and the number of total numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.</p>
+<div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb370-1" data-line-number="1">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb370-2" data-line-number="2">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<p><strong>Additional rule for re-writing approaches:</strong>
+In order to define boundaries of this kind of approach for re-writing, I define the additional rule such that any re-writing evidence of the text of Quran needs to be made based on verse indices that must also include the number of words and letters per verse as well. It must also be written from right to left as in Arabic language and we can only apply the default divisibility by 19 test as the order of the numbers to be tested as well.</p>
+<div id="Decode2" class="section level3">
+<h3><span class="header-section-number">6.1.1</span> Evidence: Rewriting the full text by main descriptive numbers per verse index</h3>
+<p>Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> is the main evidence to re-write the full text of Quran with the 4 main descriptor numbers of a text. If Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> was not successful, I would not be able to confidently hypothesize the additional follow up evidences such as this one. Because, when we mention a specific verse in Quran we <strong>naturally</strong> refer to it by its chapter and verse index such as this “Quran 74:30”. Therefore, any natural test must consider those numbers first as I did so in Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> and proved that when we re-write, or in other words decode the text of Quran with its main descriptor numbers, the resulting big number is divisible by 19, which very strongly supports that Quran is intact and has correct order and unchanged as we Muslims already presume and accept so. However, after witnessing that great test, I decided to perform a follow up test. I wanted to test if there is any similar design with respect to the general order index of each verse from 1 to 6348 (column <em>VerseI</em> in the table). Then, the question was at which location should I place the general order verse index for concatenation. The previous natural order was not quite suitable as it does not fit in, for instance, the natural “74:30” like expression of a verse of Quran. I decided to place the general order of verse index at the beginning just like I naturally did myself while generating the table of the text of Quran and placing the general verse indices, <em>VerseI</em>, at the beginning. This make sense because we also sometimes refer to a verse like “the first verse” in Quran without referring the chapter index. In a sense, these general verse order indices are at the outer domain of chapter indices and when we give only this index one can find out which chapter and which verse of that chapter by following the order of the verses in Quran. Thus, I locate the general verse indices, <em>VerseI</em>, at the beginning and then follow the general order of concatenations afterwards. As I show in the following, re-writing the full text of Quran as in Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> but this time regarding the general verse order indices results another big number that is also divisible by 19.</p>
+<div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb371-1" data-line-number="1">x&lt;-<span class="st"> </span><span class="kw">data.table</span>(unQuran)</a>
+<a class="sourceLine" id="cb371-2" data-line-number="2">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI,x<span class="op">$</span>chapter,x<span class="op">$</span>vwords,x<span class="op">$</span>vletters) </a>
+<a class="sourceLine" id="cb371-3" data-line-number="3"><span class="kw">head</span>(tmp)</a></code></pre></div>
+<pre><code>## [1] &quot;11419&quot; &quot;21418&quot; &quot;31212&quot; &quot;41312&quot; &quot;51419&quot; &quot;61319&quot;</code></pre>
+<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb373-1" data-line-number="1"><span class="co">#Revert the order from right to left as in Arabic.</span></a>
+<a class="sourceLine" id="cb373-2" data-line-number="2">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb373-3" data-line-number="3"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;6348114313&quot; &quot;6347114520&quot; &quot;6346114417&quot; &quot;634511428&quot;  &quot;634411428&quot; 
+## [6] &quot;6343114414&quot;</code></pre>
+<div class="sourceCode" id="cb375"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb375-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb375-2" data-line-number="2"><span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>))<span class="co"># &quot;0&quot;</span></a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb377"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb377-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 58714</code></pre>
+<p>Since I used the number 6348 for general verse indices of the full text, I also tested the unnumbered version for the number 6236. This evidence only passes the test for the full text of Quran that is based on 6348 general verse indices, which is more assuring in fact as we are re-writing or decoding the text of Quran. As we just witnessed again, the text of Quran was precisely designed and coded with 19 based coding system of the text of Quran and is also intact and unchanged from the beginning for the last 1387 years.</p>
+<p>Since we performed two tests and observed one success, we can compute the probability of this evidence as follows:</p>
+<div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb379-1" data-line-number="1">tmp &lt;-<span class="kw">binom.test</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dt">p =</span> (<span class="dv">1</span><span class="op">/</span><span class="dv">19</span>),</a>
+<a class="sourceLine" id="cb379-2" data-line-number="2">                 <span class="dt">alternative =</span> <span class="kw">c</span>(<span class="st">&quot;greater&quot;</span>))</a>
+<a class="sourceLine" id="cb379-3" data-line-number="3">tmp &lt;-<span class="st"> </span>tmp<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb379-4" data-line-number="4"><span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;The probability of 1 success out of 2 (with p=1/19) is:&quot;</span>, tmp))</a></code></pre></div>
+<pre><code>## [1] &quot;The probability of 1 success out of 2 (with p=1/19) is: 0.102493074792244&quot;</code></pre>
+<p>As the last process to do, let’s add the number of successful evidences and the total number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.</p>
+<div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb381-1" data-line-number="1">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb381-2" data-line-number="2">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#Decode2">6.1.1</a> is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence <a href="EvidencesRewriting.html#Decode2">6.1.1</a> had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.</p>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6_1_1_rewrite.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6_1_1_rewrite.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+</div>
+<div id="RewrByVerseIndx" class="section level3">
+<h3><span class="header-section-number">6.1.2</span> Evidence: Rewrite the full text by word and letter numbers per verse regarding verse indices</h3>
+<p>In Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>, I had used the 4 main descriptors numbers to re-write the full text of Quran. It was the natural way of re-writing the full text by the 4 main descriptive numbers. However, we can also refer to each verse by their general verse index that we assign from 1 to 6348 to the full text. Since we refer to the total verse number 6348, we also consider the unnumbered version 6236 as well for testing. If we use only these general verse indices and refer to each verse, we can similarly re-write the full text of Quran by the number of words and letters per verse in order. Because as mentioned before, these general verse indices also incorporates the chapter information inside implicitly and enough to represent the full text of Quran precisely. As you will see in the following, I will re-write, first, the full text of Quran regarding the total number of verses 6348.</p>
+<p>As we know, Quran is written from right to left and I again follow this same pattern while re-writing the text by the descriptive numbers. This represents the whole text of Quran with respect to number of words and letters per general verse index and supports the hypothesis that there is no redundant or missing words or letters in each verse and their orders are also correct.</p>
+<p>In the following proof, I demonstrate that this hypothesis for the case of 6348, which represents the total general verse indices of the full text of Quran.</p>
+<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb382-1" data-line-number="1"><span class="co">#Verse index (VerseI)  as descriptor</span></a>
+<a class="sourceLine" id="cb382-2" data-line-number="2">x&lt;-<span class="st"> </span><span class="kw">data.table</span>(unQuran)</a>
+<a class="sourceLine" id="cb382-3" data-line-number="3">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI,x<span class="op">$</span>vwords,x<span class="op">$</span>vletters) </a>
+<a class="sourceLine" id="cb382-4" data-line-number="4"><span class="kw">head</span>(tmp)</a></code></pre></div>
+<pre><code>## [1] &quot;1419&quot; &quot;2418&quot; &quot;3212&quot; &quot;4312&quot; &quot;5419&quot; &quot;6319&quot;</code></pre>
+<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb384-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp) <span class="co">## matches the coding from right to left as in Arabic.</span></a>
+<a class="sourceLine" id="cb384-2" data-line-number="2"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;6348313&quot; &quot;6347520&quot; &quot;6346417&quot; &quot;634528&quot;  &quot;634428&quot;  &quot;6343414&quot;</code></pre>
+<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb386-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb386-2" data-line-number="2"><span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>))</a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb388-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 47284</code></pre>
+<p>It further supports the knowledge that Quran is intact and unchanged and designed from the beginning in this exact same order, size and structure.</p>
+<p>Now, I demonstrate the similar number for 6236 verses text category. However, since this number does not follow the universal rule of this book, I do not take it as evidence.
+There are many such cases that I did not consider as part of the general system and I did not include in this book. I give this particular number as one such exemplary case that shows that I only include the numbers that are under the general rules of the system that I observed and set accordingly in this book. One of the the main rules was that the 4 descriptive numbers must be always in the natural order when we combine them. Here the number of letters is placed before words and therefore does not obey the general rule and thus is not included as part of the 19 based system of the text of Quran that I present in this book. Here is the number that is considered neither evidence nor fact:</p>
+<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb390-1" data-line-number="1"><span class="co">#Verse index (VerseI) as descriptor</span></a>
+<a class="sourceLine" id="cb390-2" data-line-number="2">x&lt;-<span class="st"> </span><span class="kw">data.table</span>(nQuran)</a>
+<a class="sourceLine" id="cb390-3" data-line-number="3">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI, x<span class="op">$</span>vletters,x<span class="op">$</span>vwords)  </a>
+<a class="sourceLine" id="cb390-4" data-line-number="4"><span class="kw">head</span>(tmp)</a></code></pre></div>
+<pre><code>## [1] &quot;1194&quot; &quot;2184&quot; &quot;3122&quot; &quot;4123&quot; &quot;5194&quot; &quot;6193&quot;</code></pre>
+<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb392-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp) <span class="co"># matches the coding from right to left as in Arabic.</span></a>
+<a class="sourceLine" id="cb392-2" data-line-number="2"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;6236133&quot; &quot;6235205&quot; &quot;6234174&quot; &quot;623382&quot;  &quot;623282&quot;  &quot;6231144&quot;</code></pre>
+<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb394-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb394-2" data-line-number="2"><span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>))</a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb396-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 46500</code></pre>
+<p>As the last process to do, let’s add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.</p>
+<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb398-1" data-line-number="1">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb398-2" data-line-number="2">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#RewrByVerseIndx">6.1.2</a> is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence <a href="EvidencesRewriting.html#RewrByVerseIndx">6.1.2</a> had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.</p>
+<p>This evidence completes the re-writing evidences, regarding the additional rules mentioned in Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>.</p>
+</div>
+<div id="RewrByVerseIndxLetters" class="section level3">
+<h3><span class="header-section-number">6.1.3</span> Evidence: The general verse indices and others</h3>
+<p>In this section, I will present evidences that show the harmony between the general verse indices and others indices, which are chapters and special verse indices. As a general rule we do not test the combinations of the four main descriptive numbers. On the other hand, general verse indices are outside of these four main descriptive numbers. Thus, we have specific rules for it.</p>
+<p>As the first rule on the general verse indices, we test them using only rewriting approach to see its relation to chapters and special verse <strong>indices</strong>. This means we test the general verse indices and their corresponding chapter indices for each verse and at exact location in the Book. Therefore, we have two numbers of the two text types to test between general verse indices and chapter indices as there is order in concatenation, where general verse indices is naturally at the beginning and the chapter indices on the right.</p>
+<p>Similarly, we have two numbers to test the harmony between the general verse indices and the special verse indices. So, in total we have 4 numbers and since the numbers are ordered we have 4 tests to perform. As you will see in Evidence <a href="EvidencesRewriting.html#RewrByGenSpecVerses">6.1.3.1</a> and Evidence <a href="EvidencesRewriting.html#RewrByGenVerseChapt">6.1.3.2</a>, 3 successes out of 4 are observed.</p>
+<p>As the last process to do, let’s add the number of successful evidences of tests and the total number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the global counters.</p>
+<div class="sourceCode" id="cb399"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb399-1" data-line-number="1">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">4</span> </a>
+<a class="sourceLine" id="cb399-2" data-line-number="2">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">3</span></a></code></pre></div>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#RewrByVerseIndxLetters">6.1.3</a> is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence <a href="EvidencesRewriting.html#RewrByVerseIndxLetters">6.1.3</a> had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.</p>
+<div id="RewrByGenSpecVerses" class="section level4">
+<h4><span class="header-section-number">6.1.3.1</span> Evidence: The general and special verse indices</h4>
+<p>In this evidence, I prove the harmony between the general verse indices and 6236 numbered special verse indices as below:</p>
+<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb400-1" data-line-number="1"><span class="co">## General verse indices and verses</span></a>
+<a class="sourceLine" id="cb400-2" data-line-number="2"><span class="co"># 2 possible numbers; 2 tests, one success</span></a>
+<a class="sourceLine" id="cb400-3" data-line-number="3">x&lt;-<span class="st"> </span><span class="kw">data.table</span>(nQuran)</a>
+<a class="sourceLine" id="cb400-4" data-line-number="4">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI,x<span class="op">$</span>verse)</a>
+<a class="sourceLine" id="cb400-5" data-line-number="5"><span class="kw">head</span>(tmp) <span class="co"># see the head of the number</span></a></code></pre></div>
+<pre><code>## [1] &quot;11&quot; &quot;22&quot; &quot;33&quot; &quot;44&quot; &quot;55&quot; &quot;66&quot;</code></pre>
+<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb402-1" data-line-number="1"><span class="kw">tail</span>(tmp) <span class="co"># see the tail of the number</span></a></code></pre></div>
+<pre><code>## [1] &quot;62311&quot; &quot;62322&quot; &quot;62333&quot; &quot;62344&quot; &quot;62355&quot; &quot;62366&quot;</code></pre>
+<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb404-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp) </a>
+<a class="sourceLine" id="cb404-2" data-line-number="2">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb404-3" data-line-number="3"><span class="kw">as.integer</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>)</a></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode" id="cb406"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb406-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 36308</code></pre>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.1.3.1_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.1.3.1_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+</div>
+<div id="RewrByGenVerseChapt" class="section level4">
+<h4><span class="header-section-number">6.1.3.2</span> Evidence: The general verse indices and chapters</h4>
+<p>In this evidence, I prove the harmony between the general verse indices and their corresponding chapter indices below. First, between the 6236 numbered general verse indices and their corresponding chapter indices:</p>
+<div class="sourceCode" id="cb408"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb408-1" data-line-number="1"><span class="co">## General verse indices and chapters</span></a>
+<a class="sourceLine" id="cb408-2" data-line-number="2"><span class="co"># 2 ordered numbers; thus 2 tests; two success</span></a>
+<a class="sourceLine" id="cb408-3" data-line-number="3"><span class="co">#numbered verses, nQuran object</span></a>
+<a class="sourceLine" id="cb408-4" data-line-number="4">x&lt;-<span class="st"> </span><span class="kw">data.table</span>(nQuran)</a>
+<a class="sourceLine" id="cb408-5" data-line-number="5">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI,x<span class="op">$</span>chapter) </a>
+<a class="sourceLine" id="cb408-6" data-line-number="6">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb408-7" data-line-number="7"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;6236114&quot; &quot;6235114&quot; &quot;6234114&quot; &quot;6233114&quot; &quot;6232114&quot; &quot;6231114&quot;</code></pre>
+<div class="sourceCode" id="cb410"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb410-1" data-line-number="1"><span class="kw">tail</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;61&quot; &quot;51&quot; &quot;41&quot; &quot;31&quot; &quot;21&quot; &quot;11&quot;</code></pre>
+<div class="sourceCode" id="cb412"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb412-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb412-2" data-line-number="2"><span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>))</a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb414"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb414-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 35035</code></pre>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.1.3.2.A_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.1.3.2.A_Evidence_bignumber.txt</a></p>
+<p>Second related evidence exist also for all the 6348 verses. We look at the same pattern if exist in all the 6348 verses and see that it exists too! As you will witness below, between the 6348 general verse indices and their corresponding chapter indices, we witness the same 19 based design coding patter as follows:</p>
+<div class="sourceCode" id="cb416"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb416-1" data-line-number="1"><span class="co"># unQuran object</span></a>
+<a class="sourceLine" id="cb416-2" data-line-number="2">x&lt;-<span class="st"> </span><span class="kw">data.table</span>(unQuran)</a>
+<a class="sourceLine" id="cb416-3" data-line-number="3">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI,x<span class="op">$</span>chapter) </a>
+<a class="sourceLine" id="cb416-4" data-line-number="4">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb416-5" data-line-number="5"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;6348114&quot; &quot;6347114&quot; &quot;6346114&quot; &quot;6345114&quot; &quot;6344114&quot; &quot;6343114&quot;</code></pre>
+<div class="sourceCode" id="cb418"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb418-1" data-line-number="1"><span class="kw">tail</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;61&quot; &quot;51&quot; &quot;41&quot; &quot;31&quot; &quot;21&quot; &quot;11&quot;</code></pre>
+<div class="sourceCode" id="cb420"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb420-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb420-2" data-line-number="2"><span class="kw">as.integer</span>(<span class="kw">digitsum</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>)</a></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb422-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 35715</code></pre>
+<p>As just proved, the general verse indices are in perfect harmony with their chapter indices of the text of Quran. This further supports the intactness of the text of Quran. It means, Quran is unchanged and exactly in the same order as we have right now in our hands with respect to each verse and their corresponding chapter. These evidences clearly prove that the order of verses and chapters are precisely correct and under strong 19 based design.</p>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.1.3.2.B_Evidence_bignumber_6348verses.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.1.3.2.B_Evidence_bignumber_6348verses.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+</div>
+</div>
+<div id="EVperCperV" class="section level3">
+<h3><span class="header-section-number">6.1.4</span> Evidences: Rewriting per chapter</h3>
+<p>I will show evidences in which I re-write the text of numbered verses of Quran per chapter, with the 4 main descriptor numbers of a text. To remember the numbers to be used, I first provide the head and tail of the table I will use.</p>
+<div class="sourceCode" id="cb424"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb424-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">head</span>(dfVCwl), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb424-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table head of numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-102">Table 6.2: </span>Table head of numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">Chapter_index</th>
+<th align="right">Verse_sum</th>
+<th align="right">cwords</th>
+<th align="right">cletters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">7</td>
+<td align="right">29</td>
+<td align="right">143</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">286</td>
+<td align="right">6140</td>
+<td align="right">26249</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">200</td>
+<td align="right">3501</td>
+<td align="right">14985</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">176</td>
+<td align="right">3763</td>
+<td align="right">16332</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">120</td>
+<td align="right">2837</td>
+<td align="right">12206</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">165</td>
+<td align="right">3056</td>
+<td align="right">12726</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb425"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb425-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">tail</span>(dfVCwl), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb425-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table tail of numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-102">Table 6.2: </span>Table tail of numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">Chapter_index</th>
+<th align="right">Verse_sum</th>
+<th align="right">cwords</th>
+<th align="right">cletters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">109</td>
+<td align="right">6</td>
+<td align="right">27</td>
+<td align="right">99</td>
+</tr>
+<tr class="even">
+<td align="right">110</td>
+<td align="right">3</td>
+<td align="right">19</td>
+<td align="right">80</td>
+</tr>
+<tr class="odd">
+<td align="right">111</td>
+<td align="right">5</td>
+<td align="right">23</td>
+<td align="right">81</td>
+</tr>
+<tr class="even">
+<td align="right">112</td>
+<td align="right">4</td>
+<td align="right">15</td>
+<td align="right">47</td>
+</tr>
+<tr class="odd">
+<td align="right">113</td>
+<td align="right">5</td>
+<td align="right">23</td>
+<td align="right">73</td>
+</tr>
+<tr class="even">
+<td align="right">114</td>
+<td align="right">6</td>
+<td align="right">20</td>
+<td align="right">80</td>
+</tr>
+</tbody>
+</table>
+<p>I will concatenate the numbers per chapter in the exact same order of the text of Quran, namely from right to left, as I did in Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>.</p>
+<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb426-1" data-line-number="1"><span class="co">#### Evidence on per chapter level re-writing </span></a>
+<a class="sourceLine" id="cb426-2" data-line-number="2">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(dfVCwl<span class="op">$</span>Chapter_index,dfVCwl<span class="op">$</span>Verse_sum,</a>
+<a class="sourceLine" id="cb426-3" data-line-number="3">              dfVCwl<span class="op">$</span>cwords, dfVCwl<span class="op">$</span>cletters)</a>
+<a class="sourceLine" id="cb426-4" data-line-number="4">tmpr&lt;-<span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb426-5" data-line-number="5"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;11462080&quot; &quot;11352373&quot; &quot;11241547&quot; &quot;11152381&quot; &quot;11031980&quot; &quot;10962799&quot;</code></pre>
+<div class="sourceCode" id="cb428"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb428-1" data-line-number="1"><span class="kw">tail</span>(tmpr) </a></code></pre></div>
+<pre><code>## [1] &quot;6165305612726&quot; &quot;5120283712206&quot; &quot;4176376316332&quot; &quot;3200350114985&quot;
+## [5] &quot;2286614026249&quot; &quot;1729143&quot;</code></pre>
+<div class="sourceCode" id="cb430"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb430-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb430-2" data-line-number="2"><span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>))</a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb432"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb432-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 1205</code></pre>
+<p>We can only use the default test as we are testing the order of re-writing as well. It has a similar approach to Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> but at the chapter level numbers resolution of it. We could perform two tests and observed one success.</p>
+<p>As the last process to do, let’s add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.</p>
+<div class="sourceCode" id="cb434"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb434-1" data-line-number="1"><span class="co">#2 ordered numbers, two tests</span></a>
+<a class="sourceLine" id="cb434-2" data-line-number="2">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb434-3" data-line-number="3">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#EVperCperV">6.1.4</a> is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence <a href="EvidencesRewriting.html#EVperCperV">6.1.4</a> had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.</p>
+<p>Here is the “1205” digits length number of this evidence:</p>
+<p>“11462080113523731124154711152381110319801096279910831043107725114106417771055239710493313410331473102828123101113616010011401699983615898894404975301159619722889583416294827102931140165922171314911554253902082342893013958488269238287197229686176125485221094698425108445833616975082198133381291044358042133552794617978578401747967750181841763124310877540164676745625610357320200854722828611097128227965704421797169522601133685230112896730333134766122541105651228912036418242109163111818016211177768611422696660133521560592444719705822475204657295752545569637917565578352164754553421469536236014335249312132451603601546504537315074918353153348295602510473854224234635645266745374882085445934614744389836360942538603522415479433654085122651083975117748693888735306537182865389936837303068354577832383454884359433731303578832303721563313455021713060817347229699784317288814385930279311594790262271320563025778963878246413195754231181052448322781279531421112117450942013513535399199897139351811015836552171111558664316128184478321599657288214528303539134385335451211117957307111231946781710109183975899129250511115875124253877206334114435616530561272651202837122064176376316332320035011498522866140262491729143”</p>
+</div>
+<div id="EVperCatperchapters" class="section level3">
+<h3><span class="header-section-number">6.1.5</span> Facts: Rewriting per category at chapter level</h3>
+<p>Regarding the simplified rules, when considering the four main descriptive numbers, we only rewrite Quran using all of them as we did in Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>. Therefore, I will present this successful test as a fact instead of evidence. Consequently, it will not be counted in the global probability of the 19 system presented in this book.</p>
+<p>In this fact, similar to the rewriting approach, I will concatenate the chapter indices in the numbered verses of Quran as follows:</p>
+<div class="sourceCode" id="cb435"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb435-1" data-line-number="1">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(dfVCwl<span class="op">$</span>Chapter_index)</a>
+<a class="sourceLine" id="cb435-2" data-line-number="2">tmpr&lt;-<span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb435-3" data-line-number="3"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] &quot;114&quot; &quot;113&quot; &quot;112&quot; &quot;111&quot; &quot;110&quot; &quot;109&quot;</code></pre>
+<div class="sourceCode" id="cb437"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb437-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb437-2" data-line-number="2"><span class="kw">cat</span>(<span class="kw">as.numeric</span>(<span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>))</a></code></pre></div>
+<pre><code>## 0</code></pre>
+<div class="sourceCode" id="cb439"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb439-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 234</code></pre>
+</div>
+<div id="EVrewriteVerseSums" class="section level3">
+<h3><span class="header-section-number">6.1.6</span> Evidences: Rewriting of Quran at verse level with sums</h3>
+<p>In the Ultimate Evidence, Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>, we had witnessed that we could rewrite Quran by concatenating the 6348 representation numbers of each verse at the verse level. In this evidence, Evidence <a href="EvidencesRewriting.html#EVrewriteVerseSums">6.1.6</a>, we will witness a similar rewriting evidence, also in the second type of the text with 6236 verses.</p>
+<p>Basically, we first <strong>sum</strong> the chapter index, verse index, the number of words and the number of letters in that verse. This gives us the representation number of that verse. We then place those representation numbers where we see in the text as this is a rewriting test just as in the case of Ultimate Evidence, Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>. Then we
+concatenate all the 6236 representation numbers and obtain the single representation number of the text of Quran considering only the numbered verses. Let me first remind the numbers by presenting the head and tail of the table of the numbered verses.</p>
+<div class="sourceCode" id="cb441"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb441-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">head</span>(nQuran), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb441-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table head of numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-106">Table 6.3: </span>Table head of numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">VerseI</th>
+<th align="right">chapter</th>
+<th align="right">verse</th>
+<th align="right">vwords</th>
+<th align="right">vletters</th>
+<th align="left">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">19</td>
+<td align="left">بسم الله الرحمن الرحيم</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+<td align="left">الحمد لله رب العالمين</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="left">الرحمن الرحيم</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="left">مالك يوم الدين</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">19</td>
+<td align="left">إياك نعبد وإياك نستعين</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">19</td>
+<td align="left">اهدنا الصراط المستقيم</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb442"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb442-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">tail</span>(nQuran), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb442-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table tail of numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-106">Table 6.3: </span>Table tail of numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">VerseI</th>
+<th align="right">chapter</th>
+<th align="right">verse</th>
+<th align="right">vwords</th>
+<th align="right">vletters</th>
+<th align="left">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6231</td>
+<td align="right">114</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">14</td>
+<td align="left">قل أعوذ برب الناس</td>
+</tr>
+<tr class="even">
+<td align="right">6232</td>
+<td align="right">114</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="left">ملك الناس</td>
+</tr>
+<tr class="odd">
+<td align="right">6233</td>
+<td align="right">114</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="left">إله الناس</td>
+</tr>
+<tr class="even">
+<td align="right">6234</td>
+<td align="right">114</td>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">17</td>
+<td align="left">من شر الوسواس الخناس</td>
+</tr>
+<tr class="odd">
+<td align="right">6235</td>
+<td align="right">114</td>
+<td align="right">5</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="left">الذي يوسوس في صدور الناس</td>
+</tr>
+<tr class="even">
+<td align="right">6236</td>
+<td align="right">114</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">13</td>
+<td align="left">من الجنة والناس</td>
+</tr>
+</tbody>
+</table>
+<p>And, here is the proof.</p>
+<div class="sourceCode" id="cb443"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb443-1" data-line-number="1">x&lt;-<span class="st"> </span>nQuran</a>
+<a class="sourceLine" id="cb443-2" data-line-number="2">tmp2 &lt;-<span class="st"> </span>x<span class="op">$</span>chapter <span class="op">+</span><span class="st"> </span>x<span class="op">$</span>verse <span class="op">+</span></a>
+<a class="sourceLine" id="cb443-3" data-line-number="3"><span class="st">  </span>x<span class="op">$</span>vwords <span class="op">+</span><span class="st"> </span>x<span class="op">$</span>vletters</a>
+<a class="sourceLine" id="cb443-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Head and tail of the representation numbers of verses&quot;</span>)</a></code></pre></div>
+<pre><code>## Head and tail of the representation numbers of verses</code></pre>
+<div class="sourceCode" id="cb445"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb445-1" data-line-number="1"><span class="kw">head</span>(tmp2)</a></code></pre></div>
+<pre><code>## [1] 25 25 18 20 29 29</code></pre>
+<div class="sourceCode" id="cb447"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb447-1" data-line-number="1"><span class="kw">tail</span>(tmp2)</a></code></pre></div>
+<pre><code>## [1] 133 126 127 139 144 136</code></pre>
+<div class="sourceCode" id="cb449"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb449-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>( <span class="kw">rev</span>(tmp2), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)</a>
+<a class="sourceLine" id="cb449-2" data-line-number="2"><span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> </a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb451"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb451-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 17790</code></pre>
+<p>As we see the remainder is 0 and thus the number is under the 19 based coding system of the text of Quran. We can only use the default test as we are testing the order of re-writing as well. It has a similar approach to Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> but using the second type of the text of the numbered verses and also sum operation to get the representation number of each verse. We could perform two tests and observed one success since the sum operation is different than Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>.</p>
+<p>As we see, we could again re-write the text of Quran after Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a>. This means both text types with 6348 verses and 6236 verses can be re-written with their natural numbers and they are under the 19 based coding system up until the last letter.</p>
+<p>As the last process to do, let’s add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.</p>
+<div class="sourceCode" id="cb453"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb453-1" data-line-number="1"><span class="co">#2 ordered numbers, two tests</span></a>
+<a class="sourceLine" id="cb453-2" data-line-number="2">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb453-3" data-line-number="3">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<p>There is also an additional <strong>fact</strong> in this evidence in which we concatenated each representation number of each verse. If we sum those instead of concatenation, then the resulting number reveals an interesting fact. Because the digit sum of it also divisible by 19 as shown below.</p>
+<div class="sourceCode" id="cb454"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb454-1" data-line-number="1">tmp3 &lt;-<span class="st"> </span><span class="kw">sum</span>(<span class="kw">as.numeric</span>(tmp2))</a>
+<a class="sourceLine" id="cb454-2" data-line-number="2"><span class="co">#The sum of sums</span></a>
+<a class="sourceLine" id="cb454-3" data-line-number="3">tmp3</a></code></pre></div>
+<pre><code>## [1] 951202</code></pre>
+<div class="sourceCode" id="cb456"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb456-1" data-line-number="1"><span class="co">#The digit sum of it to mod 19</span></a>
+<a class="sourceLine" id="cb456-2" data-line-number="2"><span class="kw">digitsum</span>(tmp3) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> </a></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#EVrewriteVerseSums">6.1.6</a> is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence <a href="EvidencesRewriting.html#EVrewriteVerseSums">6.1.6</a> had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.</p>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.1.6_Evidence.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.1.6_Evidence.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+</div>
+</div>
+<div id="DecodeAbjad1" class="section level2">
+<h2><span class="header-section-number">6.2</span> Evidences with Abjad numbers</h2>
+<p>The Abjad numbers, are a decimal alphabetic numeral system, in which the 28 letters of the Arabic alphabet are assigned numerical values and it is a very old tradition in Arabic language. I quote this information and each letter and their corresponding Abjad numbers from en.wikipedia.org/wiki/Abjad_numerals. It is, in nature, similar to Roman numbers. As the source of Abjad numbers is not Quran and there is no information about it in Quran, I personally am reluctant to pursue a deep textual analysis using Abjad numbers in regard to 19 based coding system of the text of Quran. However, since there was early attempts and some interesting Abjad number based coding examples available on Basmala verse, I wanted test with it anyway. Because, if the historical Abjad numbers that we know is correct and if there is also coding with the Abjad numbers then we have a utility to go into the furthest resolution in the text of Quran. So far, the finest text resolution I could try is with the number of letters per word to get a verse number representation. But, if correct, now we might have the utility to test the sequence of each words and letters within each word of the text of Quran. I tested exactly this and observed evidences for it. I will present this very interesting evidences as subsections of this section. Let’s first let’s see the Abjad numbers:</p>
+<div class="sourceCode" id="cb458"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb458-1" data-line-number="1"><span class="co">#See github.com/quran2019/Quran19/blob/master/abjads.Rda</span></a>
+<a class="sourceLine" id="cb458-2" data-line-number="2"><span class="kw">load</span>(<span class="st">&quot;abjads.Rda&quot;</span>)</a>
+<a class="sourceLine" id="cb458-3" data-line-number="3">dfAbjads &lt;-<span class="st"> </span><span class="kw">data.table</span>(<span class="kw">cbind</span>(abjadL, abjadN))</a>
+<a class="sourceLine" id="cb458-4" data-line-number="4"><span class="kw">datatable</span>(dfAbjads,</a>
+<a class="sourceLine" id="cb458-5" data-line-number="5">          <span class="dt">caption =</span> <span class="st">&#39;Abjad numbers for each unique letter character in Quran&#39;</span>,</a>
+<a class="sourceLine" id="cb458-6" data-line-number="6">          <span class="dt">options =</span> <span class="kw">list</span>(<span class="dt">pageLength =</span> <span class="dv">10</span>, </a>
+<a class="sourceLine" id="cb458-7" data-line-number="7">                              <span class="dt">autoWidth =</span> <span class="ot">TRUE</span>),</a>
+<a class="sourceLine" id="cb458-8" data-line-number="8">          <span class="dt">rownames=</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div id="htmlwidget-61f13165bf1abee780c5" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-61f13165bf1abee780c5">{"x":{"filter":"none","caption":"<caption>Abjad numbers for each unique letter character in Quran<\/caption>","data":[["ب","س","م","ا","ل","ه","ر","ح","ن","ي","د","ع","ك","و","إ","ت","ص","ط","ق","ذ","أ","غ","ض","ف","ى","ؤ","ة","ز","آ","خ","ئ","ء","ش","ظ","ج","ث"],["2","60","40","1","30","5","200","8","50","10","4","70","20","6","1","400","90","9","100","700","1","1000","800","80","10","6","5","7","1","600","10","10","300","900","3","500"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>abjadL<\/th>\n      <th>abjadN<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p>In the following sub sections, I will decode the text of the full text of Quran at the word and even letter level by replacing their corresponding Abjad numbers <span class="citation">(Wikipedia <a href="#ref-AbjadNum">2019</a>)</span>.</p>
+<p>Since Abjad numbers are not from within the text of Quran, I cannot rely on them in the same level as I do in the natural numbers of the text. Information of Abjad numbers are from historical resources and they may not be as reliable as the text of Quran. Therefore, some people are very skeptical on them. The evidences of this book are always based on the natural numbers of the text of Quran and no Abjad numbers are used other than this particular section, section <a href="EvidencesRewriting.html#DecodeAbjad1">6.2</a>. I want this book to be recalled mostly with that aspect and do not want to fully merge this section with Abjad numbers. Therefore, I will not include all the probabilities that come with the many evidences of this section. The best way to make sure, it does not cast any shadow in the reliability of this book is by not merging with the overall probabilities of the general 19 based system of this book. However, the evidences of this section are also quite strong and I will only take one success and two trials as representative contribution to the overall probabilities. Therefore I add only once success but two trials to the global counters as follows:</p>
+<div class="sourceCode" id="cb459"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb459-1" data-line-number="1">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb459-2" data-line-number="2">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<p>To clear up the point I just raised, the only way we can test whether the sequence of the words and letters have any 19 based design or not is using Abjad numbers. Otherwise with natural numbers of the text, we could test the number of words and letters of each verse regarding number 19. The following evidences with Abjad numbers suggests that even the position of each letter and words are under 19 based design. It also shows that, the natural numbers and abjad numbers are in harmony regarding number 19</p>
+<p>For the reference, to the best of my knowledge, All the evidences and facts of the main section, Evidence <a href="EvidencesRewriting.html#DecodeAbjad1">6.2</a> is first time presented to the literature in this book, and they have been hypothesized, tested and discovered by myself.</p>
+<div id="EVAbjCVwords" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Evidences: Replacing each word by its Abjad and re-write the full text of Quran</h3>
+<p>In this evidence, Evidence <a href="EvidencesRewriting.html#EVAbjCVwords">6.2.1</a>, the text of Quran will be re-written using abjad numbers.
+Basically, each word will be replaced by its corresponding abjad number and labelled by its chapter index and verse index. We will replace this representation numbers with the words in the text of Quran and concatenate them all. The resulting big number is multiple of 19, which suggest that it is under 19 based design.</p>
+<div class="sourceCode" id="cb460"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb460-1" data-line-number="1">x&lt;-<span class="st"> </span>nQuran</a>
+<a class="sourceLine" id="cb460-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb460-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb460-4" data-line-number="4">  <span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb460-5" data-line-number="5">  tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb460-6" data-line-number="6">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],tmplett)</a>
+<a class="sourceLine" id="cb460-7" data-line-number="7">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)</a>
+<a class="sourceLine" id="cb460-8" data-line-number="8">}</a>
+<a class="sourceLine" id="cb460-9" data-line-number="9">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tv) <span class="co"># matches the coding from right to left as in Arabic.</span></a>
+<a class="sourceLine" id="cb460-10" data-line-number="10"><span class="co">#Each number represents a word as this:</span></a>
+<a class="sourceLine" id="cb460-11" data-line-number="11"><span class="co">#[Chapter index|Verse index|Abjad number of the word]</span></a>
+<a class="sourceLine" id="cb460-12" data-line-number="12"><span class="kw">tail</span>(tmpr) <span class="co"># tail of the vector. </span></a></code></pre></div>
+<pre><code>## [1] &quot;1265&quot;  &quot;1283&quot;  &quot;11289&quot; &quot;11329&quot; &quot;1166&quot;  &quot;11102&quot;</code></pre>
+<div class="sourceCode" id="cb462"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb462-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb462-2" data-line-number="2"><span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co">#tes if mod 19 iz sero</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb464"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb464-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 497719</code></pre>
+<p>As we see in the above evidence that when we replace the words with their corresponding abjad numbers along with their chapter and verse indices in their exact position in the text of Quran and then concatenate them, we witness that this big number is also multiple of 19.</p>
+<p>You can access this “497719” digits length big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.2.1_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.2.1_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:</p>
+<div class="sourceCode" id="cb466"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb466-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb466-2" data-line-number="2">j&lt;-<span class="dv">1</span> <span class="co"># FIRST VERSE, BASMALA is input</span></a>
+<a class="sourceLine" id="cb466-3" data-line-number="3">tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb466-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Abjad number for each words of Basmala in Arabic order: &quot;</span>, <span class="kw">rev</span>(tmplett))</a></code></pre></div>
+<pre><code>## Abjad number for each words of Basmala in Arabic order:  289 329 66 102</code></pre>
+<div class="sourceCode" id="cb468"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb468-1" data-line-number="1">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],tmplett)</a>
+<a class="sourceLine" id="cb468-2" data-line-number="2"><span class="kw">cat</span>(<span class="st">&quot;Chapter index and verse index is concatenated </span></a>
+<a class="sourceLine" id="cb468-3" data-line-number="3"><span class="st">     to each word of the Basmala: &quot;</span>, <span class="kw">rev</span>(tmp))</a></code></pre></div>
+<pre><code>## Chapter index and verse index is concatenated 
+##      to each word of the Basmala:  11289 11329 1166 11102</code></pre>
+</div>
+<div id="EVAbjVersPair" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Evidences: Pairing verses with Abjad of both text types of Quran</h3>
+<p>In this evidence, Evidence <a href="EvidencesRewriting.html#EVAbjVersPair">6.2.2</a>, the coding patter is similar to Evidence <a href="Evidences.html#EvPerVerse2">5.5</a> and Evidence <a href="Evidences.html#EvPerChapter1">5.4</a>, where we pair representation numbers of verses of both text types of Quran between 6348 and 6236 verses. Basically we first replace each word in a verse with its corresponding abjad number. We then concatenate them per verse that gives us representation numbers of each verse using abjad numbers. We do this for both text types of Quran (6348 and 6236 verses). We then pair the two vector that contains the representation numbers of each verse. As you will remember, the longer vector, wraps the shorter vector as if a circle from its beginning.
+The resulting big number is multiple of 19. Moreover, the digit sum of the same big number is also multiple of 19. Two tests results success on the same number, which suggest that it is under 19 based design. Here is the proof.</p>
+<div class="sourceCode" id="cb470"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb470-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb470-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb470-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb470-4" data-line-number="4">  tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb470-5" data-line-number="5">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb470-6" data-line-number="6">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb470-7" data-line-number="7">tmp1 &lt;-<span class="st"> </span>tv <span class="co">#only first round</span></a>
+<a class="sourceLine" id="cb470-8" data-line-number="8"><span class="co">#</span></a>
+<a class="sourceLine" id="cb470-9" data-line-number="9">x&lt;-<span class="st"> </span>nQuran</a>
+<a class="sourceLine" id="cb470-10" data-line-number="10">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb470-11" data-line-number="11"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb470-12" data-line-number="12">  tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb470-13" data-line-number="13">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb470-14" data-line-number="14">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb470-15" data-line-number="15"><span class="co">#</span></a>
+<a class="sourceLine" id="cb470-16" data-line-number="16">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>( <span class="kw">paste0</span>(tv,tmp1), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>) </a>
+<a class="sourceLine" id="cb470-17" data-line-number="17"><span class="kw">as.bigz</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co"># mod 19</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb472"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb472-1" data-line-number="1"><span class="kw">digitsum</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co"># mod 19</span></a></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode" id="cb474"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb474-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmp))</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 419869</code></pre>
+<p>As we witnessed, not only the big number is multiple of 19 but also its digit sum is. You can access this “419869” digits length big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.2.2_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.2.2_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:</p>
+<div class="sourceCode" id="cb476"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb476-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb476-2" data-line-number="2">j&lt;-<span class="dv">1</span> <span class="co"># FIRST VERSE, BASMALA is input</span></a>
+<a class="sourceLine" id="cb476-3" data-line-number="3">tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb476-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Abjad number for each words of Basmala: &quot;</span>, <span class="kw">rev</span>(tmplett))</a></code></pre></div>
+<pre><code>## Abjad number for each words of Basmala:  289 329 66 102</code></pre>
+<div class="sourceCode" id="cb478"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb478-1" data-line-number="1">tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb478-2" data-line-number="2"><span class="kw">cat</span>(<span class="st">&quot;Basmala verse is represented as a single number</span></a>
+<a class="sourceLine" id="cb478-3" data-line-number="3"><span class="st">     from Abjad numbers as follows: &quot;</span>, tmplett)</a></code></pre></div>
+<pre><code>## Basmala verse is represented as a single number
+##      from Abjad numbers as follows:  28932966102</code></pre>
+<div class="sourceCode" id="cb480"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb480-1" data-line-number="1"><span class="co">#For 6236 verses we get the same number</span></a>
+<a class="sourceLine" id="cb480-2" data-line-number="2"><span class="co"># as the first Basmala is numbered. </span></a>
+<a class="sourceLine" id="cb480-3" data-line-number="3">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>( <span class="kw">paste0</span>(tmplett,tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)</a>
+<a class="sourceLine" id="cb480-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Pairing of Basmala verse representation is:&quot;</span>)</a></code></pre></div>
+<pre><code>## Pairing of Basmala verse representation is:</code></pre>
+<div class="sourceCode" id="cb482"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb482-1" data-line-number="1">tmp</a></code></pre></div>
+<pre><code>## [1] &quot;2893296610228932966102&quot;</code></pre>
+</div>
+<div id="EVAbjCVVersPair" class="section level3">
+<h3><span class="header-section-number">6.2.3</span> Evidences: Pairing verses with Abjad of both text types of Quran with chapter and verse indices</h3>
+<p>This evidence is similar to the previous evidence, Evidence <a href="EvidencesRewriting.html#EVAbjVersPair">6.2.2</a>, but this one includes chapter and verse indices information per verse as well. This, its the coding patter is also similar to Evidence <a href="Evidences.html#EvPerVerse2">5.5</a> and Evidence <a href="Evidences.html#EvPerChapter1">5.4</a>, where we pair representation numbers of verses of both text types of Quran between 6348 and 6236 verses. Basically we first replace each word in a verse with its corresponding abjad number. We then concatenate each abjad representation number of verse with its chapter index and verse index.For example, for Chapter and verse 2 we concatenate this as 12a where a is abjad number of the verse. We then concatenate them per verse that gives us representation numbers of each verse using abjad numbers and its descriptive indices. We do this for both text types of Quran (6348 and 6236 verses). We then pair the two vector that contains the representation numbers of each verse. As you will remember, the longer vector, wraps the shorter vector as if a circle from its beginning. The resulting big number is multiple of 19. Here is the proof.</p>
+<div class="sourceCode" id="cb484"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb484-1" data-line-number="1">x&lt;-<span class="st"> </span>nQuran</a>
+<a class="sourceLine" id="cb484-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb484-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb484-4" data-line-number="4"> <span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb484-5" data-line-number="5">  tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb484-6" data-line-number="6">  tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb484-7" data-line-number="7">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],tmplett)</a>
+<a class="sourceLine" id="cb484-8" data-line-number="8">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb484-9" data-line-number="9">tmp1 &lt;-<span class="st"> </span>tv</a>
+<a class="sourceLine" id="cb484-10" data-line-number="10"><span class="co">#now for unQuran</span></a>
+<a class="sourceLine" id="cb484-11" data-line-number="11">x&lt;-<span class="st"> </span>unQuran</a>
+<a class="sourceLine" id="cb484-12" data-line-number="12">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb484-13" data-line-number="13"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb484-14" data-line-number="14">  <span class="cf">if</span>(x<span class="op">$</span>verse[j] <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>){<span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb484-15" data-line-number="15">    tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb484-16" data-line-number="16">    tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb484-17" data-line-number="17">    tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],tmplett)</a>
+<a class="sourceLine" id="cb484-18" data-line-number="18">  }<span class="cf">else</span>{<span class="co">#For unnumbered Basmala verses</span></a>
+<a class="sourceLine" id="cb484-19" data-line-number="19">    tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb484-20" data-line-number="20">    tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb484-21" data-line-number="21">    tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],tmplett)}</a>
+<a class="sourceLine" id="cb484-22" data-line-number="22">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb484-23" data-line-number="23">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tv, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb484-24" data-line-number="24"><span class="co"># PAIRING both</span></a>
+<a class="sourceLine" id="cb484-25" data-line-number="25">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tv,tmp1)</a>
+<a class="sourceLine" id="cb484-26" data-line-number="26">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmp, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>) </a>
+<a class="sourceLine" id="cb484-27" data-line-number="27"><span class="kw">as.bigz</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co">#mod 19 of big number</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb486"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb486-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmp))</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 467765</code></pre>
+<p>As we witnessed the big number is multiple of 19. You can access this “467765” digits length big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.2.3_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.2.3_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:</p>
+<div class="sourceCode" id="cb488"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb488-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb488-2" data-line-number="2">j&lt;-<span class="dv">1</span> <span class="co"># FIRST VERSE, BASMALA is input</span></a>
+<a class="sourceLine" id="cb488-3" data-line-number="3">tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb488-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Abjad number for each words of Basmala: &quot;</span>, <span class="kw">rev</span>(tmplett))</a></code></pre></div>
+<pre><code>## Abjad number for each words of Basmala:  289 329 66 102</code></pre>
+<div class="sourceCode" id="cb490"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb490-1" data-line-number="1">tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb490-2" data-line-number="2"><span class="kw">cat</span>(<span class="st">&quot;Basmala verse is represented as a single number</span></a>
+<a class="sourceLine" id="cb490-3" data-line-number="3"><span class="st">     from Abjad numbers as follows: &quot;</span>, tmplett)</a></code></pre></div>
+<pre><code>## Basmala verse is represented as a single number
+##      from Abjad numbers as follows:  28932966102</code></pre>
+<div class="sourceCode" id="cb492"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb492-1" data-line-number="1">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],tmplett)</a>
+<a class="sourceLine" id="cb492-2" data-line-number="2"><span class="kw">cat</span>(<span class="st">&quot;Chapter index and verse index is concatenated </span></a>
+<a class="sourceLine" id="cb492-3" data-line-number="3"><span class="st">     to this verse: &quot;</span>, tmp)</a></code></pre></div>
+<pre><code>## Chapter index and verse index is concatenated 
+##      to this verse:  1128932966102</code></pre>
+</div>
+<div id="EVAbjGenIndxVersPair" class="section level3">
+<h3><span class="header-section-number">6.2.4</span> Evidences: Pairing verses with Abjad of both text types of Quran with general indices</h3>
+<p>This evidence is similar to the previous evidence, Evidence <a href="EvidencesRewriting.html#EVAbjVersPair">6.2.2</a>, but this one includes chapter and verse indices information per verse as well. This, its the coding patter is also similar to Evidence <a href="Evidences.html#EvPerVerse2">5.5</a> and Evidence <a href="Evidences.html#EvPerChapter1">5.4</a>, where we pair representation numbers of words of both text types of Quran between 6348 and 6236 verses. Basically we first replace each word with its corresponding abjad <strong>sequence</strong> number. By, abjad sequence number, I mean that each letter in the word is replaced by its corresponding abjad number. We then concatenate each abjad representation number of verse with its chapter index and verse index.For example, for Chapter and verse 2 we concatenate this as 12a where a is abjad number of the verse. We then concatenate them per verse that gives us representation numbers of each verse using abjad numbers and its descriptive indices. We do this for both text types of Quran (6348 and 6236 verses). We then pair the two vector that contains the representation numbers of each verse. As you will remember, the longer vector, wraps the shorter vector as if a circle from its beginning. The resulting big number is multiple of 19. Here is the proof.</p>
+<div class="sourceCode" id="cb494"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb494-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb494-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb494-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb494-4" data-line-number="4">  <span class="cf">if</span>(x<span class="op">$</span>verse[j] <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>){<span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb494-5" data-line-number="5">    <span class="co"># two write in Arabic way from right to left</span></a>
+<a class="sourceLine" id="cb494-6" data-line-number="6">    tmplett &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">AbjadSeqofwordsperVerse</span>(x<span class="op">$</span>text[j])) </a>
+<a class="sourceLine" id="cb494-7" data-line-number="7">    tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI[j],tmplett)</a>
+<a class="sourceLine" id="cb494-8" data-line-number="8">  }<span class="cf">else</span>{<span class="co">#For unnumbered Basmala verses</span></a>
+<a class="sourceLine" id="cb494-9" data-line-number="9">    tmplett &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">AbjadSeqofwordsperVerse</span>(x<span class="op">$</span>text[j]) )</a>
+<a class="sourceLine" id="cb494-10" data-line-number="10">    tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI[j],tmplett)}</a>
+<a class="sourceLine" id="cb494-11" data-line-number="11">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb494-12" data-line-number="12">tmp1 &lt;-<span class="st"> </span>tv</a>
+<a class="sourceLine" id="cb494-13" data-line-number="13"><span class="co">#</span></a>
+<a class="sourceLine" id="cb494-14" data-line-number="14">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tv, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb494-15" data-line-number="15"><span class="kw">as.bigz</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co">#mod 19</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb496"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb496-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmp))</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 872681</code></pre>
+<p>In the above code, we also observed an additional fact before pairing. Basically, when the letters of each of the 6348 verses are replaced by their corresponding abjad numbers and labelled by their corresponding general verse indices, the resulting big number is multiple of 19. However, the order is the normal order but not as in Arabic, which is why I did not consider this as evidence. However, if someone argues that the order should have been in the normal number order rather than as we observed in Arabic writing from right to left, then this fact is here for those.</p>
+<p>Anyways, lets continue to the main evidence and get the second vector over the 6236 numbered verses in the same way as follows:</p>
+<div class="sourceCode" id="cb498"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb498-1" data-line-number="1">x&lt;-<span class="st"> </span>nQuran </a>
+<a class="sourceLine" id="cb498-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb498-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb498-4" data-line-number="4">  <span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb498-5" data-line-number="5">  tmplett &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">AbjadSeqofwordsperVerse</span>(x<span class="op">$</span>text[j])) <span class="co"># two write in Arabic way from right to left</span></a>
+<a class="sourceLine" id="cb498-6" data-line-number="6">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI[j],tmplett)</a>
+<a class="sourceLine" id="cb498-7" data-line-number="7">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb498-8" data-line-number="8"><span class="co">#</span></a>
+<a class="sourceLine" id="cb498-9" data-line-number="9">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmp1,tv)</a>
+<a class="sourceLine" id="cb498-10" data-line-number="10">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmp, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>) </a>
+<a class="sourceLine" id="cb498-11" data-line-number="11"><span class="kw">as.bigz</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co">#mod 19</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb500"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb500-1" data-line-number="1"><span class="kw">digitsum</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co">#mod 19</span></a></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode" id="cb502"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb502-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmp))</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 1743997</code></pre>
+<p>As we witnessed, not only the big number is multiple of 19 but also its digit sum is. You can access this “1743997” digits length big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.2.4_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.2.4_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:</p>
+<div class="sourceCode" id="cb504"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb504-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb504-2" data-line-number="2">j&lt;-<span class="dv">1</span> <span class="co"># FIRST VERSE, BASMALA is input</span></a>
+<a class="sourceLine" id="cb504-3" data-line-number="3">tmplett &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">AbjadSeqofwordsperVerse</span>(x<span class="op">$</span>text[j])) </a>
+<a class="sourceLine" id="cb504-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Abjad sequence for each letters of Basmala words: &quot;</span>, tmplett)</a></code></pre></div>
+<pre><code>## Abjad sequence for each letters of Basmala words:  40108200301 50408200301 530301 40602</code></pre>
+<div class="sourceCode" id="cb506"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb506-1" data-line-number="1">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>VerseI[j],tmplett)</a>
+<a class="sourceLine" id="cb506-2" data-line-number="2"><span class="kw">cat</span>(<span class="st">&quot;The general verse index and </span></a>
+<a class="sourceLine" id="cb506-3" data-line-number="3"><span class="st">    the Abjad sequence of the words: &quot;</span>, tmp)</a></code></pre></div>
+<pre><code>## The general verse index and 
+##     the Abjad sequence of the words:  140108200301 150408200301 1530301 140602</code></pre>
+</div>
+<div id="EVAbjNatharmony" class="section level3">
+<h3><span class="header-section-number">6.2.5</span> Evidences: Harmony of all the numbers: Natural and Abjad</h3>
+<p>In the two evidences of this section, I will use all the natural numbers and abjad numbers together and show they all those numbers have harmony based on number 19. I had used two function to generate Abjad numbers, each of the evidences use one of those functions. This means both usage of Abjad numbers are in harmony with all the other natural numbers at verse level.</p>
+<p><strong>First evidence:</strong> I will concatenate all the natural numbers of a verse (chapter and verse index, number of words and letters) and the corresponding Abjad sequence number of that verse. By Abjad sequence number, I mean that I literally replaced each letter with its corresponding Abjad number in the verse. When we concatenate each of the 6236 numbered verses, we observe that the digit sum of this big number, namely digit sum of all the numbers used in this book is also multiple of 19! Here is the proof:</p>
+<div class="sourceCode" id="cb508"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb508-1" data-line-number="1">x&lt;-<span class="st"> </span>nQuran <span class="co"># 6236 verses</span></a>
+<a class="sourceLine" id="cb508-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb508-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb508-4" data-line-number="4"> <span class="co">#for all the numbered verses</span></a>
+<a class="sourceLine" id="cb508-5" data-line-number="5">  tmplett &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">AbjadSeqofwordsperVerse</span>(x<span class="op">$</span>text[j]))</a>
+<a class="sourceLine" id="cb508-6" data-line-number="6">  <span class="co"># rev is to write in Arabic way from right to left</span></a>
+<a class="sourceLine" id="cb508-7" data-line-number="7">  tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmplett, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb508-8" data-line-number="8">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],x<span class="op">$</span>vwords[j],x<span class="op">$</span>vletters[j],tmplett)</a>
+<a class="sourceLine" id="cb508-9" data-line-number="9">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb508-10" data-line-number="10">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tv, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb508-11" data-line-number="11"><span class="kw">digitsum</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co"># mod 19 of the bif number</span></a></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode" id="cb510"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb510-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmp),</a>
+<a class="sourceLine" id="cb510-2" data-line-number="2">    <span class="st">&quot; and it is also multiple of 19 as follows: &quot;</span>, <span class="kw">nchar</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span>)</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 623884  and it is also multiple of 19 as follows:  0</code></pre>
+<p>As we witnessed, not only the big number is multiple of 19 but also its length is multiple of 19. You can access this “623884” digits length big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.2.5.1_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.2.5.1_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:</p>
+<div class="sourceCode" id="cb512"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb512-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb512-2" data-line-number="2">j&lt;-<span class="dv">1</span> <span class="co"># FIRST VERSE, BASMALA is input</span></a>
+<a class="sourceLine" id="cb512-3" data-line-number="3">tmplett &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">AbjadSeqofwordsperVerse</span>(x<span class="op">$</span>text[j])) </a>
+<a class="sourceLine" id="cb512-4" data-line-number="4"><span class="kw">cat</span>(<span class="st">&quot;Abjad sequence for each letters of Basmala words: &quot;</span>, tmplett)</a></code></pre></div>
+<pre><code>## Abjad sequence for each letters of Basmala words:  40108200301 50408200301 530301 40602</code></pre>
+<div class="sourceCode" id="cb514"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb514-1" data-line-number="1">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],</a>
+<a class="sourceLine" id="cb514-2" data-line-number="2">              x<span class="op">$</span>vwords[j],x<span class="op">$</span>vletters[j],tmplett)</a>
+<a class="sourceLine" id="cb514-3" data-line-number="3"><span class="kw">cat</span>(<span class="st">&quot;Concatenate all the natural numbers and </span></a>
+<a class="sourceLine" id="cb514-4" data-line-number="4"><span class="st">    the Abjad sequence of the words  per verse: &quot;</span>, tmp)</a></code></pre></div>
+<pre><code>## Concatenate all the natural numbers and 
+##     the Abjad sequence of the words  per verse:  1141940108200301 1141950408200301 11419530301 1141940602</code></pre>
+<p><strong>Second evidence:</strong> Similar to the previous one but this time, we use the other Abjad representation function, where we represent each word by its corresponding Abjad number. Basically, this is the sum of abjad numbers of its letters for each word. We generate the big number to be tested in the exact same approach as above. The only difference is, this time we represent each word by its corresponding Abjad number. Since the final big number that we use is obtained with the same approach as the first evidence, I consider them to have a similar coding pattern and merged these evidences in the same section. In summary, this evidence also use all the natural numbers and abjad numbers together and show that all those numbers have harmony based on number 19. The way I concatenate the numbers as always is the natural order that yields a single big number and no combination.</p>
+<div class="sourceCode" id="cb516"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb516-1" data-line-number="1">x&lt;-<span class="st"> </span>nQuran <span class="co">#6236 verses</span></a>
+<a class="sourceLine" id="cb516-2" data-line-number="2">tv &lt;-<span class="kw">c</span>()</a>
+<a class="sourceLine" id="cb516-3" data-line-number="3"><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(x)) {</a>
+<a class="sourceLine" id="cb516-4" data-line-number="4">  tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb516-5" data-line-number="5">  tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb516-6" data-line-number="6">  tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],x<span class="op">$</span>vwords[j],x<span class="op">$</span>vletters[j],tmplett)</a>
+<a class="sourceLine" id="cb516-7" data-line-number="7">  tv &lt;-<span class="st"> </span><span class="kw">c</span>(tv,tmp)}</a>
+<a class="sourceLine" id="cb516-8" data-line-number="8">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(tv, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)  </a>
+<a class="sourceLine" id="cb516-9" data-line-number="9"><span class="kw">as.bigz</span>(tmp) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span> <span class="co">#mod 19</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb518"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb518-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;Number of digits of this big number is&quot;</span>, <span class="kw">nchar</span>(tmp))</a></code></pre></div>
+<pre><code>## Number of digits of this big number is 253185</code></pre>
+<p>As we witnessed, the big number is multiple of 19. You can access this “253185” digits length big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.2.5.2_Evidence_bignumber.txt" class="uri">https://github.com/quran2019/Quran19/blob/master/6.2.5.2_Evidence_bignumber.txt</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+<p>It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:</p>
+<div class="sourceCode" id="cb520"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb520-1" data-line-number="1">x&lt;-<span class="st"> </span>unQuran </a>
+<a class="sourceLine" id="cb520-2" data-line-number="2">j&lt;-<span class="dv">1</span> <span class="co"># FIRST VERSE, BASMALA is input</span></a>
+<a class="sourceLine" id="cb520-3" data-line-number="3">tmplett &lt;-<span class="st"> </span><span class="kw">AbjadSeqofaWordSumValue</span>(x<span class="op">$</span>text[j])</a>
+<a class="sourceLine" id="cb520-4" data-line-number="4">tmplett &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rev</span>(tmplett), <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span> )</a>
+<a class="sourceLine" id="cb520-5" data-line-number="5"><span class="kw">cat</span>(<span class="st">&quot;Concatenating Abjad numbers of each Basmala words: &quot;</span>, tmplett)</a></code></pre></div>
+<pre><code>## Concatenating Abjad numbers of each Basmala words:  28932966102</code></pre>
+<div class="sourceCode" id="cb522"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb522-1" data-line-number="1">tmp &lt;-<span class="st"> </span><span class="kw">paste0</span>(x<span class="op">$</span>chapter[j],x<span class="op">$</span>verse[j],</a>
+<a class="sourceLine" id="cb522-2" data-line-number="2">              x<span class="op">$</span>vwords[j],x<span class="op">$</span>vletters[j],tmplett)</a>
+<a class="sourceLine" id="cb522-3" data-line-number="3"><span class="kw">cat</span>(<span class="st">&quot;Concatenate all the natural numbers and </span></a>
+<a class="sourceLine" id="cb522-4" data-line-number="4"><span class="st">    the Abjad number the words per verse: &quot;</span>, tmp)</a></code></pre></div>
+<pre><code>## Concatenate all the natural numbers and 
+##     the Abjad number the words per verse:  1141928932966102</code></pre>
+</div>
+</div>
+<div id="EVrewriteBasedonWords" class="section level2">
+<h2><span class="header-section-number">6.3</span> Evidences: Rewriting Quran based on words</h2>
+<p>In the Ultimate Evidence, Evidence <a href="EvidencesRewriting.html#Decode1">6.1</a> and Evidence <a href="EvidencesRewriting.html#EVrewriteVerseSums">6.1.6</a> and also Evidence <a href="EvidencesRewriting.html#EVperCperV">6.1.4</a>, we had rewritten the text of Quran utilizing the natural numbers of the text of Quran considering chapter, verse, words and letters. Some people had difficult time comprehending those miraculous evidences as they prove that Quran is intact as we have today up to its letters. They categorically cannot believe this can be proved until the letters of Quran. However, fact is fact and I presented reproducible evidences that can be easily tested by anyone with some computer knowledge. People who cannot accept this fact cannot change those evidences that proves that Quran is intact up to its letters and there is 19 based coding system over its text. Or in other words “over it is nineteen !”.</p>
+<p>Anyways, I thought for such people, who dares to deny reproducible and testable facts, there might be other evidences without the number of letters. I therefore hypothesized words focused potential codings and discovered a pattern to re-write Quran utilizing only the numbers chapters and words. It is pattern, because the same coding approach exist in two levels of the text, which are chapter and verse level.
+I provide those evidences as sub-sections to be able to refer them precisely in the future. I will first present the evidence at the verse level and then in the following sub-section, we will witness the same pattern exist in the chapter level too. Lastly, both of the evidences are based on the second type of the text of Quran with the 6236 numbered verses.</p>
+<p>Since the following two evidences have the same pattern, I will assert them together and add to the counters. We could also try the same tests in the other text type pf Quran with 6348 verse. Therefore, we have 4 trials and two successes for these evidences. As the last process to do, let’s add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.</p>
+<div class="sourceCode" id="cb524"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb524-1" data-line-number="1"><span class="co">#2 ordered numbers, two tests</span></a>
+<a class="sourceLine" id="cb524-2" data-line-number="2">global_tested_nums &lt;-<span class="st"> </span>global_tested_nums <span class="op">+</span><span class="st"> </span><span class="dv">4</span> </a>
+<a class="sourceLine" id="cb524-3" data-line-number="3">global_success_nums &lt;-<span class="st"> </span>global_success_nums <span class="op">+</span><span class="st"> </span><span class="dv">2</span></a></code></pre></div>
+<p>For the reference, to the best of my knowledge, Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl">6.3.1</a> and Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsChaplvl">6.3.2</a>
+are first time presented to the literature in this book, and they have been hypothesized, tested and discovered by myself. In case if I find out those evidences had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.</p>
+<div id="EVrewriteChapWordsverslvl" class="section level3">
+<h3><span class="header-section-number">6.3.1</span> Evidences: Rewriting Quran based on words and chapters at verse level numbers</h3>
+<p>In this evidence, Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl">6.3.1</a>, the text of Quran will be re-written with respect to chapter indices and number of words per verse.</p>
+<p>Basically, for each of the 6236 verses, we first <strong>sum</strong> the chapter index and the number of words of each verse, which gives us the representation number of each of the 6236 verses. Since this is re-writing evidence, as usual, we place the representation numbers in place of each verse in the text of Quran. Since Arabic is written from right to left, the representation number of the first verse will be at the most right position. As the main approach of this book, we then concatenate these 6236 representation numbers and get the single meaningful representation number of the text of Quran. Remember this approach, because we will witness that as the same approach will be present at the chapter level too in the next evidence after this one. Thus they together contain this specific pattern.</p>
+<p>Let me first remind the numbers by presenting the head and tail of the table of the numbered verses.</p>
+<div class="sourceCode" id="cb525"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb525-1" data-line-number="1">tmp &lt;-<span class="st"> </span>nQuran</a>
+<a class="sourceLine" id="cb525-2" data-line-number="2">tmp<span class="op">$</span>VerseI &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb525-3" data-line-number="3">tmp<span class="op">$</span>vletters &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb525-4" data-line-number="4">tmp<span class="op">$</span>text &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb525-5" data-line-number="5">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">head</span>(tmp), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb525-6" data-line-number="6">  <span class="dt">caption =</span> <span class="st">&#39;Table head of numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-126">Table 6.4: </span>Table head of numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">chapter</th>
+<th align="right">verse</th>
+<th align="right">vwords</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">3</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb526"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb526-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">tail</span>(tmp), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb526-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table tail of numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-126">Table 6.4: </span>Table tail of numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">chapter</th>
+<th align="right">verse</th>
+<th align="right">vwords</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">114</td>
+<td align="right">1</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">114</td>
+<td align="right">2</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">114</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">114</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">114</td>
+<td align="right">5</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="right">114</td>
+<td align="right">6</td>
+<td align="right">3</td>
+</tr>
+</tbody>
+</table>
+<p>And, here is the proof.</p>
+<div class="sourceCode" id="cb527"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb527-1" data-line-number="1">x&lt;-nQuran</a>
+<a class="sourceLine" id="cb527-2" data-line-number="2">tmp &lt;-<span class="st"> </span>x<span class="op">$</span>chapter <span class="op">+</span><span class="st"> </span>x<span class="op">$</span>vwords</a>
+<a class="sourceLine" id="cb527-3" data-line-number="3">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb527-4" data-line-number="4"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] 117 119 118 116 116 118</code></pre>
+<div class="sourceCode" id="cb529"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb529-1" data-line-number="1"><span class="kw">tail</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] 4 5 4 3 5 5</code></pre>
+<div class="sourceCode" id="cb531"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb531-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>) </a>
+<a class="sourceLine" id="cb531-2" data-line-number="2"><span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb533"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb533-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 12579</code></pre>
+<p>As we see the remainder is 0 and thus the number is under the 19 based coding system of the text of Quran. We can only use the default test as we are testing the order of re-writing as well.</p>
+<p>You can access this big number from the following link:</p>
+<p><a href="https://github.com/quran2019/Quran19/blob/master/6.3.1_Bignumber" class="uri">https://github.com/quran2019/Quran19/blob/master/6.3.1_Bignumber</a></p>
+<p>One can just copy the big number and paste it into a web based big number calculator and test it herself.</p>
+</div>
+<div id="EVrewriteChapWordsChaplvl" class="section level3">
+<h3><span class="header-section-number">6.3.2</span> Evidences: Rewriting Quran based on words and chapters at chapter level numbers</h3>
+<p>In this evidence, Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsChaplvl">6.3.2</a>, the text of Quran will be re-written with respect to chapter indices and number of words per chapter.</p>
+<p>Basically, for each of the 114 chapter considering the text type of 6236 numbered verse of Quran, we first <strong>sum</strong> the chapter index and the number of words of each chapter, which gives us the representation number of each of the 114 chapters. Since this is re-writing evidence, as usual, we place the representation numbers in place of each chapter in the text of Quran. Since Arabic is written from right to left, the representation number of the first chapter will be at the most right position. As the main approach of this book, we then concatenate these 114 representation numbers and get the single meaningful representation number of the text of Quran. As you will remember, this approach was also used and had worked at verse level in Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl">6.3.1</a>. Therefore, it shows a particular pattern.</p>
+<p>Let me first remind the numbers by presenting the head and tail of the table of the numbers at the chapter level.</p>
+<div class="sourceCode" id="cb535"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb535-1" data-line-number="1">tmp &lt;-<span class="st"> </span>dfVCwl</a>
+<a class="sourceLine" id="cb535-2" data-line-number="2">tmp<span class="op">$</span>cletters &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb535-3" data-line-number="3">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">head</span>(tmp), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb535-4" data-line-number="4">  <span class="dt">caption =</span> <span class="st">&#39;Table head of the chapters regarding numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-128">Table 6.5: </span>Table head of the chapters regarding numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">Chapter_index</th>
+<th align="right">Verse_sum</th>
+<th align="right">cwords</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">7</td>
+<td align="right">29</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">286</td>
+<td align="right">6140</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">200</td>
+<td align="right">3501</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">176</td>
+<td align="right">3763</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">120</td>
+<td align="right">2837</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">165</td>
+<td align="right">3056</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb536"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb536-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">tail</span>(tmp), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb536-2" data-line-number="2">  <span class="dt">caption =</span> <span class="st">&#39;Table tail of the chapters regarding numbered verses of Quran.&#39;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-128">Table 6.5: </span>Table tail of the chapters regarding numbered verses of Quran.</caption>
+<thead>
+<tr class="header">
+<th align="right">Chapter_index</th>
+<th align="right">Verse_sum</th>
+<th align="right">cwords</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">109</td>
+<td align="right">6</td>
+<td align="right">27</td>
+</tr>
+<tr class="even">
+<td align="right">110</td>
+<td align="right">3</td>
+<td align="right">19</td>
+</tr>
+<tr class="odd">
+<td align="right">111</td>
+<td align="right">5</td>
+<td align="right">23</td>
+</tr>
+<tr class="even">
+<td align="right">112</td>
+<td align="right">4</td>
+<td align="right">15</td>
+</tr>
+<tr class="odd">
+<td align="right">113</td>
+<td align="right">5</td>
+<td align="right">23</td>
+</tr>
+<tr class="even">
+<td align="right">114</td>
+<td align="right">6</td>
+<td align="right">20</td>
+</tr>
+</tbody>
+</table>
+<p>And, here is the proof.</p>
+<div class="sourceCode" id="cb537"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb537-1" data-line-number="1">x&lt;-dfVCwl</a>
+<a class="sourceLine" id="cb537-2" data-line-number="2">tmp &lt;-<span class="st"> </span>x<span class="op">$</span>Chapter_index <span class="op">+</span><span class="st"> </span>x<span class="op">$</span>cwords</a>
+<a class="sourceLine" id="cb537-3" data-line-number="3">tmpr &lt;-<span class="st"> </span><span class="kw">rev</span>(tmp)</a>
+<a class="sourceLine" id="cb537-4" data-line-number="4"><span class="kw">head</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] 134 136 127 134 129 136</code></pre>
+<div class="sourceCode" id="cb539"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb539-1" data-line-number="1"><span class="kw">tail</span>(tmpr)</a></code></pre></div>
+<pre><code>## [1] 3062 2842 3767 3504 6142   30</code></pre>
+<div class="sourceCode" id="cb541"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb541-1" data-line-number="1">tmpr &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpr, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>) </a>
+<a class="sourceLine" id="cb541-2" data-line-number="2"><span class="kw">as.bigz</span>(tmpr) <span class="op">%%</span><span class="st"> </span><span class="dv">19</span></a></code></pre></div>
+<pre><code>## Big Integer (&#39;bigz&#39;) :
+## [1] 0</code></pre>
+<div class="sourceCode" id="cb543"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb543-1" data-line-number="1"><span class="kw">cat</span>(<span class="st">&quot;number of digits on this big number is&quot;</span>, <span class="kw">nchar</span>(tmpr))</a></code></pre></div>
+<pre><code>## number of digits on this big number is 367</code></pre>
+<p>As we see the remainder is 0 and thus the number is under the 19 based coding system of the text of Quran. We can only use the default test as we are testing the order of re-writing as well.</p>
+<p>Here is the “367” digits length number of this evidence:</p>
+<p>“1341361271341291361181321231281371171301371401351921271681291211331631451722281801591471941922521631852132582522583192393302733582982873293694003203543062442392874125065336324354073964133644114234026085896915333908799028351266121677390276681391813364045818471007146611861346921134310751301119513739901601157518606728448661807195718492514125033483062284237673504614230”</p>
+<div id="fact" class="section level4">
+<h4><span class="header-section-number">6.3.2.1</span> Fact</h4>
+<p>In the end of the related two evidences, Evidence <a href="Evidences.html#EvSilence">5.12</a> and Evidence <a href="Evidences.html#EvSilence2">5.15</a>, we had observed a fact, Fact <a href="Evidences.html#FactofEvSilence">5.15.1</a>, between the digits length of these two evidences that share the same pattern. I tested whether a similar fact exist between the current two related evidences, Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl">6.3.1</a> and Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsChaplvl">6.3.2</a>. I observed a similar 19 based coding fact between the two as well.</p>
+<p>As I mentioned before, these two evidences, Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsChaplvl">6.3.2</a> and Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl">6.3.1</a>, share the same pattern and thus related. The relation between both of the numbers of the two evidences is as follows. The tested number of Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsChaplvl">6.3.2</a> is 367 digits in length. The tested number of Evidence <a href="EvidencesRewriting.html#EVrewriteChapWordsverslvl">6.3.1</a> is 12579 digits in length.</p>
+<p>The <strong>fact</strong> is that, when we concatenate both of the digit lengths of these numbers, we get 36712579 and it is also multiple of 19 as if they complement each other.</p>
+
+</div>
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-AbjadNum">
+<p>Wikipedia. 2019. “Abjad Numerals.” 2019. <a href="https://en.wikipedia.org/wiki/Abjad_numerals">https://en.wikipedia.org/wiki/Abjad_numerals</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Evidences.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="OtherEvidences.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["Quran19.pdf", "Quran19.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
