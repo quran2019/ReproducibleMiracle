@@ -649,7 +649,7 @@ For future reference and analysis, I will also generate another table from this 
 ## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
 \end{verbatim}
 
-\hypertarget{htmlwidget-14dbc4060e11c1cab4d4}{}
+\hypertarget{htmlwidget-ba59f480734403650a49}{}
 
 \hypertarget{texttm}{%
 \section{Some text mining}\label{texttm}}
@@ -745,7 +745,7 @@ Now, we obtained the number of words and letters per verse in both types of the 
 ## https://rstudio.github.io/DT/server.html
 \end{verbatim}
 
-\hypertarget{htmlwidget-7cf7d9af3302ba0950a9}{}
+\hypertarget{htmlwidget-5a9113ae67220b9a9776}{}
 
 From this data we can also get the number of \textbf{unique} words and its number of letters of Quran a presented in the next chapter. But, before that lets also generate the similar table for the whole Quran text, including unnumbered Basmala verses as follows. As see, we represent the table with \emph{unQuran} R object to be able to use in the rest of the book.
 
@@ -782,7 +782,7 @@ From this data we can also get the number of \textbf{unique} words and its numbe
 ## https://rstudio.github.io/DT/server.html
 \end{verbatim}
 
-\hypertarget{htmlwidget-704f3ad46f0f35f997e6}{}
+\hypertarget{htmlwidget-3be7d641b5c2a71734df}{}
 
 \hypertarget{textTMuw}{%
 \subsection{The number of unique words in Quran}\label{textTMuw}}
@@ -833,7 +833,7 @@ We had assigned all the word in the text of Quran to R objects \emph{words} and 
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-80cf9197b53a62d936f2}{}
+\hypertarget{htmlwidget-4d217462b34aa887f2d1}{}
 
 \label{fig:uwords-table99}Table
 
@@ -934,9 +934,9 @@ From lowest to highest, the \textbf{main} numbers related to the text of Quran a
 \item
   \textbf{The number of words in Quran (including unnumbered verses) is \(78245\)} (denoted as \textbf{W}). See Chapter \ref{textTMuwW} for the proof.
 \item
-  \textbf{The number of letters in numbered verses of Quran is \(330709\)} (denoted as \textbf{l}). See Chapter \ref{textTMlL} for the proof.
+  \textbf{The number of letters in numbered verses of Quran is \(330709\)} (denoted as \textbf{l}). See Chapter \ref{textTMuwW} for the proof.
 \item
-  \textbf{The number of letters in Quran (including unnumbered verses) is \(332837\)} (denoted as \textbf{L}). See Chapter \ref{textTMlL} for the proof.
+  \textbf{The number of letters in Quran (including unnumbered verses) is \(332837\)} (denoted as \textbf{L}). See Chapter \ref{textTMuwW} for the proof.
 \end{enumerate}
 
 \begin{Shaded}
@@ -1007,12 +1007,16 @@ I will describe here some of the general rules that will be applied to test on a
 
 Setting rules in the beginning is important, otherwise, without establishing rules that limits the boundaries of the numbers set to be tested, one cannot really claim a 19 based coding system on the text of Quran. Also, the rules must be meaningful, simple and and as general as possible. Thus, I state that the first and most important rule is the numbers alone or combined must be obtained in a meaningful way. This is the most general principal for all the rules and approaches used in this book.
 
-Basically, the specific rules I will describe below is about combining all the different category numbers (e.g.~chapter, verse, word, letter) at the same time and the used mathematical tests on them. See the following subchapters for detailed descriptions.
+Another important rule for the codings that are considered as evidences based on the natural numbers of chapters, verses, words and letters is as follows: There are limited number of coding patterns we can try on those numbers but we can only consider one of the coding patterns as coding evidence on a specific number over which we try coding patterns. This means, \textbf{if one of the coding patterns observed in a specific number, then we can not try the rest of the other potential coding patterns even if some of them hold}. In such cases, we can only consider them as additional facts but not evidences and thus cannot include into the calculation of the probability of the general 19 based system. This rule reduces the number of test dramatically and allow us to test small set of test for the general system. Regarding the coding patterns that can be tried over those four natural numbers in the system, the first coding pattern is the concatenation of the natural numbers, the reverse concatenation of the natural numbers while testing re-writing of the text as in Arabic, sum of the natural numbers and pairing of the equivalent categories. these are the main coding patterns that we could try and you observe in the evidences of this book.
+
+As addition to the above universal rule, we can never consider a single success of coding pattern on a number is a evidence. In order to consider a successful coding pattern as evidence, we must observe at least two similar coding successes on the various levels of the numbers that are strongly related to each other. For example, the four main natural numbers as grand total is one level, and the chapter or verse level decomposition of those number representations are other strongly related natural numbers we can apply the similar coding pattern. Also, we have numbered verse text category and all the category of the text that covers all the verses. The same numbers in the other category of the text are also strongly related numbers we can test.
+
+In the following, the specific rules I will describe below is about combining all the different category numbers (e.g.~chapter, verse, word, letter) at the same time and the used mathematical tests on them. See the following subchapters for detailed descriptions.
 
 \hypertarget{Rule1div19}{%
 \subsection{Rule: Mathematical operations for testing}\label{Rule1div19}}
 
-There are only two mathematical operations to be applied on the numbers. The primary and \textbf{default} mathematical operation that is applied to all the numbers of interest is to divide the numbers directly by 19. The second operation is secondary and applied in some specific categories only along with the default one, which is to divide the sum of the digits of the number of interest by 19. This separation is done exactly as follows: If the number to be tested has order information then digit sum divisibilty test can never be applied on such numbers as it does not take into account the order of the digits in the number. For example if the number to be tested is concatenatination of two or more numbers, then digit sum divisibility test cannot be applie on such numbers.
+There are only two mathematical operations to be applied on the numbers. The primary and \textbf{default} mathematical operation that is applied to all the numbers of interest is to divide the numbers directly by 19. The second operation is secondary and applied in some specific categories only along with the default one, which is to divide the sum of the digits of the number of interest by 19. This separation is done exactly as follows: If the number to be tested has order information then digit sum divisibility test can never be applied on such numbers as it does not take into account the order of the digits in the number. For example if the number to be tested is concatenation of two or more numbers, then digit sum divisibility test cannot be applied on such numbers.
 
 \textbf{A) Divisibility by 19}
 Divisibility of any number of interest by 19 is the default, primary and global mathematical operation to test the numbers of the system. Whenever a new number of interest is obtained, first rule is always to check whether it is divisible by 19 or not. If it is divisible by 19 then it is the evidence that the number under consideration is coded by 19 based coding system in Quran. If this test is successful on a combined number of interest, it proves that the size and also the order of the combined numbers are designed together, in harmony and interconnected to each other and thus they are under the 19 based coding system of the text of Quran.
@@ -1033,7 +1037,7 @@ Since the evidences might have different general purposes, the rules might sligh
 Regarding the main totals of the 9 descriptive numbers, as described in Chapter \ref{Fact1}, they \textbf{alone}, as a single number, are not tested.
 This means as a rule, we do not test the total counts of the descriptive numbers alone c, v, V,u,U, w, W, l, L that was presented in Chapter \ref{Fact1}.
 
-When combining the 4 main totals of the descriptive numbers of both text type of Quran by pairing, we pair them by concatentaing in both directions if their lengths are equal. If their lengths are not equal as in the verse resolution case, then while pairing the longer vector is located at the begining and test is perferomed only in one direction. This shows if all the four of the descriptive numbers of both of the text types are all in harmony and designed together and represent the whole text of Quran. This gives us for example two numbers to be tested cvwlcVWL or cVWLcvwl at the total counts level.
+When combining the 4 main totals of the descriptive numbers of both text type of Quran by pairing, we pair them by concatenating in both directions if their lengths are equal. If their lengths are not equal as in the verse resolution case, then while pairing the longer vector is located at the beginning and test is performed only in one direction. This shows if all the four of the descriptive numbers of both of the text types are all in harmony and designed together and represent the whole text of Quran. This gives us for example two numbers to be tested cvwlcVWL or cVWLcvwl at the total counts level.
 
 We have to set rules that define the way we can combine multiple descriptive numbers. Otherwise, the potential numbers of combinations becomes too large to follow for readers and also would be difficult to define in a system of rules. Therefore, here I aim to set only the most meaningful rules, which are simple to understand and follow along with the evidences. I observed the combinations of the numbers and inferred these meaningful rules. I decided to make sure that the combinations are meaningful and did not include many other combinations that were also divisible by 19 but not fall into the defined system of rules. Here are the other general rules for combining multiple descriptive numbers in more detail:
 
@@ -1046,7 +1050,7 @@ The descriptive numbers can only be combined within its own text type in the giv
 
 Each of the two text types described in point A has, 4 different main descriptors, which are chapter, verse, word and letter numbers in order. This order is the natural order of \textbf{concatenating} these numbers and I use this order as a general rule in combining these numbers. This means for instance, I can never concatenate first, letters and then words in combining the multiple descriptive numbers. Also, when using these 4 descriptive numbers, they must be combined together. Also, any combination attempt needs to be meaningful and should test a meaningful property of the text. I also generated an independent verse index (denoted by \emph{VerseI} in text data) from 1 to 6236 or from 1 to 6348 for both of the text types. This especially helps to correctly refer to the order of the unnumbered Basmalas in calculations in some tests. In concatenations, the natural order of this independent descriptive number is before the chapter as it can independently point any verse without needing the chapter or verse number. In a special case, I may have to use this general verse index instead of the special verse index of each verse within chapters, in which case I provide an additional explanation in that evidence. Basically, unnumbered Basmala verses has no special verse indices and in such cases we might utilize from the general verse indices.
 
-Also, when combining the numbers of the two text types of Quran, they can be concatenated in either order. So, in that attempt both order is tested and this needs to be included in the probability calculations. At the verse resolution, 6348 is longer than 6236 and thus while pairing such unequal cases, we take only one direction, where the longer is at the begining.
+Also, when combining the numbers of the two text types of Quran, they can be concatenated in either order. So, in that attempt both order is tested and this needs to be included in the probability calculations. At the verse resolution, 6348 is longer than 6236 and thus while pairing such unequal cases, we take only one direction, where the longer is at the beginning.
 
 \textbf{C) Combining the totals of the descriptive numbers:}
 
@@ -1060,7 +1064,7 @@ The 4 main descriptive numbers of first text category as shown in Chapter \ref{F
 
 These letters are the symbol characters that I use to represent the 7 main descriptive numbers of the text of Quran as described in Chapter \ref{Fact1}. Regarding the rule described, we have two possible numbers to test on the main descriptive numbers. If statistically significantly successful, this will show us that all the totals of the main descriptive numbers of the text of Quran was designed together.
 
-As the second combination approach, we also test the sums of these 4 main descriptive numbers for each text type and at evry text resolution. This shows evidences with respect to totality of all those descriptive numbers.
+As the second combination approach, we also test the sums of these 4 main descriptive numbers for each text type and at every text resolution. This shows evidences with respect to totality of all those descriptive numbers.
 
 Evidence \ref{EvMAINs}, Evidence \ref{EVuniquee}, Evidence \ref{EvAlls}, which are all the evidences about the descriptive numbers, are tested by only the default divisibility by 19 test as there is order information in the numbers. This tests the order along with the size and integrity and harmony of those numbers among each other.
 
@@ -1547,13 +1551,13 @@ There is only one combination of the unique numbers according to the general rul
 
 The probability of Evidence \ref{EVuniquee} to be divisible by the number 19 is 1/19 as there is one number and one test performed. Also, as I discussed in detail in Chapters \ref{Coulditbe}, I argue that it is practically impossible to count the number of unique words manually by the people of that time that is 1387 years ago. Therefore, I conclude that this and any other evidence that includes unique descriptive numbers are beyond the ability of the people of that time to fulfill and thus must be designed supernaturally, or in other words, by God.
 
-As the last thing to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
+As the last thing to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.Since we always consider the two text categories, this success is valid for both of them as the Basmala verse is repetition althought it did not have to be so but it is. Also, since we also took the sum of individual numbers, we should also take them into account here. Thus we have 6 trials and 2 success overall for this evidence.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{#Because we apply only the default test to the single number in this evidence.}
-\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1} 
-\NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1} 
+\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{6}
+\NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\DecValTok{2} 
 \end{Highlighting}
 \end{Shaded}
 
@@ -1652,7 +1656,7 @@ Let's first get the table that shows the total numbers of each category per chap
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-541250dbeb9ac4a148b0}{}
+\hypertarget{htmlwidget-f670dfacd36531b90f22}{}
 
 Similarly, we can get a table that also includes the unnumbered Basmala verses into the above table. We need to be careful about the numbered Basmala of the first verse of the first chapter and the no Basmala situation of Chapter 9.
 
@@ -1680,7 +1684,7 @@ Similarly, we can get a table that also includes the unnumbered Basmala verses i
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-f08bbef456a2b851f1fd}{}
+\hypertarget{htmlwidget-b2b37a1aaad8cdd0b38c}{}
 
 Now, with regard to general rules, let's first concatenate each category within itself in the order of chapter, verse, word and letter. We then have to follow the general rule and concatenate the two combined numbers in both directions. This results two different numbers to be tested as the chapter level. Also, regarding the rules again, we only test the default rule on the concatenated numbers of both types of the text of Quran as follows.
 
@@ -1920,9 +1924,9 @@ As the last process to do, let's add the number of successful evidences and the 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#Because we apply only the default test to}
-\CommentTok{# the single number in this evidence.}
-\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1} 
+\CommentTok{#Because we apply only use the default test }
+\CommentTok{#Also, considering the special verse indices as well}
+\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{4} 
 \NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1}
 \end{Highlighting}
 \end{Shaded}
@@ -2017,9 +2021,7 @@ As the last process to do, let's add the number of successful evidences and the 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#Because we apply only the default test to}
-\CommentTok{# the single number in this evidence.}
-\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{2} 
+\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{4} 
 \NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1}
 \end{Highlighting}
 \end{Shaded}
@@ -2124,7 +2126,7 @@ So far I have presented many different evidences based on obtaining the numbers 
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "The probability of 7 success out of 10 (with p=1/19) is: 1.16554114725275e-07"
+## [1] "The probability of 8 success out of 20 (with p=1/19) is: 4.18236501587076e-06"
 \end{verbatim}
 
 As you witnessed, the probability of observing those paired evidences so far is extremely small and simply put impossible to occur by chance and thus they must be designed. Even, if you do not read the rest of the book, these evidence should be sufficient for someone to witness the 19 based coding system of the text of Quran, which can only be fulfilled with a super natural power. To find out about this supernatural power, I suggest we should read the content of the book, Quran, for the answer, in which we will read that God has sent Quran to all humankind and it is the final and ultimate message and the Author of the book promises that this message will always be protected. The evidences we observed so far, assures that the book is indeed protected based on the 19 based coding system of the text of Quran. Let's now see other evidences as you still did not see the ultimate evidence yet!
@@ -2156,7 +2158,7 @@ So, how could we test it? What should be the rule to test that convince ourselve
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-f0d7f4d05775b773b0a4}{}
+\hypertarget{htmlwidget-9071824b3b35730d9775}{}
 
 As seen in this table, since we already know the order of the verses, we can just concatenate verses regarding their current order from 1 to 6236. So, the rule is very simple and also meaningful. I just concatenate all the indices of the verse numbers per chapter in their order in the Quran, starting from the first chapter till the last one that is 114. This big number does not contain any redundant and unnecessary number to perform the test on the goal of interest, which is the order and size of verses and chapters as well. Also, we can only apply the default division by 19 test and we cannot use the optional digit sum test. Because, the order of the verses is to be tested and digit sum is not applicable in that case. So, we have one number and one test in the end of this hypothesis. We cannot use the second type of the text of Quran with the unnumbered Basmala verses as they do not have number as verse indices with respect to their assigned chapters.
 
@@ -2209,9 +2211,9 @@ As the last process to do, let's add the number of successful evidences and the 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#Because we apply only the default test to the single number in this evidence.}
-\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1} 
-\NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\DecValTok{1}
+\CommentTok{#Considering all the 4 main numbers of both categories}
+\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\DecValTok{2} 
+\NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\DecValTok{8}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2231,7 +2233,7 @@ Another point is that this evidence stands as proof for not only the order of ch
 \hypertarget{Evsubform1}{%
 \section{Evidences on the order of each words with letters}\label{Evsubform1}}
 
-Evidence \ref{EvAllVerses} was the most direct approach to show that the sizes and orders of verses of the text of Quran are correct and intact. Since we tested the special verse indices, we should also test the other three categories of the text that we observe at the verse resolution. This means at chapter, word and letter levels as well. This provides another 6 numbers to be tested. Moreover, as a global rule in this book, we never test words alone and they must be accompanied with letter information at all times. This is a global pattern I observed and set as a general rule. This might be designed in purpose and might help forcing to use only one version of written test of Quran. Some specific words might have multiple ways of writing and this rule does not allow this flexibility in the overall system.
+Evidence \ref{EvAllVerses} was the most direct approach to show that the sizes and orders of verses of the text of Quran are correct and intact. Since we tested the special verse indices, we should also test the other three categories of the text that we observe at the verse resolution. This means at chapter, word and letter levels as well. This provides another 6 numbers to be tested. Moreover, as a global rule in this book, we never test words alone and they must be accompanied with other information at all times. This is a global pattern I observed and set as a general rule.
 
 For the tests, I will use the numbers of these tables that keep all the descriptor numbers for each and every verse in order:
 
@@ -4868,7 +4870,7 @@ The Abjad numbers, are a decimal alphabetic numeral system, in which the 28 lett
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-1016bb8807f943a648d7}{}
+\hypertarget{htmlwidget-6b636b02e5264b1c2091}{}
 
 In the following sub sections, I will decode the text of the full text of Quran at the word and even letter level by replacing their corresponding Abjad numbers \citep{AbjadNum}.
 
@@ -5034,7 +5036,7 @@ It may be helpful to understand what is going on in the coding if I print out th
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{x<-}\StringTok{ }\NormalTok{unQuran }
-\NormalTok{j<-}\DecValTok{1} \CommentTok{# FIRST VERSE, BASMALA is input}
+\NormalTok{j<-}\DecValTok{1} \CommentTok{# First verse, BASMALA is input}
 \NormalTok{tmplett <-}\StringTok{ }\KeywordTok{AbjadSeqofaWordSumValue}\NormalTok{(x}\OperatorTok{$}\NormalTok{text[j])}
 \KeywordTok{cat}\NormalTok{(}\StringTok{"Abjad number for each words of Basmala: "}\NormalTok{, }\KeywordTok{rev}\NormalTok{(tmplett))}
 \end{Highlighting}
@@ -5413,7 +5415,7 @@ It may be helpful to understand what is going on in the coding if I print out th
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{x<-}\StringTok{ }\NormalTok{unQuran }
-\NormalTok{j<-}\DecValTok{1} \CommentTok{# FIRST VERSE, BASMALA is input}
+\NormalTok{j<-}\DecValTok{1} \CommentTok{# First verse, BASMALA is input}
 \NormalTok{tmplett <-}\StringTok{ }\KeywordTok{AbjadSeqofaWordSumValue}\NormalTok{(x}\OperatorTok{$}\NormalTok{text[j])}
 \NormalTok{tmplett <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(}\KeywordTok{rev}\NormalTok{(tmplett), }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{ )}
 \KeywordTok{cat}\NormalTok{(}\StringTok{"Concatenating Abjad numbers of each Basmala words: "}\NormalTok{, tmplett)}
@@ -6036,7 +6038,7 @@ In the following subsections, I will present some important evidences and facts,
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-10c84d0533964072fb1b}{}
+\hypertarget{htmlwidget-81839e53d2b077e36c97}{}
 
 \hypertarget{EvAl-zikr}{%
 \subsection{Evidence on the word Zikr}\label{EvAl-zikr}}
@@ -6074,17 +6076,30 @@ The word ``promise (Vaad)'' ( وعد ) used 38 times (19 x 2).
 
 We knew, God \textbf{promised} to preserve the Reminder, revelations, which was sent down. Feel free to copy and paste the Arabic words in the search box of the table and see the word count of them yourself in Quran.
 
-\hypertarget{EvAllahPositions}{%
-\section{Evidence on Allah word positions and frequencies}\label{EvAllahPositions}}
+\hypertarget{EvAllahAlRahmanPositionsMain}{%
+\section{Evidences on Allah and Al-Rahman word positions and frequencies}\label{EvAllahAlRahmanPositionsMain}}
 
-In this evidence, I will present evidences that proves the positions and number of usage of the word God, in Arabic \textbf{الله} (\textbf{Allah}),
-has its own 19 based design. These evidences prove that the distribution of the name of God (in Arabic, Allah) is not random and under precise 19 based design. These evidences suggest that the positions of the word Allah in the text of Quran stands as if a backbone within verses. These evidences prove that \textbf{Allah} words in Quran must be in their current locations and also in their current frequency in each verse. This observations further support the main hypothesis of this book that the text of Quran is intact and unchanged and it is under 19 based design.
+In the evidences within this main chapter, I will present evidences that prove the positions and counts of the word God, in Arabic \textbf{الله} (\textbf{Allah}), and the other name Al-Rahman,
+(\textbf{الرحمن})
+are individually and together have 19 based design.
+
+These evidences prove that the distribution of the names of God (in Arabic, Allah and Al-Rahman) is not random and under precise 19 based design. These evidences suggest that the positions of the word Allah and/or Al-Rahman in the text of Quran stand as if a backbone within verses. These evidences prove that \textbf{Allah} and/or \textbf{Al-Rahman} words in Quran must be in their current locations in the text and also in their current frequencies in each verse. This observations further support the main hypothesis of this book that the text of Quran is intact and unchanged and it is under 19 based design.
+
+I had started hypothesizing evidences with only Allah word but then I recalled the verse 17:110, which specifically mentions another name of God, Al-Rahman (The Most Compassionate/The All-Merciful), along with Allah word.
+
+\begin{quote}
+``Say to them (O Prophet!):''Call upon Him as Allah or call upon Him as al-Rahman; call Him by whichever name you will, all His names are beautiful. \ldots{}"
+\end{quote}
+
+Therefore, I thought that there might be a 19 based coding evidences of the word Al-Rahman along with Allah word regarding this verse.
+
+Therefore, in the sub-chapters of this chapter, in Evidence \ref{EvAllahAlRahmanPositionsMain}, I will provide the evidences that prove the positions and counts of Allah and Al-Rahman words over all the verses of Quran are under 19 based design individually and also together.
 
 Lets first get the position and frequency of Allah word in each verse with respect to general verse index, chapter index, verse indices at each chapter and the frequency in each verse. These are all natural numbers that exist in the text.
 
 Since I always use both types of the text of Quran in this book , I will again get the related numbers for both of them. To recall, the main one text type is for all 6348 verses including unnumbered Basmala verses. And the second one is only for the 6236 numbered verses text type.
 
-Here I obtain the numbers from the text and present the two tables with the obtained numbers for both text types. These are dynamic tables and you can access any data in it easily in the ebook.
+Here I obtain the numbers from the text and present the two tables with the obtained numbers for both text types. These are dynamic tables and you can access any data in it easily in the eBook.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6174,7 +6189,7 @@ Here I obtain the numbers from the text and present the two tables with the obta
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-898af0e27e95875e99a7}{}
+\hypertarget{htmlwidget-52ea2fac9d6d3743cec5}{}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6186,224 +6201,283 @@ Here I obtain the numbers from the text and present the two tables with the obta
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-f499c87d7a499d7e8440}{}
-
-For the reference, to the best of my knowledge, All the evidences presented in the subsections of this Evidence \ref{EvAllahPositions} is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out that the evidences under Evidence \ref{EvAllahPositions} had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.
-
-\hypertarget{EvAllahPositionsiboth}{%
-\subsection{Evidence on Allah word positions and frequencies in both text types}\label{EvAllahPositionsiboth}}
-
-In this evidence, I will prove that the \textbf{chapter index}, \textbf{verse index} and \textbf{Allah word counts} are under 19 based design in the combination of both of the text types of Quran. It means, the design is over both text at the same time! Basically, I will concatenate all the numbers in natural order as I did in this book earlier for some other evidences. This means any single shift of any of those numbers might break the 19 based design. This proves that the positions of Allah word are under 19 based designed in the combination of both text types of Quran.
-
-This is the way we will obtain the number to be tested:
-We will concatenate chapter index, verse index and word count in the natural order for each text type. We will obtain two vectors for both text types. We will then pair these two vectors by concatenating to each other. This evidence pattern is similar to what I presented in Evidence \ref{EvPerChapter1} and Evidence \ref{EvPerVerse2}. Note that in Evidence \ref{EvPerVerse2} the length of the two vectors that are paired were not equal. Thus, the smaller vector had repeated pairing from its beginning to pair to the longer vector. The similar pattern also exist in this evidence. We have two unequal length vectors but when paired they show and incredible 19 based evidence that the positions of Allah words are under 19 based design together in both text type of Quran. Here is the proof:
+\hypertarget{htmlwidget-2b5d9a2f767ff41c9f30}{}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#Concatenate for 6348 verses}
-\CommentTok{# Some verse indices are 0 and they should be removed}
-\CommentTok{#as there is no number to represent them even 0}
-\NormalTok{x<-}\StringTok{ }\NormalTok{yunQ}
-\NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
-\ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
-  \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
-\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j],x}\OperatorTok{$}\NormalTok{countW[j])}
-\NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
-\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{countW[j] )}
-\NormalTok{  \}}
-\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)}
+\CommentTok{#initialize the special counters to this chapter for probability calculations}
+\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\DecValTok{0}
+\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\DecValTok{0}
+\end{Highlighting}
+\end{Shaded}
+
+Similarly, here we obtain the similar table for the word Al-Rahman only as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Al-Rahman word in Arabic is assigned to search within Quran}
+\NormalTok{tmppattern <-}\StringTok{ "الرحمن"}
+
+\NormalTok{x <-}\StringTok{ }\NormalTok{unQuran }\CommentTok{#in 6348 verses}
+\CommentTok{#find verse indices}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{x}\OperatorTok{$}\NormalTok{text }
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{as.character}\NormalTok{(tmp)}
+\NormalTok{j <-}\StringTok{ }\KeywordTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{,}\KeywordTok{length}\NormalTok{(tmp))}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(tmp))\{}
+\NormalTok{  tmpw <-}\KeywordTok{strsplit}\NormalTok{(tmp[i], }\StringTok{" "}\NormalTok{)}
+\NormalTok{  tmpw <-}\StringTok{ }\KeywordTok{unlist}\NormalTok{(tmpw)}
+\NormalTok{  j[i] <-}\KeywordTok{sum}\NormalTok{(tmpw }\OperatorTok{==}\StringTok{ }\NormalTok{tmppattern)}
+  \KeywordTok{rm}\NormalTok{(tmpw)}
 \NormalTok{\}}
-\KeywordTok{cat}\NormalTok{(}\StringTok{"Length of the vector from 6348}
-\StringTok{    verses is "}\NormalTok{, }\KeywordTok{length}\NormalTok{(tv))}
+\CommentTok{#if correct, this should result }
+\CommentTok{# 157 Al-Rahman words used in total within Quran.}
+\KeywordTok{sum}\NormalTok{(j)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## Length of the vector from 6348
-##     verses is  1678
+## [1] 157
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#concatenate for 6236 verse}
-\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ}
-\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Chapter,}
-\NormalTok{             y}\OperatorTok{$}\NormalTok{verse,y}\OperatorTok{$}\NormalTok{countW)}
-\KeywordTok{cat}\NormalTok{(}\StringTok{"Length of the vector from 6348}
-\StringTok{    verses is "}\NormalTok{, }\KeywordTok{length}\NormalTok{(tmp))}
+\CommentTok{#Get the verse indices where Allah word is used}
+\NormalTok{i <-}\StringTok{ }\KeywordTok{which}\NormalTok{( j}\OperatorTok{!=}\DecValTok{0}\NormalTok{)}
+\NormalTok{x <-}\StringTok{ }\NormalTok{x[,}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{)]}
+\NormalTok{y <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(x,j)}
+\NormalTok{y <-}\StringTok{ }\NormalTok{y[i,]}
+\KeywordTok{colnames}\NormalTok{(y)<-}\KeywordTok{c}\NormalTok{(}\StringTok{"Gen_verseI"}\NormalTok{,}
+               \StringTok{"Chapter"}\NormalTok{,}
+               \StringTok{"verse"}\NormalTok{,}
+               \StringTok{"countW"}\NormalTok{)}
+\NormalTok{yunQ2 <-}\StringTok{ }\NormalTok{y}
+\KeywordTok{rm}\NormalTok{(y)}
+\CommentTok{## do the same for 6236 numbered verses}
+\NormalTok{x <-}\StringTok{ }\NormalTok{nQuran }\CommentTok{#in 6236 verses}
+\CommentTok{#find verse indices}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{x}\OperatorTok{$}\NormalTok{text }
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{as.character}\NormalTok{(tmp)}
+\NormalTok{j <-}\StringTok{ }\KeywordTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{,}\KeywordTok{length}\NormalTok{(tmp))}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(tmp))\{}
+\NormalTok{  tmpw <-}\KeywordTok{strsplit}\NormalTok{(tmp[i], }\StringTok{" "}\NormalTok{)}
+\NormalTok{  tmpw <-}\StringTok{ }\KeywordTok{unlist}\NormalTok{(tmpw)}
+\NormalTok{  j[i] <-}\KeywordTok{sum}\NormalTok{(tmpw }\OperatorTok{==}\StringTok{ }\NormalTok{tmppattern)}
+  \KeywordTok{rm}\NormalTok{(tmpw)}
+\NormalTok{\}}
+\CommentTok{#if correct, this should result }
+\CommentTok{# 45 Al-Rahman words used in total within Quran.}
+\KeywordTok{sum}\NormalTok{(j)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## Length of the vector from 6348
-##     verses is  1566
+## [1] 45
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#Pair both vectors}
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tv,tmp)}
-\CommentTok{#concatenate all the numbers}
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
-\CommentTok{#Test if mod 19 is 0}
-\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} 
+\CommentTok{#Get the verse indices where Allah word is used}
+\NormalTok{i <-}\StringTok{ }\KeywordTok{which}\NormalTok{( j}\OperatorTok{!=}\DecValTok{0}\NormalTok{)}
+\NormalTok{x <-}\StringTok{ }\NormalTok{x[,}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{)]}
+\NormalTok{y <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(x,j)}
+\NormalTok{y <-}\StringTok{ }\NormalTok{y[i,]}
+\CommentTok{#}
+\KeywordTok{colnames}\NormalTok{(y)<-}\KeywordTok{c}\NormalTok{(}\StringTok{"Gen_verseI"}\NormalTok{,}
+               \StringTok{"Chapter"}\NormalTok{,}
+               \StringTok{"verse"}\NormalTok{,}
+               \StringTok{"countW"}\NormalTok{)}
+\NormalTok{ynQ2 <-}\StringTok{ }\NormalTok{y}
+\KeywordTok{rm}\NormalTok{(y)}
+\CommentTok{##}
+\KeywordTok{datatable}\NormalTok{(yunQ,}
+          \DataTypeTok{caption =} \StringTok{'Al-Rahman word positions and counts in 6348 verses'}\NormalTok{,}
+          \DataTypeTok{options =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{pageLength =} \DecValTok{10}\NormalTok{, }
+                              \DataTypeTok{autoWidth =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{rownames=} \OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{htmlwidget-84998c0a6aefa2d15f88}{}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{datatable}\NormalTok{(ynQ,}
+          \DataTypeTok{caption =} \StringTok{'Al-Rahman word positions and counts in 6236 verses'}\NormalTok{,}
+          \DataTypeTok{options =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{pageLength =} \DecValTok{10}\NormalTok{, }
+                              \DataTypeTok{autoWidth =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{rownames=} \OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{htmlwidget-cce7c20a43e655b62074}{}
+
+Now in the following, we obtain another similar table, that is obtained considering any verse that includes either Allah or Al-Rahman words or both in it.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Allah and Al-Rahman word in Arabic is assigned to search within Quran}
+\NormalTok{tmppattern <-}\StringTok{ "الله"}
+\NormalTok{tmppattern2 <-}\StringTok{ "الرحمن"}
+\NormalTok{x <-}\StringTok{ }\NormalTok{unQuran }\CommentTok{#in 6348 verses}
+\CommentTok{#find verse indices}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{x}\OperatorTok{$}\NormalTok{text }
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{as.character}\NormalTok{(tmp)}
+\NormalTok{j <-}\StringTok{ }\KeywordTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{,}\KeywordTok{length}\NormalTok{(tmp))}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(tmp))\{}
+\NormalTok{  tmpw <-}\KeywordTok{strsplit}\NormalTok{(tmp[i], }\StringTok{" "}\NormalTok{)}
+\NormalTok{  tmpw <-}\StringTok{ }\KeywordTok{unlist}\NormalTok{(tmpw)}
+\NormalTok{  j[i] <-}\StringTok{ }\KeywordTok{sum}\NormalTok{(tmpw }\OperatorTok{==}\StringTok{ }\NormalTok{tmppattern) }\OperatorTok{+}\StringTok{ }\KeywordTok{sum}\NormalTok{(tmpw }\OperatorTok{==}\StringTok{ }\NormalTok{tmppattern2)}
+  \KeywordTok{rm}\NormalTok{(tmpw)}
+\NormalTok{\}}
+\CommentTok{#Allah and/or Al-Rahman words used in total within Quran.}
+\KeywordTok{sum}\NormalTok{(j)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## Big Integer ('bigz') :
-## [1] 0
+## [1] 2422
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this}
-\StringTok{    big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\CommentTok{#Get the verse indices where Al-Rahman word is used}
+\NormalTok{i <-}\StringTok{ }\KeywordTok{which}\NormalTok{( j}\OperatorTok{!=}\DecValTok{0}\NormalTok{)}
+\NormalTok{x <-}\StringTok{ }\NormalTok{x[,}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{)]}
+\NormalTok{y <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(x,j)}
+\NormalTok{y <-}\StringTok{ }\NormalTok{y[i,]}
+\KeywordTok{colnames}\NormalTok{(y)<-}\KeywordTok{c}\NormalTok{(}\StringTok{"Gen_verseI"}\NormalTok{,}
+               \StringTok{"Chapter"}\NormalTok{,}
+               \StringTok{"verse"}\NormalTok{,}
+               \StringTok{"countW"}\NormalTok{)}
+\NormalTok{yunQ4 <-}\StringTok{ }\NormalTok{y}
+\KeywordTok{rm}\NormalTok{(y)}
+\CommentTok{## do the same for 6236 numbered verses}
+\NormalTok{x <-}\StringTok{ }\NormalTok{nQuran }\CommentTok{#in 6236 verses}
+\CommentTok{#find verse indices}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{x}\OperatorTok{$}\NormalTok{text }
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{as.character}\NormalTok{(tmp)}
+\NormalTok{j <-}\StringTok{ }\KeywordTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{,}\KeywordTok{length}\NormalTok{(tmp))}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(tmp))\{}
+\NormalTok{  tmpw <-}\KeywordTok{strsplit}\NormalTok{(tmp[i], }\StringTok{" "}\NormalTok{)}
+\NormalTok{  tmpw <-}\StringTok{ }\KeywordTok{unlist}\NormalTok{(tmpw)}
+\NormalTok{  j[i] <-}\KeywordTok{sum}\NormalTok{(tmpw }\OperatorTok{==}\StringTok{ }\NormalTok{tmppattern) }\OperatorTok{+}\StringTok{ }\KeywordTok{sum}\NormalTok{(tmpw }\OperatorTok{==}\StringTok{ }\NormalTok{tmppattern2)}
+  \KeywordTok{rm}\NormalTok{(tmpw)}
+\NormalTok{\}}
+\CommentTok{#Allah and Al-Rahman words used in total within Quran.}
+\KeywordTok{sum}\NormalTok{(j)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## number of digits on this
-##     big number is 15465
+## [1] 2198
 \end{verbatim}
 
-You can access this ``15465'' digits length big number from the following link:
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Get the verse indices where Allah word is used}
+\NormalTok{i <-}\StringTok{ }\KeywordTok{which}\NormalTok{( j}\OperatorTok{!=}\DecValTok{0}\NormalTok{)}
+\NormalTok{x <-}\StringTok{ }\NormalTok{x[,}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{)]}
+\NormalTok{y <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(x,j)}
+\NormalTok{y <-}\StringTok{ }\NormalTok{y[i,]}
+\CommentTok{#}
+\KeywordTok{colnames}\NormalTok{(y)<-}\KeywordTok{c}\NormalTok{(}\StringTok{"Gen_verseI"}\NormalTok{,}
+               \StringTok{"Chapter"}\NormalTok{,}
+               \StringTok{"verse"}\NormalTok{,}
+               \StringTok{"countW"}\NormalTok{)}
+\NormalTok{ynQ4 <-}\StringTok{ }\NormalTok{y}
+\KeywordTok{rm}\NormalTok{(y)}
+\CommentTok{##}
+\KeywordTok{datatable}\NormalTok{(yunQ,}
+          \DataTypeTok{caption =} \StringTok{'Allah and/or Al-Rahman word positions and counts in 6348 verses'}\NormalTok{,}
+          \DataTypeTok{options =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{pageLength =} \DecValTok{10}\NormalTok{, }
+                              \DataTypeTok{autoWidth =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{rownames=} \OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.1_bignumber.txt}
+\hypertarget{htmlwidget-33d4feec3db37794b32a}{}
 
-One can just copy the big number and paste it into a web based big number calculator and test it herself.
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{datatable}\NormalTok{(ynQ,}
+          \DataTypeTok{caption =} \StringTok{'Allah and/or Al-Rahman word positions and counts in 6236 verses'}\NormalTok{,}
+          \DataTypeTok{options =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{pageLength =} \DecValTok{10}\NormalTok{, }
+                              \DataTypeTok{autoWidth =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{rownames=} \OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-I will also compute the probability of evidences with respect to Allah words separately. In order to evaluate whether our observations on Allah word positions are by chance alone or by design, we have to compute the probability of our observations on these particular evidences. Therefore, I will count the number of trials and successful observations just for the evidences about Allah word positions.
+\hypertarget{htmlwidget-b3c41b819e22ac5869fb}{}
 
-For the particular evidence of this sub-section, we could also pair vectors the other way around. Therefore, in total, for this particular evidence, we have two tests and one success. We add them to the particular counters of the evidences about Allah word positions. We will use them in the end to compute the overall probability of our observations about Allah word positions.
+Now we can use these three tables in the following sections for coding evidences.
+
+For the reference, to the best of my knowledge, All the evidences presented in the subsections of this Chapter \ref{EvAllahAlRahmanPositionsMain} is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out that the evidences under Evidence \ref{EvAllahAlRahmanPositionsMain} had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.
+
+In summary, this is the main chapter that includes the three sub-chapters. I collected them in this main chapter because in each of the three sub-chapters, I use all the three tables for any coding tests. This means they have the common numbers to be tested. Each sub-chapter test for a different coding pattern. Therefore, this chapter will prove that, the positions and counts of Allah and Al-Rahman words over all the verses of Quran are under 19 based design individually and also together. To recall, the reason I consider the word Al-Rahman along with Allah word is because of the verse 17:110 in Quran.
+
+\begin{quote}
+``Say to them (O Prophet!):''Call upon Him as Allah or call upon Him as al-Rahman; call Him by whichever name you will, all His names are beautiful. \ldots{}"
+\end{quote}
+
+\hypertarget{EvAllahAlRahmanPosConcat}{%
+\subsection{Evidence on Allah and Al-Rahman words with concatenation of chapter and special verse indices}\label{EvAllahAlRahmanPosConcat}}
+
+In this evidence, we will witness that the exact positions of Allah and/or Al-Rahman is not random but coded into the text regarding chapter indices and special verse indices. In fact these are the most natural way of referring any verse in the text of Quran. For example when refer to a specific verse, we say 17:110, which means Chapter 17 and Verse 110. Therefore the evidences in this sub-chapter use the most natural numbers to refer to a position of a verse in the text of Quran. The coding pattern of the evidences of this sub-chapter concatenates each chapter index and special verse index with Allah and/or Al-Rahman words in it. In this evidence, I will prove that the chapter indices and the special verse indices with Allah words and/or Al-Rahman words in them are under 19 based design Since the same pattern exist in most of the trials, this is a very powerful evidence. We witness that the same 19 based design pattern exist considering only Allah word, only Al-Rahman word and also in their combination (verse with Allah or Al-Rahman words). Since as a global rule, I try any coding pattern in both of the text types of Quran (all 6348 verses or only 6236 numbered verses), in the end we perform 6 trials. As we will witness that 4 out of 6 trials are successful. This means the probability of such an observation is 1 in 10000 (or 0.0001) if we consider only these evidences independently.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\KeywordTok{binom.test}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{6}\NormalTok{,}\DataTypeTok{p =}\NormalTok{ (}\DecValTok{1}\OperatorTok{/}\DecValTok{19}\NormalTok{),}
+                 \DataTypeTok{alternative =} \KeywordTok{c}\NormalTok{(}\StringTok{"greater"}\NormalTok{))}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{tmp}\OperatorTok{$}\NormalTok{p.value}
+
+\KeywordTok{cat}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"The probability of 4 success out of }
+\StringTok{          6 tests (with p=1/19) is:"}\NormalTok{, tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The probability of 4 success out of 
+##           6 tests (with p=1/19) is: 0.000105620298618704
+\end{verbatim}
+
+Let's also add these numbers to the counters that we will use them in the probability calculations of the system in this book.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{#counters to compute the overall probability}
-\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\DecValTok{2}
-\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\DecValTok{1}
+\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\StringTok{ }\DecValTok{6}
+\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{4}
 \end{Highlighting}
 \end{Shaded}
 
-As an additional note, you may have noticed that I removed the zero indices while concatenating as they correspond to unnumbered Basmala verses. In this book, I never used zero index for the unnumbered Basmala verses as there is \textbf{no number}, including zero and it also makes difference in the divisibility. However, if anyone argues on this point there is this example: When zero is used, there is also a design pattern in 6348 verses as follows. Basically, when we concatenate chapter index, verse index and word count for each verse with Allah word and then concatenate all in their natural order again, the resulting big number is also multiple of 19.
-But I do \textbf{not} consider this example neither as evidence nor fact. I just give you as an example for the sake of argument.
+Now, Let's witness the evidences regarding each of the three numbers from tables we had obtained in the main chapter.
+
+\textbf{The Evidence (A) on Allah words:}
+
+This evidence concatenates each chapter index and special verse index with only Allah words in it. The same pattern exist in both text categories (6348 and 6236 verses) of Quran. First, I present the proof for the numbered 6236 verses below:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{y <-}\StringTok{ }\NormalTok{yunQ}
-\KeywordTok{head}\NormalTok{(y) }\CommentTok{# head of the table}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##    Gen_verseI Chapter verse countW
-## 1:          1       1     1      1
-## 2:          8       2     0      1
-## 3:         15       2     7      1
-## 4:         17       2     9      1
-## 5:         18       2    10      1
-## 6:         23       2    15      1
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Chapter,}
-\NormalTok{             y}\OperatorTok{$}\NormalTok{verse,y}\OperatorTok{$}\NormalTok{countW)}
-\CommentTok{# head side of numbers of each verse}
-\KeywordTok{head}\NormalTok{(tmp) }
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] "111"  "201"  "271"  "291"  "2101" "2151"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
-\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Big Integer ('bigz') :
-## [1] 0
-\end{verbatim}
-
-\hypertarget{EvAllahPositionwithsum}{%
-\subsection{Evidence on Allah word positions and frequencies with sum}\label{EvAllahPositionwithsum}}
-
-In this evidence, I will prove that the chapter indices, verse indices and Allah word counts are also under 19 based design in the numbered verses of Quran with respect to their total sum as follows. In the table of Allah word positions in 6236 verses' above, I provided the chapter indices, verse indices in that chapter and Allah word counts in that verse.
-
-The sum of each of these numbers are 33697, 100228 and 2153, respectively. The total number of all these three numbers is equal to \textbf{136078} and it is multiple of 19 (in particular 19x7162).
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{sum}\NormalTok{(ynQ[,}\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{)])}
-\KeywordTok{cat}\NormalTok{(}\StringTok{"The total number is "}\NormalTok{, tmp)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## The total number is  136078
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{# mod 19 is zero}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Big Integer ('bigz') :
-## [1] 0
-\end{verbatim}
-
-This further proves the positions and frequencies of Allah words are under 19 based design together in the numbered verses of Quran. We could also try this coding in all the 6348 verses. Since there is no order in the number, assuming that we also test the digit sum of them, therefore we have 4 trials and one success in this case. Let's add them to the counters as follows.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{#counters to compute the overall probability}
-\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\DecValTok{4}
-\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{EvAllahPositionwtConcat}{%
-\subsection{Evidence on Allah word positions and frequencies with concatenation}\label{EvAllahPositionwtConcat}}
-
-In this evidence, I will prove that the general verse indices, the chapter indices, the verse indices and Allah word counts are also designed in the numbered verses of Quran with respect to their concatenations as follows. It looks, more of the evidences about Allah word counts are in the numbered verses category.
-
-In this evidence, we concatenate the general verse index, the chapter index and the number of Allah words in that verse. For example, the first Allah word in the numbered verse of Basmala verse in the first chapter (Al-Fatiha), which has also the first general verse index. Thus, we get this representative number for it after concatenating in the natural order: 111. Similarly, the following verse with Allah word is at the general verse index 14 and in the second chapter with one Allah word. Thus, we get this 1421 as the representative number for it by concatenating in the natural order. This is done for all the verses with Allah words in it. Then we concatenate all of these representative numbers with each other in the normal order of the table. Then we get 9742 digits length big number and it is multiple of 19. Here is the proof of this test:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ }\CommentTok{#ynQ is from 6236 verses}
-\KeywordTok{head}\NormalTok{(y)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##    Gen_verseI Chapter verse countW
-## 1:          1       1     1      1
-## 2:         14       2     7      1
-## 3:         16       2     9      1
-## 4:         17       2    10      1
-## 5:         22       2    15      1
-## 6:         24       2    17      1
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Gen_verseI, y}\OperatorTok{$}\NormalTok{Chapter,}
-\NormalTok{             y}\OperatorTok{$}\NormalTok{countW)}
-\CommentTok{# head side of numbers of each verse}
+\CommentTok{#The required numbers for this evidence are in the ynQ object. }
+\NormalTok{x<-}\StringTok{ }\NormalTok{ynQ }\CommentTok{#6236 numbered verses}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter,x}\OperatorTok{$}\NormalTok{verse)}
+\CommentTok{# head and tail sides of numbers of each verse}
 \KeywordTok{head}\NormalTok{(tmp)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "111"  "1421" "1621" "1721" "2221" "2421"
+## [1] "11"  "27"  "29"  "210" "215" "217"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(tmp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "988"  "1046" "1101" "1102" "1121" "1122"
 \end{verbatim}
 
 \begin{Shaded}
@@ -6418,65 +6492,257 @@ In this evidence, we concatenate the general verse index, the chapter index and 
 ## [1] 0
 \end{verbatim}
 
-You can access this ``9742'' digits length big number from the following link:
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
 
-\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.3_big_number.txt}
+\begin{verbatim}
+## number of digits on this big number is 5732
+\end{verbatim}
+
+As we witnessed, the resulting 5732 digits length big number is multiple of 19.
+You can access this 5732 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.1.A.txt}
 
 One can just copy the big number and paste it into a web based big number calculator and test it herself.
 
-A similar pattern also exist with the \textbf{special verse indices} of each chapter. However, this time the digit sum of the big number is multiple of 19. Therefore, with respect to general rule, I consider this as a \textbf{fact} rather than evidence. In this \textbf{fact}, we concatenate the chapter index, the verse index and the number of Allah words in each verse. For example, the first Allah word in the numbered verse of Basmala verse is in the first chapter (Al-Fatiha). Thus, we get this representative number for it after concatenating in the natural order: 111. Similarly, the following verse with Allah word is in the second chapter and special verse 7 with one Allah word. Thus, we get this representative number for it after concatenating in the natural order: 271. This is done for all the verses with Allah words in it. Then, we concatenate all of these representative numbers with each other in the normal order of the table. Then, we get 7298 digits length big number and the digit sum of this big number is \textbf{24586} and it is multiple of 19. Here is the proof of this test:
+As a general rule of this book, I always try any coding pattern of any evidence in both of the text categories of Quran. Now as per the rule, I try the same coding pattern in all the 6348 verses of Quran. As I prove below, the same coding pattern also exist in that too!
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ }\CommentTok{# from 6236 verses}
-\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Chapter,}
-\NormalTok{             y}\OperatorTok{$}\NormalTok{verse,y}\OperatorTok{$}\NormalTok{countW)}
-\CommentTok{# head side of numbers of each verse}
+\CommentTok{#The required numbers for this evidence are in the yunQ object.}
+\NormalTok{x<-}\StringTok{ }\NormalTok{yunQ }\CommentTok{#all 6348 verses}
+\NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
+\ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
+  \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j])}
+\NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j])}
+\NormalTok{  \}}
+\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)}
+\NormalTok{\}}
+\CommentTok{# head and tail sides of numbers of each verse}
+\KeywordTok{head}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "11"  "2"   "27"  "29"  "210" "215"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "111"  "112"  "1121" "1122" "113"  "114"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tv, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{) }
+
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{#mod 19 must be zero}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## number of digits on this big number is 5964
+\end{verbatim}
+
+The resulting 5964 digits length big number is multiple of 19.
+You can access this 5964 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.1.A2.txt}
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+We witnessed two evidences of the same coding patterns, which proves that the exact positions of Allah words are perfectly under 19 based coding system of the text of Quran. Since, we observed this in two different text category, in total we tested 3244 verses that include Allah words in them considering their exact chapter and special verse indices. Since this special word, Allah, spread through Quran as if a skeleton, it also supports the accuracy and intactness of all the verses and chapters of Quran. Because, if any one of the 6348 or 6236 verses were removed,the considered verses would be shifted and these codings would not hold anymore. Only the last 5 verses would not be supported by these evidences as they are in the tail and does not contain Allah word in it.
+
+As an interesting \textbf{fact}, since these two evidences of the same coding pattern are related to each other, I generally test the relation between them too. As we see the digit length of these numbers 5732 and 5964 have a 19 based coding relation. When we concatenate them, the resulting numbers is 57325964 and it is also multiple of 19.
+
+\textbf{The Evidence (B) on Al-Rahman words:}
+
+Now we will witness that the same coding pattern also exist in all the 6348 verse of Quran considering only Al-Rahman words in it too:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#The required numbers for this evidence are in the yunQ2 object.}
+\NormalTok{x<-}\StringTok{ }\NormalTok{yunQ2 }\CommentTok{#all 6348 verses}
+\NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
+\ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
+  \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j])}
+\NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j])}
+\NormalTok{  \}}
+\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)}
+\NormalTok{\}}
+\CommentTok{# head and tail sides of numbers of each verse}
+\KeywordTok{head}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "11"   "13"   "2"    "2163" "3"    "4"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "109" "110" "111" "112" "113" "114"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tv, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{) }
+
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{#mod 19 must be zero}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## number of digits on this big number is 406
+\end{verbatim}
+
+As we witnessed, the resulting 406 digits length big number is multiple of 19. You can access this 406 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.1.B.txt}
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+\textbf{The Evidence (C) on Allah and/or Al-Rahman words together:}
+
+Now we will witness that the same coding pattern also exist in the numbered verses of Quran considering Allah and/or Al-Rahman words together in them too:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#The required numbers for this evidence are in the ynQ4 object.}
+\NormalTok{x<-}\StringTok{ }\NormalTok{ynQ4 }\CommentTok{#all 6348 verses}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter,x}\OperatorTok{$}\NormalTok{verse)}
+\CommentTok{# head and tail sides of numbers of each verse}
 \KeywordTok{head}\NormalTok{(tmp)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "111"  "271"  "291"  "2101" "2151" "2171"
+## [1] "11"  "13"  "27"  "29"  "210" "215"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(tmp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "988"  "1046" "1101" "1102" "1121" "1122"
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
-\KeywordTok{digitsum}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} 
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{#mod 19 must be zero}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
+## Big Integer ('bigz') :
 ## [1] 0
 \end{verbatim}
 
-You can access this ``7298'' digits length big number from the following link:
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
 
-\url{https://github.com/quran2019/Quran19/blob/master/Fact_7.3.3_bignumber.txt}
+\begin{verbatim}
+## number of digits on this big number is 5887
+\end{verbatim}
+
+As we witnessed, the resulting 5887 digits length big number is multiple of 19. You can access this 5887 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.1.C.txt}
 
 One can just copy the big number and paste it into a web based big number calculator and test it herself.
 
-Since there is order in the number, we had two trials and one success. However, I will also take into account for the two cases as not successes though one of their digit sum is divisible by 19. Therefore, we have 4 trials and one success in these two cases. Let's add them to the counters as follows.
+Now considering the four codings evidences, we witnessed that Allah and Al-Rahman words are under 19 based designs, which further proves the intactness of Quran together along with all the rest of the evidences.
+
+\hypertarget{EvAllahRakmanPositionsGenVerseIndex}{%
+\subsection{Evidence on Allah and Al-Rahman word positions regarding general verse indices}\label{EvAllahRakmanPositionsGenVerseIndex}}
+
+In this evidence, I will prove that the general verse indices of the verses which includes Allah words and also Allah and/or Al-Rahman words together are also under 19 based design. Basically, we will only look at the general verse indices alone. Remember that in the evidences of this main chapter, Chapter \ref{EvAllahAlRahmanPositionsMain}, we always use the numbers from the three tables, Allah only, Al-Rahman only, and also Allah and/or Al-Rahman words together. In this sub-chapter, we will witness that the same coding pattern exist regarding Allah only and also Allah and/or Al-Rahman words together.
+
+As we will witness that 2 out of 6 trials are successful. This means the probability of such an observation alone is 0.036 and still statistically significant if we consider only these evidences independently.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\KeywordTok{binom.test}\NormalTok{(}\DecValTok{2}\NormalTok{, }\DecValTok{6}\NormalTok{,}\DataTypeTok{p =}\NormalTok{ (}\DecValTok{1}\OperatorTok{/}\DecValTok{19}\NormalTok{),}
+                 \DataTypeTok{alternative =} \KeywordTok{c}\NormalTok{(}\StringTok{"greater"}\NormalTok{))}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{tmp}\OperatorTok{$}\NormalTok{p.value}
+
+\KeywordTok{cat}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"The probability of 2 success out of }
+\StringTok{          6 tests (with p=1/19) is:"}\NormalTok{, tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The probability of 2 success out of 
+##           6 tests (with p=1/19) is: 0.0360552074686411
+\end{verbatim}
+
+Let's also add these numbers to the counters that we will use them in the probability calculations of the system in this book.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{#counters to compute the overall probability}
-\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\StringTok{ }\DecValTok{4}
-\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{1}
+\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\StringTok{ }\DecValTok{6}
+\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{2}
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{EvAllahPositionVerseIndex}{%
-\subsection{Evidence on Allah word positions and frequencies on verse indices only}\label{EvAllahPositionVerseIndex}}
+Now, Let's witness the evidences regarding each of the three numbers from tables we had obtained in the main chapter.
 
-In this evidence, I will prove that the general verse indices and the special verse indices of each chapter, which includes Allah words are also under 19 based design, are under 19 based design individually. Basically, we will only look at verse indices alone. There is one \textbf{evidence} based on general verse indices and one \textbf{fact} based on special verse indices in each chapter.
+\textbf{Evidence (A) on Allah word only}:
 
-Evidence tests whether the general verse indices, in which there is Allah words has 19 based design. As we will see there is design in the numbered verses. When we concatenate each general verse index in the 6236 numbered verses, the resulting big number is multiple of 19. This clearly shows the positions of verses with Allah word in the numbered verses and we witness that it is under the 19 based designed and not random.
+This evidence tests whether the general verse indices, in which there is Allah words has 19 based design. As we will see there is design considering the numbered verses. When we concatenate each general verse indices in the 6236 numbered verses, the resulting big number is multiple of 19. This clearly shows the positions of verses with Allah words in the numbered verses are under the 19 based design.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ }\CommentTok{#from numbered verses}
+\CommentTok{# ynQ is for Allah word for numbered verses}
+\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ }\CommentTok{#from 6236 numbered verses}
 \NormalTok{tmp<-}\StringTok{ }\NormalTok{y}\OperatorTok{$}\NormalTok{Gen_verseI}
 \CommentTok{# head side of numbers of each verse}
 \KeywordTok{head}\NormalTok{(tmp)}
@@ -6499,19 +6765,55 @@ Evidence tests whether the general verse indices, in which there is Allah words 
 ## [1] 0
 \end{verbatim}
 
-You can access this ``5719'' digits length big number from the following link:
+You can access this 5719 digits length big number from the following link:
 
-\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.4_big_number.txt}
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.2.A.txt}
 
 One can just copy the big number and paste it into a web based big number calculator and test it herself.
 
-One more \textbf{interesting fact} on this big number is that the length of this big number is 5719 and it is also multiple of 19 as 19x301.
+One more \textbf{interesting fact} on this big number is that the length of this big number is \textbf{5719} and it is also multiple of 19 as 19x301.
+
+\textbf{Evidence (B) on Allah and/or Al-Rahman words together}:
+
+This evidence tests whether the general verse indices, in which there is Allah and/or Al-Rahman words together have 19 based design. As we will see there is design considering all the verses. When we concatenate each of the the resulting general verse indices in the 6348 numbered verses, the resulting big number is multiple of 19. This clearly shows the positions of verses with Allah and/or Al-Rahman words together are under the 19 based design. Here is the proof.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# yunQ4 is for Allah and/or Al-Rahman words together}
+\NormalTok{y <-}\StringTok{ }\NormalTok{yunQ4 }\CommentTok{#from all the 6348 verses}
+\NormalTok{tmp<-}\StringTok{ }\NormalTok{y}\OperatorTok{$}\NormalTok{Gen_verseI}
+\CommentTok{# head side of numbers of each verse}
+\KeywordTok{head}\NormalTok{(tmp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1]  1  3  8 15 17 18
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} 
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+You can access this 6318 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.2.B.txt}
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
 
 \textbf{Fact:}
 
-In the above evidence, we tested the general verse indices.
-I also test the corresponding special verse indices of each chapter with the same pattern. In interesting enough, this is also under 19 based design as a fact that supports the above evidence.
-When we concatenate each special verse index in the 6236 numbered verses, the digit sum of the resulting big number is 12730 and it is multiple of 19 as 19x670. This clearly shows the positions of verses with Allah word in the numbered verses and we witness that it is under the 19 based designed and not random.
+In the above evidence (A) for Allah words only, we tested the general verse indices.
+I also tested the corresponding special verse indices of each chapter with the same pattern. Interesting enough, there is also 19 based relation as a fact that further supports that particular evidence.
+When we concatenate each special verse index in the 6236 numbered verses, the digit sum of the resulting big number is 12730 and it is multiple of 19 as 19x670. This suggests that the positions of special verses with Allah word in them have also 19 based design.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6547,111 +6849,66 @@ When we concatenate each special verse index in the 6236 numbered verses, the di
 ## [1] 0
 \end{verbatim}
 
-You can access this ``3275'' digits length big number from the following link:
+You can access this 3275 digits length big number from the following link:
 
-\url{https://github.com/quran2019/Quran19/blob/master/Fact_7.3.4_big_number.txt}
+\url{https://github.com/quran2019/Quran19/blob/master/Fact_7.3.2.fact.txt}
 
-Since there is order in the numbers, we had two trials and one success. However, I will also take into account for the two cases, considering the fact, as not successes since they are not directly divisible by 19, though digit sum is. Therefore we have 4 trials and one success in these two cases. Let's add them to the counters as follows.
+\hypertarget{EvAllahRahmanwordpaired}{%
+\subsection{Fact on Allah and Al-Rahman word positions when paired}\label{EvAllahRahmanwordpaired}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{#counters to compute the overall probability}
-\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\StringTok{ }\DecValTok{4}
-\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{EvAllahPositionChapSpecVerses}{%
-\subsection{Evidence on Allah word positions and frequencies with Chapter and Special verse indices}\label{EvAllahPositionChapSpecVerses}}
-
-In this evidence, I will prove that the chapter indices and the special verse indices in each chapter with Allah words in it are under 19 based design in the numbered verses of Quran.
-
-This evidence concatenates each chapter index and special verse index of each chapter with Allah words in it over all the 5236 numbered verses. The resulting 5732 digits length big number is multiple of 19. This shows that the positions of verses with Allah word in it are under 19 based design too. Therefore, we witness that it is under the 19 based designed and not random.
+In this fact, I will demonstrate that the chapter and the special verse indices of the verses which includes Allah words and the verses which includes Al-Rahman words are together also under 19 based design. Basically, we will pair those indices. The pattern of this fact is similar to what I presented in Evidence \ref{EvPerChapter1} and Evidence \ref{EvPerVerse2}.
+In this sub-chapter, we will witness that the same coding pattern exist between the indices of Allah and also Al-Rahman words.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{x<-}\StringTok{ }\NormalTok{ynQ }
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter,x}\OperatorTok{$}\NormalTok{verse)}
-\CommentTok{# head side of numbers of each verse}
-\KeywordTok{head}\NormalTok{(tmp)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] "11"  "27"  "29"  "210" "215" "217"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
-\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{#mod 19 must be zero}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Big Integer ('bigz') :
-## [1] 0
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## number of digits on this big number is 5732
-\end{verbatim}
-
-You can access this ``5732'' digits length big number from the following link:
-
-\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.5_big_number.txt}
-
-One can just copy the big number and paste it into a web based big number calculator and test it herself.
-
-Since there is order in the numbers, we had two trials and one success. Therefore we have 2 trials and one success in these two cases. Let's add them to the counters as follows.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{#counters to compute the overall probability}
-\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\StringTok{ }\DecValTok{2}
-\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{EvAllahPositionGenChapSpecVerses2}{%
-\subsection{Evidence with General verse indices, Chapter and Special verse indices}\label{EvAllahPositionGenChapSpecVerses2}}
-
-In this evidence, I will prove that the general verse indices, the chapter indices and the special verse indices in each chapter with Allah words in it are under 19 based design in all the verses.
-
-This evidence concatenates each general verse index, chapter index and special verse index that have Allah words in it considering all the 6348 verses. We then concatenate each of these represenation numbers in its natural order. The resulting 12126 digits length big number is multiple of 19. This clearly shows the positions of verses with Allah word in it are under 19 based design and not random.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{x<-}\StringTok{ }\NormalTok{yunQ }\CommentTok{#all 6348 verses}
+\CommentTok{# yunQ is for Allah word from all verses}
+\CommentTok{# yunQ2 is for Al-Rahman word from all verses}
+\NormalTok{tmpdf1 <-}\StringTok{ }\NormalTok{yunQ}
+\NormalTok{tmpdf2 <-}\StringTok{ }\NormalTok{yunQ2 }
+\NormalTok{x<-}\StringTok{ }\NormalTok{tmpdf1}
 \NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
 \ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
   \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
-\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Gen_verseI[j], x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j])}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j])}
 \NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
-\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Gen_verseI[j],x}\OperatorTok{$}\NormalTok{Chapter[j])}
-\NormalTok{  \}}
-\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)}
-\NormalTok{\}}
-
-\CommentTok{# head side of numbers of each verse}
-\KeywordTok{head}\NormalTok{(tv)}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j] )\}}
+\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp) \}}
+\KeywordTok{length}\NormalTok{(tv)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "111"   "82"    "1527"  "1729"  "18210" "23215"
+## [1] 1678
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tv, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{) }
-\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{# mod 19 must be zero }
+\NormalTok{tmpa <-}\StringTok{ }\NormalTok{tv}
+\CommentTok{#}
+\NormalTok{x<-}\StringTok{ }\NormalTok{tmpdf2}
+\NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
+\ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
+  \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j])}
+\NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j] )\}}
+\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)\}}
+\KeywordTok{length}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 157
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Pair both vectors}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmpa,tv)}
+\CommentTok{#concatenate all the numbers}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
+
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{#test for 19}
 \end{Highlighting}
 \end{Shaded}
 
@@ -6662,38 +6919,26 @@ This evidence concatenates each general verse index, chapter index and special v
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this }
-\StringTok{    big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\KeywordTok{nchar}\NormalTok{(tmp)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## number of digits on this 
-##     big number is 12126
+## [1] 10313
 \end{verbatim}
 
-You can access this ``12126'' digits length big number from the following link:
+You can access this 10313 digits length big number from the following link:
 
-\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.3.6_big_number.txt}
+\url{https://github.com/quran2019/Quran19/blob/master/Fact_7.3.3.txt}
 
 One can just copy the big number and paste it into a web based big number calculator and test it herself.
 
-Since there is order in the numbers, we had two trials and one success. Therefore we have 2 trials and one success in these two cases. Let's add them to the counters as follows.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{#counters to compute the overall probability}
-\NormalTok{AllahWordEvidenceTrials <-}\StringTok{ }\NormalTok{AllahWordEvidenceTrials }\OperatorTok{+}\StringTok{ }\DecValTok{2}
-\NormalTok{AllahWordEvidenceSuccesses <-}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses }\OperatorTok{+}\StringTok{ }\DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
-
 \hypertarget{ProbEvAllahPositions}{%
-\subsection{Probability of the Evidences on Allah word positions and frequencies}\label{ProbEvAllahPositions}}
+\subsection{Probability of the Evidences on Allah and Al-Rahman word positions and frequencies}\label{ProbEvAllahPositions}}
 
-In this section I will compute the probability of witnessing all the new evidences on Allah word positions and frequencies.
+In this section I will compute the probability of witnessing all the new evidences on Allah and Al-Rahman word positions and frequencies.
 
-As you know, I had two special counters to get the total number of tests and total number of successes. Using the two special counters and Binomial test, we can calculate the probability of witnessing all those evidences that proves the 19 based coding system exist on Allah word positions and frequencies. This \textbf{supports} the overall conclusion of this book such that the text of Quran was designed from the beginning and it is intact and unchanged for the last 1387 years since it was first written in 632. Here is the probability of observing all those evidences by chance alone:
+As you know, I had two special counters to get the total number of tests and total number of successes. Using the two special counters and Binomial test, we can calculate the probability of witnessing all those evidences that proves the 19 based coding system exist on Allah and Al-Rahman word positions and frequencies. This \textbf{supports} the overall conclusion of this book such that the text of Quran was designed from the beginning and it is intact and unchanged for the last 1387 years since it was first written in 632. Here is the probability of observing all those evidences by chance alone:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6708,7 +6953,7 @@ As you know, I had two special counters to get the total number of tests and tot
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  6 success out of all the 18  tests (with p=1/19) is: 0.000227481815830633
+## The probability of all the  6 success out of all the 12  tests (with p=1/19) is: 1.48994163952564e-05
 \end{verbatim}
 
 \begin{Shaded}
@@ -6720,8 +6965,8 @@ As you know, I had two special counters to get the total number of tests and tot
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  6 success out of all the 18  tests (with p=1/19) and Probability of number 19
-##   being in Quran together is: 1.99545452483011e-06
+## The probability of all the  6 success out of all the 12  tests (with p=1/19) and Probability of number 19
+##   being in Quran together is: 1.30696635046109e-07
 \end{verbatim}
 
 As we see this is small probability and the evidences we witnessed cannot occur by chance and thus should be designed by the Author of Quran. This is my rational conclusion based on this probability.
@@ -6742,7 +6987,7 @@ Let's try something else for extremely skeptical people. If some people think th
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  6 success out of all the 36  tests (with p=1/19) is: 0.0105952854522913
+## The probability of all the  6 success out of all the 24  tests (with p=1/19) is: 0.00125569431578239
 \end{verbatim}
 
 \begin{Shaded}
@@ -6754,11 +6999,20 @@ Let's try something else for extremely skeptical people. If some people think th
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  6 success out of all the 36  tests (with p=1/19) and Probability of
-##   number 19 being in Quran together is: 9.29411004586953e-05
+## The probability of all the  6 success out of all the 24  tests (with p=1/19) and Probability of
+##   number 19 being in Quran together is: 1.10148624191438e-05
 \end{verbatim}
 
 As we observed that the probability of observing the evidences we all witnessed in this section is still statistically significant as it is less than 0.05.
+
+Now, I add these trials and successes on Allah and Al-Rahman word positions to the global counters for overall system probability calculations in the end of the book.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{global_tested_nums <-}\StringTok{ }\NormalTok{global_tested_nums }\OperatorTok{+}\StringTok{ }\NormalTok{AllahWordEvidenceTrials}
+\NormalTok{global_success_nums <-}\StringTok{ }\NormalTok{global_success_nums }\OperatorTok{+}\StringTok{ }\NormalTok{AllahWordEvidenceSuccesses}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{EvSuraTavba}{%
 \section{Evidence on Chapter At-Tawbah}\label{EvSuraTavba}}
@@ -6903,7 +7157,7 @@ As we witnessed the number of words of verses of Chapter 9 has also the similar 
 ## [1] 0
 \end{verbatim}
 
-As we witnessed, the three evidences have also another independent 19 based coding among themselves based on their digit sum. These three evidences and the fourth additional one that connects them, clearly prove the 19 based design in the verses of Chapter 9. An it is the only chapter with this coding pattern that proves its verses are clearly under 19 based system. No wonder it is Chapter 9. Becasue, there has been specualtion over its last two verses (128, 129) by the Rasha Khalifa's fake and made up 19 system claim. Considering this, I hypothesized that God might have placed a special 19 based design in the verses of Chapter 9. And, without much surprize, I discovered these evidences on Chapter 9, which proves that its under a clear 19 based design. Also, remember these evidences are themselves are also additional upon all the main evidences of this book that proves the text of Quran is intact and unchanged.
+As we witnessed, the three evidences have also another independent 19 based coding among themselves based on their digit sum. These three evidences and the fourth additional one that connects them, clearly prove the 19 based design in the verses of Chapter 9. An it is the only chapter with this coding pattern that proves its verses are clearly under 19 based system. No wonder it is Chapter 9. Because, there has been speculation over its last two verses (128, 129) by the Rashad Khalifa's fake and made up 19 system claim. Considering this, I hypothesized that God might have placed a special 19 based design in the verses of Chapter 9. And, without much surprise, I discovered these evidences on Chapter 9, which proves that its under a clear 19 based design. Also, remember these evidences are themselves are also additional upon all the main evidences of this book that proves the text of Quran is intact and unchanged.
 
 As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
 
@@ -7000,7 +7254,7 @@ You can test the numbers from these dynamic tables easily:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-5ae7c48ad8bd001e476f}{}
+\hypertarget{htmlwidget-9acdc090331a7b73c6df}{}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7013,7 +7267,7 @@ You can test the numbers from these dynamic tables easily:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{htmlwidget-ad6581fdebfb165264ba}{}
+\hypertarget{htmlwidget-7a506067a6fa5d63399c}{}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7294,7 +7548,7 @@ As the last process to do, let's add the number of successful evidences and the 
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{Fact:} There is also this 19 based design, which I considered as a fact and thus will present it as a fact. In the above evidence. I considered the general verse indices while getting the indices of the verses with word content as multiple of 19. Instead of that, If we take the chapter indices and special verse indices, together as a single represenation number, of the verses with multiple of 19 word content, then again the digit sum of the big number is multiple of 19. The coding exist both, in 6348 and 6236 verses as the resulting big numbers are the same. Here is the proof:
+\textbf{Fact:} There is also this 19 based design, which I considered as a fact and thus will present it as a fact. In the above evidence. I considered the general verse indices while getting the indices of the verses with word content as multiple of 19. Instead of that, If we take the chapter indices and special verse indices, together as a single representation number, of the verses with multiple of 19 word content, then again the digit sum of the big number is multiple of 19. The coding exist both, in 6348 and 6236 verses as the resulting big numbers are the same. Here is the proof:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7331,7 +7585,7 @@ As the last process to do, let's add the number of successful evidences and the 
 ## The length of the representative number to be tested is  592
 \end{verbatim}
 
-Another interesting fact is that, in the above fact, if we also consider number of letters of both text categories and get the single represenation number just like we did in Evidence \ref{EvChapContmult19} in the previous section, then the digit sum of resulting big number is also multiple of 19. Here is the proof:
+Another interesting fact is that, in the above fact, if we also consider number of letters of both text categories and get the single representation number just like we did in Evidence \ref{EvChapContmult19} in the previous section, then the digit sum of resulting big number is also multiple of 19. Here is the proof:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7374,6 +7628,378 @@ Another interesting fact is that, in the above fact, if we also consider number 
 
 For the reference, to the best of my knowledge, Evidence \ref{EvVerseContmult19} is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \ref{EvVerseContmult19} had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.
 
+\hypertarget{EvAllahPositionsonly}{%
+\section{Evidences on only Allah word positions and frequencies regarding Chapters, Verses and Words}\label{EvAllahPositionsonly}}
+
+In this chapter, I will present three different evidences in three different sub-sections of this section, using \textbf{chapter indices}, \textbf{verse indices} and the number of \textbf{Allah word counts} in each of those verses. The reason I present them in three sub-section is because they each have different coding pattern. Since I observed mainly digit sum based coding in those evidences, as an exception to the global rule, I will also use the optional digit sum test to the numbers even though they have order information. Therefore, I will not include, the number of successes and trials of these three sub-sections into the global counters. This means, the three evidences of that we will witness in the section will not affect the global probability of the general system that we will measure in the end. Therefore,in the chapter, I will calculate the probability of what we observe with those three evidences of the three sub-sections of this chapter. In each of the following three subsections we perform 4 tests and observe one successes. This means 3 successes out of 12 trials with each success probability of 1/19. Therefore, the probability of such observation by chance alone can be calculated as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\KeywordTok{binom.test}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{12}\NormalTok{,}\DataTypeTok{p =}\NormalTok{ (}\DecValTok{1}\OperatorTok{/}\DecValTok{19}\NormalTok{),}
+                 \DataTypeTok{alternative =} \KeywordTok{c}\NormalTok{(}\StringTok{"greater"}\NormalTok{))}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{tmp}\OperatorTok{$}\NormalTok{p.value}
+
+\KeywordTok{cat}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"The probability of 3 success out of }
+\StringTok{          12 tests (with p=1/19) is:"}\NormalTok{, tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The probability of 3 success out of 
+##           12 tests (with p=1/19) is: 0.0224151472095752
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"The probability of 3 success out of 12 tests (with p=1/19) }
+\StringTok{and Probability of number 19 being in Quran together is:"}\NormalTok{, tmp}\OperatorTok{*}\NormalTok{(}\DecValTok{1}\OperatorTok{/}\DecValTok{114}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The probability of 3 success out of 12 tests (with p=1/19) 
+## and Probability of number 19 being in Quran together is: 0.000196624098329607
+\end{verbatim}
+
+The three evidences in the following three sub-chapters have a particularly importance. Because, in the fake 19 based claim of Rashad Khalifa, they use the same three columns but individually (\textbf{chapter indices}, \textbf{verse indices} and the number of \textbf{Allah word counts}). By removing one of the verses, they make sure (!) each of these three columns are multiple of 19 individually! They clearly manipulate the text on a specific verse to make sure the numbers match to their made up fake system claim. The three evidences I present in the following three sub-sections prove that there is already a 19 based coding design considering the same three columns of data, chapter indices, special verse indices and the total number of Allah words at that verse. Since there is already a 19 based coding on the same three columns, it is fair to say that, they could not find this already existing 19 based codings with those three columns and made up their owns by manipulating the text. Manipulating the text is scientifically unacceptable. Because, no matter what the manipulators find in the end, their system claim belongs to the manipulators but not to the original text itself. Because, once you open up the door for manipulation, then you have to exhaustively search for all the space of the possible texts that could be generated by the manipulations and prove that what you show is statistically significantly different than all the rest of the possible codings in that space! Considering the size of the text of Quran, it is impossible to perform this task. This proves the point that, scientifically speaking, it is non-sense to consider any claim that manipulates the text. Anyone who searches for coding patterns in the text of Quran, must use one of the already available text copies that has been accepted and already being used by Muslims. Any approach that manipulates even a single letter of the text by his own choice is just non-sense.
+
+For the reference, to the best of my knowledge, Evidence \ref{EvAllahPositionsonly} is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \ref{EvAllahPositionsonly} had been available in another article, then, in such a case, I surely add a citation and update the online version of this book
+
+Let's get back to the main topic and see the evidences in the following sub-sections.
+
+\hypertarget{EvAllahPositionsipair}{%
+\subsection{Evidences on Allah word positions and frequencies regarding Chapters, Verses and Words}\label{EvAllahPositionsipair}}
+
+In these evidence, I will prove that the \textbf{chapter index}, \textbf{verse index} and \textbf{Allah word counts} are under 19 based design in combination of both of the text types of Quran. It means, the design is over both text at the same time! Basically, I will concatenate all the numbers in natural order as I did in this book earlier for some other evidences. This means any single shift of any of those numbers might break the 19 based design. This proves that the positions of Allah word are under 19 based designed in combination of both text types of Quran.
+
+This is the way we will obtain the number to be tested:
+We will concatenate chapter index, verse index and word count in the natural order for each text type. We will obtain two vectors for both text types. We will then pair these two vectors by concatenating to each other. This evidence pattern is similar to what I presented in Evidence \ref{EvPerChapter1} and Evidence \ref{EvPerVerse2}. Note that in Evidence \ref{EvPerVerse2} the length of the two vectors that are paired were not equal. Thus, the smaller vector had repeated pairing from its beginning to pair to the longer vector. The similar pattern also exist in this evidence. We have two unequal length vectors but when paired they show and incredible 19 based evidence that the positions of Allah words are under 19 based design together in both text type of Quran. Here is the proof:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Concatenate for 6348 verses}
+\CommentTok{# Some verse indices are 0 and they should be removed}
+\CommentTok{#as there is no number to represent them even 0}
+\NormalTok{x<-}\StringTok{ }\NormalTok{yunQ}
+\NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
+\ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
+  \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j],x}\OperatorTok{$}\NormalTok{countW[j])}
+\NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{countW[j] )}
+\NormalTok{  \}}
+\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)}
+\NormalTok{\}}
+\KeywordTok{cat}\NormalTok{(}\StringTok{"Length of the vector from 6348}
+\StringTok{    verses is "}\NormalTok{, }\KeywordTok{length}\NormalTok{(tv))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Length of the vector from 6348
+##     verses is  1678
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#concatenate for 6236 verse}
+\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ}
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Chapter,}
+\NormalTok{             y}\OperatorTok{$}\NormalTok{verse,y}\OperatorTok{$}\NormalTok{countW)}
+\KeywordTok{cat}\NormalTok{(}\StringTok{"Length of the vector from 6348}
+\StringTok{    verses is "}\NormalTok{, }\KeywordTok{length}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Length of the vector from 6348
+##     verses is  1566
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Pair both vectors}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tv,tmp)}
+\CommentTok{#concatenate all the numbers}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
+\CommentTok{#Test if mod 19 is 0}
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} 
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this}
+\StringTok{    big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## number of digits on this
+##     big number is 15465
+\end{verbatim}
+
+You can access this 15465 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.7.1.txt}
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+As an interesting fact, for the big number obtained with the exact same pattern of this evidence for the word \textbf{Al-Rahman}, which is one of the three names of God in the Basmala verse, we observe that digit sum of the big number is multiple of 19 too.
+
+\hypertarget{EvAllahPositionwithsum}{%
+\subsection{Evidence on Allah word positions and frequencies regarding Chapters, Verses and Words with sum}\label{EvAllahPositionwithsum}}
+
+In this evidence, I will show that the chapter indices, verse indices and Allah word counts together have a 19 based design in the numbered verses of the text of Quran with respect to their total sum. In the table of Allah word positions in 6236 verses above, I provided the chapter indices, verse indices in that chapter and Allah word counts in each verse. We will use those numbers in this evidence too. This pattern of this evidence is similar to what I presented in Evidence \ref{EvPerChapter1} and Evidence \ref{EvPerVerse2}.
+
+The sum of each of these numbers are 33697, 100228 and 2153, respectively. The total number of all these three numbers is equal to \textbf{136078} and it is multiple of 19 (in particular 19x7162).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{sum}\NormalTok{(ynQ[,}\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{)])}
+\KeywordTok{cat}\NormalTok{(}\StringTok{"The total number is "}\NormalTok{, tmp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The total number is  136078
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{# mod 19 is zero}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+This further shows the positions and frequencies of Allah words have 19 based coding relation together in the numbered verses of Quran.
+
+\hypertarget{EvAllahPositionwithdigitsum}{%
+\subsection{Evidence on Allah word positions and frequencies regarding Chapters, Verses and Words with digit sum}\label{EvAllahPositionwithdigitsum}}
+
+In this evidence, I will show that the chapter indices, verse indices and Allah word counts together have a 19 based design in the numbered verses of the text of Quran with respect to the digit sum of all the numbers in those three columns of data. In the table of Allah word positions in 6236 verses above, I provided the chapter indices, verse indices in that chapter and Allah word counts in each verse. We will use those numbers in this evidence and test their digit sum.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x <-}\StringTok{ }\NormalTok{ynQ}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Chapter, x}\OperatorTok{$}\NormalTok{verse,x}\OperatorTok{$}\NormalTok{countW)}
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
+\KeywordTok{cat}\NormalTok{(}\StringTok{"The length of number the big number is "}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp) )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The length of number the big number is  7298
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{digitsum}\NormalTok{(tmp)}
+\KeywordTok{cat}\NormalTok{(}\StringTok{"The digit sum of the big number is "}\NormalTok{, tmp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The digit sum of the big number is  24586
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{# mod 19 is zero}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0
+\end{verbatim}
+
+You can access this 7298 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Evidence_7.7.3.txt}
+
+As we witnessed, not only the sum of the numbers are multiple of 19 as we see in the previous evidence, but also their digit sum is under 19 based design.
+
+As an interesting fact, for the big number obtained with the exact same pattern of this evidence for the word \textbf{Al-Rahim}, which is one of the three names of God in the Basmala verse, we observe that the big number is multiple of 19 and also its digit sum of it is multiple of 19 too.
+
+As an additional note, you may have noticed that I removed the zero indices while concatenating as they correspond to unnumbered Basmala verses. In this book, I never used zero index for the unnumbered Basmala verses as there is \textbf{no number}, including zero and it also makes difference in the divisibility. However, if anyone argues on this point there is this example: When zero is used, there is also a design pattern in 6348 verses as follows. Basically, when we concatenate chapter index, verse index and word count for each verse with Allah word and then concatenate all in their natural order again, the resulting big number is also multiple of 19.
+But I do \textbf{not} consider this example neither as evidence nor fact. I just give you as an example for the sake of argument.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{y <-}\StringTok{ }\NormalTok{yunQ}
+\KeywordTok{head}\NormalTok{(y) }\CommentTok{# head of the table}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Gen_verseI Chapter verse countW
+## 1:          1       1     1      1
+## 2:          8       2     0      1
+## 3:         15       2     7      1
+## 4:         17       2     9      1
+## 5:         18       2    10      1
+## 6:         23       2    15      1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Chapter,}
+\NormalTok{             y}\OperatorTok{$}\NormalTok{verse,y}\OperatorTok{$}\NormalTok{countW)}
+\CommentTok{# head side of numbers of each verse}
+\KeywordTok{head}\NormalTok{(tmp) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "111"  "201"  "271"  "291"  "2101" "2151"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+\hypertarget{EvAllahPositionwtConcat}{%
+\subsection{Fact on Allah word positions and frequencies with concatenation}\label{EvAllahPositionwtConcat}}
+
+In this fact, I will prove that the general verse indices, the chapter indices, the verse indices and Allah word counts are also designed in the numbered verses of Quran with respect to their concatenations as follows. It looks, more of the evidences about Allah word counts are in the numbered verses category.
+
+In this fact, we concatenate the general verse index, the chapter index and the number of Allah words in that verse. For example, the first Allah word in the numbered verse of Basmala verse in the first chapter (Al-Fatiha), which has also the first general verse index. Thus, we get this representative number for it after concatenating in the natural order: 111. Similarly, the following verse with Allah word is at the general verse index 14 and in the second chapter with one Allah word. Thus, we get this 1421 as the representative number for it by concatenating in the natural order. This is done for all the verses with Allah words in it. Then we concatenate all of these representative numbers with each other in the normal order of the table. Then we get 9742 digits length big number and it is multiple of 19. Here is the proof of this test:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#yunQ4  # ynQ}
+\NormalTok{y <-}\StringTok{ }\NormalTok{ynQ }\CommentTok{#ynQ is from 6236 verses}
+\KeywordTok{head}\NormalTok{(y)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Gen_verseI Chapter verse countW
+## 1:          1       1     1      1
+## 2:         14       2     7      1
+## 3:         16       2     9      1
+## 4:         17       2    10      1
+## 5:         22       2    15      1
+## 6:         24       2    17      1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp<-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(y}\OperatorTok{$}\NormalTok{Gen_verseI, y}\OperatorTok{$}\NormalTok{Chapter,}
+\NormalTok{             y}\OperatorTok{$}\NormalTok{countW)}
+\CommentTok{# head side of numbers of each verse}
+\KeywordTok{head}\NormalTok{(tmp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "111"  "1421" "1621" "1721" "2221" "2421"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tmp, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{)}
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{#mod 19 must be zero}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+You can access this 9742 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Fact_7.7.4.txt}
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+\hypertarget{EvAllahPositionGenChapSpecVerses2}{%
+\subsection{Fact: General verse indices, Chapter and Special verse indices}\label{EvAllahPositionGenChapSpecVerses2}}
+
+In this \textbf{fact}, I will show that the general verse indices, the chapter indices and the special verse indices in each chapter with Allah words in it have also 19 based relation in all the verses.
+
+This fact concatenates each general verse index, chapter index and special verse index that have Allah words in it considering all the 6348 verses. We then concatenate each of these representation numbers in its natural order. The resulting 12126 digits length big number is multiple of 19.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x<-}\StringTok{ }\NormalTok{yunQ }\CommentTok{#all 6348 verses}
+\NormalTok{tv <-}\KeywordTok{c}\NormalTok{()}
+\ControlFlowTok{for}\NormalTok{(j }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(x)) \{}
+  \ControlFlowTok{if}\NormalTok{(x}\OperatorTok{$}\NormalTok{verse[j] }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)\{}\CommentTok{#for all the numbered verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Gen_verseI[j], x}\OperatorTok{$}\NormalTok{Chapter[j], x}\OperatorTok{$}\NormalTok{verse[j])}
+\NormalTok{  \}}\ControlFlowTok{else}\NormalTok{\{}\CommentTok{#For unnumbered Basmala verses}
+\NormalTok{    tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(x}\OperatorTok{$}\NormalTok{Gen_verseI[j],x}\OperatorTok{$}\NormalTok{Chapter[j])}
+\NormalTok{  \}}
+\NormalTok{  tv <-}\StringTok{ }\KeywordTok{c}\NormalTok{(tv,tmp)}
+\NormalTok{\}}
+
+\CommentTok{# head side of numbers of each verse}
+\KeywordTok{head}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "111"   "82"    "1527"  "1729"  "18210" "23215"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(tv)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "6325111"  "6331112"  "63321121" "63331122" "6336113"  "6342114"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(tv, }\DataTypeTok{collapse =} \StringTok{""}\NormalTok{) }
+\KeywordTok{as.bigz}\NormalTok{(tmp) }\OperatorTok{%%}\StringTok{ }\DecValTok{19} \CommentTok{# mod 19 must be zero }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Big Integer ('bigz') :
+## [1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\StringTok{"number of digits on this }
+\StringTok{    big number is"}\NormalTok{, }\KeywordTok{nchar}\NormalTok{(tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## number of digits on this 
+##     big number is 12126
+\end{verbatim}
+
+You can access this 12126 digits length big number from the following link:
+
+\url{https://github.com/quran2019/Quran19/blob/master/Fact_7.7.5.txt}
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
 \hypertarget{Probofnovels}{%
 \section{Overall Probability of all the novel Evidences}\label{Probofnovels}}
 
@@ -7394,7 +8020,7 @@ In this section I will compute the probability of witnessing all the new evidenc
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  43 success out of all the 98  tests (with p=1/19) is: 6.96366434775727e-29
+## The probability of all the  57 success out of all the 121  tests (with p=1/19) is: 6.80280952715744e-40
 \end{verbatim}
 
 \begin{Shaded}
@@ -7407,8 +8033,8 @@ In this section I will compute the probability of witnessing all the new evidenc
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  43 success out of all the 98  tests (with p=1/19) and Probability
-##           of number 19 being in Quran together is: 6.10847749803269e-31
+## The probability of all the  57 success out of all the 121  tests (with p=1/19) and Probability
+##           of number 19 being in Quran together is: 5.96737677820828e-42
 \end{verbatim}
 
 As we see this is extremely small probability and the evidences we witnessed cannot occur by chance and thus must be designed by the Author of Quran. This is my rational conclusion after witnessing all these reproducible evidences.
@@ -7429,7 +8055,7 @@ Let's try something else for extremely skeptical people. If some people think th
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  43 success out of all the 196  tests (with p=1/19) is: 1.36722645960393e-15
+## The probability of all the  57 success out of all the 242  tests (with p=1/19) is: 1.00833466332332e-21
 \end{verbatim}
 
 \begin{Shaded}
@@ -7442,13 +8068,13 @@ Let's try something else for extremely skeptical people. If some people think th
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  43 success out of all the 196  tests (with p=1/19) and Probability of number 19 
-##           being in Quran together is: 1.19932145579292e-17
+## The probability of all the  57 success out of all the 242  tests (with p=1/19) and Probability of number 19 
+##           being in Quran together is: 8.84504090634488e-24
 \end{verbatim}
 
 As we observed that the probability of observing the new evidences we all witnessed in this book is still extremely small and cannot occur by mere chance and thus it must be designed as is. This shows that the text of Quran is coded by the 19 based coding system, which also proves that the text of Quran was designed as is when it was first written in 632 and it is intact and unchanged for the last 1387 years. Furthermore, as an interesting fact, it is revealed to all humankind in 2019, which means 1387 years later, which is also 19x73 and also its digit sum is 1+3+8+7 is exactly 19. This fact (not claimed as evidence) is very interesting as it also incorporates the two common operations I used in this book.
 
-Before closing this chapter, I again increase the tested numbers by four fold to make sure even the extremely skeptical person is satisfied on the point of the statistical significance of the presented evidences.
+How about if we increase the tested numbers by four fold to make sure even the extremely skeptical person is satisfied on the point of the statistical significance of the presented evidences.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7464,7 +8090,7 @@ Before closing this chapter, I again increase the tested numbers by four fold to
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  43 success out of all the 392  tests (with p=1/19) is: 5.70656924380136e-06
+## The probability of all the  57 success out of all the 484  tests (with p=1/19) is: 1.76362785844616e-08
 \end{verbatim}
 
 \begin{Shaded}
@@ -7477,11 +8103,46 @@ Before closing this chapter, I again increase the tested numbers by four fold to
 \end{Shaded}
 
 \begin{verbatim}
-## The probability of all the  43 success out of all the 392  tests (with p=1/19)  and Probability of number 19
-##           being in Quran together is: 5.0057624945626e-08
+## The probability of all the  57 success out of all the 484  tests (with p=1/19)  and Probability of number 19
+##           being in Quran together is: 1.54704198109312e-10
 \end{verbatim}
 
 As we see, we have statistically extremely significant probability and there is no doubt about about the design of the 19 based system of the text of Quran.
+
+Before closing this chapter, I again increase the tested numbers by 6 fold to make sure no one has any doubt about the 19 based system of the text of Quran we witnessed is statistically significant and not expected to be observed by chance. This also helps compensating any possible mistake that I personally might have done unintentionally while calculating the probability of the presented system in general.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tmp <-}\KeywordTok{binom.test}\NormalTok{(global_success_nums, }
+\NormalTok{                 global_tested_nums}\OperatorTok{*}\DecValTok{6}\NormalTok{,}
+                 \DataTypeTok{p =}\NormalTok{ (}\DecValTok{1}\OperatorTok{/}\DecValTok{19}\NormalTok{),}
+                 \DataTypeTok{alternative =} \KeywordTok{c}\NormalTok{(}\StringTok{"greater"}\NormalTok{))}
+\NormalTok{tmp <-}\StringTok{ }\NormalTok{tmp}\OperatorTok{$}\NormalTok{p.value}
+\KeywordTok{cat}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"The probability of all the "}\NormalTok{, global_success_nums,}
+          \StringTok{"success out of all the"}\NormalTok{, global_tested_nums}\OperatorTok{*}\DecValTok{6}\NormalTok{,}
+          \StringTok{" tests (with p=1/19) is:"}\NormalTok{, tmp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The probability of all the  57 success out of all the 726  tests (with p=1/19) is: 0.00204795811151798
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cat}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"The probability of all the "}\NormalTok{, global_success_nums,}
+          \StringTok{"success out of all the"}\NormalTok{, global_tested_nums}\OperatorTok{*}\DecValTok{6}\NormalTok{,}
+          \StringTok{" tests (with p=1/19)  and Probability of number 19}
+\StringTok{          being in Quran together is:"}\NormalTok{, tmp}\OperatorTok{*}\NormalTok{(}\DecValTok{1}\OperatorTok{/}\DecValTok{114}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## The probability of all the  57 success out of all the 726  tests (with p=1/19)  and Probability of number 19
+##           being in Quran together is: 1.7964544837877e-05
+\end{verbatim}
+
+As we see, we have statistically very significant probability and there is no doubt about about the design of the 19 based system of the text of Quran.
 
 \hypertarget{discussions-and-copyrights}{%
 \chapter{Discussions and Copyrights}\label{discussions-and-copyrights}}
@@ -7620,7 +8281,7 @@ However, traditional Muslim belief do not reject this controversial claimed hadi
 
 This topic needs more detailed explanations but this book is not about it mainly. Therefore, I will shorty touch to this important topic as the perception about Muslims is not too distance from violence because of, first the biased media, and, second, the many bad examples by some traditional Muslims we saw in history and now. I know that the media mostly is exaggerating the negative examples about Muslims who are around 1.8 billion people on earth. However, they are there and we have to make an explanation for them.
 
-In short, there is no violence at all in Islam regarding Quran but those bad examples are based on some of the claimed hadith reports other consensus. I explained before that I reject all the claimed hadith reports as the source of Islam. They are just historical claimed reports and we can get some historical and thus blurred information about past. We can also utilize them to learn about Arabic language of the past as well. As long as they are not considered as the source of Islam, then those claimed hadith reports can also be studied, \textbf{if wished}, to understand a topic in the religion. If the approach is just like to listen any other \textbf{preferred} scholar's opinion that we might consider to understand a topic in religion, then one can also utilize from them while try to understand a topic in the religion. However, this is a very sensitive case as one might be biased towards the claimed hadith report rather than objectively consider it along with all the other information about a topic. Therefore, be warned that if one has a any bias towards them, then there is always potential to infer incorrect biased conclusion on an issue.
+In short, there is no violence at all in Islam regarding Quran but those bad examples are based on some of the claimed hadith reports or the consensus. I explained before that I reject all the claimed hadith reports as the source of Islam. They are just historical claimed reports and we can get some historical and thus blurred information about past. We can also utilize them to learn about Arabic language of the past as well. As long as they are not considered as the source of Islam, then those claimed hadith reports can also be studied, \textbf{if wished}, to understand a topic in the religion. If the approach is just like to listen any other \textbf{preferred} scholar's opinion that we might consider to understand a topic in religion, then one can also utilize from them while trying to understand a topic in the religion. However, this is a very sensitive case as one might be biased towards the claimed hadith report rather than objectively consider it along with all the other information about a topic. Therefore, be warned that if one has any bias towards them, then there is always potential to infer incorrect biased conclusion on an issue.
 
 Back to the main topic, once you only take Quran as the source of Islam, then you cannot apply violence to anyone. The only way Quran allows violence is as a self defense. Self defense of individual or self defense of a community like a country. And this is a universal rule for all humanity. The only verses that are claimed to order violence without self defense is mostly interpreted wrongly although the translation is clear.
 
