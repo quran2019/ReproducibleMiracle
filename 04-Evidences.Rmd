@@ -1,0 +1,1362 @@
+# Evidences of Nineteen {#Evidences}
+
+In this chapter, I will demonstrate each 19 based codings over all the descriptive numbers of the text of Quran that was generated in Chapter \@ref(text). I will also provide the R programming code chunks so that the readers can also reproduce the results easily by just copy and paste themselves and test the presented results of the evidences. The evidences is not as simple as the one I deliberately designed for the title of this book or the title of this chapter in case you did not realize yet! 
+
+In order not to make the book too long, I did not print out the big numbers of each evidence other than one exemplary one. However, you can easily run the codes I provided and regenerate them. Alternatively, you might access them and other related materials from the Github repository of the book at https://github.com/quran2019/Quran19.
+
+
+
+## Evidence: Integrity and intactness of all the main numbers {#EvMAINs}
+
+This evidence will show that **all** the main descriptive numbers are together designed by the 19 based coding system of the text of Quran. For convenience and its importance for this chapter, I present the descriptive numbers again here in the following tables.
+
+```{r numbers-table2, eval=TRUE}
+dfnums <- data.frame(c,v,V,w,W,l,L)
+# Table:
+knitr::kable(dfnums, booktabs = TRUE,
+  caption = 'Table of all the 7 main descriptive numbers of the text of Quran.')
+
+dfunums <- data.frame(u,U)
+# Table:
+knitr::kable(dfunums, booktabs = TRUE,
+  caption = 'Table of all the unique descriptive numbers of the text of Quran.')
+```
+
+
+Let's first remember the main numbers of the text of Quran. There are 4 main numbers of the text, which are number of chapters, number of verses, number of words and number of letters. However, as explained in detail in Chapter \@ref(RuleCombine), Quran has a different structure, which makes it possible to be defined in two different forms regarding those main numbers of each form. Specifically, if we prefer to describe Quran with numbered verses only then we have these 4 descriptive numbers in order:
+
+$$c, v, w, l$$
+
+$$`r paste(c, v, w, l, sep ='-')`$$
+
+In fact most of the scholars mentions Quran with regard to the numbered verses and cites verse number as 6236. However, some scholars like to mention all the verses including the unnumbered Basmala verses and thus cite the verse number as 6348. In that case the 4 main numbers are as follows in order:
+
+$$c, V, W, L$$
+
+$$`r paste(c, V, W, L, sep ='-')`$$
+
+These show the two different aspects of the text of Quran regarding its textual structure. In fact, both of the scholars are correct as long as they emphasize the difference. However, do we have a 19 based coding evidence that supports the current belief that Quran is intact and thus all the numbers are correct? A 19 based evidence on the main descriptive numbers of Quran that verifies *both* of the text forms to be under 19 based coding system and they are designed in harmony together should be considered superior than any other evidence that only verifies one form of the text. In this evidence, I will present that both of the main descriptive numbers are together coded and under the 19 based coding system of the text of Quran.
+
+Also, I ordered the 4 main numbers naturally from chapters towards letters by following the general rules as described in Chapter \@ref(RulesProbs). Again, according to the rules described in Chapter \@ref(RulesProbs), there are only two ways we can combine these two main descriptive numbers by concatenating them either way as follows:
+
+1)
+$$c, v, w, l, c, V, W, L$$
+
+$$`r paste0(c, v, w, l, c, V, W, L)`$$ 
+
+2) 
+$$c, V, W, L, c, v, w, l$$
+
+$$`r paste0(c, V, W, L, c, v, w, l)`$$ 
+
+
+There are only two possible combinations and both of the number combinations are **divisible by 19**. This means that they both are in harmony and designed together with the 19 based coding system. Specifically, Evidence \@ref(EvMAINs) holds the divisibility by 19 rule of Chapter \@ref(Rule1div19) of the global **Test 19** (Chapter \@ref(Test19)) and thus it is under the 19 based coding system of the text of Quran. Or, in other words, "74:30. Over it is Nineteen"! 
+
+**Proof of Evidence \@ref(EvMAINs):** We have to use a special R package, gmp [@Rgmp], for the computation of big numbers. As a double check, one can also manually copy and paste this big number into a web application [@BigNC] for a double check if wished.    
+
+```{r , eval=TRUE, message=FALSE}
+#First number
+suppressWarnings(require(gmp)) 
+tmp <- paste0(c, v, w, l, c, V, W, L, collapse = '')
+tmp
+cat("The mod 19 of this long number is ", as.numeric(as.bigz(tmp) %% 19))
+cat("The precise result of the division is found as follows:") 
+cat(as.character(div.bigz(tmp, 19)))
+```
+
+Similarly, we can prove for the second number.
+
+```{r , eval=TRUE, message=FALSE}
+#First number
+suppressWarnings(require(gmp)) 
+tmp2 <- paste0(c, V, W, L, c, v, w, l, collapse = '')
+tmp2
+cat("The mod 19 of this long number is ", as.numeric(as.bigz(tmp2) %% 19))
+cat("The precise result of the division is found as follows:") 
+cat(as.character(div.bigz(tmp2, 19)))
+```
+
+
+We all witnessed that the two big numbers of Evidence \@ref(EvMAINs) are precisely divisible by 19. Feel free to double check it by running the codes yourself or by just copying and pasting that big number into an independent big number calculator, such as this [@BigNC] and test it yourself. 
+
+Evidence \@ref(EvMAINs) and its reproducible proofs demonstrated that Quran has a 19 based coding evidence that supports the integrity and intactness and order of the all the main descriptive numbers of the text of Quran from chapters until letters. Evidence \@ref(EvMAINs) demonstrates that all the main numbers regarding the two categories of the text of Quran are not random numbers but they are related to each other in an *orderly* manner and they are all coded together and in harmony regarding number 19 based coding system of the text of Quran. In other words, "74:30. Over it is Nineteen". 
+
+Let's know calculate the **probability** of Evidence \@ref(EvMAINs) being observed by chance alone. We had two events and two successes as we apply only the default test per number, which was set as the rule,in Chapter \@ref(RuleCombine), for all the descriptive numbers. This means we have **two success out of 2** tests each with probability of 1/19. We can use Binomial test to calculate this specific probability.
+
+```{r , eval=TRUE, message=FALSE}
+tmp <-binom.test(2, 2, p = (1/19),
+                 alternative = c("greater"))
+tmp <- tmp$p.value
+print(paste("The probability of 2 success out of 2 tests (with p=1/19) is:", tmp))
+```
+
+Even if we had only observed this single evidence in whole Quran, then as we see from the probability result, Evidence \@ref(EvMAINs) alone is proven to be statistically significant event independent of any other events. Moreover, number 19 is not a random number that we observe by chance in the text of Quran. It was the only unique number mentioned in a special way in Quran as in "74:30. Over it is Nineteen". Therefore, as I discussed in Chapter \@ref(P2), the probability of this number mentioned in Quran was approximated as Probability P2 (1/114). As discussed in Chapter \@ref(P3), we can calculate the combined probability of two events occurring together by multiplying them if we wanted to get the probability of observing only this evidence regardless of others. Thus, the approximate such probability of Evidence \@ref(EvMAINs) is as $((tmp) * 1/114) = `r round(((tmp) * 1/114), 6)`$ or $`r round(((tmp) * 1/114), 6)*100`$%. I calculated this probability once in this evidence but this situation is similar for all the other evidences. I will not repeat it for all the other evidences again and again but we better keep this in mind. I will only calculate their independent probability for each of the rest of the evidences. In the end of all the evidences, I will compute the combined probability of all the evidences and then will consider this Probability P2 along with the total probability.
+
+
+Also it is important to emphasize that, since the numbers passed the default divisibility by 19 test, it confirms that, not just the sizes but also the order of the concatenated numbers are designed and in harmony and interconnected too. Therefore, since we have a rule that dictates the ordering of the numbers while concatenating, the divisibility by 19 rule further assures that the order, namely the structure and organization of the text is also designed along with the size of each component of the text. Any evidence that has similar situation should be considered similarly in future evidences.
+
+Therefore, Evidence \@ref(EvMAINs) provides a strong rationale evidence that all the numbers of chapters, verses, words and letters of Quran were designed from the beginning and also it was not changed and still intact. It stands as a strong evidence to the hypothesis that the text of Quran is authentic and unchanged from the beginning. Because, in this evidence, we witnessed that all the 7 descriptive numbers, including numbered verses and unnumbered verses are in harmony and connected to each other by the 19 based coding system of the text of Quran. It is important because there is one chapter (Chapter 9) out of all the 114 chapters that does not start with the unnumbered Basmala verse in Quran. It was deliberately left so and unconventional to the rest of Quran. If they had written an another unnumbered Basmala in front of Chapter 9 as all the rest of the 113 chapters of Quran, then Evidence \@ref(EvMAINs) would be collapsed!
+From this evidence, we are assured that the content and organization of the text of Quran, from chapter to letters, as a whole is designed and as is from the beginning for the last 1387 years and unchanged.
+
+As the last thing to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#initilize to clarify them
+global_tested_nums <- 0
+global_success_nums <- 0
+#we will repeat below after each evidence
+global_tested_nums <- global_tested_nums + 2
+global_success_nums <- global_success_nums + 2 
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvMAINs) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvMAINs) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.
+
+
+## Evidence: The unique numbers {#EVuniquee}
+
+$$u, U$$
+
+$$`r paste(u,U, sep ='-')`$$
+
+In Chapter \@ref(texttm), I provided reproducible open source codes that allow easily to reproduce and generate the 7 main descriptive numbers of the text of Quran and also provided the two unique numbers that are distilled from all the used words of Quran. Those two numbers are unique number of words (denoted by **u**) and also the number of letters of the unique words (denoted by **U**) of Quran. In total, all the 9 different descriptive numbers about the text of Quran can be reproduced in Chapter \@ref(texttm) from the text of Quran.
+The unique numbers **u** and **U** are not independent categories of the text of Quran but they are derived from all the used words and letters in Quran. In a sense, they are offspring of the words and letters categories, respectively, as they are dependent of the main descriptive numbers of the text of Quran. Thus, they are treated as a separate category. These unique numbers are also important and that must be considered because it reflects the richness of the word set used in the book of God. I expected them to be coded under the 19 based coding system of the text of Quran and also designed together with all the 7 main descriptive numbers of the text of Quran and thus developed hypothesis and tested them as such. 
+
+Regarding the general rules, I do not test them alone but concatenate them together. Since u and U represent a separate category, I concatenate them in the natural order as well, which is words and the letters. Both types of the text of Quran, with unnumbered verses and with only numbered verses, has the same number of unique words as the unnumbered Basmala verses are just repetitions of the numbered Basmala (chapter 1, verse 1). Therefore there is only one combined number to be tested, which is **uU**. In summary, in this evidence, I will prove that the unique number of words ($`r u`$) and their number of letters ($`r U`$) together, which is $`r paste0(u,U)`$, are also under the 19 based coding system of the text of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+tmp <- paste0(u,U, collapse = '')
+tmp
+cat("The mod 19 of the unique numbers combination is  ", 
+    as.numeric(as.bigz(tmp) %% 19))
+cat("The precise result of the division is found as follows:") 
+cat(as.character(div.bigz(tmp, 19)))
+```
+
+There is only one combination of the unique numbers according to the general rules as described in Chapter \@ref(RulesProbs) and I proved that both of the descriptive unique numbers are together coded by the 19 based coding system of the text of Quran. Or, in other words, "74:30. Over it is Nineteen"! Specifically, Evidence \@ref(EVuniquee) holds the divisibility by 19 rule of Chapter \@ref(Rule1div19) of the global **Test 19** (Chapter \@ref(Test19)) and they are under the 19 based coding system of the text of Quran. Feel free to test it yourself by reviewing and running all the codes of this evidence.
+
+
+The probability of Evidence \@ref(EVuniquee) to be divisible by the number 19 is 1/19 as there is one number and one test performed. Also, as I discussed in detail in Chapters \@ref(Coulditbe), I argue that it is practically impossible to count the number of unique words manually by the people of that time that is 1387 years ago. Therefore, I conclude that this and any other evidence that includes unique descriptive numbers are beyond the ability of the people of that time to fulfill and thus must be designed supernaturally, or in other words, by God.
+
+As the last thing to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.Since we always consider the two text categories, this success is valid for both of them as the Basmala verse is repetition althought it did not have to be so but it is. Also, since we also took the sum of individual numbers, we should also take them into account here. Thus we have 6 trials and 2 success overall for this evidence.
+
+
+```{r , eval=TRUE, message=FALSE}
+#Because we apply only the default test to the single number in this evidence.
+global_tested_nums <- global_tested_nums + 6
+global_success_nums <- global_success_nums + 2 
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EVuniquee) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EVuniquee) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.
+
+
+## Evidence: All the numbers {#EvAlls}
+
+This evidence will show that **all** the 9 descriptive numbers of the text of Quran are also designed together and under the 19 based coding system of the text of Quran. This evidence proves that the previous two evidences, Evidence \@ref(EvMAINs) and Evidence \@ref(EVuniquee) are in harmony together and they are designed together and intact and unchanged for the last 1387 years since the revelation of Quran was complete. According to the general rules as described in Chapter \@ref(RulesProbs), we can combine those combined numbers by concatenating in any possible directions. Because each combined number represent one of the two categories that are comparable and we mught expect a meaningfull relation. In this case, to combine the two numbers of Evidence \@ref(EvMAINs) and the single number of Evidence \@ref(EVuniquee), we have 4 combinations as follows: 
+
+1)
+$$c, v, w, l, c, V, W, L, u, U$$
+$$`r paste0(c, v, w, l, c, V, W, L, u, U)`$$ 
+
+2) 
+$$u, U, c, v, w, l, c, V, W, L$$
+$$`r paste0(u, U, c, v, w, l, c, V, W, L)`$$ 
+
+3) 
+$$c, V, W, L, c, v, w, l, u, U$$
+$$`r paste0(c, V, W, L, c, v, w, l, u, U)`$$ 
+
+4) 
+$$u, U, c, V, W, L, c, v, w, l$$
+$$`r paste0(u, U, c, V, W, L, c, v, w, l)`$$ 
+
+This evidence, Evidence \@ref(EvAlls), shows that each of the four combinations are divisible by 19. This means all the 9 descriptive numbers of the text of Quran is under the 19 based coding system of the text of Quran. Since both of the categories are independently divisible by 19, it is also **expected* to have the concatenated numbers to be divisible by 19. Therefore, there is really no need to prove here again that those four numbers are divisible by 19. Feel free to try them. However, since these numbers to be tested are obtained as a result of a general rule, they are still considered evidences for the harmony between the concatenated categories. On the other hand, I will not inclued them in the probability calculations of the generaly system to make sure there is no argument on this evidence. 
+
+Since the Evidence \@ref(EvAlls) is a result of concatenation of two categories, where both of them are divisible by 19, it may be disputed by some, despite the fact that they are derived based on the rules and thus presented as evidence. Therefore, I hypothesized a further evidence that breaks the mathematical connection between the two numbers. Hw can we break the mathematical connection between the numbers of the two categories. The only way we can make sure the two numbers concatenated do not have to be multiple of 19 is by considering their digit sum. In that case, instead of the all the four number combinations presented above,
+we have a single number to be tested. Basically, the digits sum of the first category numbers and the digit sum of the second category number are concatenated. This gives a single number but since we concatenate in both sirections, we get two numbers to be tested.
+
+Just to make sure, the digit sum of the numbers are not multiple of 19 individually, let's first see the digit sum of the unique number category (1487080068), which is
+`r digitsum("1487080068")`. As we see it is not multiple of 19. Therefore, the concatenation of this number with the other category does not have to be multiple of 19. This means we break the mathematical connection and there is no room to argue on the harmony between the unique numbers and the other four main descriptive numbers.
+
+Also, here is the digit sum of any one of the 4 numbers of the 4 descriptive numbers (for example digitsum("114623677797330709114634878245332837")) is,
+`r digitsum("114623677797330709114634878245332837")`.
+
+As you see, none of the two digit sum numbers are multiple of 19. This breaks down all the connections to 19.  Now, we concatenate them and observe that the concatenation is also divisible by 19. 
+
+```{r , eval=TRUE}
+as.bigz(42161) %% 19
+```
+
+This supports the hypothesis that these two related category are coded and designed from the beginning together and in harmony among each other. 
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#Because we apply only the default test
+#to the two numbers in this evidence.
+# since there is order in the number.
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1 
+```
+
+There is also further fact, as the digit sum of u (unique words) and w (words), is 57, where the number is is 1487077797.
+
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvAlls) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvAlls) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+So far, I presented all the most important evidences on the descriptive numbers of the text of Quran with respect to all the categories of the text of Quran, which are chapters, verses, words and letters. This was the last evidence in regard to the 9 descriptive numbers of the text of Quran, which was presented in Chapter \@ref(Fact1).
+
+## Evidence: All the numbers per chapter {#EvPerChapter1}
+
+In Evidence \@ref(EvMAINs), I showed that the number of each category over all the text of Quran is coded by the 19 based coding system of the text of Quran. Now I will show similar evidence, regarding the descriptive numbers **per chapter**. This means, we are going down to next level of resolution in the text of Quran.
+
+Let's first get the table that shows the total numbers of each category per chapter in the numbered verses.
+
+```{r dfVCwl-table, eval=TRUE, tidy=FALSE}
+require(data.table)
+nQuran <- data.table(nQuran)
+cwords <- c()
+cletters<-c()
+for(i in 1:114){
+  cwords <- c(cwords,sum(nQuran[chapter==i]$vwords))
+  cletters <- c(cletters,sum(nQuran[chapter==i]$vletters))
+}
+dfVCwl <- cbind(dfVC[,c(1:2)], cwords, cletters)
+# Let's print this table
+require(DT)
+datatable(dfVCwl,
+caption = 'Total numbers of each category in numbered verses per chapter',
+          options = list(pageLength = 10, 
+                          autoWidth = TRUE),
+          rownames= FALSE)
+```
+
+Similarly, we can get a table that also includes the unnumbered Basmala verses into the above table. We need to be careful about the numbered Basmala of the first verse of the first chapter and the no Basmala situation of Chapter 9.
+
+```{r dfVCWL-table, eval=TRUE, tidy=FALSE}
+cWords <- cwords + nQuran$vwords[1]
+cLetters<-cletters +  nQuran$vletters[1]
+cWords[1] <- cWords[1]-nQuran$vwords[1]
+cLetters[1] <- cLetters[1]-nQuran$vletters[1]
+cWords[9] <- cWords[9]-nQuran$vwords[1]
+cLetters[9] <- cLetters[9]-nQuran$vletters[1]
+
+#add the one Basmala per chapter verse into the verse counts
+dfVCWL <-cbind(dfVC[,c(1:2)],cWords, cLetters )
+dfVCWL$Verse_sum <- dfVCWL$Verse_sum+1
+dfVCWL$Verse_sum[1] <- dfVCWL$Verse_sum[1]-1 
+dfVCWL$Verse_sum[9] <- dfVCWL$Verse_sum[9]-1 
+# Let's print this table
+datatable(dfVCWL,
+caption = 'Total numbers of each category in all verses per chapter,
+including the Basmala verses',
+          options = list(pageLength = 10, 
+                              autoWidth = TRUE),
+          rownames= FALSE)
+```
+
+Now, with regard to general rules, let's first concatenate each category within itself in the order of chapter, verse, word and letter. We then have to follow the general rule and concatenate the two combined numbers in both directions. This results two different numbers to be tested as the chapter level. Also, regarding the rules again, we only test the default rule on the concatenated numbers of both types of the text of Quran as follows. 
+
+```{r  eval=TRUE}
+tmp1 <- paste0(dfVCwl$Chapter_index,dfVCwl$Verse_sum,
+              dfVCwl$cwords, dfVCwl$cletters)
+tmp2 <- paste0(dfVCWL$Chapter_index,dfVCWL$Verse_sum,
+              dfVCWL$cWords, dfVCWL$cLetters)
+
+tmp <- paste0(tmp1, tmp2)
+head(tmp)
+tmp <- paste0(tmp, collapse = '')
+cat("Mod 19 of the number is 0 as seen:")
+as.integer(as.bigz(tmp) %% 19)
+
+cat("The number of digits of the final number is: ", nchar(tmp))
+```
+
+As we witnessed, this big number is divisible by 19 and passed the test. Regarding the rules, there were two possible numbers to be tested and one of them passed the test but the observation is still statistically significant. This success of Evidence \@ref(EvPerChapter1) shows that the descriptive numbers of both types of the text of Quran are also designed together and in harmony and interconnected at the chapter level too. The structure of the big number of this evidence is structurally similar to the ones in Evidence \@ref(EvMAINs) but now the similar design pattern observed in per chapter level too. And we see that all the chapter, verse, words and letters sizes are intact and also their order is in perfect harmony as this ordered big number is successful on the default divisibility by 19 test. This evidence perfectly align with the previous Evidence \@ref(EvMAINs) and they both reassure each other at different domains of the text. 
+
+Here is the "`r nchar(tmp)`" digits length number of this evidence:
+
+"`r tmp`"
+
+
+The probability of Evidence \@ref(EvPerChapter1) with these one success out of the two possible numbers can be calculated as follows.
+```{r , eval=TRUE, message=FALSE}
+tmp <-binom.test(1, 2, p = (1/19),
+                 alternative = c("greater"))
+tmp <- tmp$p.value
+print(paste("The probability of 1 success out of 2 tests (with p=1/19) is:", tmp))
+```
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#Because we apply only the default test to two numbers in this evidence.
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvPerChapter1) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvPerChapter1) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+
+
+## Evidence: All the numbers per verse {#EvPerVerse2}
+
+In Evidence \@ref(EvMAINs) and Evidence \@ref(EvPerChapter1), I had shown that the number of each category over all the text of Quran is coded at the highest level and also at the per chapter level.
+
+Both of the numbers of the chapters in both types of the text of Quran are the same. Thus, it was straight forward to concatenate the two types regarding the general rules in Evidence \@ref(EvPerChapter1), where I showed similar evidence to Evidence \@ref(EvMAINs) but with the corresponding numbers at the chapter level. Now, I will show similar evidence with the numbers in the verse level despite the fact that the two types have different total verse numbers as 6348 and 6236 and their lengths do not match to pair and concatenate! Since their lengths are different, we need to make some specific adjustments for this hypothesis.
+
+Let's first see again the table that shows the total numbers of each category per verse in the numbered verses as I will concatenate these numbers of both category.
+
+```{r, eval=TRUE}
+knitr::kable(head(unQuran), booktabs = TRUE,
+  caption = 'Table head of all verses of Quran.')
+knitr::kable(head(nQuran), booktabs = TRUE,
+  caption = 'Table head of numbered verses of Quran.')
+```
+
+Now, in a similar manner to Evidence \@ref(EvPerChapter1), I will concatenate numbers of all categories regarding all and only numbered verses. Since, this evidence is about the total verse numbers 6348 and 6236 of both types, I will use the general verse indices to be able to concatenate the unnumbered Basmala verses as well. Because otherwise, there is no real representative number to be assigned to the unnumbered Basmala verses within the total of 6348 verses and thus we can not correctly concatenate their corresponding counterpart in the numbered verses at the 6236 verses. Let's elaborate on this more.
+
+So far, we have observed that the evidences were mainly by concatenating the numbered verses version of the text of Quran and the whole version of the text that includes the unnumbered Basmala verses too. This seems to be one of the main patterns in the 19 based coding system of the text of Quran. We have observed this pattern at every level so far, from total numbers of each of the descriptor numbers of the text to per chapter level too. Now, the question is, can we see the same paired concatenation coding pattern in the verse level as well. If we think straight, we would probably first say no as we cannot match at the per verse level as the numbers of verses in the two categories are different (6348 vs 6236). Second, even if we try to concatenate, what numbers are we going to assign to the unnumbered Basmala verses at the beginning of the 112 chapters? Since the unnumbered Basmala verses are unnumbered, we cannot use any other number, even 0, to really represent them. As a single solution to this point, we can fairly utilize the general verse index of each verse for all the verses, because even the unnumbered verses have a unique general verse index in order out of the 6348 verses. This way, we solve the second problem but how about the first problem of concatenating the unmatched total verse numbers of both category (6348 vs 6236)? Well, solution came by itself as I had not even thought about it before running the code myself at first! I just tried the default approach of R programming language, which is the natural one. If you try to concatenate two vectors where one of the vectors is longer than the other, then by default, R keeps concatenating by starting over the smaller vector again. In a sense, the larger vector wraps the smaller vector as a circle. As an example, let's say we have two vectors a an b. The longer vector a has 5 elements as this a=(1,2,3,4,5) and the shorter vector b has three elements as this b=(7,8,9). Then, if we concatenate a and b, the natural way is to start using the elements of the shorter vector from the beginning again. A a result, the concatenation of a and b gives us this vector ab=(17, 28, 39, 47, 58). This is the natural way and also the default behavior of R as well. This means I did not even need to write a special code to perform this concatenation task and just simply concatenated them as if they are equal. In this evidence, we will test exactly this and see if the concatenation of the descriptive numbers of the text of Quran per verse level is also under the 19 based coding system of the text of the Quran. Here is the proof that shows success on this evidence too:
+
+```{r , eval=TRUE, message=FALSE}
+x<- data.table(unQuran)
+tmp1 <- paste0(x$chapter, x$VerseI,x$vwords, x$vletters)
+x<- data.table(nQuran)
+tmp2 <- paste0(x$chapter, x$VerseI,x$vwords, x$vletters)
+tmp<-paste0(tmp1,tmp2)
+# To see what is going on in concatenation
+head(tmp)
+tmp1[6235:6238]
+tmp2[6235:6236]
+tmp[6235:6238]
+#
+tmp <- paste0(tmp, collapse = '')
+as.integer(as.bigz(tmp) %% 19) 
+#Digitsum is not used as evidence but just presented as a fact.
+as.integer(digitsum(tmp) %% 19) 
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+As **a general additional rule*, for such unequal in length cases, the directions of pairing is not in both directions but the longer length vector is always placed at the beginning. This also makes sense as this pairing operation is like a circle as the shorter starts over to pair with the longer vector. This way The longer one is as if at the outside of the circle of the paired and concatenated vectors. Therefore there is only one combination to be tested in this Evidence \@ref(EvPerVerse2). 
+
+Regarding this additional rule, we test one direction of the concatenation and thus we have two numbers to test but we have one success. As always, we only apply the default test in regard to evidences of the ordered numbers to be tested. This means we performed one test and observed one success. In the analysis, you can see that the digit sum of this big number is also divisible by 19, which means that this big number would pass both of the tests at the same time but as I set a general rule before, I only take the result of the default test as a proof of the evidence. The second result is interesting and stands as supportive fact and I decided to present it as well just as a **fact**.
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#Because we apply only use the default test 
+#Also, considering the special verse indices as well
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvPerVerse2) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvPerVerse2) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/5_5_BigNumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+
+## Evidence: Pairing general verse and chapters {#EvPariVersessChap}
+
+
+When pairing, we only pair all the four main categories together.
+We do not consider any other combinations of those four categories and use them together while pairing. This dramatically reduces the complexity of the system as it reduces the numbers to be tested to a very small number over all. However, general verse index is not one of the four main descriptive numbers and assigned a specific rule while pairing. It can be paired either chapter or special verse indices. Therefore, there are two possible numbers to test for pairing of the general verse index. 
+
+
+Similar to the previous one, I will present an evidence with the exact same approach of Evidence \@ref(EvPerVerse2), but this time, with only **general verse** indices and **chapter** indices. This evidence is also similar to the general pairing approach we have in Evidence \@ref(EvMAINs), Evidence \@ref(EvPerChapter1) and also Evidence \@ref(EvPerVerse2).
+
+
+```{r , eval=TRUE, message=FALSE}
+tmp1 <- paste0(unQuran$VerseI, unQuran$chapter) 
+tmp2 <- paste0(nQuran$VerseI, nQuran$chapter)
+tmp <- paste0(tmp1,tmp2)
+
+# To see what is going on in 
+# concatenation at the unmatched indices
+head(tmp)
+tmp1[6235:6238]
+tmp2[6235:6236]
+tmp[6235:6238]
+#
+tmp <- paste0(tmp, collapse = '')
+cat(as.integer(as.bigz(tmp) %% 19)) 
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+Again, we have one direction to pair and thus one number to bested. We also apply only the default divisibility by 19 test when we are testing an ordered number. 
+
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters. Since the pairings has direction at the verse level, we have only two numbers, one to chapter and one to special verse index.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvPariVersessChap) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvPariVersessChap) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+
+
+### Fact: Per letters concatenation {#EvPerLettersConcat}
+
+In this section, the fact I will present has the same approach of Evidence \@ref(EvPerVerse2), but with only letters category levels. In order to simplify the rules and help easier understanding of the overall 19 system, this is assigned as a fact but not as evidences of the over all system. Therefore, this is not computed in the finale probability calculation. While pairing, regarding the rules only all the four main descriptive numbers are used but they are not paired alone.
+
+However, facts may be useful to see some available connections and might help further develop the presented system in the future. They might also be helpful to answer some questions about some special cases that might arise in the future.
+
+If you got used to the miracles of this ancient book, you might wonder, why did we skip the word level and just analyzing just the letter level. The answer is that, I did not observe word level evidence that might be part of the system and I am trying to set boundaries of the system with as general rules as possible. Therefore, as another general rule over all the book is that there is never only word level evidence in the system proposed in this book and thus I exclude them from the system  in general based on observations of all the evidences. Maybe, in the future, some other people investigate more on this point and prove some primarily word level evidences and consider including them as well. As long as they are not exceptions and part of general rules then they can be included in the future if any exist.
+
+Back to the main point, here is the proof of the last fact, which is merely based on number of letters per verse in both text types together. In this fact, similar to the general approach in Evidence \@ref(EvMAINs), Evidence \@ref(EvPerChapter1) and also Evidence \@ref(EvPerVerse2), we will concatenate the numbers of both text types of Quran but at the number of letters per verse resolution.
+
+
+```{r , eval=TRUE, message=FALSE}
+tmp1 <- unQuran$vletters
+tmp2 <- nQuran$vletters
+tmp<-paste0(tmp1,tmp2)
+# To see what is going on in concatenation 
+#  at the unmatched indices
+head(tmp)
+tmp1[6235:6238]
+tmp2[6235:6236]
+tmp[6235:6238]
+#
+tmp <- paste0(tmp, collapse = '')
+cat(as.integer(as.bigz(tmp) %% 19)) 
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+
+For the reference, to the best of my knowledge, Fact \@ref(EvPerLettersConcat) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Fact \@ref(EvPerLettersConcat) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+
+
+
+### Overall probability of the concatenation evidences {#EvOverallConcateProb}
+
+So far I have presented  many different evidences based on obtaining the numbers of interest in a similar pairing fashion. Basically we first concatenate the numbers in the natural order within its own categories for both of the text types of Quran. We then pair them by concatenating the two combined numbers. This concatenation of the paired concatenation approach appears to be systematic pattern in the text of Quran and I presented the following evidences Evidence \@ref(EvMAINs), Evidence \@ref(EVuniquee) , Evidence \@ref(EvAlls), Evidence \@ref(EvPerChapter1) and Evidence \@ref(EvPerVerse2). I have been counting the number of tests and number of successes out of these events in the two R object to be able to calculate the overall probability of what we have been observing in the end. Although, I will keep adding upon these counter object, it is good time to have a look by calculating the overall probability of all those evidences as they are a separate similar category regarding their structures. Here is the overall probability of these evidences so far.
+
+```{r , eval=TRUE, message=FALSE}
+tmp <-binom.test(global_success_nums, 
+                 global_tested_nums, p = (1/19),
+                 alternative = c("greater"))
+tmp <- tmp$p.value
+print(paste("The probability of", global_success_nums,
+            "success out of", global_tested_nums ,
+            "(with p=1/19) is:", tmp))
+```
+
+As you witnessed, the probability of observing those paired evidences so far is extremely small and simply put impossible to occur by chance and thus they must be designed. Even, if you do not read the rest of the book, these evidence should be sufficient for someone to witness the 19 based coding system of the text of Quran, which can only be fulfilled with a super natural power. To find out about this supernatural power, I suggest we should read the content of the book, Quran, for the answer, in which we will read that God has sent Quran to all humankind and it is the final and ultimate message and the Author of the book promises that this message will always be protected. The evidences we observed so far, assures that the book is indeed protected based on the 19 based coding system of the text of Quran. Let's now see other evidences as you still did not see the ultimate evidence yet! 
+
+
+## Evidence of the order of each and every verses {#EvAllVerses}
+
+Quran was known to be revealed to Prophet Muhammad in around 22 years. All Muslims has this historical information that the order of the revelation was different than in the book of Quran we have in our hands today. I believe that the final order is also no coincidence, especially considering the odd situation with the unnumbered Basmalas and also the absence of Basmala before Chapter 9 contrary to all the other chapters. Moreover, I interpret Verse 75:17 literally and consider it as a support on this matter too.
+
+> "It is for Us to collect it and relate it.", Quran, 75:17
+
+So, in my perception, Quran was built as a book in this order with current verse and chapter numbers deliberately from the beginning. However, as always, God knows best and this is my own interpretation. 
+
+The previously presented evidences, Evidence \@ref(EvPerChapter1), Evidence \@ref(EvPerVerse2) and Evidence \@ref(EvPerLettersConcat), already supports it. I wanted to test whether there is any further support by the 19 based coding system of the text of Quran with respect to the order of the verses. If there is, it assures that the order and size of all the verses (automatically the order of chapters) are intact and protected until today for the last 1387 years. We had already observed strong supporting evidences (Evidence \@ref(EvPerChapter1), Evidence \@ref(EvPerVerse2) and Evidence \@ref(EvPerLettersConcat)) on the order. However, I specifically wanted to test the order of verses alone as well, as it is the backbone of the structure of the text of Quran. 
+
+So, how could we test it? What should be the rule to test that convince ourselves such that there is a strong evidence on the order of all those 6236 numbered verses of Quran. So, I set the most simple and meaningful rule for this test, which is the most concise with no redundant number in it and yet sufficient to the test the order of the verses. I will simply concatenate all the verse indices per chapter in their order in the book. For this, I will use the table that holds each verses per row as I had presented in Chapter \@ref(Fetchingtext). Let's recall the table that holds the numbered verses of Quran, where each row is one verse.
+
+```{r eval=TRUE}
+require(data.table, quietly = T)
+require(DT, quietly = T)
+datatable(nQuran,
+          caption = 'Table of the numbered verses of Quran.',
+          options = list(pageLength = 10, 
+                              autoWidth = TRUE),
+          rownames= FALSE)
+```
+
+As seen in this table, since we already know the order of the verses, we can just concatenate verses regarding their current order from 1 to 6236. So, the rule is very simple and also meaningful. I just concatenate all the indices of the verse numbers per chapter in their order in the Quran, starting from the first chapter till the last one that is 114. This big number does not contain any redundant and unnecessary number to perform the test on the goal of interest, which is the order and size of verses and chapters as well. Also, we can only apply the default division by 19 test and we cannot use the optional digit sum test. Because, the order of the verses is to be tested and digit sum is not applicable in that case. So, we have one number and one test in the end of this hypothesis. We cannot use the second type of the text of Quran with the unnumbered Basmala verses as they do not have number as verse indices with respect to their assigned chapters.
+
+Here is the reproducible test and proof of the evidence that supports that the order of chapters and verses and also the size of verses of each chapter is correct and intact and protected from the beginning till now for the last 1387 years. As seen below, this big number is divisible by 19 and under the 19 based coding system of the text of Quran. Or, in other words, "74:30. Over it is Nineteen". Here is the proof of this evidence:
+
+```{r , eval=TRUE, message=FALSE}
+head(nQuran$verse)
+tmpVc <- paste0(nQuran$verse, collapse = '')
+cat("Test of Rule 1:") 
+as.integer(as.bigz(tmpVc) %% 19)
+
+cat("The number of digits of the final number is: ", nchar(tmpVc))
+```
+
+We have one out of one success in this evidence. The probability of this big number to be divisible by 19 is 1/19. As we witnessed this very big number is divisible by 19. 
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in a global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#Considering all the 4 main numbers of both categories
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 8
+```
+
+
+The reason, we took only one number is because these per chapter verse indices or, in other words, special verse indices are same in both of the text type of Quran. However, we cannot assign any number to the unnumbered Basmala verses as any special verse number, including zero. Therefore, we use special verse indices for only the text of numbered verses of Quran. This gives us a single big number to test for this case.
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvAllVerses) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvAllVerses) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book.
+
+To make sure, you can imagine the size of the big number and make some observable tests as well, I will print out this big number in this book. For example, the The first chapter has 7 verses as you can see at the beginning of the big number. Also, as a double check, you manually copy and paste this extremely big number into another web application for any big numbers calculator such as this [@BigNC]. Here is the $`r nchar(tmpVc)`$ digit big number that we tested above:" `r tmpVc` ". 
+
+
+### Discussion on this evidence {#EvAllVersesDiscuss}
+
+Can you imagine that people of that time could design such an evidence themselves even if they wanted to? They did not even had abundance of papers and pen but using mainly animal skins as papers. Imagine right now, you are given this task and a big prize. Can you manually, using only papers and pen, divide this big extremely big number into 19 and make sure it is is divisible by 19? As you can admit, this is impossible to perform by people manually even now.
+
+Another point is that this evidence stands as proof for not only the order of chapters are correct, but also the order of verses within chapters and also the total number of verses per chapter is also correct, intact and also unchanged since the beginning till now for the last 1387 years. This evidence along with others stand up against any argument on those points of the text of Quran.
+
+
+## Evidences on the order of each words with letters{#Evsubform1}
+
+Evidence \@ref(EvAllVerses) was the most direct approach to show that the sizes and orders of verses of the text of Quran are correct and intact. Since we tested the special verse indices, we should also test the other three categories of the text that we observe at the verse resolution. This means at chapter, word and letter levels as well. This provides another 6 numbers to be tested. Moreover, as a global rule in this book, we never test words alone and they must be accompanied with other information at all times. This is a global pattern I observed and set as a general rule. 
+
+For the tests, I will use the numbers of these tables that keep all the descriptor numbers for each and every verse in order:
+
+```{r eval=TRUE}
+knitr::kable(head(unQuran), booktabs = TRUE,
+  caption = 'Table head of all verses of Quran.')
+
+knitr::kable(head(nQuran), booktabs = TRUE,
+  caption = 'Table head of numbered verses of Quran.')
+```
+
+
+I will now perform the test with only words and letters together. This represents the word as we cannot use word numbers without letter information as a general rule. Additionally, since we respect the order while concatenating, the verse and chapter orders information are also implicitly considered in this test. Here, we do not use the verse indices per chapter directly and thus we can use both types of the text of Quran. Interesting enough, this test works on the text type that incorporates unnumbered and numbered verses as follows:
+
+
+```{r eval=TRUE}
+x<- data.table(unQuran)
+tmp <- paste0(x$vwords, x$vletters) 
+head(tmp)
+tmp <- paste0(tmp, collapse = '')
+as.integer(as.bigz(tmp) %% 19)
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+I could test this hypothesis also in the numbered verses (nQuran object) as well and thus we have one out of two success in this case. Because we can only use the default divisibility by 19 test as there is order in the tested number. This means we cannot use the optional digit sum test. 
+
+
+Considering chapter and letter numbers as well, in total we could have one success out of 6 possible numbers to test. We had already added verse indices cases to the global counters in Evidence \@ref(EvAllVerses). Thus, as the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global counter object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 6 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(Evsubform1) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(Evsubform1) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+ 
+ 
+### Fact: Harmony among verse, words and letters{#Evsubform1fact}
+
+Regarding the general rules, we do not look at the combinations among the four main descriptive numbers. Therefore, I present this successful test as a fact for information. We will not include this in the probability calculations.  
+We will perform similar approach to Evidence \@ref(EvAllVerses) but with special verses, words and letters together in finest text resolution, as follows.
+
+```{r eval=TRUE}
+x<- nQuran
+tmp <- paste0(x$verse, x$vwords, x$vletters)
+head(tmp)
+tmp <- paste0(tmp, collapse = '')
+as.character(as.bigz(tmp) %% 19)
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+
+There is also additional **fact** that complement the previous fact. The above fact exist in the 6236 numbered verses. The similar pattern also exist in all the 6348 verses. This time, we also compute the digit sum of each representative numbers of each verses before concatenating them as follows.
+
+```{r eval=TRUE}
+x<- unQuran #6348 verses
+tmp <- paste0(x$verse, x$vwords, x$vletters)
+head(tmp)
+tmp <- sapply(tmp, digitsum) # digit sum of each verse
+tmp <- paste0(tmp, collapse = "")  
+digitsum(tmp) %% 19
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+As we observed, in both of the text category of Quran, we observe 19 based relations as fact among verse indices, number of words and letters.
+
+## Facts: on individual categories {#EVcombineindividuals}
+
+As I described in the rules in Chapter \@ref(RulesProbs), we do not test the descriptive numbers alone within their own category. However, in this section, I will present some interesting individual examples as facts but not as evidences of the general system.
+
+### Fact: The Chapters {#EVchapters}
+
+$$c$$
+
+$$`r c`$$
+
+The number of chapters in Quran is 114 and it is divisible by 19. Among all the others, Fact \@ref(EVchapters) looks the most obvious one and easiest to count even manually. However, it is still an interesting fact of the text of Quran regarding 19 based coding system. Because it stands as an important clue that leads to the 19 system of the text.
+
+Although, this number, 114, is well known by all Muslims, this book is for anyone who wants to reproduce and test the claimed evidences. Therefore, in this book, I also provided a reproducible test to count and test the number of chapters as 114 computationally from the text of Quran. The reproducible tests of Fact \@ref(EVchapters) is available in Chapter \@ref(textcv) as the computational proof of Fact \@ref(EVchapters). The unique number for the total number of chapters was denoted by the letter *c* in Chapter \@ref(textcv) in this book to refer it whenever it is used.
+
+Regarding the reference, the number of chapters and the divisibility of it by 19 were already known by all Muslims and there is no need to give a specific reference for it. God knows best, but in my humble opinion, when considered with the verse, "74:30. Over it is Nineteen", this so simply 19 divisible number 114 might be left so obvious as a clue (along with the 19 letters Basmala verse), so that Muslims get curious about the other numbers of the text of Quran and discover the 19 based coding system of the text of Quran in the end. 
+
+### Fact: The Verses {#EVverses}
+
+$$v, V$$
+
+$$`r paste(v, V, sep ='-')`$$
+
+The number of numbered verses in Quran was counted from the text computationally and shown to be equal to $`r v` (v)$ and the number of unnumbered and numbered verses together in Quran was shown to be equal to $`r V` (V)$ in Chapter \@ref(Fact1). A reproducible test is provided in Chapter \@ref(textcv) for anyone who wish to reproduce these numbers. When we combine them by concatenating in both directions to test, the sum of the digits of the two verse numbers *v* (6236)  and *V* (6348) is equal to 
+$`r digitsum(paste0(v, V, collapse = ''))`$ and it is **divisible by 19**. It is easy to calculate but lets use the *digitsum* function again and save some time as follows:    
+
+```{r , eval=TRUE, message=FALSE}
+tmp <- paste0(v, V, collapse = '')
+tmp
+tmp1 <- digitsum(tmp)
+cat("The sum of the digits is:", tmp1) 
+```
+
+Fact \@ref(EVverses) incorporates both of the verse numbers and show that they are related to each other regarding 19. 
+
+
+## Evidence: Totals {#EvTotals}
+
+As a rule on the total of all the descriptive numbers, the totals are tested individually. Namely, in this sections, we will test the totals of the descriptive numbers at all the text resolutions for both of the text types. This results 6 different numbers to be tested overall. In the following, I will present the two evidences out of those 6 potential numbers that come out of the set rule.
+
+
+For the reference, to the best of my knowledge, the three evidences of hits sections, Evidence \@ref(EvTotalsMain), Evidence \@ref(EvTotalsChapter) and Evidence \@ref(EvTotalsVerse) are first time presented to the literature in this book. In case if I find out that they had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+### Evidence: Totals of the main descriptive numbers {#EvTotalsMain}
+
+The first and most important rule of all is that each evidence must be meaningful and answer an important question. This evidence answers a very simple question: 
+
+Is the total of all the 4 main descriptive numbers under the 19 system or not?
+
+This is a meaningful question as it can simply prove that the the total numbers of each of the 4 text category are designed together under the 19 system. Since we have two text types, then we have two numbers to be tested. The first one is 417544, which is the total of the totals of each of the four text categories. Let's remember the 4 main descriptive numbers of the text of Quran regarding all the verses including the unnumbered Basmala verses.
+
+$$c, V, W, L$$
+
+$$`r paste(c, V, W, L, sep =' , ')`$$
+
+The sum of these 4 numbers are calculated as follows
+
+  
+$$c+V+W+L = 417544$$
+
+As it is proved below, the total of the 4 main descriptive numbers is divisible by 19 and thus under the 19 system. It represents the integrity and intactness of the text of Quran in total.
+
+```{r eval=TRUE}
+tmp <- sum(c,V,W,L) # 417544
+cat(as.numeric(as.bigz(tmp)) %% 19 )
+```
+
+As we see, we could have two possible totals from the two text types and one of them is divisible by 19.
+
+As the last process to do, let's add the number of successful evidences and the total number of numbers to the global counters. Since the order is not important, regarding the general rule, we must apply both of the tests, which are the optional digit sum and the default division by 19 test. This makes 4 tests in total. 
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+
+
+### Evidence: Totals in chapter resolution {#EvTotalsChapter}
+
+This evidence answers a very simple question:
+
+Is the total of all the 4 main descriptive numbers in **chapter** resolution, under the 19 system or not?
+
+Let's remember the table with which we will compute, in chapter resolution, the sums of the numbers of the chapters, verses, words and letters.
+```{r eval=TRUE}
+x<- dfVCWL
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers at chapters in Quran.')
+```
+
+Basically, sum of all the numbers in the above table is tested.
+In this evidence, the total number at **chapter** resolution, based on the all verses, observed to be under the 19 system as proved in the following:
+
+
+```{r eval=TRUE}
+x<- dfVCWL
+tmp <- sum(x)# sum all numbers at CHAPTER resolution
+#423985
+cat("The sum of all numbers 
+    at CHAPTER resolution is", tmp, ".")
+cat("The modulo of it by 19 is ")
+as.bigz(tmp) %% 19
+```
+
+This result is not surprising and expected because its numbers are mathematically related to the totals as observed in Evidence \@ref(EvTotalsMain). However, this evidence is the result of the set rules and thus it is also taking into account. Because when I set rules, I test all the numbers that are testable as the result of the rule. This is implemented even in the cases of negative results. 
+
+
+However, I wanted to try another meaningful, but mathematically unrelated, hypothesis on the same table that includes all the numbers at the chapter resolution. Then, I hypothesized that if I count the numbers of each column that are divisible by 19 and get a new number by concatenating those numbers, I end up with a meaningful but mathematically unrelated number than the totals. As you see in the proof below the unrelated number of the table is also divisible by 19.
+
+
+```{r eval=TRUE}
+# mod 19 of all the numbers at the chapter resolution 
+y <- dfVCWL %% 19
+knitr::kable(head(y), booktabs = TRUE,
+caption = 'Table head of the mod 19 of all the numbers at the chapter resolution.')
+
+tmp <- paste0(
+length(which(y$Chapter_index == 0)), 
+length(which(y$Verse_sum == 0)), 
+length(which(y$cWords == 0)),
+length(which(y$cLetters == 0))
+)
+
+cat("Concatenation of each column's mod 19 counts is ", tmp)
+cat("The modulo of it by 19 is ", (as.numeric(tmp) %% 19) )
+```
+
+This stands as a further supporting **fact** for the Evidence \@ref(EvTotalsChapter). As we witnessed, the table that keeps all the numbers at the chapter resolution has an additional and independent 19 based evidence in it.
+
+
+Interesting enough, just the opposite of this test is also successful in the second text type of Quran, which is only the numbered verses. In that text type, the counts of each of the columns, which are **not** divisible by 19, yields a number that is divisible by 19. Here is the proof.
+
+
+
+```{r eval=TRUE}
+# mod 19 of all the numbers at the chapter resolution 
+y <- dfVCwl %% 19
+knitr::kable(head(y), booktabs = TRUE,
+caption = 'Table head of the mod 19 of all the numbers at the chapter resolution of the numbered verses.')
+
+tmp <- paste0(
+  length(which(y$Chapter_index != 0)) ,
+  length(which(y$Verse_sum != 0)), 
+  length(which(y$cWords != 0)), 
+  length(which(y$cLetters != 0))
+)
+
+cat("Concatenation of each column's NOT mod 19 counts is ", tmp)
+cat("The modulo of it by 19 is ", (as.numeric(tmp) %% 19))
+```
+
+Since I do not set general rules, I only present these just as the supporting facts to the evidence of this section. They are not counted for the probability calculations.
+
+
+As the last process to do, let's add the number of successful evidences and the total number of numbers to the global counters. Since the order is not important, regarding the general rule, we must apply both of the tests, which are the optional digit sum and the default division by 19 test. This makes 4 tests in total as there are two different numbers to be tested from the two text types. 
+
+```{r, eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+
+
+### Evidence: Totals in verse resolution {#EvTotalsVerse}
+
+This evidence answers a very simple question:
+
+Is the total of all the 4 main descriptive numbers in **verse** resolution, under the 19 system or not?
+
+Let's remember the table with which we will compute, in verse resolution, the sums of the numbers of the chapters, verses, words and letters.
+```{r eval=TRUE}
+x<- nQuran
+x$text <- NULL #removes this column
+x$VerseI <- NULL #removes this column
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbered verses of Quran.')
+```
+
+Basically, sum of all the numbers in the above table is tested.
+In this evidence, the total number at verse resolution, based on the numbered verses, observed to be under the 19 system as proved in the following:
+
+
+```{r eval=TRUE}
+tmp <- sum(x) # sum of all numbers at verse resolution
+#951202
+cat("The sum of all numbers 
+    at verse resolution is", tmp, ".")
+cat("The digit sum of it is ", digitsum(tmp))
+```
+
+
+As the last process to do, let's add the number of successful evidences and the total number of numbers to the global counters. Since the order is not important, regarding the general rule, we must apply both of the tests, which are the optional digit sum and the default division by 19 test. This makes 4 tests in total. 
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+
+
+
+### Evidence: Totals per chapter numbers {#EvTotalsPerChapters}
+
+This evidence answers this question:
+
+Is the total of all the 4 main descriptive numbers **per chapter**, under the 19 system or not?
+
+This evidence is similar to the Evidence \@ref(EvTotalsChapter). but in this one, we first get the unique numbers per chapter and then get the sum that represents the sum of numbers per chapters.
+
+Let's remember the table with which we will compute, in chapter resolution, the sums of the numbers of the chapters, verses, words and letters.
+```{r eval=TRUE}
+x<- dfVCWL
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers at chapters in Quran.')
+```
+
+Basically, sum of all the numbers in the above table is tested.
+In this evidence, the total number at **chapter** resolution, based on the all verses, observed to be under the 19 system as proved in the following:
+
+
+```{r eval=TRUE}
+tmp <- paste0(dfVCWL$Chapter_index,dfVCWL$Verse_sum,
+               dfVCWL$cWords, dfVCWL$cLetters)
+head(tmp)
+tail(tmp)
+tmp <- sum(as.numeric(tmp))
+as.character(tmp)
+digitsum(tmp)
+digitsum(tmp) %% 19
+```
+
+
+
+As the last process to do, let's add the number of successful evidences and the total number of numbers to the global counters. Since the order is not important, regarding the general rule, we must apply both of the tests, which are the optional digit sum and the default division by 19 test. This makes 4 tests in total as there are two different numbers to be tested from the two text types. 
+
+```{r, eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+This evidence in chapter resolution alone would not be considered as separate evidence but as you will see in the following section, the same **pattern** exist in the verse level resolution too and thus included as separate evidences here.
+
+
+### Evidence: Totals per verse numbers {#EvTotalsPerVersess}
+
+This evidence answers this question:
+
+Is the **total** of all the 4 main descriptive numbers **per verse**, under the 19 system or not?
+
+This evidence is similar to the Evidence \@ref(EvTotalsPerChapters) but shows there is this pattern exist also in the verse resolution. Again, we first get the unique numbers per verse and then get the sum that represents the sum of numbers per verse.
+
+Let's remember the table with which we will compute, in chapter resolution, the sums of the numbers of the chapters, verses, words and letters.
+```{r eval=TRUE}
+x<- nQuran
+x$text <- NULL #removes this column
+x$VerseI <- NULL #removes this column
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers at chapters in Quran.')
+```
+
+Basically, sum of all the numbers in the above table is tested.
+In this evidence, the total number at **verse** resolution, based on the all verses, observed to be under the 19 system as proved in the following:
+
+
+```{r eval=TRUE}
+tmp <- paste0(x$chapter, x$verse,
+              x$vwords, x$vletters)
+head(tmp)
+tail(tmp)
+tmp <- sum(as.numeric(tmp))
+tmp
+as.integer(as.bigz(tmp) %% 19)
+```
+
+
+
+As the last process to do, let's add the number of successful evidences and the total number of numbers to the global counters. Since the order is not important, regarding the general rule, we must apply both of the tests, which are the optional digit sum and the default division by 19 test. This makes 4 tests in total as there are two different numbers to be tested from the two text types. 
+
+```{r, eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+
+## Fact: Others {#FactOtherss}
+
+In this section, I present some interesting tests that are not within the general rules but presented as relevant information.
+
+
+
+
+If I do not observe a systematic pattern and can not set rules, I do not take individual interesting examples as evidence. But, I will still report some interesting numbers as a separate **fact** rather than evidence. In order to claim a number to be evidence, I always consider the set rules and accordingly count the number of potential numbers to be tested so that we can calculate whether the evidence is statistically significant or not within the overall 19 based system. Another reason I record some interesting tested numbers as a **fact** is that, they might still be part of another coding pattern that I might not have realized yet but people might investigate further around them and might find a new pattern later and include them too. Moreover, even if I had included these facts as evidence (instead of fact) and extend the rules and thus add some more potential redundant numbers along with it, the overall probability of all the evidences of the whole system would still be extremely significant as it is currently already extremely significant. But I prefer to keep the overall space of the numbers and system as small and simple as possible. Thus, in this current fact, I will present an interesting 19 divisible tested number as an interesting **fact**.
+
+
+### Fact: Totals {#FactTotals}
+
+This fact is about combining sums of the totals of the main descriptive numbers per chapter. 
+
+Let's remember the tables with which we will compute the sums of chapters, verses, words and letters.
+```{r eval=TRUE}
+require(data.table, quietly = T)
+require(DT, quietly = T)
+knitr::kable(head(nQuran), booktabs = TRUE,
+  caption = 'Table head of the numbered verses of Quran.')
+
+knitr::kable(head(unQuran), booktabs = TRUE,
+  caption = 'Table head of the all verses of Quran.')
+```
+
+From these tables we can compute sum of each columns of chapters and verses and combine them by concatenation and test them as below:
+
+```{r eval=TRUE}
+# text type 1
+tmp <- dfVCWL
+tmp <- apply(tmp,2,sum)
+tmps<- sum(tmp) #the sum of the 4 descriptor number 
+tmp2 <- paste0(tmp, collapse = "")
+tmp2 <- paste0(tmp2,tmps) # 6555634878245332837423985
+# text type 2
+tmp <- dfVCwl
+tmp <- apply(tmp,2,sum)
+tmps<- sum(tmp)
+tmp <- paste0(tmp, collapse = "")
+tmp #"6555623677797330709"
+tmp <- paste0(tmp,tmps)
+tmp #"6555623677797330709421297"
+
+#combine both text type sums by concatenating as usual
+x<- paste0(tmp,tmp2)
+x #"65556236777973307094212976555634878245332837423985"
+#Tests
+as.bigz(x) %% 19  # 0
+digitsum(x) %% 19 # 0
+#represent 3/4 success considering both ways
+```
+
+The fist column (Chapter_index) in the table is for the indices of chapters (1 to 114) and the sum of these indices, **as another fact is 6555, which itself is divisible by 19** and also one of the three numbers of interest for this fact. The second column contains the verse sum of each chapter and the sum of it, as we know from before, is 6236. 
+
+### Fact: Relation between chapters and Verses {#FactChapVerse}
+
+This fact is about the harmony between the chapter indices and their corresponding total verses. The sum of chapter indices (from 1 to 114) is 6555 and the sum of verses in these chapters are 6236. When concatenated, it provides 62366555 as the number to be tested. The digit sum of this number is 38, which is 2x19. 
+
+If you go over web sites regarding 19 system on the text of Quran, like amazing19.com, you see that they all sum the number of indices from 1 to 114 and mention 6555 that itself is divisible by 19. They also demonstrate a different 19 based coding with similar to these numbers. On the other hand, I still did not observe before the combined numbers of this presented fact here and thus present in this book. Since this approach did not seem to be fully aligned with my defined system of this book in general, I present this observation as a fact.
+
+
+
+### Fact: Relation between general verse indices and letters {#FactGenVerLet}
+
+In this fact, I present the potential relation between the general verse indices and and letters. Word number is as always not tested alone regarding the general rule. This evidence again mimics the re-writing approach and concatenates from right to left for all the two pairs. This evidence uses the optional digit sum test and not aligned with the rules of the evidences as the number is ordered.
+
+```{r , eval=TRUE, message=FALSE}
+## General verse indices and letters
+# 2 possible numbers; one test
+x<- data.table(unQuran)
+#The order of both is not matter as digit sum test has passed
+tmp <- paste0(x$VerseI,x$vletters)
+tmpr <- rev(tmp) # The reverse and othwer way both works as digit sum test has passed.
+tmpr <- paste0(tmpr, collapse = '')
+as.integer(digitsum(tmpr) %% 19)
+
+cat("number of digits on this big number is", nchar(tmpr))
+
+```
+
+
+
+### Fact: Relation between letters sum at chapter level {#FactSumLetChap}
+
+This fact presents the 19 based relation of the total number of letters per chapter in all the text of Quran. 
+
+```{r , eval=TRUE, message=FALSE}
+# Evidence on chapter level letters
+tmp <- dfVCWL$cLetters
+tmp <- paste0(tmp, collapse = '')
+digitsum(tmp) %% 19 
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+
+### Fact: Relation between words and letters along with chapter indices {#FactChapWordLetterrs}
+
+This fact presents the 19 based relation between the number of words and letters in each verse along with chapter indices in all the text of Quran. 
+
+```{r , eval=TRUE, message=FALSE}
+#As a fact (not as evidence) but not as evidence here, 
+#Chapters, words and letters
+x<- unQuran
+tmp <- paste0(x$chapter,x$vwords,x$vletters)
+head(tmp) # head of the big number
+tail(tmp) # tail of the big number
+tmp <- paste0(tmp, collapse = "")
+as.character(digitsum(tmp) %% 19)
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+
+
+## Evidence to silence: Harmony among Chapters, Verses and Words {#EvSilence}
+
+I rediscovered this evidence on February 10, 2020 and added into the e-book right away. I might have seen this evidence before but might have forgotten as well. Because it is so evident and similar to my other evidences. I was so overwhelmed with many evidences while writing this book and probably forget this one then. Recently, there were some critics on my book as it is mostly based on the evidences that includes the number of letters. I guess, it may seem too good to be true to them. Having this criticism in mind, I was looking at the table below, which shows each chapter and the number of verses, words and letters within each chapter. 
+
+
+```{r eval=TRUE}
+x<- dfVCWL
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers at chapters in Quran.')
+```
+
+
+The most important chapter in Quran can be considered as the first chapter, Al-Fatiha. This chapter is recited in every obligated daily prayers by all Muslims. Therefore, all Muslims know and recites it. This verse caught my eye as the digit sum of the chapter index (1), number of verses (7) and number of words (29) is exactly 19 (1+7+2+9 = 19). This woke me up. I then tested the traditional concatenation rule of this book by concatenating these numbers, as always, in the natural order from chapter towards words. Then I got 1729, and it is also divisible by 19. Because 1729/19 = 91.
+
+As witnessed, there are two simple 19 based coding design in the most important chapter, Al-Fatiha, of Quran.
+
+Then, I learned the pattern! My hypothesis was simple. God might have left us this important pattern within the most important and most recited and also short chapter of Quran. Then the next step was to test this pattern in the whole Quran. For each of the 114 chapter, I first applied this pattern and obtained the representation number of each chapter. I then concatenate them from first chapter till 114. This concatenation approach is similar to what we observed in Evidence \@ref(EvAllVerses). Regarding the big number to be tested, since I inferred this pattern, specifically from the first chapter, Al-Fatiha, this evidence has its own rule and not necessarily have to fully align with the rest of the book. 
+
+See below for the proof of this evidence. I will print out this 800 digits length big number in the end of this chapter for your tests. This number includes all the verses, including the unnumbered Basmala verses of Quran.
+
+
+
+```{r eval=TRUE}
+tmp2 <- paste0(dfVCWL$Chapter_index,dfVCWL$Verse_sum,
+          dfVCWL$cWords)
+
+head(tmp2)
+tail(tmp2)
+tmp <- paste0(tmp2, collapse = "")
+
+as.bigz(tmp) %% 19 #Test if remaining is 0
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+This evidence proves that chapters, verses and words of Quran was designed by the 19 based coding system of Quran from the beginning and unchanged from the beginning. 
+
+
+
+I could test this hypothesis also in the numbered verses as well and thus we have one out of two success in this case. Because we can only use the default divisibility by 19 test as there is order in the tested number. This means we cannot use the optional digit sum test. 
+
+Let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global counter object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvSilence) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvSilence) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+Here is the 800 digits length big number:
+
+"`r tmp`"
+
+
+## Evidence: Harmony among Chapters and Words {#EvChapWords}
+
+Following the observation of Evidence \@ref(EvSilence), I decided to revisit the relation of the words separately with chapters and verses as well. I observed that there is also similar design pattern to Evidence \@ref(EvSilence) between chapter indices and number of words in each chapter. Therefore, following the discovery of Evidence \@ref(EvSilence), I present this evidence. All the technical descriptions is same as in Evidence \@ref(EvSilence), except in this evidence, we remove the verse sums and only look at the harmony between the chapter indices and the number of words in each chapter.
+
+
+Let me give the natural numbers of Quran at the chapter level to remind you the numbers we will use in this evidence.  
+
+
+```{r eval=TRUE}
+x<- dfVCWL
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers at chapters in Quran.')
+```
+
+
+Again, for each of the 114 chapter, I first concatenated the chapter index and number of words in that chapter and obtained the representation number of each chapter. I then concatenate them from first chapter till 114. This concatenation approach is similar to what we observed in Evidence \@ref(EvAllVerses) and Evidence \@ref(EvSilence).  I will print out this 571 digits length big number in the end of this chapter for your tests. This number includes all the verses, including the unnumbered Basmala verses of Quran.
+
+As an interesting fact, the digit length of this big number 571 and 571 is also historically known to be the date of birth of Prophet Muhammad.
+
+
+Back to the main point, see below for the proof of this evidence.
+
+
+```{r eval=TRUE}
+tmp2 <- paste0(dfVCWL$Chapter_index,
+          dfVCWL$cWords)
+
+head(tmp2)
+tail(tmp2)
+tmp <- paste0(tmp2, collapse = "")
+
+as.bigz(tmp) %% 19 #Test if remaining is 0
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+This evidence proves that chapters and words of Quran was designed by the 19 based coding system of the text of Quran from the beginning and unchanged from the beginning. It is intact as we, Muslims, have today in our hands. 
+
+
+I could test this hypothesis also in the numbered verses (nQuran object) as well and thus we have one out of two success in this case. Because we can only use the default divisibility by 19 test as there is order in the tested number. This means we cannot use the optional digit sum test. I will also count the potential trial between verse and verse into the counter to be fair in the probability calculation over all the system presented in this book. 
+
+Let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global counter object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvChapWords) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvChapWords) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+Here is the 571 digits length big number:
+
+"`r tmp`"
+
+
+## Evidence: Harmony among Chapters, Verses and Words at verse level {#EvChapVersWordSumms}
+
+In this evidence, we will witness that chapters, verses and words are in harmony at the verse level. We had already observed the 19 based harmony among chapters, verses and words In Evidence \@ref(EvSilence) at the chapter level. In this evidence, Evidence \@ref(EvChapVersWordSumms), we will again witness 19 based harmony among chapters, verses and words but at the verse level. 
+
+As you will recall, in Evidence \@ref(EvSilence), we had learned the rule to get the evidence number to be tested from the most well known chapter of Quran, Al-Fatiha. Again, we learn another rule to get the evidence number and use it in this current evidence, Evidence \@ref(EvChapVersWordSumms). 
+
+God know best but the observation suggest that, it looks God might have left this is as another apparent **clue** so that we can discover the 19 based design in the text of Quran easily.
+
+Here is the **fact** that we observe a 19 based coding in the first and most well known and recited chapter of Quran, Al-Fatiha:
+
+In the chapter Al-Fatiha, at the verse level, for each verse, we **sum** the chapter index, verse index and the number of words in that verse. Since there are 7 verses, I will present the calculation here and get the single number to be tested that represent Al-Fatiha.
+
+Chapter index of Al-Fatiha is 1 as it is the first chapter of Quran. The first verse of it has 4 words. We get the representation number of the first verse as this: 1+1+4=6.
+If we perform this for all the 7 verses of Al-Fatiha, the we get the rest of the representation numbers of each verses as follows:
+
+1 + 2 + 4 = 7
+
+1 + 3 + 2 = 6
+
+1 + 4 + 3 = 8
+
+1 + 5 + 4 = 10
+
+1 + 6 + 3 = 10
+
+1 + 7 + 9 = 17
+
+Now we have the representation number of each verse. Now, we concatenate them as the classical operation of this book. We get the following single number that represent the 19 based coding design in Al-Fatiha as : 6 7 6 8 10 10 17
+
+6768101017
+
+Now we witness, this number is under 19 based coding system as follows:
+
+```{r eval=TRUE}
+tmp <- "6768101017"
+as.bigz(tmp) %% 19 #Test if the remaining is 0
+
+cat("number of digits on this number is", nchar(tmp))
+```
+
+As we witnessed there is apparent 19 based design on the text of Al-Fatiha. I have not seen this particular 19 based evidence on Al-Fatiha before anywhere else. Therefore, if it was not published anywhere else before, this should be cited as among the novel discoveries of this book.
+
+There is also another interesting fact on it.
+The digit sum of the single big number, 6768101017, is 37. Also, when divided by 19 to test whether it is under the 19 based coding system, the quotient is 356215843. Interesting enough, the digit sum of this quotient is also 37. I recalled this number instantly because at the chapter level sums, Al-Fatiha has this number as follows: Al-Fatiha is chapter 1, has 7 verses and has 29 words. When summed this also gives 37. This did not seem to be a coincidence to me and I present here as an interesting **fact**.
+
+Back to the main point, we just witnessed that there is 19 based design in the first and most well known and recited chapter of Quran, Al-Fatiha. The hypothesis I put forward is that the same design might be over all Quran and it might be left as a clue. This means, we infer the **rule** to get the number to be tested from this hypothesis. As you will witness in the current evidence, the same 19 based design of Al-Fatiha also exist over all the text of Quran as well.
+
+Let me summarize the rule over all Quran accordingly. In this Evidence \@ref(EvChapVersWordSumms), we first **sum** the chapter index, the verse index and the number of words of each verse, which gives the representation number of each of the 6348 verses. We then concatenate each of those representation number and get the single representation number of all the 6348 verses of Quran. As we witness as follows, this number is also divisible by 19 and thus under the 19 based coding system of the text of Quran. 
+
+Let's first remember the head of the table we will utilize.
+```{r eval=TRUE}
+x<- unQuran
+x$VerseI <- NULL
+x$vletters<-NULL
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers of verses in Quran.')
+```
+
+Since in this main chapter we are looking at the evidences without the number of letters, I presented the table accordingly. Here is the proof of Evidence \@ref(EvChapVersWordSumms). 
+
+```{r eval=TRUE}
+x<- unQuran
+tmp <- x$chapter + x$verse + x$vwords
+cat("The head and tail of the numbers that represent each verse.")
+head(tmp)
+tail(tmp)
+tmp <- paste0(tmp, collapse = "")  
+as.bigz(tmp) %% 19
+
+cat("Number of digits on this big number is", nchar(tmp))
+```
+
+As we see, the remainder is zero and the big number is under the 19 based coding system of the text of Quran.
+
+We could try this also in the numbered verses. I will also consider the two possible trials of the similar approach at the chapter level representation numbers. Considering all, we have one out of 4 trial for this evidence to add to the global counter object so that in the end of the book we can calculate the global probability of the general system.
+
+```{r, eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvChapVersWordSumms) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvChapVersWordSumms) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/5.14_Evidence.txt 
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+
+
+
+
+## Evidence to silence 2: Harmony among Chapters, Verses and Words {#EvSilence2}
+
+I had discovered Evidence \@ref(EvSilence) on February 10, 2020 and then added that into the e-book of this book. The rule of Evidence \@ref(EvSilence) was obtained from the most well known and recited chapter, Al-Fatiha, which therefore can arguably be considered as the most important chapter in Quran. It is also the first chapter and short enough to manually analyse. This chapter is recited in every obligated daily prayers by all Muslims. Therefore, all Muslims know and recite it. This verse has very explicit 19 based coding with the natural numbers of its text. The chapter index of it is 1, the number of verses of it is 7 and the number of words in it is 29. When we concatenate them in the natural order it makes 1729 and it is multiple of 19 as 19x91.
+In Evidence \@ref(EvSilence), I had applied the same pattern to the whole Quran and proved that the same pattern also exist in the whole Quran. The hypothesis was that the pattern in Al-Fatiha was a clue that lead us to the 19 based design over all Quran.
+
+However, there is one more pattern in then same numbers of Al-Fatiha, which based on the digit sum of the same natural numbers as follows: 1+7+2+9 = 19. This is so obvious as the digit sum is exactly 19. So I set my next hypothesis similar to what I did in Evidence \@ref(EvSilence). I hypothesized that the same pattern exist in the whole Quran and God might have left this apparent coding pattern to us as a clue that can lead us to the 19 based design over all Quran. And, I discovered that this hypothesis is also correct and I discovered this Evidence \@ref(EvSilence2). Along with Evidence \@ref(EvSilence), these two evidences prove that the two apparent clues of Al-Fatiha exist in the whole Quran. They are so clear and apparent that no one can argue on the 19 based designs of Evidence \@ref(EvSilence2) and Evidence \@ref(EvSilence) considering the two clue evidences of Al-Fatiha. These evidences prove that the number of chapters, verses, words of Quran designed by the 19 based coding system of the text of Quran since the year 632. Since we witness that the coding still exist in the current version of Quran, then we can scientifically conclude that the Quran is intact and unchanged from the beginning till our current time. Moreover, the 19 based coding designs cannot be performed by people of that time and must have been done by a supernatural power that we Muslims consider as God.
+Also, since we did not use the number of letters, these evidences exist in all the text versions of Quran as in some versions some letters of some words might be written slightly different for the same word. 
+
+This evidence exist in the numbered verses of the text of Quran. This means out of the two clues, the first one valid in all the verses (6348 verses, including unnumbered Basmala verses) and the second clue valid in the numbered verses of Quran (6236 verses). This observation also supports the conclusion of this book, which suggests that both type of the text of Quran are under the 19 based coding system.  
+
+Let's again remember the table over which we will witness the evidence.
+
+```{r eval=TRUE}
+x<- dfVCwl
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbers at chapters in Quran.')
+```
+
+
+
+
+Let me describe shortly how we obtain the number to be tested. For each of the 114 chapter, I first applied the digit sum pattern (as in Al-Fatiha 1+7+2+9=19) and obtained the representation number of each chapter. For example, the first chapter Al-Fatiha is represented by 19 as we compute the digits sum of the chapter index, the number of verses and the number of words as this 1+7+2+9=19. We perform the same process for all the 114 chapters and obtain the representation number of each chapter. 
+We then concatenate them from first chapter till 114. This concatenation approach is similar to what we observed in Evidence \@ref(EvAllVerses). Regarding the big number to be tested, since I inferred this pattern, specifically from the first chapter, Al-Fatiha, this evidence has its own rule and not necessarily have to fully align with the rest of the book. 
+
+See below for the proof of this evidence. I will print out this 227 digits length big number in the end of this chapter for your tests. This number is based on all the numbered verses of Quran.
+
+
+
+```{r eval=TRUE}
+tmp <- paste0(dfVCwl$Chapter_index, dfVCwl$Verse_sum,
+                dfVCwl$cwords)
+head(tmp)
+tmp <- sapply(tmp, digitsum)
+head(tmp)
+tmp <- paste0(tmp, collapse = "")  
+as.bigz(tmp) %% 19 #Test if remaining is 0
+
+cat("number of digits on this big number is", nchar(tmp))
+```
+
+
+I could test this hypothesis also in all the verses as well and thus we have one out of two success in this case.
+
+Let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global counter object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvSilence2) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvSilence2) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+Here is the 227 digits length big number:
+
+"`r tmp`"
+
+### Fact{#FactofEvSilence}
+
+There is also an interesting relation between Evidence \@ref(EvSilence) and Evidence \@ref(EvSilence2).
+As I mentioned before, these two evidences are based on the two clue evidence of Al-Fatiha and one of the same clue pattern exist in Evidence \@ref(EvSilence) over all the verses (6348 verses) and the second clue evidence of Al-Fatiha exist in Evidence \@ref(EvSilence2) over all the numbered verses (6236 verses). As mentioned before, this suggests that both text types are under 19 based coding of the text of Quran. Here, in this fact, I will present an interesting relation between these two evidence, which suggests that they are also related regarding number 19.
+
+The relation between the both numbers of the two evidences, Evidence \@ref(EvSilence) and Evidence \@ref(EvSilence2), is as follows. The tested number of Evidence \@ref(EvSilence) is 800 digits in length. The tested number of Evidence \@ref(EvSilence2) is 227 digits in length.
+
+The **fact** is that, when we concatenate both of the digit lengths of these numbers, we get 800227. The digit sum of this number is exactly 19 as if they complement each other.
+
+
+
+## Evidence: Harmony between Verses and Words {#EvVerseWordsFatiha}
+
+This evidence was presented as a **fact** in Fact \@ref(Evsubform1fact) rather than as **evidence** before in this book. Because, there was no general pattern to classify it a evidence. However, since Evidence \@ref(EvSilence), I have realized that there are 19 based coding clues in the first chapter of Quran, Al-Fatiha, which is the most well known and recited chapter by Muslims. If I see a 19 based coding in that chapter, then I hypothesize that it might also be in the whole Quran as well and I take it as a rule to obtain the number to be tested in the whole Quran. By April 11, 2019, I realized that one of the facts in Fact \@ref(Evsubform1fact) is also available in the chapter Al-Fatiha. Since the rule is available for that fact, I revised the book and present that fact as **evidence** in this chapter as Evidence \@ref(EvVerseWordsFatiha). 
+
+The rule of Evidence \@ref(EvSilence) was obtained from the most well known and recited chapter, Al-Fatiha, which therefore can arguably be considered as the most important chapter in Quran. It is also the first chapter and short enough to manually analyse. This chapter is recited in every obligated daily prayers by all Muslims. Therefore, all Muslims know and recite it. This verse has very explicit 19 based coding with the natural numbers of its text. The chapter index of it is 1, the number of verses of it is 7 and the number of words in it is 29. When we concatenate them in the natural order it makes 1729 and it is multiple of 19 as 19x91.
+
+In this evidence, we observe the following 19 based coding pattern in Al-Fatiha, which shows the design between its verse indices and number of words.
+
+Chapter index of Al-Fatiha is 1 as it is the first chapter of Quran. The first verse of it has 4 words. We get the representation number of the first verse by concatenating verse 1 and number of words 4 as this: 14. We apply this to all the 7 verses of Al-Fatiha and concatenate them then we obtain this long number: 14243243546379. The digit sum of this number is 57, which is 19x3.
+
+Let's run this operation by R code as follows:
+
+```{r eval=TRUE}
+x<- nQuran
+x<- x[x$chapter==1,]
+tmp2 <- paste0(x$verse, x$vwords)
+tmp <- paste0(tmp2, collapse = "")
+tmp
+digitsum(tmp) %% 19 #Test if the remaining is 0
+```
+
+
+As we witnessed there is apparent 19 based design on the text of Al-Fatiha. I have not seen this particular 19 based evidence on Al-Fatiha before anywhere else. Therefore, if it was not published anywhere else before, this should also be cited as among the novel discoveries of this book.
+
+Now the hypothesis is, this might be left as a clue and it is available in the whole text of Quran. As I prove in the following, it really is. 
+
+Here is the head of the numbers table we will use. It contains the verse level natural numbers of the numbered verses of Quran.
+```{r eval=TRUE}
+x<- nQuran
+x$text <- NULL
+x$VerseI <- NULL
+knitr::kable(head(x), booktabs = TRUE,
+  caption = 'Table head of the numbered verses of Quran.')
+```
+
+We will concatenate all the verse indices and number of words of each verse by following the rule we observed from Al-Fatiha. Then, as we see the resulting big number is under 19 based coding system of the text of Quran as the digit sum of it is divisible by 19 just as we observe in the coding of Al-Fatiha above. Here is the proof as follows.
+
+```{r eval=TRUE}
+x<- nQuran
+tmp2 <- paste0(x$verse, x$vwords)
+head(tmp2)
+tmp <- paste0( tmp2, collapse = "")
+digitsum(tmp) %% 19 #Test if remaining is 0
+cat("number of digits on this big number is", nchar(tmp))
+tmp <- digitsum(tmp)
+cat("the digit sum of the big number is ", tmp, " and it is also divisible by 19 as follows:")
+tmp/19 
+```
+
+As we witnessed the digit sum of all the verse indices and their corresponding number of words is not only divisible by 19 but 19x19! We observed double 19 division.
+
+Along with all the others, these evidences prove that the number of verses and words of Quran designed by the 19 based coding system of the text of Quran since the year 632. Since we witness that the coding still exist in the current version of Quran, then we can conclude that the Quran is intact and unchanged from the beginning till our current time. Also, since we did not use the number of letters, these evidences exist in all the text versions of Quran as in some print versions, some letters of some words might be written slightly different for the same word. 
+
+This evidence exist in the numbered verses of the text of Quran. I could test this hypothesis also in all the verses as well and thus we have one out of two success in this case.
+
+Let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global counter object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvVerseWordsFatiha) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvVerseWordsFatiha) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+Here is the link to access the 22051 digits length big number:
+https://github.com/quran2019/Quran19/blob/master/5.16_Evidence_bignumber.txt
+
+
+## Evidence: Verses and Words Sum {#EvVerseWordsSumFatiha}
+
+Just as before this evidence gets its rule to obtain the number to be tested from chapter Al-Fatiha. I will not repeat importance of Al-Fatiha. In the previous evidence, Evidence \@ref(EvVerseWordsFatiha), we had observed 19 based coding evidence between verse indices and number of its words. In this evidence we observe another relation by summing all those numbers.
+Let's first see the evidence in chapter Al-Fatiha and then apply it to whole Quran again.
+
+
+
+```{r eval=TRUE}
+x<- nQuran
+x<- x[x$chapter==1,]
+tmp <- x$verse+x$vwords
+tmp <- sum(as.numeric(tmp))
+
+cat("The sum of the verse indices and their number of words in Al-Fatiha is ", tmp, "  and it is also divisible by 19 and the result is ", tmp/19)
+```
+
+Now we observed the rule and apply it to whole Quran.
+The sum of all these numbers are also divisible by 19 as follows:
+
+```{r eval=TRUE}
+x<- nQuran
+tmp <- x$verse+x$vwords
+tmp <- sum(as.numeric(tmp))
+cat("The sum of the verse indices and their number of words in all Quran is ", tmp, "  and it is also divisible by 19 and the result is ", tmp/19)
+as.bigz(tmp) %% 19
+```
+
+Let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global counter object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EvVerseWordsSumFatiha) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EvVerseWordsSumFatiha) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 

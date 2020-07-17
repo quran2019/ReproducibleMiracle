@@ -1,0 +1,856 @@
+# Evidences on Rewriting {#EvidencesRewriting}
+
+In this chapter, I will present some of the most important evidences I hypothesized and tested and witnessed them to be under the 19 based coding system of the text of Quran. In my opinion, especially Evidence \@ref(Decode1) is the **ultimate evidence** as the proof that the text of Quran is intact and unchanged and designed under the 19 based coding system. It is because we literally **rewrite** the text of Quran with the corresponding descriptive numbers at finest text resolution and in exact same order of Quran. This chapter mainly provides evidences in the similar rewriting approach in general.
+ 
+## The Ultimate Evidence: Rewriting the full text by main descriptive numbers per verse {#Decode1}
+In my opinion, this evidence is the ultimate evidence of all that itself proves that whole text of Quran with all of its text structure, size and order is under the 19 based coding system of the text of Quran and thus it is intact and unchanged from the beginning since 632 for the last 1387 years. In a sense, I fully decode the text of Quran by its descriptive numbers. In order to decode the full text of Quran, we need its own text numbers to decode. The way I will decode the text of Quran is simply by re-writing the text of Quran, verse by verse with its counted descriptive numbers in the exact same order of the text from right to left as in Arabic. For these kinds of re-writing evidences, we can add this rule upon general rules such that in order to re-write the text of Quran by its descriptive numbers we need to mimic the Arabic text of Quran that is written from right to left. In order to re-write the full text of Quran in the exact same order, I will utilize from this table that keeps all the descriptor numbers for each and every verse of the full text of Quran in order:
+
+```{r eval=TRUE}
+knitr::kable(head(unQuran), booktabs = TRUE,
+  caption = 'Table head of all verses of Quran.')
+
+knitr::kable(tail(unQuran), booktabs = TRUE,
+  caption = 'Table tail of all verses of Quran.')
+```
+
+Using all the descriptive numbers per verse, I will re-write the whole text of Quran with the numbers in each row of the table above. I will basically re-write the full text of Quran with numbers in the same order of the words of Quran from right to left as in Arabic. As numbers, I will use the exact chapter index, verse index, number of words and also number of letters of each verse. Since in the whole text of Quran there are 112 unnumbered Basmala verses, I will also take this into account and I will not assign any verse number for the unnumbered Basmalas but still assign their chapter index and word and letter numbers for them just like they are written in the text of Quran. This literally means, re-writing the full text of Quran with the 4 main descriptor numbers of the text. There is only one version of such an hypothesis. Because, I am testing the order and size of each verse at the smallest resolution that is number of letters and words per verse along with all the two other specific descriptor numbers, chapters and verses. Here is the proof with a reproducible R code that re-writes, namely decodes, the full text of Quran by the 4 different descriptor numbers first and then test this big number.
+
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran
+tv <-c()
+ for(j in 1:nrow(x)) {
+     if(x$verse[j] != 0){#for all the numbered verses
+         tmp <- paste0(x$chapter[j],x$verse[j],x$vwords[j],x$vletters[j])
+         }else{#For unnumbered Basmala verses
+             tmp <- paste0(x$chapter[j],x$vwords[j],x$vletters[j])
+             }
+     tv <- c(tv,tmp)
+   }
+ tmp <- paste0(tv, collapse = "")  
+ #I revert the order from right to left as in Arabic.
+ tmpr <- rev(tv) # matches the coding from right to left as in Arabic.
+ tmpr[1:10] #"1146313" "1145520" "1144417" "114328"  ...
+ tail(tmpr)
+ tmpr <- paste0(tmpr, collapse = "")  
+ cat("The test of divisibility by 19:")
+ cat(as.numeric(as.bigz(tmpr) %% 19)) #"0"
+ 
+ cat("Number of digits on this big number
+     is ", nchar(tmpr))
+ cat("The length of the big number is ",
+  nchar(tmpr), " and its digit sum is ",
+  length(nchar(tmpr)))
+```
+
+First of all before discussing on the main point, as you can see in the last result, the digit sum of the number of digits of this big number, which is obtained by re-writing the full text of Quran, is exactly 19.
+
+Back to the main point of the evidence, in my opinion, divisibility by 19 of this big number that represents the re-writing of the text of Quran in every level of detail is the biggest evidence of all, namely ultimate evidence. We **additionally** are witnessing that the digit sum of the number of digits number is exactly 19 and this further assures my opinion on this the greatest evidence of all as we do not normally observe such further assurances.
+
+From the head and tail outputs of the *tmpr* object, one can perform a quick check and test the re-writing. Feel free to use the code to reproduce and test the proof given above and critically evaluate it.
+
+
+Since we are re-writing the full text of Quran by its own numbers and thus testing the intactness of all the sizes and also the orders of all the descriptive numbers and structure of the text, we can only use the default divisibility by 19 test. So, we have one number and one test! Therefore, the probability of this big number being divisible by 19 is 1/19. And also it is worth emphasizing again that this big number is the only number we can generate to re-write the full text of Quran with the 4 main descriptor numbers of a text at finest text resolution. This big number represents the whole text of Quran with respect to the number of words and letters per verse per chapter and supports the hypothesis that there is no redundant or missing words or letters in each and every verses and their orders and sizes are correct, intact and unchanged since the beginning from 632 until today for the last 1387 years.
+
+The first column *VerseI* of the above table is an independently added column by myself to be able to refer each verse independently from the chapter index. It is especially useful to refer to unnumbered Basmala verses as they in fact do not have any number. I placed number 0 to fill the places of the verse index of unnumbered Basmala verses in the *verse* column but in fact there is no real **0** number representation for those Basmala verses. I already took this into account while re-writing the full text by numbers and skipped those zeros in the concatenation process. I will consider those *VerseI* indices in another section separately.
+
+For the reference, to the best of my knowledge, Evidence \@ref(Decode1) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(Decode1) had been available in another article, which is very unlikely, then in such a case, I surely add a citation and update the online version of this book.
+
+This evidence, Evidence \@ref(Decode1), is the ultimate evidence of all in my opinion. Because we literally re-write the full text of Quran in the exact same structure and order using the main descriptor numbers per verse. We used the full text version of Quran, which means including unnumbered and numbered verses. In my opinion, there is no better alternative than this big number to represent Quran with numbers and thus this is the single best number. We witnessed that this number is under the 19 based coding system of the text of Quran. On the other hand, I have observed some other interesting re-writing representations as well but they can only be considered only underneath of this evidence as secondary evidences compare to this one. Therefore, I will provide several sub-sections that present other evidences about re-writing the text of Quran with other numbers from different aspects. Again, those are only follow up evidences and they are only meaningful because we have already witnessed the best re-writing of the text, Evidence \@ref(Decode1), as under 19 based coding system of the text of Quran. If Evidence \@ref(Decode1) was not successful, those follow up subsections would not be as meaningful as now. Because, one could always argue that the best possible re-writing representation did not pass the test, which is not the case right now.
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/BigNumber_6.1.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+As the last process to do, let's add the number of successful evidences and the number of total numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters. 
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+
+**Additional rule for re-writing approaches:**
+In order to define boundaries of this kind of approach for re-writing, I define the additional rule such that any re-writing evidence of the text of Quran needs to be made based on verse indices that must also include the number of words and letters per verse as well. It must also be written from right to left as in Arabic language and we can only apply the default divisibility by 19 test as the order of the numbers to be tested as well.
+
+
+### Evidence: Rewriting the full text by main descriptive numbers per verse index {#Decode2}
+
+Evidence \@ref(Decode1) is the main evidence to re-write the full text of Quran with the 4 main descriptor numbers of a text. If Evidence \@ref(Decode1) was not successful, I would not be able to confidently hypothesize the additional follow up evidences such as this one. Because, when we mention a specific verse in Quran we **naturally** refer to it by its chapter and verse index such as this "Quran 74:30". Therefore, any natural test must consider those numbers first as I did so in Evidence \@ref(Decode1) and proved that when we re-write, or in other words decode the text of Quran with its main descriptor numbers, the resulting big number is divisible by 19, which very strongly supports that Quran is intact and has correct order and unchanged as we Muslims already presume and accept so. However, after witnessing that great test, I decided to perform a follow up test. I wanted to test if there is any similar design with respect to the general order index of each verse from 1 to 6348 (column *VerseI* in the table). Then, the question was at which location should I place the general order verse index for concatenation. The previous natural order was not quite suitable as it does not fit in, for instance, the natural "74:30" like expression of a verse of Quran. I decided to place the general order of verse index at the beginning just like I naturally did myself while generating the table of the text of Quran and placing the general verse indices, *VerseI*, at the beginning. This make sense because we also sometimes refer to a verse like "the first verse" in Quran without referring the chapter index. In a sense, these general verse order indices are at the outer domain of chapter indices and when we give only this index one can find out which chapter and which verse of that chapter by following the order of the verses in Quran. Thus, I locate the general verse indices, *VerseI*, at the beginning and then follow the general order of concatenations afterwards. As I show in the following, re-writing the full text of Quran as in Evidence \@ref(Decode1) but this time regarding the general verse order indices results another big number that is also divisible by 19.
+
+```{r , eval=TRUE, message=FALSE}
+x<- data.table(unQuran)
+tmp <- paste0(x$VerseI,x$chapter,x$vwords,x$vletters) 
+head(tmp)
+#Revert the order from right to left as in Arabic.
+tmpr <- rev(tmp)
+head(tmpr)
+tmpr <- paste0(tmpr, collapse = '')
+cat(as.numeric(as.bigz(tmpr) %% 19))# "0"
+
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+Since I used the number 6348 for general verse indices of the full text, I also tested the unnumbered version for the number 6236. This evidence only passes the test for the full text of Quran that is based on 6348 general verse indices, which is more assuring in fact as we are re-writing or decoding the text of Quran. As we just witnessed again, the text of Quran was precisely designed and coded with 19 based coding system of the text of Quran and is also intact and unchanged from the beginning for the last 1387 years.
+
+Since we performed two tests and observed one success, we can compute the probability of this evidence as follows:
+
+```{r , eval=TRUE, message=FALSE}
+tmp <-binom.test(1, 2, p = (1/19),
+                 alternative = c("greater"))
+tmp <- tmp$p.value
+print(paste("The probability of 1 success out of 2 (with p=1/19) is:", tmp))
+```
+
+As the last process to do, let's add the number of successful evidences and the total number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(Decode2) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(Decode2) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6_1_1_rewrite.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+
+### Evidence: Rewrite the full text by word and letter numbers per verse regarding verse indices  {#RewrByVerseIndx}
+
+
+In Evidence \@ref(Decode1), I had used the 4 main descriptors numbers to re-write the full text of Quran. It was the natural way of re-writing the full text by the 4 main descriptive numbers. However, we can also refer to each verse by their general verse index that we assign from 1 to 6348 to the full text. Since we refer to the total verse number 6348, we also consider the unnumbered version 6236 as well for testing. If we use only these general verse indices and refer to each verse, we can similarly re-write the full text of Quran by the number of words and letters per verse in order. Because as mentioned before, these general verse indices also incorporates the chapter information inside implicitly and enough to represent the full text of Quran precisely. As you will see in the following, I will re-write, first, the full text of Quran regarding the total number of verses 6348.
+
+As we know, Quran is written from right to left and I again follow this same pattern while re-writing the text by the descriptive numbers. This represents the whole text of Quran with respect to number of words and letters per general verse index and supports the hypothesis that there is no redundant or missing words or letters in each verse and their orders are also correct.
+
+In the following proof, I demonstrate that this hypothesis for the case of 6348, which represents the total general verse indices of the full text of Quran.
+
+```{r , eval=TRUE, message=FALSE}
+#Verse index (VerseI)  as descriptor
+x<- data.table(unQuran)
+tmp <- paste0(x$VerseI,x$vwords,x$vletters) 
+head(tmp)
+tmpr <- rev(tmp) ## matches the coding from right to left as in Arabic.
+head(tmpr)
+tmpr <- paste0(tmpr, collapse = '')
+cat(as.numeric(as.bigz(tmpr) %% 19))
+
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+It further supports the knowledge that Quran is intact and unchanged and designed from the beginning in this exact same order, size and structure.
+
+
+Now, I demonstrate the similar number for 6236 verses text category. However, since this number does not follow the universal rule of this book, I do not take it as evidence.
+There are many such cases that I did not consider as part of the general system and I did not include in this book. I give this particular number as one such exemplary case that shows that I only include the numbers that are under the general rules of the system that I observed and set accordingly in this book. One of the the main rules was that the 4 descriptive numbers must be always in the natural order when we combine them. Here the number of letters is placed before words and therefore does not obey the general rule and thus is not included as part of the 19 based system of the text of Quran that I present in this book. Here is the number that is considered neither evidence nor fact:
+
+
+```{r , eval=TRUE, message=FALSE}
+#Verse index (VerseI) as descriptor
+x<- data.table(nQuran)
+tmp <- paste0(x$VerseI, x$vletters,x$vwords)  
+head(tmp)
+tmpr <- rev(tmp) # matches the coding from right to left as in Arabic.
+head(tmpr)
+tmpr <- paste0(tmpr, collapse = '')
+cat(as.numeric(as.bigz(tmpr) %% 19))
+
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(RewrByVerseIndx) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(RewrByVerseIndx) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+This evidence completes the re-writing evidences, regarding the additional rules mentioned in Evidence \@ref(Decode1).
+
+### Evidence: The general verse indices and others {#RewrByVerseIndxLetters}
+
+In this section, I will present evidences that show the harmony between the general verse indices and others indices, which are chapters and special verse indices. As a general rule we do not test the combinations of the four main descriptive numbers. On the other hand, general verse indices are outside of these four main descriptive numbers. Thus, we have specific rules for it. 
+
+As the first rule on the general verse indices, we test them using only rewriting approach to see its relation to chapters and special verse **indices**. This means we test the general verse indices and their corresponding chapter indices for each verse and at exact location in the Book. Therefore, we have two numbers of the two text types to test between general verse indices and chapter indices as there is order in concatenation, where general verse indices is naturally at the beginning and the chapter indices on the right.
+
+Similarly, we have two numbers to test the harmony between the general verse indices and the special verse indices. So, in total we have 4 numbers and since the numbers are ordered we have 4 tests to perform. As you will see in Evidence \@ref(RewrByGenSpecVerses) and Evidence \@ref(RewrByGenVerseChapt), 3 successes out of 4 are observed.
+
+
+As the last process to do, let's add the number of successful evidences of tests and the total number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the global counters.
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 3
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(RewrByVerseIndxLetters) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(RewrByVerseIndxLetters) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+
+
+#### Evidence: The general and special verse indices {#RewrByGenSpecVerses}
+
+In this evidence, I prove the harmony between the general verse indices and 6236 numbered special verse indices as below:
+
+
+```{r, eval=TRUE, message=FALSE}
+## General verse indices and verses
+# 2 possible numbers; 2 tests, one success
+x<- data.table(nQuran)
+tmp <- paste0(x$VerseI,x$verse)
+head(tmp) # see the head of the number
+tail(tmp) # see the tail of the number
+tmpr <- rev(tmp) 
+tmpr <- paste0(tmpr, collapse = '')
+as.integer(as.bigz(tmpr) %% 19)
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.1.3.1_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+#### Evidence: The general verse indices and chapters {#RewrByGenVerseChapt}
+
+In this evidence, I prove the harmony between the general verse indices and their corresponding chapter indices below. First, between the 6236 numbered general verse indices and their corresponding chapter indices:
+
+```{r, eval=TRUE, message=FALSE}
+## General verse indices and chapters
+# 2 ordered numbers; thus 2 tests; two success
+#numbered verses, nQuran object
+x<- data.table(nQuran)
+tmp <- paste0(x$VerseI,x$chapter) 
+tmpr <- rev(tmp)
+head(tmpr)
+tail(tmpr)
+tmpr <- paste0(tmpr, collapse = '')
+cat(as.numeric(as.bigz(tmpr) %% 19))
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.1.3.2.A_Evidence_bignumber.txt
+
+
+Second related evidence exist also for all the 6348 verses. We look at the same pattern if exist in all the 6348 verses and see that it exists too! As you will witness below, between the 6348 general verse indices and their corresponding chapter indices, we witness the same 19 based design coding patter as follows:
+
+```{r, eval=TRUE, message=FALSE}
+# unQuran object
+x<- data.table(unQuran)
+tmp <- paste0(x$VerseI,x$chapter) 
+tmpr <- rev(tmp)
+head(tmpr)
+tail(tmpr)
+tmpr <- paste0(tmpr, collapse = '')
+as.integer(digitsum(tmpr) %% 19)
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+
+As just proved, the general verse indices are in perfect harmony with their chapter indices of the text of Quran. This further supports the intactness of the text of Quran. It means, Quran is unchanged and exactly in the same order as we have right now in our hands with respect to each verse and their corresponding chapter. These evidences clearly prove that the order of verses and chapters are precisely correct and under strong 19 based design. 
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.1.3.2.B_Evidence_bignumber_6348verses.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+### Evidences: Rewriting per chapter  {#EVperCperV}
+
+I will show evidences in which I re-write the text of numbered verses of Quran per chapter, with the 4 main descriptor numbers of a text. To remember the numbers to be used, I first provide the head and tail of the table I will use.
+
+```{r, eval=TRUE}
+knitr::kable(head(dfVCwl), booktabs = TRUE,
+  caption = 'Table head of numbered verses of Quran.')
+knitr::kable(tail(dfVCwl), booktabs = TRUE,
+  caption = 'Table tail of numbered verses of Quran.')
+```
+
+I will concatenate the numbers per chapter in the exact same order of the text of Quran, namely from right to left, as I did in Evidence \@ref(Decode1).
+
+```{r , eval=TRUE, message=FALSE}
+#### Evidence on per chapter level re-writing 
+tmp <- paste0(dfVCwl$Chapter_index,dfVCwl$Verse_sum,
+              dfVCwl$cwords, dfVCwl$cletters)
+tmpr<-rev(tmp)
+head(tmpr)
+tail(tmpr) 
+tmpr <- paste0(tmpr, collapse = '')
+cat(as.numeric(as.bigz(tmpr) %% 19))
+cat("number of digits on this big number is", nchar(tmpr))
+
+```
+
+We can only use the default test as we are testing the order of re-writing as well. It has a similar approach to Evidence \@ref(Decode1) but at the chapter level numbers resolution of it. We could perform two tests and observed one success. 
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#2 ordered numbers, two tests
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EVperCperV) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EVperCperV) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+Here is the "`r nchar(tmpr)`" digits length number of this evidence:
+
+"`r tmpr`"
+
+
+### Facts: Rewriting per category at chapter level {#EVperCatperchapters}
+
+Regarding the simplified rules, when considering the four main descriptive numbers, we only rewrite Quran using all of them as we did in Evidence \@ref(Decode1). Therefore, I will present this successful test as a fact instead of evidence. Consequently, it will not be counted in the global probability of the 19 system presented in this book.
+
+
+In this fact, similar to the rewriting approach, I will concatenate the chapter indices in the numbered verses of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+tmp <- paste0(dfVCwl$Chapter_index)
+tmpr<-rev(tmp)
+head(tmpr)
+tmpr <- paste0(tmpr, collapse = '')
+cat(as.numeric(as.bigz(tmpr) %% 19))
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+
+
+
+### Evidences: Rewriting of Quran at verse level with sums  {#EVrewriteVerseSums}
+
+In the Ultimate Evidence, Evidence \@ref(Decode1), we had witnessed that we could rewrite Quran by concatenating the 6348 representation numbers of each verse at the verse level. In this evidence, Evidence \@ref(EVrewriteVerseSums), we will witness a similar rewriting evidence, also in the second type of the text with 6236 verses.
+
+Basically, we first **sum** the chapter index, verse index, the number of words and the number of letters in that verse. This gives us the representation number of that verse. We then place those representation numbers where we see in the text as this is a rewriting test just as in the case of Ultimate Evidence, Evidence \@ref(Decode1). Then we
+concatenate all the 6236 representation numbers and obtain the single representation number of the text of Quran considering only the numbered verses. Let me first remind the numbers by presenting the head and tail of the table of the numbered verses.
+
+
+
+
+
+```{r, eval=TRUE}
+knitr::kable(head(nQuran), booktabs = TRUE,
+  caption = 'Table head of numbered verses of Quran.')
+knitr::kable(tail(nQuran), booktabs = TRUE,
+  caption = 'Table tail of numbered verses of Quran.')
+```
+
+And, here is the proof.
+
+```{r , eval=TRUE, message=FALSE}
+x<- nQuran
+tmp2 <- x$chapter + x$verse +
+  x$vwords + x$vletters
+cat("Head and tail of the representation numbers of verses")
+head(tmp2)
+tail(tmp2)
+tmpr <- paste0( rev(tmp2), collapse = "")
+as.bigz(tmpr) %% 19 
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+As we see the remainder is 0 and thus the number is under the 19 based coding system of the text of Quran. We can only use the default test as we are testing the order of re-writing as well. It has a similar approach to Evidence \@ref(Decode1) but using the second type of the text of the numbered verses and also sum operation to get the representation number of each verse. We could perform two tests and observed one success since the sum operation is different than Evidence \@ref(Decode1).
+
+As we see, we could again re-write the text of Quran after Evidence \@ref(Decode1). This means both text types with 6348 verses and 6236 verses can be re-written with their natural numbers and they are under the 19 based coding system up until the last letter. 
+
+As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#2 ordered numbers, two tests
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+
+There is also an additional **fact** in this evidence in which we concatenated each representation number of each verse. If we sum those instead of concatenation, then the resulting number reveals an interesting fact. Because the digit sum of it also divisible by 19 as shown below.
+
+```{r , eval=TRUE, message=FALSE}
+tmp3 <- sum(as.numeric(tmp2))
+#The sum of sums
+tmp3
+#The digit sum of it to mod 19
+digitsum(tmp3) %% 19 
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EVrewriteVerseSums) is first time presented to the literature in this book, and it has been hypothesized, tested and discovered by myself. In case if I find out Evidence \@ref(EVrewriteVerseSums) had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.1.6_Evidence.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+
+## Evidences with Abjad numbers {#DecodeAbjad1}
+
+The Abjad numbers, are a decimal alphabetic numeral system, in which the 28 letters of the Arabic alphabet are assigned numerical values and it is a very old tradition in Arabic language. I quote this information and each letter and their corresponding Abjad numbers from en.wikipedia.org/wiki/Abjad_numerals. It is, in nature, similar to Roman numbers. As the source of Abjad numbers is not Quran and there is no information about it in Quran, I personally am reluctant to pursue a deep textual analysis using Abjad numbers in regard to 19 based coding system of the text of Quran. However, since there was early attempts and some interesting Abjad number based coding examples available on Basmala verse, I wanted test with it anyway. Because, if the historical Abjad numbers that we know is correct and if there is also coding with the Abjad numbers then we have a utility to go into the furthest resolution in the text of Quran. So far, the finest text resolution I could try is with the number of letters per word to get a verse number representation. But, if correct, now we might have the utility to test the sequence of each words and letters within each word of the text of Quran. I tested exactly this and observed evidences for it. I will present this very interesting evidences as subsections of this section. Let's first let's see the Abjad numbers:
+
+```{r eval=TRUE}
+#See github.com/quran2019/Quran19/blob/master/abjads.Rda
+load("abjads.Rda")
+dfAbjads <- data.table(cbind(abjadL, abjadN))
+datatable(dfAbjads,
+          caption = 'Abjad numbers for each unique letter character in Quran',
+          options = list(pageLength = 10, 
+                              autoWidth = TRUE),
+          rownames= FALSE)
+```
+
+In the following sub sections, I will decode the text of the full text of Quran at the word and even letter level by replacing their corresponding Abjad numbers [@AbjadNum]. 
+
+Since Abjad numbers are not from within the text of Quran, I cannot rely on them in the same level as I do in the natural numbers of the text. Information of Abjad numbers are from historical resources and they may not be as reliable as the text of Quran. Therefore, some people are very skeptical on them.  The evidences of this book are always based on the natural numbers of the text of Quran and no Abjad numbers are used other than this particular section, section \@ref(DecodeAbjad1). I want this book to be recalled mostly with that aspect and do not want to fully merge this section with Abjad numbers. Therefore, I will not include all the probabilities that come with the many evidences of this section. The best way to make sure, it does not cast any shadow in the reliability of this book is by not merging with the overall probabilities of the general 19 based system of this book. However, the evidences of this section are also quite strong and I will only take one success and two trials as representative contribution to the overall probabilities. Therefore I add only once success but two trials to the global counters as follows:
+
+
+```{r , eval=TRUE, message=FALSE}
+global_tested_nums <- global_tested_nums + 2 
+global_success_nums <- global_success_nums + 1
+```
+
+
+To clear up the point I just raised, the only way we can test whether the sequence of the words and letters have any 19 based design or not is using Abjad numbers. Otherwise with natural numbers of the text, we could test the number of words and letters of each verse regarding number 19. The following evidences with Abjad numbers suggests that even the position of each letter and words are under 19 based design. It also shows that, the natural numbers and abjad numbers are in harmony regarding number 19
+
+For the reference, to the best of my knowledge, All the evidences and facts of the main section, Evidence \@ref(DecodeAbjad1) is first time presented to the literature in this book, and they have been hypothesized, tested and discovered by myself.
+
+
+### Evidences: Replacing each word by its Abjad and re-write the full text of Quran  {#EVAbjCVwords}
+
+In this evidence, Evidence \@ref(EVAbjCVwords), the text of Quran will be re-written using abjad numbers.
+Basically, each word will be replaced by its corresponding abjad number and labelled by its chapter index and verse index. We will replace this representation numbers with the words in the text of Quran and concatenate them all. The resulting big number is multiple of 19, which suggest that it is under 19 based design.
+
+
+
+```{r , eval=TRUE, message=FALSE}
+x<- nQuran
+tv <-c()
+for(j in 1:nrow(x)) {
+  #for all the numbered verses
+  tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+  tmp <- paste0(x$chapter[j],x$verse[j],tmplett)
+  tv <- c(tv,tmp)
+}
+tmpr <- rev(tv) # matches the coding from right to left as in Arabic.
+#Each number represents a word as this:
+#[Chapter index|Verse index|Abjad number of the word]
+tail(tmpr) # tail of the vector. 
+tmpr <- paste0(tmpr, collapse = "")  
+as.bigz(tmpr) %% 19 #tes if mod 19 iz sero
+
+cat("Number of digits of this big number is", nchar(tmpr))
+```
+
+As we see in the above evidence that when we replace the words with their corresponding abjad numbers along with their chapter and verse indices in their exact position in the text of Quran and then concatenate them, we witness that this big number is also multiple of 19.
+
+You can access this "`r nchar(tmpr)`" digits length big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.2.1_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+j<-1 # FIRST VERSE, BASMALA is input
+tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+cat("Abjad number for each words of Basmala in Arabic order: ", rev(tmplett))
+tmp <- paste0(x$chapter[j],x$verse[j],tmplett)
+cat("Chapter index and verse index is concatenated 
+     to each word of the Basmala: ", rev(tmp))
+```
+
+
+
+### Evidences: Pairing verses with Abjad of both text types of Quran {#EVAbjVersPair}
+
+In this evidence, Evidence \@ref(EVAbjVersPair), the coding patter is similar to Evidence \@ref(EvPerVerse2) and Evidence \@ref(EvPerChapter1), where we pair representation numbers of verses of both text types of Quran between 6348 and 6236 verses. Basically we first replace each word in a verse with its corresponding abjad number. We then concatenate them per verse that gives us representation numbers of each verse using abjad numbers. We do this for both text types of Quran (6348 and 6236 verses). We then pair the two vector that contains the representation numbers of each verse. As you will remember, the longer vector, wraps the shorter vector as if a circle from its beginning.
+The resulting big number is multiple of 19. Moreover, the digit sum of the same big number is also multiple of 19. Two tests results success on the same number, which suggest that it is under 19 based design. Here is the proof.
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+tv <-c()
+for(j in 1:nrow(x)) {
+  tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+  tmp <- paste0(rev(tmplett), collapse = "" )
+  tv <- c(tv,tmp)}
+tmp1 <- tv #only first round
+#
+x<- nQuran
+tv <-c()
+for(j in 1:nrow(x)) {
+  tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+  tmp <- paste0(rev(tmplett), collapse = "" )
+  tv <- c(tv,tmp)}
+#
+tmp <- paste0( paste0(tv,tmp1), collapse = "") 
+as.bigz(tmp) %% 19 # mod 19
+digitsum(tmp) %% 19 # mod 19
+
+cat("Number of digits of this big number is", nchar(tmp))
+```
+
+As we witnessed, not only the big number is multiple of 19 but also its digit sum is. You can access this "`r nchar(tmp)`" digits length big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.2.2_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+j<-1 # First verse, BASMALA is input
+tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+cat("Abjad number for each words of Basmala: ", rev(tmplett))
+tmplett <- paste0(rev(tmplett), collapse = "" )
+cat("Basmala verse is represented as a single number
+     from Abjad numbers as follows: ", tmplett)
+
+#For 6236 verses we get the same number
+# as the first Basmala is numbered. 
+tmp <- paste0( paste0(tmplett,tmplett), collapse = "")
+cat("Pairing of Basmala verse representation is:")
+tmp
+```
+
+
+### Evidences: Pairing verses with Abjad of both text types of Quran with chapter and verse indices {#EVAbjCVVersPair}
+
+This evidence is similar to the previous evidence, Evidence \@ref(EVAbjVersPair), but this one includes chapter and verse indices information per verse as well. This, its the coding patter is also similar to Evidence \@ref(EvPerVerse2) and Evidence \@ref(EvPerChapter1), where we pair representation numbers of verses of both text types of Quran between 6348 and 6236 verses. Basically we first replace each word in a verse with its corresponding abjad number. We then concatenate each abjad representation number of verse with its chapter index and verse index.For example, for Chapter and verse 2 we concatenate this as 12a where a is abjad number of the verse. We then concatenate them per verse that gives us representation numbers of each verse using abjad numbers and its descriptive indices. We do this for both text types of Quran (6348 and 6236 verses). We then pair the two vector that contains the representation numbers of each verse. As you will remember, the longer vector, wraps the shorter vector as if a circle from its beginning. The resulting big number is multiple of 19. Here is the proof.
+
+```{r , eval=TRUE, message=FALSE}
+x<- nQuran
+tv <-c()
+for(j in 1:nrow(x)) {
+ #for all the numbered verses
+  tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+  tmplett <- paste0(rev(tmplett), collapse = "" )
+  tmp <- paste0(x$chapter[j],x$verse[j],tmplett)
+  tv <- c(tv,tmp)}
+tmp1 <- tv
+#now for unQuran
+x<- unQuran
+tv <-c()
+for(j in 1:nrow(x)) {
+  if(x$verse[j] != 0){#for all the numbered verses
+    tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+    tmplett <- paste0(rev(tmplett), collapse = "" )
+    tmp <- paste0(x$chapter[j],x$verse[j],tmplett)
+  }else{#For unnumbered Basmala verses
+    tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+    tmplett <- paste0(rev(tmplett), collapse = "" )
+    tmp <- paste0(x$chapter[j],tmplett)}
+  tv <- c(tv,tmp)}
+tmp <- paste0(tv, collapse = "")  
+# PAIRING both
+tmp <- paste0(tv,tmp1)
+tmp <- paste0(tmp, collapse = "") 
+as.bigz(tmp) %% 19 #mod 19 of big number
+
+cat("Number of digits of this big number is", nchar(tmp))
+```
+
+As we witnessed the big number is multiple of 19. You can access this "`r nchar(tmp)`" digits length big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.2.3_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+j<-1 # FIRST VERSE, BASMALA is input
+tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+cat("Abjad number for each words of Basmala: ", rev(tmplett))
+tmplett <- paste0(rev(tmplett), collapse = "" )
+cat("Basmala verse is represented as a single number
+     from Abjad numbers as follows: ", tmplett)
+tmp <- paste0(x$chapter[j],x$verse[j],tmplett)
+cat("Chapter index and verse index is concatenated 
+     to this verse: ", tmp)
+```
+
+
+
+
+### Evidences: Pairing verses with Abjad of both text types of Quran with general indices {#EVAbjGenIndxVersPair}
+
+This evidence is similar to the previous evidence, Evidence \@ref(EVAbjVersPair), but this one includes chapter and verse indices information per verse as well. This, its the coding patter is also similar to Evidence \@ref(EvPerVerse2) and Evidence \@ref(EvPerChapter1), where we pair representation numbers of words of both text types of Quran between 6348 and 6236 verses. Basically we first replace each word with its corresponding abjad **sequence** number. By, abjad sequence number, I mean that each letter in the word is replaced by its corresponding abjad number. We then concatenate each abjad representation number of verse with its chapter index and verse index.For example, for Chapter and verse 2 we concatenate this as 12a where a is abjad number of the verse. We then concatenate them per verse that gives us representation numbers of each verse using abjad numbers and its descriptive indices. We do this for both text types of Quran (6348 and 6236 verses). We then pair the two vector that contains the representation numbers of each verse. As you will remember, the longer vector, wraps the shorter vector as if a circle from its beginning. The resulting big number is multiple of 19. Here is the proof.
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+tv <-c()
+for(j in 1:nrow(x)) {
+  if(x$verse[j] != 0){#for all the numbered verses
+    # two write in Arabic way from right to left
+    tmplett <- rev(AbjadSeqofwordsperVerse(x$text[j])) 
+    tmp <- paste0(x$VerseI[j],tmplett)
+  }else{#For unnumbered Basmala verses
+    tmplett <- rev(AbjadSeqofwordsperVerse(x$text[j]) )
+    tmp <- paste0(x$VerseI[j],tmplett)}
+  tv <- c(tv,tmp)}
+tmp1 <- tv
+#
+tmp <- paste0(tv, collapse = "")  
+as.bigz(tmp) %% 19 #mod 19
+cat("Number of digits of this big number is", nchar(tmp))
+```
+
+In the above code, we also observed an additional fact before pairing. Basically, when the letters of each of the 6348 verses are replaced by their corresponding abjad numbers and labelled by their corresponding general verse indices, the resulting big number is multiple of 19. However, the order is the normal order but not as in Arabic, which is why I did not consider this as evidence. However, if someone argues that the order should have been in the normal number order rather than as we observed in Arabic writing from right to left, then this fact is here for those. 
+
+Anyways, lets continue to the main evidence and get the second vector over the 6236 numbered verses in the same way as follows: 
+
+```{r , eval=TRUE, message=FALSE}
+x<- nQuran 
+tv <-c()
+for(j in 1:nrow(x)) {
+  #for all the numbered verses
+  tmplett <- rev(AbjadSeqofwordsperVerse(x$text[j])) # two write in Arabic way from right to left
+  tmp <- paste0(x$VerseI[j],tmplett)
+  tv <- c(tv,tmp)}
+#
+tmp <- paste0(tmp1,tv)
+tmp <- paste0(tmp, collapse = "") 
+as.bigz(tmp) %% 19 #mod 19
+digitsum(tmp) %% 19 #mod 19
+
+cat("Number of digits of this big number is", nchar(tmp))
+```
+
+As we witnessed, not only the big number is multiple of 19 but also its digit sum is. You can access this "`r nchar(tmp)`" digits length big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.2.4_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+j<-1 # FIRST VERSE, BASMALA is input
+tmplett <- rev(AbjadSeqofwordsperVerse(x$text[j])) 
+cat("Abjad sequence for each letters of Basmala words: ", tmplett)
+tmp <- paste0(x$VerseI[j],tmplett)
+cat("The general verse index and 
+    the Abjad sequence of the words: ", tmp)
+```
+
+
+### Evidences: Harmony of all the numbers: Natural and Abjad {#EVAbjNatharmony}
+
+In the two evidences of this section, I will use all the natural numbers and abjad numbers together and show they all those numbers have harmony based on number 19. I had used two function to generate Abjad numbers, each of the evidences use one of those functions. This means both usage of Abjad numbers are in harmony with all the other natural numbers at verse level.
+
+**First evidence:** I will concatenate all the natural numbers of a verse (chapter and verse index, number of words and letters) and the corresponding Abjad sequence number of that verse. By Abjad sequence number, I mean that I literally replaced each letter with its corresponding Abjad number in the verse.  When we concatenate each of the 6236 numbered verses, we observe that the digit sum of this big number, namely digit sum of all the numbers used in this book is also multiple of 19! Here is the proof:
+
+```{r , eval=TRUE, message=FALSE}
+x<- nQuran # 6236 verses
+tv <-c()
+for(j in 1:nrow(x)) {
+ #for all the numbered verses
+  tmplett <- rev(AbjadSeqofwordsperVerse(x$text[j]))
+  # rev is to write in Arabic way from right to left
+  tmplett <- paste0(tmplett, collapse = "" )
+  tmp <- paste0(x$chapter[j],x$verse[j],x$vwords[j],x$vletters[j],tmplett)
+  tv <- c(tv,tmp)}
+tmp <- paste0(tv, collapse = "")  
+digitsum(tmp) %% 19 # mod 19 of the bif number
+
+cat("Number of digits of this big number is", nchar(tmp),
+    " and it is also multiple of 19 as follows: ", nchar(tmp) %% 19)
+
+```
+
+As we witnessed, not only the big number is multiple of 19 but also its length is multiple of 19. You can access this "`r nchar(tmp)`" digits length big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.2.5.1_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+j<-1 # FIRST VERSE, BASMALA is input
+tmplett <- rev(AbjadSeqofwordsperVerse(x$text[j])) 
+cat("Abjad sequence for each letters of Basmala words: ", tmplett)
+tmp <- paste0(x$chapter[j],x$verse[j],
+              x$vwords[j],x$vletters[j],tmplett)
+cat("Concatenate all the natural numbers and 
+    the Abjad sequence of the words  per verse: ", tmp)
+```
+
+
+**Second evidence:** Similar to the previous one but this time, we use the other Abjad representation function, where we represent each word by its corresponding Abjad number. Basically, this is the sum of abjad numbers of its letters for each word. We generate the big number to be tested in the exact same approach as above. The only difference is, this time we represent each word by its corresponding Abjad number. Since the final big number that we use is obtained with the same approach as the first evidence, I consider them to have a similar coding pattern and merged these evidences in the same section. In summary, this evidence also use all the natural numbers and abjad numbers together and show that all those numbers have harmony based on number 19. The way I concatenate the numbers as always is the natural order that yields a single big number and no combination.
+
+
+
+```{r , eval=TRUE, message=FALSE}
+x<- nQuran #6236 verses
+tv <-c()
+for(j in 1:nrow(x)) {
+  tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+  tmplett <- paste0(rev(tmplett), collapse = "" )
+  tmp <- paste0(x$chapter[j],x$verse[j],x$vwords[j],x$vletters[j],tmplett)
+  tv <- c(tv,tmp)}
+tmp <- paste0(tv, collapse = "")  
+as.bigz(tmp) %% 19 #mod 19
+
+cat("Number of digits of this big number is", nchar(tmp))
+```
+
+As we witnessed, the big number is multiple of 19. You can access this "`r nchar(tmp)`" digits length big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.2.5.2_Evidence_bignumber.txt
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+It may be helpful to understand what is going on in the coding if I print out the outputs of a few steps using the first verse, Basmala, of Quran as follows:
+
+```{r , eval=TRUE, message=FALSE}
+x<- unQuran 
+j<-1 # First verse, BASMALA is input
+tmplett <- AbjadSeqofaWordSumValue(x$text[j])
+tmplett <- paste0(rev(tmplett), collapse = "" )
+cat("Concatenating Abjad numbers of each Basmala words: ", tmplett)
+tmp <- paste0(x$chapter[j],x$verse[j],
+              x$vwords[j],x$vletters[j],tmplett)
+cat("Concatenate all the natural numbers and 
+    the Abjad number the words per verse: ", tmp)
+```
+
+
+
+
+
+
+
+
+## Evidences: Rewriting Quran based on words  {#EVrewriteBasedonWords}
+
+In the Ultimate Evidence, Evidence \@ref(Decode1) and Evidence \@ref(EVrewriteVerseSums) and also Evidence \@ref(EVperCperV), we had rewritten the text of Quran utilizing the natural numbers of the text of Quran considering chapter, verse, words and letters. Some people had difficult time comprehending those miraculous evidences as they prove that Quran is intact as we have today up to its letters. They categorically cannot believe this can be proved until the letters of Quran. However, fact is fact and I presented reproducible evidences that can be easily tested by anyone with some computer knowledge. People who cannot accept this fact cannot change those evidences that proves that Quran is intact up to its letters and there is 19 based coding system over its text. Or in other words "over it is nineteen !".
+
+Anyways, I thought for such people, who dares to deny reproducible and testable facts, there might be other evidences without the number of letters. I therefore hypothesized words focused potential codings and discovered a pattern to re-write Quran utilizing only the numbers chapters and words. It is pattern, because the same coding approach exist in two levels of the text, which are chapter and verse level.
+I provide those evidences as sub-sections to be able to refer them precisely in the future. I will first present the evidence at the verse level and then in the following sub-section, we will witness the same pattern exist in the chapter level too. Lastly, both of the evidences are based on the second type of the text of Quran with the 6236 numbered verses.
+
+Since the following two evidences have the same pattern, I will assert them together and add to the counters. We could also try the same tests in the other text type pf Quran with 6348 verse. Therefore, we have 4 trials and two successes for these evidences. As the last process to do, let's add the number of successful evidences and the number of numbers to be tested regarding this evidence in the global object so that in the end of the book we can calculate the global probability using the counters.
+
+```{r , eval=TRUE, message=FALSE}
+#2 ordered numbers, two tests
+global_tested_nums <- global_tested_nums + 4 
+global_success_nums <- global_success_nums + 2
+```
+
+For the reference, to the best of my knowledge, Evidence \@ref(EVrewriteChapWordsverslvl) and Evidence \@ref(EVrewriteChapWordsChaplvl)
+are first time presented to the literature in this book, and they have been hypothesized, tested and discovered by myself. In case if I find out those evidences had been available in another article, then, in such a case, I surely add a citation and update the online version of this book. 
+
+
+
+### Evidences: Rewriting Quran based on words and chapters at verse level numbers  {#EVrewriteChapWordsverslvl}
+
+In this evidence, Evidence \@ref(EVrewriteChapWordsverslvl), the text of Quran will be re-written with respect to chapter indices and number of words per verse.
+
+
+Basically, for each of the 6236 verses, we first **sum** the chapter index and the number of words of each verse, which gives us the representation number of each of the 6236 verses. Since this is re-writing evidence, as usual, we place the representation numbers in place of each verse in the text of Quran. Since Arabic is written from right to left, the representation number of the first verse will be at the most right position. As the main approach of this book, we then concatenate these 6236 representation numbers and get the single meaningful representation number of the text of Quran. Remember this approach, because we will witness that as the same approach will be present at the chapter level too in the next evidence after this one. Thus they together contain this specific pattern.   
+
+Let me first remind the numbers by presenting the head and tail of the table of the numbered verses.
+
+
+```{r, eval=TRUE}
+tmp <- nQuran
+tmp$VerseI <- NULL
+tmp$vletters <- NULL
+tmp$text <- NULL
+knitr::kable(head(tmp), booktabs = TRUE,
+  caption = 'Table head of numbered verses of Quran.')
+knitr::kable(tail(tmp), booktabs = TRUE,
+  caption = 'Table tail of numbered verses of Quran.')
+```
+
+And, here is the proof.
+
+```{r , eval=TRUE, message=FALSE}
+x<-nQuran
+tmp <- x$chapter + x$vwords
+tmpr <- rev(tmp)
+head(tmpr)
+tail(tmpr)
+tmpr <- paste0(tmpr, collapse = "") 
+as.bigz(tmpr) %% 19
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+As we see the remainder is 0 and thus the number is under the 19 based coding system of the text of Quran. We can only use the default test as we are testing the order of re-writing as well.
+
+You can access this big number from the following link:
+
+https://github.com/quran2019/Quran19/blob/master/6.3.1_Bignumber
+
+One can just copy the big number and paste it into a web based big number calculator and test it herself.
+
+
+### Evidences: Rewriting Quran based on words and chapters at chapter level numbers  {#EVrewriteChapWordsChaplvl}
+
+In this evidence, Evidence \@ref(EVrewriteChapWordsChaplvl), the text of Quran will be re-written with respect to chapter indices and number of words per chapter.
+
+
+Basically, for each of the 114 chapter considering the text type of 6236 numbered verse of Quran, we first **sum** the chapter index and the number of words of each chapter, which gives us the representation number of each of the 114 chapters. Since this is re-writing evidence, as usual, we place the representation numbers in place of each chapter in the text of Quran. Since Arabic is written from right to left, the representation number of the first chapter will be at the most right position. As the main approach of this book, we then concatenate these 114 representation numbers and get the single meaningful representation number of the text of Quran. As you will remember,  this approach was also used and had worked at verse level in Evidence \@ref(EVrewriteChapWordsverslvl). Therefore, it shows a particular pattern. 
+
+Let me first remind the numbers by presenting the head and tail of the table of the numbers at the chapter level.
+
+
+```{r, eval=TRUE}
+tmp <- dfVCwl
+tmp$cletters <- NULL
+knitr::kable(head(tmp), booktabs = TRUE,
+  caption = 'Table head of the chapters regarding numbered verses of Quran.')
+knitr::kable(tail(tmp), booktabs = TRUE,
+  caption = 'Table tail of the chapters regarding numbered verses of Quran.')
+```
+
+And, here is the proof.
+
+```{r , eval=TRUE, message=FALSE}
+x<-dfVCwl
+tmp <- x$Chapter_index + x$cwords
+tmpr <- rev(tmp)
+head(tmpr)
+tail(tmpr)
+tmpr <- paste0(tmpr, collapse = "") 
+as.bigz(tmpr) %% 19
+cat("number of digits on this big number is", nchar(tmpr))
+```
+
+As we see the remainder is 0 and thus the number is under the 19 based coding system of the text of Quran. We can only use the default test as we are testing the order of re-writing as well.
+
+Here is the "`r nchar(tmpr)`" digits length number of this evidence:
+
+"`r tmpr`"
+
+
+
+#### Fact
+
+In the end of the related two evidences, Evidence \@ref(EvSilence) and Evidence \@ref(EvSilence2), we had observed a fact, Fact \@ref(FactofEvSilence), between the digits length of these two evidences that share the same pattern. I tested whether a similar fact exist between the current two related evidences,  Evidence \@ref(EVrewriteChapWordsverslvl) and Evidence \@ref(EVrewriteChapWordsChaplvl). I observed a similar 19 based coding fact between the two as well.   
+
+As I mentioned before, these two evidences, Evidence \@ref(EVrewriteChapWordsChaplvl) and Evidence \@ref(EVrewriteChapWordsverslvl), share the same pattern and thus related. The relation between both of the numbers of the two evidences is as follows. The tested number of Evidence \@ref(EVrewriteChapWordsChaplvl) is 367 digits in length. The tested number of Evidence \@ref(EVrewriteChapWordsverslvl) is 12579 digits in length.
+
+The **fact** is that, when we concatenate both of the digit lengths of these numbers, we get 36712579 and it is also multiple of 19 as if they complement each other.
+
