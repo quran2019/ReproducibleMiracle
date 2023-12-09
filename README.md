@@ -1,4 +1,4 @@
-# ReproducibleMiracle
+# ReproducibleMiracle book's Github pages files of https://quran2019.github.io/ReproducibleMiracle/
 
 Presents 19 System over the full text of Quran (6348/6236 verses). Discovered by Gökmen Altay between 2019-2023.
 
