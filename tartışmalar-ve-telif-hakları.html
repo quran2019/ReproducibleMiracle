@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Tartışmalar ve Telif Hakları | 6348 Ayette 19 Sistemi</title>
+  <meta name="description" content="Bu kitap, Kuran’ın metninde bulunan ve Kuran’ın bozulmadan ve değişmeden kaldığını gösteren 19 tabanlı kodlama sistemini göstermektedir. 2019 yılında keşfettiğim ve 2023 sonuna kadar yeni keşfettiğim kodlarla geliştirdiğim, Kuran’ın tüm 6348 ve numaralı 6236 ayetleri üzerindeki 19 sistemini sunar." />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Tartışmalar ve Telif Hakları | 6348 Ayette 19 Sistemi" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Bu kitap, Kuran’ın metninde bulunan ve Kuran’ın bozulmadan ve değişmeden kaldığını gösteren 19 tabanlı kodlama sistemini göstermektedir. 2019 yılında keşfettiğim ve 2023 sonuna kadar yeni keşfettiğim kodlarla geliştirdiğim, Kuran’ın tüm 6348 ve numaralı 6236 ayetleri üzerindeki 19 sistemini sunar." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Tartışmalar ve Telif Hakları | 6348 Ayette 19 Sistemi" />
+  
+  <meta name="twitter:description" content="Bu kitap, Kuran’ın metninde bulunan ve Kuran’ın bozulmadan ve değişmeden kaldığını gösteren 19 tabanlı kodlama sistemini göstermektedir. 2019 yılında keşfettiğim ve 2023 sonuna kadar yeni keşfettiğim kodlarla geliştirdiğim, Kuran’ın tüm 6348 ve numaralı 6236 ayetleri üzerindeki 19 sistemini sunar." />
+  
+
+<meta name="author" content="Gökmen Altay" />
+
+
+<meta name="date" content="2019-09-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Othercodes.html"/>
+<link rel="next" href="text110.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.31/datatables.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.13.6/jszip.min.js"></script>
+<link href="libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">6348 Ayette 19 Sistemi</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Önsöz</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Kitaba genel bir giriş</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#teknik-kodlama-örneği"><i class="fa fa-check"></i><b>2.1</b> Teknik kodlama örneği</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#kodlamanın-çözülmesi"><i class="fa fa-check"></i><b>2.2</b> Kodlamanın Çözülmesi</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#değişmeyen-kuranın-ilgili-ayetleri-ve-motivasyon"><i class="fa fa-check"></i><b>2.3</b> Değişmeyen Kuran’ın İlgili Ayetleri ve Motivasyon</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#özet"><i class="fa fa-check"></i><b>2.4</b> Özet</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#bu-kitabı-nasıl-okumalı-ve-değerlendirmeliyiz.-allah-en-iyi-bilir-dikkatli-olalım"><i class="fa fa-check"></i><b>2.5</b> Bu Kitabı Nasıl Okumalı ve Değerlendirmeliyiz. Allah En İyi Bilir, Dikkatli Olalım</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#tabanlı-bir-sistem-olmadan-kurana-inanabilir-miyiz"><i class="fa fa-check"></i><b>2.6</b> 19 Tabanlı Bir Sistem Olmadan Kuran’a İnanabilir miyiz?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="TextRules.html"><a href="TextRules.html"><i class="fa fa-check"></i><b>3</b> Kuran Metni ve Kurallar</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="TextRules.html"><a href="TextRules.html#text"><i class="fa fa-check"></i><b>3.1</b> Kuran Metni Hakkında</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="TextRules.html"><a href="TextRules.html#Fetchingtext"><i class="fa fa-check"></i><b>3.1.1</b> R Programlama Ortamına Kuran Metnini Çekmek</a></li>
+<li class="chapter" data-level="3.1.2" data-path="TextRules.html"><a href="TextRules.html#numcatgypes"><i class="fa fa-check"></i><b>3.1.2</b> Kuran Metninin Ana Tanımlayıcı Sayılarının Kategorileri</a></li>
+<li class="chapter" data-level="3.1.3" data-path="TextRules.html"><a href="TextRules.html#textcv"><i class="fa fa-check"></i><b>3.1.3</b> Bölüm ve Ayet Sayısı, Metin Üzerinde Sağlık Kontrolleri</a></li>
+<li class="chapter" data-level="3.1.4" data-path="TextRules.html"><a href="TextRules.html#kuranın-numaralandırılmış-ve-numarasız-ayetleri"><i class="fa fa-check"></i><b>3.1.4</b> Kuran’ın Numaralandırılmış ve Numarasız Ayetleri</a></li>
+<li class="chapter" data-level="3.1.5" data-path="TextRules.html"><a href="TextRules.html#texttm"><i class="fa fa-check"></i><b>3.1.5</b> Kuran Metni Üzerinde Bazı Metin Madenciliği ve Tablolar</a>
+<ul>
+<li class="chapter" data-level="3.1.5.1" data-path="TextRules.html"><a href="TextRules.html#textTMuw"><i class="fa fa-check"></i><b>3.1.5.1</b> Kuran’da Benzersiz Kelime Sayısı</a></li>
+<li class="chapter" data-level="3.1.5.2" data-path="TextRules.html"><a href="TextRules.html#textTMul"><i class="fa fa-check"></i><b>3.1.5.2</b> Kuran’daki Benzersiz Kelimelerin Harf Sayısı</a></li>
+<li class="chapter" data-level="3.1.5.3" data-path="TextRules.html"><a href="TextRules.html#Basmalatab1"><i class="fa fa-check"></i><b>3.1.5.3</b> Basmala Ayetinin Benzersiz Kelimelerinin Tablosu</a></li>
+<li class="chapter" data-level="3.1.5.4" data-path="TextRules.html"><a href="TextRules.html#textTMuwW"><i class="fa fa-check"></i><b>3.1.5.4</b> Kuran’daki Kelime ve Harf Sayısı</a></li>
+</ul></li>
+<li class="chapter" data-level="3.1.6" data-path="TextRules.html"><a href="TextRules.html#AlLetrsnums2"><i class="fa fa-check"></i><b>3.1.6</b> Kuran’daki Tüm Sayılar: Bölüm, Ayet, Kelime ve Harf.</a>
+<ul>
+<li class="chapter" data-level="3.1.6.1" data-path="TextRules.html"><a href="TextRules.html#Fact1"><i class="fa fa-check"></i><b>3.1.6.1</b> Kuran Metninin 7 Ana Sayısı</a></li>
+<li class="chapter" data-level="3.1.6.2" data-path="TextRules.html"><a href="TextRules.html#FactUniques"><i class="fa fa-check"></i><b>3.1.6.2</b> Kuran Metninin Benzersiz Tanımlayıcı Sayıları</a></li>
+</ul></li>
+<li class="chapter" data-level="3.1.7" data-path="TextRules.html"><a href="TextRules.html#Coulditbe"><i class="fa fa-check"></i><b>3.1.7</b> Bu Sayılar İnsanlar Tarafından Sayılıp Tasarlanabilir miydi?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="TextRules.html"><a href="TextRules.html#RulesProbs"><i class="fa fa-check"></i><b>3.2</b> Kurallar &amp; Olasılıklar</a>
+<ul>
+<li class="chapter" data-level="3.2.0.1" data-path="TextRules.html"><a href="TextRules.html#Ruleobtaintext"><i class="fa fa-check"></i><b>3.2.0.1</b> Metinden Sayıları Elde Etme Kuralı</a></li>
+<li class="chapter" data-level="3.2.1" data-path="TextRules.html"><a href="TextRules.html#Probs"><i class="fa fa-check"></i><b>3.2.1</b> Olasılıklar</a>
+<ul>
+<li class="chapter" data-level="3.2.1.1" data-path="TextRules.html"><a href="TextRules.html#Test19"><i class="fa fa-check"></i><b>3.2.1.1</b> Bu Kitapta Sunulan 19 Sistemi Hakkında</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2.2" data-path="TextRules.html"><a href="TextRules.html#TablesNumbersall"><i class="fa fa-check"></i><b>3.2.2</b> Kullanılacak Sayıların Tabloları</a></li>
+<li class="chapter" data-level="3.2.3" data-path="TextRules.html"><a href="TextRules.html#Rfuncs"><i class="fa fa-check"></i><b>3.2.3</b> Bazı R Fonksiyonları</a></li>
+<li class="chapter" data-level="3.2.4" data-path="TextRules.html"><a href="TextRules.html#Abjad1Intro"><i class="fa fa-check"></i><b>3.2.4</b> Sonra Kullanılacak Ebced Sayıları ve Fonksiyonları</a></li>
+<li class="chapter" data-level="3.2.5" data-path="TextRules.html"><a href="TextRules.html#CountersInit"><i class="fa fa-check"></i><b>3.2.5</b> Olasılık Hesaplamaları İçin Sayacın Sıfırlanması</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html"><i class="fa fa-check"></i><b>4</b> Kuran’ın Tam Metni Üzerinde Anahtar Kodlama Örüntülerine Dayalı 19 Sistemi</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#KeySysNoLett"><i class="fa fa-check"></i><b>4.1</b> Kuran’ın Tam Metni Üzerinde Harfsiz Anahtar Kodlama örüntülerine Dayalı 19 Sistemi</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvOddEven"><i class="fa fa-check"></i><b>4.1.1</b> Çift ve Tek Kodlama Örüntüsü Hakkında</a></li>
+<li class="chapter" data-level="4.1.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#Evidences"><i class="fa fa-check"></i><b>4.1.2</b> Kuran’ın Tam Metninde Harfler Olmadan Al-Fatiha Üzerinden Ana 19 Sistemi Kullanmak</a>
+<ul>
+<li class="chapter" data-level="4.1.2.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvFatihah"><i class="fa fa-check"></i><b>4.1.2.1</b> Fatiha bölümüne dayalı 19 Sistemi hakkında kodlama örüntülerine dayalı</a></li>
+<li class="chapter" data-level="4.1.2.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#MainRulesDecEV"><i class="fa fa-check"></i><b>4.1.2.2</b> Fatiha tabanlı 19 sistem delillerinin kuralları</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvSilence"><i class="fa fa-check"></i><b>4.1.3</b> Susturucu Delil: Bölümler, Ayetler ve Kelimeler arasındaki Harmoni</a>
+<ul>
+<li class="chapter" data-level="4.1.3.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvOddEven1"><i class="fa fa-check"></i><b>4.1.3.1</b> Çift ve Tek Bölümlerle Delil, Bölüm Düzeyinde Tüm 6348 Ayet</a></li>
+<li class="chapter" data-level="4.1.3.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvOddEven2"><i class="fa fa-check"></i><b>4.1.3.2</b> 6236 Numaralı Ayetlerde Bölüm Düzeyinde Çift ve Tek Bölümlerle Delil</a></li>
+<li class="chapter" data-level="4.1.3.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvSilence2"><i class="fa fa-check"></i><b>4.1.3.3</b> Bölümler, Ayetler ve Kelimeler Arasındaki Uyum İçin Delil 2:</a>
+<ul>
+<li class="chapter" data-level="4.1.3.3.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvSilence2dgsm"><i class="fa fa-check"></i><b>4.1.3.3.1</b> Delil 2’ye Ek Gerçek: Bölümler, Ayetler ve Kelimeler Arasındaki Uyum</a></li>
+<li class="chapter" data-level="4.1.3.3.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#FactofEvSilence"><i class="fa fa-check"></i><b>4.1.3.3.2</b> Gerçek</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1.3.4" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvChapVersWordSumms"><i class="fa fa-check"></i><b>4.1.3.4</b> Ayet Düzeyinde Bölümler, Ayetler ve Kelimeler Arasında Uyum Delili</a></li>
+<li class="chapter" data-level="4.1.3.5" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvOddEvenVersesum"><i class="fa fa-check"></i><b>4.1.3.5</b> Ayet Düzeyinde Çift ve Tek Bölümlerle Delil</a>
+<ul>
+<li class="chapter" data-level="4.1.3.5.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvVerseWordsSumFatiha"><i class="fa fa-check"></i><b>4.1.3.5.1</b> Gerçek: Ayetler ve Kelimeler Toplamı</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1.3.6" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvVerseWordsFatiha"><i class="fa fa-check"></i><b>4.1.3.6</b> Gerçek: Ayetler ve Kelimeler Arasındaki Kodlama</a></li>
+<li class="chapter" data-level="4.1.3.7" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvMain19SysFatihahProbDetail"><i class="fa fa-check"></i><b>4.1.3.7</b> Al-Fatiha Temelli 19 Sisteminin Detaylı Olasılığı</a>
+<ul>
+<li class="chapter" data-level="4.1.3.7.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvAlFatihaOnlyProb"><i class="fa fa-check"></i><b>4.1.3.7.1</b> Yalnızca Al-Fatiha Kodlamalarına Dayalı Delillerin Olasılığı</a></li>
+<li class="chapter" data-level="4.1.3.7.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvOverallodevProb"><i class="fa fa-check"></i><b>4.1.3.7.2</b> Yalnızca Çift ve Tek Kodlamalara Dayalı Delillerin Olasılığı</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4.1.4" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#totalChapterskeyev"><i class="fa fa-check"></i><b>4.1.4</b> Kuran’ın Tam Metninin Bölüm Sayısını Kullanan Ana 19 Sistemi Delili</a></li>
+<li class="chapter" data-level="4.1.5" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#AllKeyOverallProbNoLett"><i class="fa fa-check"></i><b>4.1.5</b> Harf Bilgisi Olmadan Tüm Ana Kodlama Temelli Delillerin Genel Olasılığı</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#KeySysWithLett"><i class="fa fa-check"></i><b>4.2</b> Harf Bilgisi İçeren Ana Kodlama Örüntüsüne Dayalı 19 Sistemi</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvLettersPairsatVerse"><i class="fa fa-check"></i><b>4.2.1</b> Al-Fatiha Temelli Ana Kodlama Delilinin Harf Eşleştirmesi</a>
+<ul>
+<li class="chapter" data-level="4.2.1.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVAbjVersPair"><i class="fa fa-check"></i><b>4.2.1.1</b> Kuran’ın Her İki Metin Tipindeki Ayetlerin Ebcet Değerlerinin Eşleştirilmesi</a></li>
+<li class="chapter" data-level="4.2.1.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvLettersPairsDSatVerse"><i class="fa fa-check"></i><b>4.2.1.2</b> Ayet Düzeyinde Basamak Toplamı ile Eşleştirilmiş Harfler</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#KeyCodeBasmalaRewrt"><i class="fa fa-check"></i><b>4.2.2</b> Besmele’ye Dayalı Ana Kodlama Delilinin Yeniden Yazımı</a>
+<ul>
+<li class="chapter" data-level="4.2.2.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#Decode1"><i class="fa fa-check"></i><b>4.2.2.1</b> Nihai Delil: Kuran Metninin Her Ayetinin Ana Tanımlayıcı Sayılarıyla Yeniden Yazılması</a>
+<ul>
+<li class="chapter" data-level="4.2.2.1.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#Decode2"><i class="fa fa-check"></i><b>4.2.2.1.1</b> Gerçek: Her Ayetin Ana Tanımlayıcı Sayılarıyla Kuran’ın Tam Metninin Yeniden Yazılması</a></li>
+<li class="chapter" data-level="4.2.2.1.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVrewriteVLperW"><i class="fa fa-check"></i><b>4.2.2.1.2</b> Gerçek: Kuran’ın Tam Metninin Ayet Seviyesinde Her Kelimenin Harf Sayısıyla Yeniden Yazılması</a></li>
+<li class="chapter" data-level="4.2.2.1.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVrewriteGenVLperW"><i class="fa fa-check"></i><b>4.2.2.1.3</b> Gerçek: Kuran’ın Tam Metninin Genel Ayet İndeksi Seviyesinde Her Kelimenin Harf Sayısıyla Yeniden Yazılması</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2.2.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVperCperV"><i class="fa fa-check"></i><b>4.2.2.2</b> Basmala Temelli Ana Kodlama Örüntüsü ile Bölüm Seviyesi Verileri Yeniden Yazma</a></li>
+<li class="chapter" data-level="4.2.2.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVperCperVevod"><i class="fa fa-check"></i><b>4.2.2.3</b> Tek Çift Kodlama ile Yazım Yeniden Yazımı ve Bölüm Düzeyi Veriler: Gerçek</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#KeyCodeTotalNumsev"><i class="fa fa-check"></i><b>4.2.3</b> Tam Doğal Sayı Tabanlı Anahtar Kodlama Delilleri</a>
+<ul>
+<li class="chapter" data-level="4.2.3.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVrewriteVerseSums"><i class="fa fa-check"></i><b>4.2.3.1</b> Ayet Düzeyinde Toplam Sayılar Tabanlı Anahtar Kodlama İle Yeniden Yazım</a></li>
+<li class="chapter" data-level="4.2.3.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVrewriteVerseSumsEvOd"><i class="fa fa-check"></i><b>4.2.3.2</b> Ayet Düzeyinde Toplam Sayılar Tabanlı Anahtar Kodlama İle Yeniden Yazım Üzerinde Tek Çift: Gerçek</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2.4" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvMAINs"><i class="fa fa-check"></i><b>4.2.4</b> Bölüm Düzeyi Verilerinde Toplam Tabanlı Anahtar Kodlama Örüntüsü ile Eşleştirme</a>
+<ul>
+<li class="chapter" data-level="4.2.4.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvPerChapter1"><i class="fa fa-check"></i><b>4.2.4.1</b> Bölüm Düzeyindeki Tüm Sayıların Eşleştirilmesi</a></li>
+<li class="chapter" data-level="4.2.4.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EvPerVerse2"><i class="fa fa-check"></i><b>4.2.4.2</b> Her Ayet İçin Tüm Sayıların Eşleştirilmesi: Delil</a></li>
+<li class="chapter" data-level="4.2.4.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#EVAbjVersPair2"><i class="fa fa-check"></i><b>4.2.4.3</b> Kuran’ın İki Metin Türünde Ayetlerin Ebced Değerlerinin, Bölüm, Ayet ve Kelime Sayılarıyla Eşleştirilmesi: Delil</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2.5" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#AllKeyOverallProbLettOnly"><i class="fa fa-check"></i><b>4.2.5</b> Yalnızca Harf Bilgileri İçeren Tüm Anahtar Kodlama Tabanlı Delillerin Genel Olasılığı</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#AllKeyOverallProbFinal"><i class="fa fa-check"></i><b>4.3</b> Tüm Anahtar Kodlama Tabanlı Delillerin Son Olasılığı</a></li>
+<li class="chapter" data-level="4.4" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#RelVersMean"><i class="fa fa-check"></i><b>4.4</b> İlgili Ayet Anlamları ve Anahtar Kodları</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#RelVers8320"><i class="fa fa-check"></i><b>4.4.1</b> 83:20 Ayeti Numaralandırılmış Kitap?</a></li>
+<li class="chapter" data-level="4.4.2" data-path="KeyCodingsBased.html"><a href="KeyCodingsBased.html#RelVers1038"><i class="fa fa-check"></i><b>4.4.2</b> 10:38 Ayeti</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="SumMainEv.html"><a href="SumMainEv.html"><i class="fa fa-check"></i><b>5</b> Evrensel Deliller</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahAlRahmanPositionsMain"><i class="fa fa-check"></i><b>5.1</b> Kuran’daki Allah ve El-Rahman Kelimelerinin Pozisyonları ve Frekansları Üzerine Deliller</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahElRahmanPozBirlestir"><i class="fa fa-check"></i><b>5.1.1</b> Deliller ve Allah ile El-Rahman kelimelerinin sure ve özel ayet indeksleriyle birleştirilmesi üzerine olasılık</a>
+<ul>
+<li class="chapter" data-level="5.1.1.1" data-path="SumMainEv.html"><a href="SumMainEv.html#numaralı-ayetler-üzerinde-allah-kelimelerinin-pozisyonlarına-dair-delil"><i class="fa fa-check"></i><b>5.1.1.1</b> 6236 numaralı ayetler üzerinde Allah kelimelerinin pozisyonlarına dair delil:</a></li>
+<li class="chapter" data-level="5.1.1.2" data-path="SumMainEv.html"><a href="SumMainEv.html#tüm-6348-ayet-üzerinde-allah-kelimelerinin-pozisyonlarına-dair-delil"><i class="fa fa-check"></i><b>5.1.1.2</b> Tüm 6348 ayet üzerinde Allah kelimelerinin pozisyonlarına dair delil:</a>
+<ul>
+<li class="chapter" data-level="5.1.1.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#gerçek-tüm-allah-kelimelerinin-pozisyon-indeksleri-bir-arada"><i class="fa fa-check"></i><b>5.1.1.2.1</b> Gerçek: Tüm Allah kelimelerinin pozisyon indeksleri bir arada:</a></li>
+</ul></li>
+<li class="chapter" data-level="5.1.1.3" data-path="SumMainEv.html"><a href="SumMainEv.html#tüm-6348-ayet-üzerinde-el-rahman-kelimelerinin-pozisyonlarına-dair-delil"><i class="fa fa-check"></i><b>5.1.1.3</b> Tüm 6348 ayet üzerinde El-Rahman kelimelerinin pozisyonlarına dair delil</a>
+<ul>
+<li class="chapter" data-level="5.1.1.3.1" data-path="SumMainEv.html"><a href="SumMainEv.html#gerçek-el-rahman-kelimelerinin-pozisyonlarının-toplamının-birleştirilmesi"><i class="fa fa-check"></i><b>5.1.1.3.1</b> Gerçek: El-Rahman Kelimelerinin Pozisyonlarının Toplamının Birleştirilmesi</a></li>
+</ul></li>
+<li class="chapter" data-level="5.1.1.4" data-path="SumMainEv.html"><a href="SumMainEv.html#allah-veveya-el-rahman-kelimelerinin-pozisyonlarına-dair-delil"><i class="fa fa-check"></i><b>5.1.1.4</b> Allah ve/veya El-Rahman Kelimelerinin Pozisyonlarına Dair Delil:</a></li>
+</ul></li>
+<li class="chapter" data-level="5.1.2" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahRahmanPozisyonlarGenelAyetIndeksi"><i class="fa fa-check"></i><b>5.1.2</b> Genel Ayet İndekslerine Göre Allah ve El-Rahman Kelime Pozisyonlarına Dair Delil</a>
+<ul>
+<li class="chapter" data-level="5.1.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahPozisyonlarGenelAyetIndeksi"><i class="fa fa-check"></i><b>5.1.2.1</b> Genel Ayet İndekslerine Göre Allah Kelimesinin Pozisyonlarına Dair Delil:</a></li>
+<li class="chapter" data-level="5.1.2.2" data-path="SumMainEv.html"><a href="SumMainEv.html#genel-ayet-indekslerine-göre-allah-veveya-el-rahman-kelimelerinin-pozisyonlarına-dair-delil"><i class="fa fa-check"></i><b>5.1.2.2</b> Genel Ayet İndekslerine Göre Allah ve/veya El-Rahman Kelimelerinin Pozisyonlarına Dair Delil:</a>
+<ul>
+<li class="chapter" data-level="5.1.2.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#önceki-delille-ilgili-gerçekler"><i class="fa fa-check"></i><b>5.1.2.2.1</b> Önceki Delille İlgili Gerçekler:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.1.3" data-path="SumMainEv.html"><a href="SumMainEv.html#ProbEvAllahPozisyonları"><i class="fa fa-check"></i><b>5.1.3</b> Allah ve El-Rahman Kelime Pozisyonları ve Frekanslarına Dair Delillerin Olasılığı</a></li>
+<li class="chapter" data-level="5.1.4" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahPozisyonlari"><i class="fa fa-check"></i><b>5.1.4</b> Allah Kelime Pozisyonları ve Frekansları Hakkında Gerçekler</a>
+<ul>
+<li class="chapter" data-level="5.1.4.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahPozisyonToplam"><i class="fa fa-check"></i><b>5.1.4.1</b> Sureler, Ayetler ve Kelimeler Bakımından Allah Kelimesinin Pozisyonları ve Frekanslarına Dair Toplam Kodlama</a></li>
+<li class="chapter" data-level="5.1.4.2" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahPozisyonBasamakToplami"><i class="fa fa-check"></i><b>5.1.4.2</b> Sureler, Ayetler ve Kelimeler Bakımından Allah Kelimesinin Pozisyonları ve Frekanslarına Dair Basamak Toplamı Kodlaması</a></li>
+<li class="chapter" data-level="5.1.4.3" data-path="SumMainEv.html"><a href="SumMainEv.html#sifirindeksornek"><i class="fa fa-check"></i><b>5.1.4.3</b> Sureler, Ayetler ve Kelimeler Üzerinden 0 İndekslemesiyle Rastgele Kodlama Örneği</a></li>
+<li class="chapter" data-level="5.1.4.4" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahPozisyonlarıİkili"><i class="fa fa-check"></i><b>5.1.4.4</b> Sureler, Ayetler ve Kelimeler Bakımından Allah Kelimesinin Pozisyonları ve Frekanslarına Dair Gerçek</a></li>
+</ul></li>
+<li class="chapter" data-level="5.1.5" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahKelimesiTümBiçimleri"><i class="fa fa-check"></i><b>5.1.5</b> Kuran’da Allah Kelimesinin Tüm Kullanım Biçimleriyle İlgili Gerçek</a>
+<ul>
+<li class="chapter" data-level="5.1.5.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahKelimesiTümBiçimleriToplam"><i class="fa fa-check"></i><b>5.1.5.1</b> Kuran’da Allah Kelimesinin Tüm Kullanım Biçimleriyle İlgili Sayıların Toplamı Üzerine Gerçek</a></li>
+<li class="chapter" data-level="5.1.5.2" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllahWordAllformsConc"><i class="fa fa-check"></i><b>5.1.5.2</b> Kuran’daki Allah Kelimesinin Tüm Kullanım Şekilleriyle İlgili Sayıların Birleştirilmesi Üzerine Gerçek</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="SumMainEv.html"><a href="SumMainEv.html#EvSuraTavba"><i class="fa fa-check"></i><b>5.2</b> Sura At-Tawbah Üzerine Delil</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#at-tawbah-suresinin-özel-ayet-indeksleriyle-ilgili-delil"><i class="fa fa-check"></i><b>5.2.1</b> At-Tawbah Suresi’nin Özel Ayet İndeksleriyle İlgili Delil:</a></li>
+<li class="chapter" data-level="5.2.2" data-path="SumMainEv.html"><a href="SumMainEv.html#at-tawbah-suresinin-genel-ayet-indeksleriyle-ilgili-delil"><i class="fa fa-check"></i><b>5.2.2</b> At-Tawbah Suresi’nin Genel Ayet İndeksleriyle İlgili Delil:</a></li>
+<li class="chapter" data-level="5.2.3" data-path="SumMainEv.html"><a href="SumMainEv.html#at-tawbah-suresinin-ayetlerindeki-kelime-içeriğiyle-ilgili-delil"><i class="fa fa-check"></i><b>5.2.3</b> At-Tawbah Suresi’nin Ayetlerindeki Kelime İçeriğiyle İlgili Delil:</a></li>
+<li class="chapter" data-level="5.2.4" data-path="SumMainEv.html"><a href="SumMainEv.html#at-tawbah-suresinin-bireysel-kanıtlarının-birleşimi-üzerine-delil"><i class="fa fa-check"></i><b>5.2.4</b> At-Tawbah Suresi’nin Bireysel Kanıtlarının Birleşimi Üzerine Delil:</a></li>
+<li class="chapter" data-level="5.2.5" data-path="SumMainEv.html"><a href="SumMainEv.html#at-tawbah-üzerindeki-tüm-kanıtların-olasılığı"><i class="fa fa-check"></i><b>5.2.5</b> At-Tawbah Üzerindeki Tüm Kanıtların Olasılığı</a></li>
+<li class="chapter" data-level="5.2.6" data-path="SumMainEv.html"><a href="SumMainEv.html#at-tawbah-suresi-üzerine-gerçekler"><i class="fa fa-check"></i><b>5.2.6</b> At-Tawbah Suresi Üzerine Gerçekler:</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAl-zikr"><i class="fa fa-check"></i><b>5.3</b> El-Zikr Sözcüğü Üzerine Delil</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="SumMainEv.html"><a href="SumMainEv.html#WordCounTable"><i class="fa fa-check"></i><b>5.3.1</b> Kelime Sayımlarını Test Etmek için Benzersiz Kelimeler Tablosu</a>
+<ul>
+<li class="chapter" data-level="5.3.1.1" data-path="SumMainEv.html"><a href="SumMainEv.html#ilgili-diğer-kelimeler-üzerine-gerçekler"><i class="fa fa-check"></i><b>5.3.1.1</b> İlgili Diğer Kelimeler Üzerine Gerçekler</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="SumMainEv.html"><a href="SumMainEv.html#EvVerseContmult19"><i class="fa fa-check"></i><b>5.4</b> Ayet İçeriği Üzerine Deliller</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvChapCont"><i class="fa fa-check"></i><b>5.4.1</b> Bölüm Seviyesinde Kelime İçeriği Üzerine Delil</a></li>
+<li class="chapter" data-level="5.4.2" data-path="SumMainEv.html"><a href="SumMainEv.html#EvVerseCont"><i class="fa fa-check"></i><b>5.4.2</b> Ayet Seviyesinde İçerik Üzerine Delil</a>
+<ul>
+<li class="chapter" data-level="5.4.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#FactVerseCont1"><i class="fa fa-check"></i><b>5.4.2.1</b> Genel Ayet Sırasının Kelime ve Harf İçeriği Üzerine Gerçek</a></li>
+<li class="chapter" data-level="5.4.2.2" data-path="SumMainEv.html"><a href="SumMainEv.html#FactVerseCont2"><i class="fa fa-check"></i><b>5.4.2.2</b> Ayet Seviyesinde Kelime İçeriğiyle İlgili Harfler Üzerine Gerçek</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="SumMainEv.html"><a href="SumMainEv.html#EvIndexes"><i class="fa fa-check"></i><b>5.5</b> Deliller ve Gerçekler indeksler üzerine</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvAllVerses"><i class="fa fa-check"></i><b>5.5.1</b> Delil: her bir ayetin sırası</a>
+<ul>
+<li class="chapter" data-level="5.5.1.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EVperCatperchapters"><i class="fa fa-check"></i><b>5.5.1.1</b> Gerçek: Bölüm indekslerinin yeniden yazılması</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5.2" data-path="SumMainEv.html"><a href="SumMainEv.html#RewrByVerseIndxLetters"><i class="fa fa-check"></i><b>5.5.2</b> Gerçekler: Genel ayet indeksleri ve diğerleri</a>
+<ul>
+<li class="chapter" data-level="5.5.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#EvPariVersessChap"><i class="fa fa-check"></i><b>5.5.2.1</b> Gerçek: Genel ayetler ve bölümlerin eşleştirilmesi</a></li>
+<li class="chapter" data-level="5.5.2.2" data-path="SumMainEv.html"><a href="SumMainEv.html#RewrByGenSpecVerses"><i class="fa fa-check"></i><b>5.5.2.2</b> Gerçek: Genel ve özel ayet indeksleri</a></li>
+<li class="chapter" data-level="5.5.2.3" data-path="SumMainEv.html"><a href="SumMainEv.html#RewrByGenVerseChapt"><i class="fa fa-check"></i><b>5.5.2.3</b> Gerçek: Genel ayet indeksleri ve bölümler</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="SumMainEv.html"><a href="SumMainEv.html#fibevs"><i class="fa fa-check"></i><b>5.6</b> Fibonacci Tabanlı Deliller</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="SumMainEv.html"><a href="SumMainEv.html#fibEvVerse"><i class="fa fa-check"></i><b>5.6.1</b> Ayetlerdeki Fibonacci Delili</a></li>
+<li class="chapter" data-level="5.6.2" data-path="SumMainEv.html"><a href="SumMainEv.html#fibFacts"><i class="fa fa-check"></i><b>5.6.2</b> Sadece Gerçekler Olarak Fibonacci Kodları</a>
+<ul>
+<li class="chapter" data-level="5.6.2.1" data-path="SumMainEv.html"><a href="SumMainEv.html#fibFactChap"><i class="fa fa-check"></i><b>5.6.2.1</b> Bölümler Üzerinde Fibonacci Kodu</a></li>
+<li class="chapter" data-level="5.6.2.2" data-path="SumMainEv.html"><a href="SumMainEv.html#fibFactWords"><i class="fa fa-check"></i><b>5.6.2.2</b> Kelimeler Üzerinde Fibonacci Kodu</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="SumMainEv.html"><a href="SumMainEv.html#şu-ana-kadar-sunulan-tüm-delillerin-toplam-olasılığı"><i class="fa fa-check"></i><b>5.7</b> Şu Ana Kadar Sunulan Tüm Delillerin Toplam Olasılığı</a></li>
+<li class="chapter" data-level="5.8" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimEvidences"><i class="fa fa-check"></i><b>5.8</b> Ha-Mim Delilleri</a>
+<ul>
+<li class="chapter" data-level="5.8.1" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCtotal"><i class="fa fa-check"></i><b>5.8.1</b> Kuran’ın Tam Metnindeki Ha-Mim Harflerinin Toplamı</a></li>
+<li class="chapter" data-level="5.8.2" data-path="SumMainEv.html"><a href="SumMainEv.html#HMASGCevf"><i class="fa fa-check"></i><b>5.8.2</b> Ha-Mim-Ayn-Sin-Gaf Delili ve Gerçekleri</a></li>
+<li class="chapter" data-level="5.8.3" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimChapProb"><i class="fa fa-check"></i><b>5.8.3</b> Ha-Mim Bölüm Seviyesi Kodların Kuralları ve Olasılıkları</a></li>
+<li class="chapter" data-level="5.8.4" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimFactsAll"><i class="fa fa-check"></i><b>5.8.4</b> Dağılmış Harfler Üzerine Gerçekler</a>
+<ul>
+<li class="chapter" data-level="5.8.4.1" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCdsChap"><i class="fa fa-check"></i><b>5.8.4.1</b> Gerçek: Bölüm seviyesi sayıların rakam toplamı</a></li>
+<li class="chapter" data-level="5.8.4.2" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCdsConcChap"><i class="fa fa-check"></i><b>5.8.4.2</b> Gerçek: Bölüm Seviyesi Sayıların Rakam Toplamı Birleştirmeleri</a></li>
+<li class="chapter" data-level="5.8.4.3" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCconcChap"><i class="fa fa-check"></i><b>5.8.4.3</b> Gerçek: Bölüm Seviyesi Sayıların Birleştirilmesi</a></li>
+<li class="chapter" data-level="5.8.4.4" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCdsVerse"><i class="fa fa-check"></i><b>5.8.4.4</b> Gerçek: Ayet Seviyesi Sayıların Rakam Toplamı</a></li>
+<li class="chapter" data-level="5.8.4.5" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCconcSumVerse"><i class="fa fa-check"></i><b>5.8.4.5</b> Gerçek: Ayet Seviyesi İndekslerle Toplamların Birleştirilmesi</a></li>
+<li class="chapter" data-level="5.8.4.6" data-path="SumMainEv.html"><a href="SumMainEv.html#HaMimCdsconcSumVerse"><i class="fa fa-check"></i><b>5.8.4.6</b> Ayet Seviyesi İndekslerle Toplamların Rakam Toplamı Birleştirmesi</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="SumMainEv.html"><a href="SumMainEv.html#AllDisjointedlettersSum"><i class="fa fa-check"></i><b>5.9</b> Tüm Ayrık Harflerin Toplamı</a></li>
+<li class="chapter" data-level="5.10" data-path="SumMainEv.html"><a href="SumMainEv.html#DiscussDisjonlet"><i class="fa fa-check"></i><b>5.10</b> Diğer ‘Ayrık Harfler’ Üzerine Tartışma ve Gelecekteki Çalışmalar</a></li>
+<li class="chapter" data-level="5.11" data-path="SumMainEv.html"><a href="SumMainEv.html#şimdiye-kadarki-tüm-delillerin-genel-olasılığı"><i class="fa fa-check"></i><b>5.11</b> Şimdiye Kadarki Tüm Delillerin Genel Olasılığı</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Othercodes.html"><a href="Othercodes.html"><i class="fa fa-check"></i><b>6</b> Diğer Deliller ve Gerçekler</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Othercodes.html"><a href="Othercodes.html#iron"><i class="fa fa-check"></i><b>6.1</b> Demirin Mucizesi Delil Olarak</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="Othercodes.html"><a href="Othercodes.html#ironKnownEvs"><i class="fa fa-check"></i><b>6.1.1</b> Kuran’daki Demirin Bilinen Delilleri</a></li>
+<li class="chapter" data-level="6.1.2" data-path="Othercodes.html"><a href="Othercodes.html#ironNewEv1"><i class="fa fa-check"></i><b>6.1.2</b> Demir Ayeti ve Demirin Atom Numarası: Demirin İlk Yeni Delilleri</a></li>
+<li class="chapter" data-level="6.1.3" data-path="Othercodes.html"><a href="Othercodes.html#ironNewEv2"><i class="fa fa-check"></i><b>6.1.3</b> Demir Ayeti, Demir Kelimesine Kadar &amp; Demirin Atom Numarası: Demirin İkinci Yeni Delilleri</a></li>
+<li class="chapter" data-level="6.1.4" data-path="Othercodes.html"><a href="Othercodes.html#ironNewEv3"><i class="fa fa-check"></i><b>6.1.4</b> Demir ve Kuran’ın Büyük Delili</a></li>
+<li class="chapter" data-level="6.1.5" data-path="Othercodes.html"><a href="Othercodes.html#ironNewEv4"><i class="fa fa-check"></i><b>6.1.5</b> Demir ve Kuran Üzerine Ek Gerçekler</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="Othercodes.html"><a href="Othercodes.html#EvonBasmala"><i class="fa fa-check"></i><b>6.2</b> Basmala Ayeti Üzerine Kodlar</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="Othercodes.html"><a href="Othercodes.html#KeyevsonBsm"><i class="fa fa-check"></i><b>6.2.1</b> Basmala Ayetinden Anahtar Kodlama Örüntüsüne Dayalı Deliller</a>
+<ul>
+<li class="chapter" data-level="6.2.1.1" data-path="Othercodes.html"><a href="Othercodes.html#KeyevCumLetBsm"><i class="fa fa-check"></i><b>6.2.1.1</b> Basmala Ayetinin Harflerinin ve İndekslerinin Biriktirilmiş Sayısı</a></li>
+<li class="chapter" data-level="6.2.1.2" data-path="Othercodes.html"><a href="Othercodes.html#KeyevAbjSeqBsm"><i class="fa fa-check"></i><b>6.2.1.2</b> Basmala Ayetinin Kelime Başına Ebcet Değerleri ve İndeksleri</a></li>
+<li class="chapter" data-level="6.2.1.3" data-path="Othercodes.html"><a href="Othercodes.html#KeyevCumAbjBsm"><i class="fa fa-check"></i><b>6.2.1.3</b> Basmala Ayetinin Kelime Başına Ebcet Değerlerinin ve İndekslerinin Biriktirilmiş Sayısı</a></li>
+<li class="chapter" data-level="6.2.1.4" data-path="Othercodes.html"><a href="Othercodes.html#KeyevAbjLetSeqBsm"><i class="fa fa-check"></i><b>6.2.1.4</b> Basmala Ayetinin Harf Başına Ebcet Değerleri ve Kelime İndeksleri</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2.2" data-path="Othercodes.html"><a href="Othercodes.html#FactsonBasmala"><i class="fa fa-check"></i><b>6.2.2</b> Basmala Ayeti Üzerinde Kodlar Gerçekler Olarak</a>
+<ul>
+<li class="chapter" data-level="6.2.2.1" data-path="Othercodes.html"><a href="Othercodes.html#Ev2Basmala"><i class="fa fa-check"></i><b>6.2.2.1</b> Basmala Kelimeleri Üzerine Eşleştirme ile Gerçek</a></li>
+<li class="chapter" data-level="6.2.2.2" data-path="Othercodes.html"><a href="Othercodes.html#Ev1Basmala"><i class="fa fa-check"></i><b>6.2.2.2</b> Basmala Kelimeleri Üzerine Rakam Toplamı ile Gerçek</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2.3" data-path="Othercodes.html"><a href="Othercodes.html#Ev0Basmala"><i class="fa fa-check"></i><b>6.2.3</b> Kuran’ın Tam Metnindeki Basmala Kelimeleri Üzerine Gerçek</a>
+<ul>
+<li class="chapter" data-level="6.2.3.1" data-path="Othercodes.html"><a href="Othercodes.html#EvBasmalaIndividuals"><i class="fa fa-check"></i><b>6.2.3.1</b> Basmala Kelimeleri Üzerine Gerçekler</a></li>
+<li class="chapter" data-level="6.2.3.2" data-path="Othercodes.html"><a href="Othercodes.html#EvBasmalaLett"><i class="fa fa-check"></i><b>6.2.3.2</b> Basmala Harfleri Üzerine Bilinen Kodlar</a></li>
+<li class="chapter" data-level="6.2.3.3" data-path="Othercodes.html"><a href="Othercodes.html#EvBasmalaNum"><i class="fa fa-check"></i><b>6.2.3.3</b> Kuran’daki Basmala Ayetlerinin Sayısı Üzerine Bilinen Kodlar</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="Othercodes.html"><a href="Othercodes.html#EVuniquee"><i class="fa fa-check"></i><b>6.3</b> Gerçek: Benzersiz Sayılar</a></li>
+<li class="chapter" data-level="6.4" data-path="Othercodes.html"><a href="Othercodes.html#EVuniquee"><i class="fa fa-check"></i><b>6.4</b> Gerçek: Benzersiz Sayılar</a></li>
+<li class="chapter" data-level="6.5" data-path="Othercodes.html"><a href="Othercodes.html#EvTotals"><i class="fa fa-check"></i><b>6.5</b> Toplamlar</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="Othercodes.html"><a href="Othercodes.html#EvTotalsMain"><i class="fa fa-check"></i><b>6.5.1</b> Gerçek: Ana Tanımlayıcı Sayıların Toplamları</a></li>
+<li class="chapter" data-level="6.5.2" data-path="Othercodes.html"><a href="Othercodes.html#EvTotalsVerse"><i class="fa fa-check"></i><b>6.5.2</b> Gerçek: Ayet Çözünürlüğündeki Toplamlar</a></li>
+<li class="chapter" data-level="6.5.3" data-path="Othercodes.html"><a href="Othercodes.html#EvTotalsPerChapters"><i class="fa fa-check"></i><b>6.5.3</b> Gerçek: Bölüm Başına Toplamlar</a></li>
+<li class="chapter" data-level="6.5.4" data-path="Othercodes.html"><a href="Othercodes.html#EvTotalsPerVersess"><i class="fa fa-check"></i><b>6.5.4</b> Gerçek: Ayet Başına Toplamlar</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="Othercodes.html"><a href="Othercodes.html#EvChapContmult19"><i class="fa fa-check"></i><b>6.6</b> 19’un Katı İçeriğe Sahip Bölümler Üzerine Gerçekler</a></li>
+<li class="chapter" data-level="6.7" data-path="Othercodes.html"><a href="Othercodes.html#DecodeAbjad1"><i class="fa fa-check"></i><b>6.7</b> Abjad Sayıları ile İlgili Gerçekler</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="Othercodes.html"><a href="Othercodes.html#EVAbjCVwords"><i class="fa fa-check"></i><b>6.7.1</b> Gerçek: Her Kelimenin Yerine Abjadını ve İndekslerini Koyarak Kuran’ın Tam Metnini Yeniden Yazma</a></li>
+<li class="chapter" data-level="6.7.2" data-path="Othercodes.html"><a href="Othercodes.html#EVAbjCVVersPair"><i class="fa fa-check"></i><b>6.7.2</b> Gerçek: Abjad Sayılarıyla Her İki Metin Türündeki Kuran Ayetlerinin Bölüm ve Ayet İndeksleriyle Eşleştirilmesi</a></li>
+<li class="chapter" data-level="6.7.3" data-path="Othercodes.html"><a href="Othercodes.html#EVAbjGenIndxVersPair"><i class="fa fa-check"></i><b>6.7.3</b> Gerçek: Her İki Metin Türündeki Kuran Ayetlerinin Abjadı ile Genel İndekslerle Eşleştirilmesi</a></li>
+<li class="chapter" data-level="6.7.4" data-path="Othercodes.html"><a href="Othercodes.html#EVAbjNatharmony"><i class="fa fa-check"></i><b>6.7.4</b> Gerçek: Tüm Sayılar: Doğal ve Ebjcet</a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="Othercodes.html"><a href="Othercodes.html#EvLettersOnly"><i class="fa fa-check"></i><b>6.8</b> Gerçek: Sadece Harflere Dayalı Kodlamalar</a>
+<ul>
+<li class="chapter" data-level="6.8.1" data-path="Othercodes.html"><a href="Othercodes.html#EvWordsPairsDSatVerse"><i class="fa fa-check"></i><b>6.8.1</b> Gerçek: Ayet Seviyesinde Rakam Toplamı ile Kelimelerin Eşleştirilmesi</a></li>
+</ul></li>
+<li class="chapter" data-level="6.9" data-path="Othercodes.html"><a href="Othercodes.html#EvsChapWordsall"><i class="fa fa-check"></i><b>6.9</b> Bölüm ve Kelime Sayıları İle İlgili Gerçekler</a>
+<ul>
+<li class="chapter" data-level="6.9.1" data-path="Othercodes.html"><a href="Othercodes.html#EVrewriteBasedonWords"><i class="fa fa-check"></i><b>6.9.1</b> Kuran’ı Bölüm ve Kelimelere Dayalı Olarak Yeniden Yazma</a>
+<ul>
+<li class="chapter" data-level="6.9.1.1" data-path="Othercodes.html"><a href="Othercodes.html#EVrewriteChapWordsverslvl"><i class="fa fa-check"></i><b>6.9.1.1</b> Gerçek: Ayet Seviyesindeki Bölüm ve Kelime Sayılarına Dayalı Olarak Kuran’ı Yeniden Yazma</a></li>
+<li class="chapter" data-level="6.9.1.2" data-path="Othercodes.html"><a href="Othercodes.html#EVrewriteChapWordsChaplvl"><i class="fa fa-check"></i><b>6.9.1.2</b> Gerçek: Bölüm ve Kelimelere Dayalı Olarak Kuran’ı Bölüm Seviyesinde Yeniden Yazma</a>
+<ul>
+<li class="chapter" data-level="6.9.1.2.1" data-path="Othercodes.html"><a href="Othercodes.html#EVrewriteChapWordsChaplvlDgtsm"><i class="fa fa-check"></i><b>6.9.1.2.1</b> Gerçek: Kuran’ı Kelime ve Bölüm Numaraları ile Bölüm Seviyesinde Rakam Toplamı Kullanarak Yeniden Yazmak</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6.9.2" data-path="Othercodes.html"><a href="Othercodes.html#EvChapWords"><i class="fa fa-check"></i><b>6.9.2</b> Bölümler ve Kelimeler Arasındaki Gerçek</a></li>
+<li class="chapter" data-level="6.9.3" data-path="Othercodes.html"><a href="Othercodes.html#EvpairChapWordsPairingChptrLvl"><i class="fa fa-check"></i><b>6.9.3</b> Gerçek: Bölüm ve Kelimelerle Eşleşme Örüntüsü</a>
+<ul>
+<li class="chapter" data-level="6.9.3.1" data-path="Othercodes.html"><a href="Othercodes.html#EvChapWordstotal"><i class="fa fa-check"></i><b>6.9.3.1</b> Gerçek: Bölümler ve Kelimeler Arasında Toplam Seviyede Anahtar Kodlama</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="Othercodes.html"><a href="Othercodes.html#Evsubform1"><i class="fa fa-check"></i><b>6.10</b> Kelimelerin Sırası ve Harflerle İlgili Gerçek</a></li>
+<li class="chapter" data-level="6.11" data-path="Othercodes.html"><a href="Othercodes.html#Evsubform1fact"><i class="fa fa-check"></i><b>6.11</b> Gerçek: Ayet, Kelime ve Harfler Arasındaki Kod</a></li>
+<li class="chapter" data-level="6.12" data-path="Othercodes.html"><a href="Othercodes.html#EVcombineindividuals"><i class="fa fa-check"></i><b>6.12</b> Gerçekler: Bireysel Kategoriler Üzerine</a>
+<ul>
+<li class="chapter" data-level="6.12.1" data-path="Othercodes.html"><a href="Othercodes.html#EVchapters"><i class="fa fa-check"></i><b>6.12.1</b> Gerçek: Bölümler</a></li>
+<li class="chapter" data-level="6.12.2" data-path="Othercodes.html"><a href="Othercodes.html#EVverses"><i class="fa fa-check"></i><b>6.12.2</b> Gerçek: Ayetler</a></li>
+</ul></li>
+<li class="chapter" data-level="6.13" data-path="Othercodes.html"><a href="Othercodes.html#FactOtherss"><i class="fa fa-check"></i><b>6.13</b> Gerçek: Diğerleri</a>
+<ul>
+<li class="chapter" data-level="6.13.1" data-path="Othercodes.html"><a href="Othercodes.html#FactTotals"><i class="fa fa-check"></i><b>6.13.1</b> Gerçek: Toplamlar</a></li>
+<li class="chapter" data-level="6.13.2" data-path="Othercodes.html"><a href="Othercodes.html#FactGenVerLet"><i class="fa fa-check"></i><b>6.13.2</b> Gerçek: Genel Ayet Dizinleri ve Harfler Arasındaki Kod</a></li>
+<li class="chapter" data-level="6.13.3" data-path="Othercodes.html"><a href="Othercodes.html#FactSumLetChap"><i class="fa fa-check"></i><b>6.13.3</b> Gerçek: Bölüm Seviyesinde Harflerin Basamak Toplamı Üzerindeki Kod</a></li>
+<li class="chapter" data-level="6.13.4" data-path="Othercodes.html"><a href="Othercodes.html#FactChapWordLetterrs"><i class="fa fa-check"></i><b>6.13.4</b> Gerçek: Bölümler, Kelimeler ve Harfler Arasındaki İlişki</a></li>
+</ul></li>
+<li class="chapter" data-level="6.14" data-path="Othercodes.html"><a href="Othercodes.html#allah-ve-el-rahman-kelime-konumları-üzerine-ilave-gerçekler"><i class="fa fa-check"></i><b>6.14</b> Allah ve El-Rahman Kelime Konumları Üzerine İlave Gerçekler</a>
+<ul>
+<li class="chapter" data-level="6.14.1" data-path="Othercodes.html"><a href="Othercodes.html#EvAllahRahmanwordpaired"><i class="fa fa-check"></i><b>6.14.1</b> Allah ve El-Rahman Kelime Konumlarının Eşleştirildiğindeki Gerçeği</a></li>
+<li class="chapter" data-level="6.14.2" data-path="Othercodes.html"><a href="Othercodes.html#EvAllahPositionwtConcat"><i class="fa fa-check"></i><b>6.14.2</b> Allah Kelime Konumları ve Frekansları Üzerine Gerçek: Birleştirme İle</a></li>
+<li class="chapter" data-level="6.14.3" data-path="Othercodes.html"><a href="Othercodes.html#EvAllahPositionGenChapSpecVerses2"><i class="fa fa-check"></i><b>6.14.3</b> Gerçek: Genel Ayet Dizinleri, Bölüm ve Özel Ayet Dizinleri</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html"><i class="fa fa-check"></i><b>7</b> Tartışmalar ve Telif Hakları</a>
+<ul>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-rewiew"><i class="fa fa-check"></i>İncelemeler, Geri Bildirimler ve İletişim</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-future"><i class="fa fa-check"></i>Gelecekteki Çalışmalar</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-nonmuslims"><i class="fa fa-check"></i>Müslüman olmayan okuyuculara kişisel mesajım</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-tradition"><i class="fa fa-check"></i>Kuran ve Geleneksel Müslüman İnancı Arasındaki Uçurum</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-source"><i class="fa fa-check"></i>İslam Dininin Kaynağı</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-sects"><i class="fa fa-check"></i>Geleneksel Müslümanlar Arasındaki Mezhepler</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-bad-ex"><i class="fa fa-check"></i>Kuran’a Rağmen Geleneksel Bir Kötü Örnek</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-violnace"><i class="fa fa-check"></i>İslam’da Şiddet Yoktur</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-ageforthy"><i class="fa fa-check"></i>40 Yaşımda, Kuran’ın Müslümanı Oldum</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-discoverydate"><i class="fa fa-check"></i>Bu Sistemin Keşif Tarihi</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-relvves"><i class="fa fa-check"></i>İlgili Bazı Ayetler</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-science"><i class="fa fa-check"></i>Kuran’ın Diğer Bilimsel İlgili Mucizeleri ve Diğer İlginç Gerçekler</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-Copyrights"><i class="fa fa-check"></i>Bu kitabın telif hakları</a></li>
+<li class="chapter" data-level="" data-path="tartışmalar-ve-telif-hakları.html"><a href="tartışmalar-ve-telif-hakları.html#fw-acknowledgements"><i class="fa fa-check"></i>Atıflar ve son notlar</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="text110.html"><a href="text110.html"><i class="fa fa-check"></i><b>8</b> Ek: Metin Sürümü 1.1 Hakkında</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="text110.html"><a href="text110.html#updateoftext"><i class="fa fa-check"></i><b>8.1</b> Kitabımın yayımlanmasından sonraki metin güncellemesi!</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="text110.html"><a href="text110.html#BadamaResearch"><i class="fa fa-check"></i><b>8.1.1</b> Ba’da-ma Kelimesi Üzerine Araştırmam ve Sonucu</a></li>
+<li class="chapter" data-level="8.1.2" data-path="text110.html"><a href="text110.html#bada-ma-kelimesi-hakkındaki-araştırma-sürecimin-özeti"><i class="fa fa-check"></i><b>8.1.2</b> <em>ba’da-ma</em> Kelimesi Hakkındaki Araştırma Sürecimin Özeti:</a></li>
+<li class="chapter" data-level="8.1.3" data-path="text110.html"><a href="text110.html#ChatGPTbadama"><i class="fa fa-check"></i><b>8.1.3</b> ChatGPT’nin bada-ma kelimesine verdiği yanıtlar</a>
+<ul>
+<li class="chapter" data-level="8.1.3.1" data-path="text110.html"><a href="text110.html#bard-google"><i class="fa fa-check"></i><b>8.1.3.1</b> BARD (Google):</a></li>
+<li class="chapter" data-level="8.1.3.2" data-path="text110.html"><a href="text110.html#chatgpt-3.5"><i class="fa fa-check"></i><b>8.1.3.2</b> ChatGPT-3.5:</a></li>
+<li class="chapter" data-level="8.1.3.3" data-path="text110.html"><a href="text110.html#chatgpt-4"><i class="fa fa-check"></i><b>8.1.3.3</b> ChatGPT-4:</a></li>
+<li class="chapter" data-level="8.1.3.4" data-path="text110.html"><a href="text110.html#gemini-goodleun-en-son-bardı"><i class="fa fa-check"></i><b>8.1.3.4</b> GEMINI (Goodle’un En Son BARD’ı):</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="text110.html"><a href="text110.html#gettextV11nums"><i class="fa fa-check"></i><b>8.2</b> Metindeki Bazı 19 Bazlı Kodlar Versiyon 1.1</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="text110.html"><a href="text110.html#ChpVrsWrd11"><i class="fa fa-check"></i><b>8.2.1</b> Kod: Bölüm, ayet ve ayet seviyesindeki kelimeler</a></li>
+<li class="chapter" data-level="8.2.2" data-path="text110.html"><a href="text110.html#ChpVrsWrdLetatChaprewrite11"><i class="fa fa-check"></i><b>8.2.2</b> Kod: Bölüm, Ayet, Kelimeler, Harfler Bölüm Seviyesinde Yeniden Yazım</a>
+<ul>
+<li class="chapter" data-level="8.2.2.1" data-path="text110.html"><a href="text110.html#daha-fazla-gerçek"><i class="fa fa-check"></i><b>8.2.2.1</b> Daha Fazla Gerçek</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2.3" data-path="text110.html"><a href="text110.html#VrsLvlWrdrewrite11"><i class="fa fa-check"></i><b>8.2.3</b> Kod: Sadece Ayet Seviyesinde Kelimelerin Yeniden Yazımı</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a>
+<ul>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html#fw-isbnn"><i class="fa fa-check"></i>ISBN</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">6348 Ayette 19 Sistemi</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tartışmalar-ve-telif-hakları" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Tartışmalar ve Telif Hakları<a href="tartışmalar-ve-telif-hakları.html#tartışmalar-ve-telif-hakları" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Hipotezlerimi doğrulayan tüm delillerin sunumunu tamamladım ve bunların tekrar üretilebilir testlerini de kitabımda paylaştım. Bu bölümde, Kuran ve metninin 19 tabanlı kodlama sistemi hakkında çeşitli konularda kendi öznel düşüncelerimi paylaşmak istiyorum. Ayrıca Kuran ve İslam hakkında bazı kişisel düşüncelerimi de paylaşacağım. Hemen bana inanmanızı istemiyorum. İslam hakkında ifade ettiğim şeyleri Kuran’daki mesajla karşılaştırmanızı ve sonunda kendi sonucunuza varmanızı öneririm. Kuran konusunda uzman değilim ve bunlar ortalama bir Müslümanın öznel düşünceleridir.</p>
+<blockquote>
+<p>“Onlar ki, sözü dinlerler ve onun en güzeline uyarlar. İşte onlar Allah’ın kendilerini doğru yola ilettiği kimselerdir ve onlar sağduyu sahipleridir.”, (Kuran,39:18, kuranmeali.com, S. Ateş)</p>
+</blockquote>
+<p>Dolayısıyla sadece uzmanları dinlemek zorunda değilsiniz, ancak aklınızı kullanarak sizin için en iyisinin ne olduğuna karar vermek ve onu takip etmek zorundasınız.</p>
+<div id="fw-rewiew" class="section level3 unnumbered hasAnchor">
+<h3>İncelemeler, Geri Bildirimler ve İletişim<a href="tartışmalar-ve-telif-hakları.html#fw-rewiew" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Öncelikle, bu kitapta sunduğum sistem hala farkında olmadığım bazı hatalar içerebilir. Bu çalışmayı tamamen tek başıma yürüttüm ve bu çalışmayı teknik olarak gözden geçirecek kimsem yoktu. Eğer yeteneğiniz varsa, lütfen kodlarımı, delillerimi, kurallarını ve genel olarak kitabı inceleyin ve faydalı eleştirel incelemelerle geri bildirim sağlayın. Bunun için, İngilizce olarak X (Twitter) üzerinden @galtay19, veya Türkçe olarak @gokmen_19 adresinden veya Youtube kanalımda yorumlardan bana ulaşabilirsiniz. Bu kitabın çok teknik olduğunu ve çok sayıda kod içerdiğini unutmayın, bu yüzden birçok hatam olabilir. Bu nedenle, kodları kendiniz test etmekten çekinmeyin. Gözlemlediğim kuralları tanımlamak için elimden geleni yaptım, ancak kuralların daha iyi tanımlamaları olabilir ve gelecekte iyileştirmelere açıktırlar. Bu kitabı ilk olarak sadece internetten e-kitap olarak yayınlayacağım. Bir süre sonra, geri bildirimlere göre gerekirse internet sürümü güncelleyip bu kitabın basılı kağıt kopyasını yayınlayabilirim. Bu kitap ilk olarak 2019-09-07 tarihinde internetten yayınlandı ve 2019-12-31 tarihinde hafif bir revizyondan geçti, ardından Kasım 2020’de büyük bir revizyon yaptım. Son olarak 2023’te, bazı yeni delillerle nihai bir güncelleme yaptım.</p>
+<p>Bu süre zarfında, delillerin kodlama kısımlarıyla ilgili ciddi özel itirazlarla karşılaşmadım. Kendim, karmaşıklığı konusunda bazı endişelerim vardı ve kuralları basitleştirerek kitabı ilk olarak 2019-12-31 tarihinde güncelledim. 2020’nin 19 Eylül’üne kadar, çift ve tek tabanlı delilleri keşfettim ve kuralları yeniden düzenleyerek, daha önce mevcut olan Al-Fatiha kodlama tabanlı delillerle birlikte <a href="KeyCodingsBased.html#Evidences">4.1.2</a> Bölümünde <strong>Ana 19 Sistemi</strong> içinde sundum. Son olarak, 2023-12-5 tarihinde Fibonacci tabanlı ve diğer anahtar kodlama örüntüsü tabanlı deliller ile <em>demir ayeti</em> üzerindeki son keşfettiğim delillerimle beraber kitabı önemli iyileştirmelerle güncelledim. Ancak, bu kitap inceleme amaçlı için bir süre daha sadece internetten yayın olarak kalabilir.</p>
+<p>Bu kitapta sunduğum 19 tabanlı kodlama sistemi, bir buzdağının sadece görünen kısmı olabilir ve ben bu kitapta ne kadarını keşfedip sunduğumu tam olarak bilmiyorum. Kuran metninde 19 tabanlı bir kodlama sistemi olduğuna dair yeterli ve önemli deliller keşfettiğimi çıkarımladığımdan, metin üzerindeki analizimle gözlemleyebildiğim sisteme dayanarak bu kitabı yazdım. Kitapta herhangi ciddi bir hata varsa, bu yalnızca benim istemeden yaptığım bir hata olacaktır. O zaman, hataları düzeltmek için kesinlikle gerekli adımları atacağım. Tüm çıkarımlar kendi değerlendirmelerime dayanıyor ve bazıları hala yanlış olabilir. Eğer “tanık olduğumuz şey Allah’ın bir tasarımıdır” gibi bir ifade kullanıyorsam veya ima ediyorsam, bu, analizim ve çıkarımıma dayanarak kendi öznel sonucum anlamına gelir ve mutlak gerçek olmak zorunda değildir. Allah en iyi bilendir. Bu kitapta sunduğum şeylerin mutlak gerçek olduğunu asla iddia etmiyorum çünkü sadece Allah mutlak gerçeği bilir. Bu nedenle, tüm iddialarımı bilimsel olarak eleştirilmeli ve okuyucular sunulanlara dayanarak kendi hükümlerini vermelidir. Eğer yeterli istatistik ve matematik bilgisine sahip değilseniz, çevrenizdeki güvendiğiniz uzman kişilere danışmanızı öneririm.</p>
+<p>Son olarak, Besmele etrafında bazı açık basit deliller var, örneğin, 19 harften oluşur ve Kuran’da 114 kez kullanılır. Bu kitapta bilinen delilleri pek dahil etmedim çünkü bu kitapta sadece yeni keşifleri tanıtmaya çalıştım. Bu nedenle, bu kitabın 19 sistemi kurallarıyla çelişmeyen başka bir yayında başka birinin delilleriyle karşılaşırsanız, bunları, sunduğum sistemin diğer ek delilleri olarak kabul etmekte özgürsünüz. Kısacası, diğer mevcut delilleri hariç tutmuyorum, ancak yalnızca keşfettiğim yeni 19 Sistemini ve yalnızca yeni delillerle sunmak için bu kitapta dahil etmiyorum.</p>
+</div>
+<div id="fw-future" class="section level3 unnumbered hasAnchor">
+<h3>Gelecekteki Çalışmalar<a href="tartışmalar-ve-telif-hakları.html#fw-future" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bu kitap benim hobi projem gibiydi ve iş saatlerinden sonra, çoğunlukla hafta sonları ve tatillerimde boş zamanlarımda yazdım. Boş zamanım sınırlı olduğu için, aklımdaki tüm olası hipotezleri test edemedim. Bu konuda yeteneği ve ilgisi olan kişileri daha fazla araştırma yapmaya ve diğer potansiyel delilleri bulmaya teşvik ediyorum. Ancak, bir sayıyı 19’un katı olarak gördüğünüz anda hemen bir ‘delil’ olarak kabul edip olaya atlamayın. Anlamlı kuralların bir sistemine uyup uymadığını kontrol edin. Bu nedenle, bu kitapta bazı 19 tabanlı kodlamaları izole <strong>gerçekler</strong> olarak sundum ama sistem delilleri olarak değil. Bu yaklaşım türleri için yeterli örnekler bu kitapta mevcut.</p>
+<p>Özellikle, araştırmacılara Kuran’ın her bölümünün metnini ayrı ayrı olarak da incelemelerini öneririm. Örneğin 9. bölüm (At-Tevbe) 11115 harf içerir ve bu sayı 19’un katıdır. Ayrıca, 9. bölüm (At-Tevbe) 129 ayetten oluşur ve 1’den 129’a kadar tüm sayıları yazıp birleştirdiğimizde, büyük sayı da 19’a bölünebilir. 9. bölümde (At-Tevbe) görüldüğü gibi, bazı bölümlerin özel koruma ihtiyacı olabilir! Her bölüm ayrı ayrı incelenmeye değerdir.</p>
+<p>Ayrıca, literatürde <em>Hurufu mukkatta</em> harfleri (aynı zamanda “ayrık harfler” veya “gizemli harfler” olarak da bilinir) hakkında birçok önerilen delil var. Benim bulduğum bu harfler üzerinde bazı yeni deliller var ama hepsini kapsamlı bir şekilde inceleyemedim. İlk neden, bu harfler hakkında zaten birçok delil iddiası olmasıdır. İkinci olarak, bu harfler tüm bölümlerde görünmüyor ve bu kitapta Kuran’ın <strong>tam metni</strong>nin bütünlüğünü destekleyen delilleri kapsamaya çalıştım. Ancak, kesinlikle araştırmaya değerler. Kitabım, bu “gizemli harfler”in işlevselliği için de destekleyici bir delil olup, o harflerin varlıkları, sunduğum tüm 19 tabanlı sistemin de geçerli olmasını sağlar. Bunlar olmadan, sistemim de çöker. Ancak, bu harfler üzerinde daha spesifik delillerin de olabileceğini tahmin ediyorum. İlgilenen okuyuculara kitabımdaki delillere ve internet üzerinden kolayca yapılan bir arama ile mevcut olan diğer delillere yönlendiriyorum. Kendim test etmediğim ve “gizemli harfler” üzerine diğer mevcut önerilen delillerin doğru olup olmadığından tam olarak emin olmadığım için burada onları alıntılamıyorum.</p>
+<p>İlk kitap versiyonumda gelecekteki çalışmalar için şu paragrafı yazmıştım:
+&gt; “Her bölümün tek ve çift ayet sayıları ile ilgili bir çalışma yapılabilir. Bu yönde bazı basit örnekler amazing19.com’da mevcut. Benim bu kitapta sunduğum benzer yaklaşımlar kullanılarak genişletilebilirler.”</p>
+<p>2019’un erken Eylül aylarında, bu kitabın ilk versiyonunda önerdiğim bu gelecekteki çalışmayı kendim sonrasında gerçekleştirdim. Sonuç olarak, <strong>ana 19 sistemi</strong> içinde <a href="KeyCodingsBased.html#Evidences">4.1.2</a> Bölümünde sunduğum tüm tek ve çift örüntü tabanlı delilleri ve daha önce mevcut olan Al-Fatiha kodlama tabanlı delilleri buldum.</p>
+</div>
+<div id="fw-nonmuslims" class="section level3 unnumbered hasAnchor">
+<h3>Müslüman olmayan okuyuculara kişisel mesajım<a href="tartışmalar-ve-telif-hakları.html#fw-nonmuslims" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bu kitabı okudunuz ve Kuran’ın metninin doğaüstü bir tasarıma sahip olduğu sonucuna vardıysanız, mütevazı görüşümce, içeriğini de okumanızı öneririm. Bunu yapmadan önce, Müslümanlar ve dolayısıyla İslam hakkında sahip olabileceğiniz herhangi bir önyargıyı unutmanızı da öneririm. Kuran’ın içeriğini gerçekten anlamak için, bunun tamamen yeni okunacak bir kitap olduğunu varsaymalı ve sadece mesajını anlamaya çalışmalısınız. Temelde, Müslümanlar hakkında bildiklerinizi veya gözlemlediklerinizi, iyi veya kötü, unutun ve Müslümanlarla hiçbir şekilde karşılaştırmadan sadece Kuran’ı okuyun. Çünkü İslam hakkında olumsuz olarak düşündüğünüz şeyler büyük olasılıkla Kuran’dan kaynaklanmaz, geleneksel Müslüman inancından veya basitçe kültürden kaynaklanır.</p>
+<p>Uzun lafın kısası, Kuran’ı sanki sadece Yaratıcınızdan size gönderilmiş gibi okumanızı ve mesajını olduğu gibi anlamaya çalışmanızı öneririm. İslam, sadece Kuran’da yazılanlardır ama başka bir şey değildir. İslam, genel olarak Müslümanların yaşamına bakarak gördüğünüz şey değildir. Ayrıca, Kuran dışında, Muhammed nebi hakkındaki herhangi bir tarihi rapora tamamen inanmamanızı öneririm. Muhammed nebi, Allah tarafından Kuran’da en iyi ve en doğru şekilde bildirilmiştir.</p>
+</div>
+<div id="fw-tradition" class="section level3 unnumbered hasAnchor">
+<h3>Kuran ve Geleneksel Müslüman İnancı Arasındaki Uçurum<a href="tartışmalar-ve-telif-hakları.html#fw-tradition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ne yazık ki, günümüzde ve muhtemelen uzun bir süredir, çoğunluğu oluşturan geleneksel Müslümanların, Kuran ile aralarında büyük bir uçurum var. Arapça bilmeyen çoğu Müslüman, kendi dillerinde Kuran’ın çevirisini okuyup anlamaya bile çalışmaz, sadece Arapça metnini anlamadan tekrar ederler. Bu mantıksız uygulama, Arapça konuşmayan Müslüman ülkeler arasında oldukça yaygındır. Bu, insanların kendi tercihleriyle yapmalarından değil, genellikle alimler veya imamlar tarafından bu şekilde yapmaları yönünde yönlendirildikleri ve teşvik edildikleri içindir. Geleneksel Müslüman inancı, sıradan insanların kendi başlarına Kuran’ı anlayamayacakları ve Kuran ve diğer kaynaklarda uzman olan alimleri dinlemeleri <em>gerektiği</em> fikrini dayatır. Durum bununla da sınırlı kalmaz, Kuran’ın tek başına anlaşılmaya yeterli olmadığını ve Kuran’daki mesajı tam olarak anlamak için Muhammed nebinin ölümünden <em>yaklaşık</em> 200 yıl sonra yazıya dökülen, ‘<em>iddia edilen hadis raporlarının</em>’ da <em>mutlaka</em> dikkate alınması gerektiğini iddia ederler! Kuran’ın Allah’ın dinini anlamak ve yaşamak için yeterince detaylı olmadığını, gerekli detayları sadece Muhammed nebinin açıkladığını ve uyguladığını ve bu nedenle Kuran’daki mesajı tam olarak anlamak için <em>iddia edilen hadis raporlarını</em> okumamız <em>gerektiğini</em>, bunun zorunluluk olduğunu, savunurlar.</p>
+<p>Bu şekilde Kuran’ı, aslında gerçekten kimse tam sayısını veya doğruluğunu bilmediği veya üzerinde anlaşamadığı, tarihsel iddia edilen hadis raporları içine hapsediyorlar. Bu güçlü bir şekilde dayatılan geleneksel fikrin sonucu olarak, sıradan Müslümanlar kendilerini, aynı zamanda geleneksel Müslüman inançla yetiştirilip eğitilmiş olan alimleri dinlemeye ve uymaya mecbur hissederler. Bu geleneksel öğreti, sıradan Müslümanların çocukluktan yaşlılığa kadar zihinlerine enjekte edildiğinden, Kuran ayetlerini kendi başlarına okuduklarında ayetlerden anladıklarına gerçekten güvenemezler, çünkü onlara bunu tam olarak anlayamayacakları veya yanlış anlayabilecekleri beyin yıkaması yapılmıştır. Böylece, Kuran ayetlerini anlamaktan ve kendi başlarına bir anlam çıkarmaktan korkar gibidirler. Ancak bir alim veya imam onlar için ayetleri açıkladığında Kuran ayetlerinin anlamına güvenirler. Ancak, bu fikir Kuran’daki mesajın aksinedir. İlgili birçok ayet arasından, burada kısa tutmak için sadece bu ayetleri alıntılayacağım:</p>
+<blockquote>
+<p>Elif lam ra. (Bu,) bir Kitaptır ki, hikmet sahibi, herşeyden haberi olan (Allah) tarafından ayetleri sağlamlaştırılmış ve güzelce açıklanmıştır. (Kuran,11:1, kuranmeali.com, S. Ateş)</p>
+</blockquote>
+<blockquote>
+<p>Ta ki Allah’tan başkasına tapmayasınız. Ben de, O’ndan size (gönderilmiş) bir uyarıcı ve müjdeleyiciyim. (Kuran,11:2, kuranmeali.com, S. Ateş)</p>
+</blockquote>
+<p>Anladığım kadarıyla, Allah bize Kuran’ın zaten açıklandığını ve bizim sadece Allah’tan başkasına ibadet etmememiz için böyle yapıldığını bildiriyor. Bu anlamın tersini düşündüğümüzde, eğer Kuran yeterince detaylı olmasaydı, Kuran’ı bizim için açıklayacak alimlere ihtiyaç duyardık ve Allah’ı anlamak için Allah’tan başka herhangi birine ihtiyaç duyma hissi veya durumu, Allah’tan başka birine ibadet etme biçimi olarak kabul edilebilir. İbadetin farklı biçimleri vardır. Bağlamdan, birisi, alimlerin ya da imamların ne dediklerini dinlemek zorunda olduğuna inanıyorsa, bu onların Allah’ın mesajını almak için kendisi ile Allah arasında <strong>zorunlu aracılar</strong> olarak yerleştirdiği anlamına gelir. Ancak, bu durum Kuran’daki ana mesaja aykırıdır. Çünkü bir Müslüman’ın Allah ile bağlantı kurmak için başkasına ihtiyacı yoktur. Bu ayetlere klasik geleneksel argüman, “biz alimlere veya imamlara ibadet etmiyoruz” diyebilirler. O zaman, ibadetin anlamını tekrar hatırlayalım. İbadet, “bir ilaha derin saygı ve sevgi göstermek; dini ritüellerle onurlandırmak” anlamına gelir (bu, basit bir Google aramasıyla doğrulanabilir). Allah’ın mesajını anlamak için bu <strong>zorunlu aracıları</strong> dinlememiz ve onları takip etmemiz gerektiği hissi, bu aracılara ek bir ilahi saygı, bir hürmet getirme potansiyeline sahiptir. Çünkü onların hayatımızdaki konumu Allah ile sıradan Müslümanlar arasındadır. Bu hissin sonucu, Müslümanlar onları dinler ve Kuran ile karşılaştırmadan din hakkında ne söylerlerse kabul ederler. Bu aracıları dinlemek ve onların sözlerine, ne derlerse Allah’ın bizden yapmamızı istediği gibi güvenip itaat etmek bir ibadet biçimidir. Çünkü biz bu aracıları dinler ve itaat ederiz ve onların söyledikleri şeylerin Kuran ile uyumlu olup olmadığını gerçekten bilmiyoruz. Çünkü pratikte, onlara Kuran’a gösterdiğimizden daha fazla güven gösteririz. Bu, geleneksel Müslümanların çocukluktan itibaren böyle yetiştirilmiş olmalarından kaynaklanır. Bu durumun sonucu, Müslüman ülkelerde veya yurtdışındaki Müslüman topluluklar arasında gözlemlediğimiz neredeyse tüm olumsuz şeylerdir. Birçok geleneksel öğreti, geleneksel alimler veya imamlar tarafından sanki Allah’ın emirleriymiş gibi öğretilmiştir, oysa bunların birçoğu ya Kuran’da yoktur ya da Kuran’a aykırıdır.</p>
+<p>Özetle, büyük çoğunluk olan geleneksel Müslümanlar, alimleri veya imamları dinler ve dinlerini ona göre yaşamaya çalışırlar. Dinlerini öğrenmek için çok fazla Kuran okumazlar ve Kuran’dan anladıkları şeye göre anlamını kullanıp hayatlarını yaşamazlar. Sadece, imamlarının kendilerine Kuran hakkında söylediklerine göre Kuran’daki talimatları takip ederler. Bu, aslında insanların tercihi değil, geleneksel Müslümanların zihinlerine sürekli beslenen baskın geleneksel Müslüman inancıdır. Kuran ile sıradan Müslümanlar arasındaki mevcut doğrudan ilişki, imamların aracılığı olmaksızın, gerçekten anlamadan sürekli olarak Kuran ayetlerini Arapça okumaktır. Çünkü anlamadıkları halde okumaya devam ettiklerinde ödüllendirilecekleri öğretildiler, oysa Kuran’da böyle bir ayet yoktur. Aksine, Kuran’ı okuyan herkes, Allah’ın sürekli olarak aklımızı kullanmamızı emrettiğini ve aklımıza hitap ettiğini fark eder. Böylece, geleneksel Müslümanlar ile Kuran arasında büyük bir uçurum oluşmuştur. Her Şeyi Bilen Allah’ın, Kıyamet Günü’nde Muhammed nebinin Müslümanlar hakkında şikayette bulunduğu bu ayetle bizi bu konuda uyardığı için Müslümanların çoğunun bu durumu şaşırtıcı değildir.</p>
+<blockquote>
+<p>Elçi de: “Ya Rabbi, kavmim, bu Kur’an’ı terk edilmiş bıraktılar demiştir. (Kuran,25:30, kuranmeali.com, S. Ateş)</p>
+</blockquote>
+</div>
+<div id="fw-source" class="section level3 unnumbered hasAnchor">
+<h3>İslam Dininin Kaynağı<a href="tartışmalar-ve-telif-hakları.html#fw-source" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Müslümanlar hakkında evrensel değerlerle uyumlu görünmeyen birçok şey, Kuran’dan kaynaklanmamaktadır. O zaman, bazı Müslümanların, özellikle kadınlarla ilgili, olumsuz uygulamalarını neden gördüğünüzü merak edebilirsiniz. Cevap, geleneksel Müslüman inancının, yani İslam’ın din olarak sadece Kuran’ı kaynak olarak kabul etmemesidir. Kuran’la birlikte, Peygamberimiz Muhammed nebinin tarihsel iddia edilen raporları olan Hadis anlatıları ve çoğunlukla geçmişte İslam hukuku meseleleri üzerinde bazı erken İslam alimlerinin anlaşmasını temsil eden <strong>İcma</strong> da bulunmaktadır. Hadisler, Muhammed nebinin herhangi bir sözü, eylemi ve onayları hakkında <strong>iddia edilen</strong> raporlardır. Ancak, en güvenilir hadis kaynakları bile, Buhari’nin kitabı gibi, Peygamberimizin ölümünden yaklaşık 200 yıl sonrasına tarihlenir. Bu tartışma, kitabın ana konusu olmadığı için bu konuda daha fazla detaya girmeyeceğim. Ancak kısaca, iddia edilen herhangi bir hadis raporunun %100 doğru olduğunu asla bilemeyiz ve emin olamayız. İddia edilen Hadis raporları Kuran gibi değildir ve Allah sadece Kuran’ı korumayı vaat etmiştir, başka hiçbir kitabı değil. İddia edilen hadis raporları, Allah’ın nazarında da İslam’ın kaynağı olsaydı, her şeye gücü yeten Allah onları Kuran gibi kaydedilmiş ve başından beri Kuran gibi korumuş olurdu. Allah en iyi bilir ama benim mütevazı görüşüm, bu noktanın iddia edilen hadis raporlarının Allah’ın nazarında İslam’ın kaynağı olamayacağının başka bir mantıksal kanıtı olduğudur. Bazı hadis raporları doğru olabilir, bazıları kısmen doğru olabilir ama bazıları da yanlıştır. Tarih boyunca Müslümanlar arasında güce sahip olan herhangi bir kişi, kendi istedikleri bazı sahte hadisleri ekleyebilir ve Müslümanların hayatını buna göre dönüştürebilir. Özellikle kadınlar, bu yolla en çok zarar gören ilk kesim oldu.</p>
+<p>Bir milyondan fazla iddia edilen hadis raporunun olduğu bilinmektedir. Buhari ve Müslim gibi bazı alimlerin, kendi kişisel yargılarına göre bu raporları filtreledikleri ve Peygamberimizin ölümünden yaklaşık <strong>200 yıl sonra</strong>, “doğru” olarak kabul ettikleri bazı iddia edilen hadis raporlarını hadis kitaplarında tuttukları söylenir. Bu bilgi tek başına, rasyonel Müslümanların şu soruyu sorması gerektiğini tetiklemelidir: Kuran’dan yaklaşık 200 yıl sonra yazıldığı iddia edilen bir kitap, Kuran’la birlikte nasıl dinin kaynağı olabilir? “İddia edilen” raporlar dedim çünkü bu hadis kitaplarının orijinal kopyaları bile mevcut değildir ve en eski hadis kitaplarının kopyaları bilimsel olarak sadece Kuran yazıldıktan yaklaşık 400 yıl sonraya tarihlenir. Bu bilgiyi kendi araştırmamda elde ettim, ancak kendi araştırmanızı yapmaktan çekinmeyin. Bu kitapların içeriği gerçekten doğru olsa bile, bu bilgi tek başına, bu hadis kitaplarının İslam dininin, tüm insanlık için ve tüm zamanlar için olan dininin kaynağı olamayacağını kanıtlar. Eğer böyle hadis raporlarına ihtiyaç duyulmuş olsaydı, Allah’ın, Elçisine Kuran’la birlikte hadislerini de kaydetmesini veya ezberlemesini de emretmesini beklerdik. Çünkü Kuran, tüm insanlık için ve tüm zamanlar içindir. Eğer Peygamberimizin hadis raporlarına gerçekten ihtiyaç duyulmuş olsaydı, bu raporlar <strong>kesinlikle</strong> Muhammed nebi tarafından kaydedilirdi. Çünkü o, elçi olarak görevini mükemmel bir şekilde yerine getirdi. Aksi takdirde, ironik bir şekilde, görünüşte peygamber yanlısı olan geleneksel Müslüman inancı, Muhammed nebinin görevini tam olarak yapmadığıyla suçlamış ta olur ki bu asla kabul edilemez. Bizim elimizde Kuran var ve şüphesiz Muhammed nebinin görevini mükemmel bir şekilde yerine getirdiğini ondan biliyoruz. Dinin kaynağının sadece Kuran olduğu ve başka hiçbir kitaba ihtiyaç olmadığı için, Peygamberimiz Kuran’la yaptığı gibi hadislerini kaydetmemiştir.</p>
+<p>Özetle, tüm Müslümanları Allah’ın vahyederek <strong>indiriğini</strong>, yani sadece Kuran’ı, Allah’ın mesajı, İslam’ın kaynağı olarak takip etmeye davet ediyorum, başka hiçbir şeyi değil. Ancak, geleneksel Müslüman inancı sizi önceki Müslüman alimleri veya ataları takip etmeye yönlendirir. O zaman, Allah’ın Kuran’da benzer bir durum hakkında ne vahiy ettiğine bakın:</p>
+<blockquote>
+<p>Onlara: “Allah’ın indirdiğine uyun!” dense, “Hayır, biz atalarımızı üzerinde bulduğumuz(yol)a uyarız!” derler. Peki ama, ataları bir şey düşünmeyen, doğru yolu bulamayan kimseler olsalar da mı (atalarının yoluna uyacaklar)? (Kuran, 2:170).</p>
+</blockquote>
+<blockquote>
+<p>Allah kuluna kafi değil mi? Seni O’ndan başkalarıyle korkutuyorlar. Allah kimi şaşırtırsa artık onu yola getiren olmaz. (Kuran 39:36).</p>
+</blockquote>
+<p>Geleneksel Müslüman alimlerin bu saf mesaja ilk itirazı, iddia edilen hadisler olmadan, bir Müslümanın günlük namazını ritüeliyle ve benzer şekilde diğer bilinen uygulamaları doğru bir şekilde yerine getiremeyeceğidir. Bu aslında oldukça komik ve acınası bir sorudur. Çünkü soran kişi varsayılan olarak, İslam hakkında bildiği her şeyin doğru olduğunu ve bunların iddia ettikleri detaylarla Kuran’da olmadığı için, Kuran’ın yeterince detaylı olmadığı ve iddia edilen hadis raporlarına başvurmaları gerektiği sonucuna varmıştır. Bu cevabı burada onlar için kısa tutacağım. Kuran, yanlış inançlarınızı içermek zorunda değildir. Din hakkındaki çarpıtılmış anlayışınız Kuran’da olmak zorunda değil. Namaz, oruç, temizlik, sadaka ve diğer benzer Müslüman uygulamaları, Allah’ın dilediği kadar yeterli detayla Kuran’da açıklanmıştır. Böyle bir itirazda bulunanlara önerim, koordinatlarınızı bilin, haddinizi aşmayın ve asla Allah’a dini öğretmeye çalışmayın!</p>
+<blockquote>
+<p>De ki: “Siz Allah’a dininizi mi öğretiyorsunuz? Oysaki Allah, gökte ne var, yerde ne var hepsini bilir. Allah her şeyi çok iyi bilmektedir.” (Kuran,49:16, kuranmeali.com, Y.N. Öztürk)</p>
+</blockquote>
+</div>
+<div id="fw-sects" class="section level3 unnumbered hasAnchor">
+<h3>Geleneksel Müslümanlar Arasındaki Mezhepler<a href="tartışmalar-ve-telif-hakları.html#fw-sects" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Gördüğünüz gibi, geleneksel Müslüman inancının kaynakları, sıradan Müslümanların takip etmeleri ve kendilerinin öğrenmeleri için çok fazladır. Bu, hepsi aynı Kuran’ı ve aynı peygamberi kabul etmelerine rağmen Müslümanlar arasında bu kadar çok mezhep ve dalın var olmasının diğer nedenlerinden biridir. Peki, inançlarındaki farklılıkların kaynağı nedir? Basitçe söylemek gerekirse, güvendikleri alimler farklıdır ve nerede doğduklarına göre onları takip ettikleri için, geleneksel Müslüman inancı içinde farklı bir dalda yer alırlar. Temelde, hepsi aynı Kuran’ı kabul eder, ancak her biri iddia edilen Hadis raporlarının veya İcma kurallarının farklı bölümlerini kabul eder ve sonunda farklı bir dal oluştururlar ve farklı bir mezhebin farklı türde bir Müslümanı olurlar. İşte bu yüzden, farklı Müslüman ülkelerde, inançlarındaki çeşitliliklere sahip çeşitli Müslüman tiplerini görürsünüz. Bu durum, Kuran’da okudukları ancak ders almadıkları bir ayete rağmen yine de böyledir:</p>
+<blockquote>
+<p>Dinlerini parça parça edip fırkalara, hiziplere bölünenler var ya, senin onlarla hiçbir ilişiğin yoktur. Onların işi Allah’a kalmıştır. Allah onlara, yapıp ettiklerini haber verecektir. (Kuran 6:159)</p>
+</blockquote>
+<p>Ayrıca, aşağıdaki ayette, Kuran’ın (Kitap) Müslümanlara indirildiği ve <strong>her şeyi açıkladığı</strong> açıktır. Kuran’ın detaylı bir kitap olduğunu bildiren birçok başka ayet de bulunmaktadır.</p>
+<blockquote>
+<p>Gün olur, her ümmet için kendi aleyhlerine kendi içlerinden bir tanık çıkarırız. Seni de şu insanlar hakkında tanık olarak getireceğiz. Sana bu Kitap’ı indirdik ki her şey için ayrıntılı bir açıklayıcı, bir kılavuz, bir rahmet, Müslümanlara da bir müjde ol. (Kuran 16:89)</p>
+</blockquote>
+</div>
+<div id="fw-bad-ex" class="section level3 unnumbered hasAnchor">
+<h3>Kuran’a Rağmen Geleneksel Bir Kötü Örnek<a href="tartışmalar-ve-telif-hakları.html#fw-bad-ex" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Geleneksel Müslümanlar, dinlerini gerekli detaylarla sadece Kuran’ı okuyarak öğrenemeyecekleri şeklinde yönlendirilmişlerdir ve bu nedenle iddia edilen Hadis raporlarına ve hatta İcma’ya ihtiyaçları vardır. Kaynaklar, sıradan bir Müslümanın öğrenmesi, anlaması ve onlardan herhangi bir kural çıkarması için çok fazla olduğunda, <strong>alimleri dinlemek ve takip etmek zorundadırlar</strong>. Bu nedenle, tüm geleneksel Müslümanlar, çoğunlukla geleneksel Müslüman inancının geleneksel kurallarını dayatan alimlere kulak asmaya veya onları dinlemeye zorlanır hissederler. Bu durumda, herhangi bir durumda, alimler çoğunlukla verilen duruma geleneksel inançlarına uyacak şekilde bir yol bulabilirler. Bu, tarih boyunca ve bugün Müslüman ülkelerin liderleri için çok uygun bir durum olmuştur. Alimleri kontrol etmek ve böylece alimleri dinlemek zorunda hisseden geleneksel Müslüman halkı kontrol etmek onlar için çok zor değildir. Müslümanların tarihinde, ülke liderine açıkça karşı çıkan veya boyun eğmeyen bazı alimlerin hapsedildiği veya öldürüldüğü birçok acınası örnekler vardır. Kuran dışında başka kaynakları İslam’ın bilgi kaynağı olarak eklediklerinde, Kuran’da olmayan ve hatta Kuran’a aykırı olan şeyleri uygulayabilirler. Bu durumun en aşırı örneği, İslam’ı açıkça terk eden bir Müslüman için ölüm cezasıdır (Arapça’da “mürted”). Aslında, bu Kuran’a tamamen aykırıdır. Kuran’da böyle bir emir yoktur ve Kuran’ı okuduktan sonra çıkarılabilecek genel mesajın aksinedir. Ayrıca, Allah bu ayetle bizi açıkça bilgilendirir:</p>
+<blockquote>
+<p>“DİNDE zorlama yoktur…”. (Kuran 2:256)</p>
+</blockquote>
+<p>Yine de, Buhari gibi en güvenilir hadis kitaplarında, bir <strong>iddia edilen hadis</strong> raporuna göre, Peygamber, dinini değiştireni öldürmeyi şöyle buyurmuştur: “Kim İslam dinini değiştirirse onu öldürün.” Bu iddia edilen hadis raporunu tamamen reddediyorum. Bunun, Kuran ile hiçbir şekilde uyumlu olmadığı için uydurulmuş yanlış bir rapor olduğuna inanıyorum. Peygamberimiz sadece ve sadece Kuran’ı takip eder ve Kuran ile çelişen hiçbir şeyi Elçi vasfıyla söyleyemez.</p>
+<blockquote>
+<p>Şimdi o, [kendisine bunu emanet ettiğimiz kişi,] [kendi] sözlerinden bir kısmını Bize isnad etmeye kalkışsaydı, (Kuran,69:44, kuranmeali.com, M.Esed)</p>
+</blockquote>
+<blockquote>
+<p>o’nu sağ elinden yakalardık; (Kuran,69:45)</p>
+</blockquote>
+<blockquote>
+<p>ve şah damarını keserdik; (Kuran,69:46)</p>
+</blockquote>
+<p>Geleneksel Müslüman inancı, bu tartışmalı iddia edilen murted (dinden dönen) hadisini reddetmez, fakat onu istedikleri gibi çeşitli şekillerde yorumlarlar. Gördüğünüz gibi, bu aşırı örnekte, zamana ve duruma bağlı olarak, geleneksel Müslüman inancına veya bir lidere karşı bağımsız ve eleştirel bir Müslüman alim, murted (dinden dönen) ilan edilebilir ve öldürülebilir. Bu, geleneksel Müslüman inancının tarih boyunca ve şimdi Müslüman ülkelerde bu kadar güçlü bir şekilde devam etmesinin diğer nedenlerinden biridir. Bu iddia edilen hadis doğru kabul edildiği ve böylece dinin kabul edilen kaynaklarından biri olduğu sürece, bu iddia edilen hadis raporunu reddeden herkes kolayca murted (dinden dönen) ilan edilebilir ve öldürülebilir. <strong>Çok kurnazca</strong> biri, binlerce iddia edilen hadis raporu arasına bu iddia edilen hadisi ekebilir ve bu özel iddia edilen hadisle bir şekilde, diğer tüm iddia edilen hadis raporlarını herhangi bir şekilde eleştiriden korunmuş olur. Çünkü, hadislerden birini reddeden herhangi biri kolayca murted ilan edilebilir ve öldürülebilir. Bunun, Müslümanlar arasında her zaman olduğunu söylemiyorum, ancak söylediğim şey, bu hadis raporu Buhari gibi güvenilir hadis kitaplarında olduğu sürece, böyle bir şey yapmak için her zaman bir yol vardır ve potansiyel olarak kullanılabilir. O zaman, özellikle tarihte, Müslüman ülkelerde Müslümanlar arasında gerçekten ifade özgürlüğü yoktur. Bu kitabı yazabiliyor ve geleneksel Müslüman inancını eleştirebiliyorum, çünkü genel olarak ve özellikle Müslümanları eleştirmek söz konusu olduğunda Amerika Birleşik Devletleri gibi ifade özgürlüğünün bir dereceye kadar var olduğu bir Batı ülkesinde yaşıyorum. Ancak, dürüst olmak gerekirse, geleneksel Müslüman inancını eleştirirken, yine de hayatıma yönelik potansiyel tehlikeyi kabul ediyorum. Çünkü bu gerçek bir şeydir ve geçmişte talihsiz örnekler vardır. Örneğin, geleneksel Müslüman inancının erken dönem önde gelen eleştirmenlerinden Rashad Khalifa, sadece Kuran’ın İslam’ın kaynağı olduğu fikrini güçlü bir şekilde desteklerken, 1990 yılında Arizona’da suikasta uğramıştı. Ayrıca, Kuran metnini kendi uydurduğu sayılara uydurmak için manipüle ettiği <strong>uydurma ve yanlış 19 sistemi</strong> iddiasının sahibiydi. Konuya geri dönecek olursak, sadece ve tamamen Kuran’ı takip etmeye çalışan bir Müslüman olarak, gücüm ölçüsünde, Kuran’daki gerçeği ne olursa olsun ileri sürmek ve dile getirmek zorundayım.</p>
+</div>
+<div id="fw-violnace" class="section level3 unnumbered hasAnchor">
+<h3>İslam’da Şiddet Yoktur<a href="tartışmalar-ve-telif-hakları.html#fw-violnace" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bu konu daha detaylı açıklamalar gerektirir, ancak bu kitap esas olarak bu konu hakkında değildir. Bu nedenle, Batı dünyasında Müslümanlar hakkında şiddetle ilgili bir algı olduğu için, bu önemli konuya kısaca değineceğim. İlk olarak, önyargılı medya ve ikinci olarak, tarihte ve şimdi gördüğümüz bazı geleneksel Müslümanlar tarafından yapılan birçok kötü örnek nedeniyle, Batı dünyasında Müslümanlar hakkındaki algı şiddetten çok uzak değil. Dünyada yaklaşık 1,8 milyar insan olan Müslümanlar hakkında medyanın çoğunlukla olumsuz örnekleri abarttığını biliyorum. Ancak, bunlar ortada ve bizim onlar için bir açıklama yapmamız gerekiyor.</p>
+<p>Kısacası, kendini savunma dışında, İslam’da Kuran’a göre şiddet yoktur, ancak bu kötü örnekler bazı iddia edilen hadis raporlarına veya icmaya dayanmaktadır. Daha önce İslam’ın kaynağı olarak tüm iddia edilen hadis raporlarını reddettiğimi açıkladım. Bunlar sadece tarihsel iddia edilen raporlardır ve geçmiş hakkında bazı tarihsel ve dolayısıyla bulanık bilgiler alabiliriz. Ayrıca, geçmişin Arapça dilini öğrenmek için de onları kullanabiliriz. İddia edilen hadis raporları İslam’ın kaynağı olarak kabul edilmedikçe, dinde bir konuyu anlamak için, istenirse, bu iddia edilen hadis raporları da çalışılabilir. İddia edilen hadis raporlarına, dinde bir konuyu anlamak için dikkate alabileceğimiz diğer <strong>tercih edilen</strong> bir alimin görüşünü dinlemek gibi bir yaklaşım olduğu sürece, dinde bir konuyu anlamaya çalışırken onlardan da yararlanılabilir. İddia edilen hadis raporları İslam’ın kaynağı olarak kabul edilmediği veya diğer bilgi kaynaklarından daha yüksek bir otoriteye sahip kabul edilmediği sürece, onlar da <em>isteyenlerce çalışılabilir</em>. Ancak, bu çok hassas bir durumdur, çünkü biri, diğer tüm bilgilerle birlikte objektif bir şekilde değerlendirmek yerine, iddia edilen hadis raporlarına karşı olumlayıcı önyargılı olabilir. Bu nedenle, eğer birinin onlara karşı herhangi bir olumlu önkabulü varsa, bir konuda yanlış ve önyargılı bir sonuca varma potansiyeli her zaman vardır. Bu nedenle, Kuran’ın takip etmemiz gereken tek ve yalnızca tek bilgi kaynağı olarak kabul edildiği sürece, Arapça dilini, tarihi kitapları çalışmak veya diğer bilgili kişilerin yorumlarını dinlemek sorun olmamalıdır. Ancak sonunda, dinde zorunlu olarak kabul ettiğimiz ve yaptığımız her şeyin sadece ve sadece Kuran’a dayandığından emin olmalıyız ve eğer Kuran’a dayanmıyorsa onları yapmak zorunda olmadığımızı ve onları İslam inancının bir parçası olarak kabul etmememiz gerektiğini unutmamalıyız.</p>
+<p>Bir de “Kuran ile çelişmiyorsa hadisleri alırım” diyen arafta bir grup alim var ki, söylediklerindeki mantıksızlığı görememektedirler ve tam da yukarıda uyardığım olumlu önyargılı durumdakilerin yapabileceği gibi bir inanç benimsemişlerdir. Çünkü Kuran’da okuduğumuzda <em>aklımızın anladığı</em> en doğru manayı almak sorumluluğumuzdur. Oysa, hadis rivayetlerini Kuran ile çelişmezse alırım diyenler Kuran’da akıllarına göre daha doğru bir mana varken sırf hadis rivayetlerinde yazıyor diye akla daha az uygun manayı seçebilirler. Bu aslında rivayetleri Kuran’ın önüne geçirmek demektir. Çünkü Kuran zaten daha akla uygun bir açıklama yapmış ama o grup sırf çelişmiyor diye daha zayıf bir manaya inanmış olur ve yolda çıkarlar. Bununla beraber Kuran ile çelişmiyen bir çok uygulamayı din diye İslam’a da sokmuş olabilirler. Oysa Kuran’da yasaklanmayan herşey, Kuran’da açıkça belirtilmediği sürece, temiz ve hoş şeyler helal, kötü ve çirkin şeyler haramdır. Arafta kalan bu gruba Araf suresinde bir ayet.</p>
+<blockquote>
+<p>(Kuran, 7:157) onlar ki, ellerindeki Tevrat’ta ve [daha sonra da] İncil’de tanımlanmış bulacakları Elçi’nin, okuması yazması olmayan Haberci’nin izinden gidecekler; [ve o Elçi ki] onlara yapılması doğru olanı buyurup yapılması yanlış olanı yasaklayacak; yine onlara <strong>temiz ve hoş şeyleri helal, kötü ve çirkin şeyleri haram</strong> kılacak; onların sırtlarına vurulmuş yükü indirip boyunlarına geçirilmiş zincirleri çözecek. Ve sonuç olarak, o’na inanan, o’nu yüce tutup destekleyen ve yücelerden bahşedilen ışığın ardına o’nunla birlikte düşenler; işte böyleleri, nihaî kurtuluşa, esenliğe erişen kimseler olacak”.</p>
+</blockquote>
+<p>Elbette, diğer ayatlerle beraber değerlendirildiğinde, Allah resulu bu emri Kuran’ı olduğu gibi getirerek yerine getirmiş olur ama ilginç bir şekilde, Haid Rivayetlerini Kuran’ortak koşan kalabalık gelenekçiler, bu ayete kalplerindeki manayı vererek Elçinin de helal haram kılabileceğini iddia etmektedirler. Oysa Elçi neyin haram olduğuna <strong>sadece</strong> Kuran’dan baktığını 6:145 ayetinde ilan ederek biz <strong>gerçek hadisini</strong> Kuran’da bildirmiş. İşte bu ayet gerçek sünnete bir örnektir ve biz sadece Kuran’ı İslam’ın tek kaynağı olarak görenlerin Elçinin sadece gerçek sünnetini dupduru şekilde takip ettiğimize bir örnektir. Biz çoğunluğun yaptığı gibi <em>zanna</em> (Kuran, 6:116) değil, sadece doğruluğu Allah tarafından garanti edilmiş gerçek sünnete uyuyoruz ki o da Kuran’da ne varsa ona uymaktır (Kuran, 46:9). Ama Gelenek atalarının izinden gittiğinden rivayetleri ve hatta ‘Büyük Alimlerini’ Kuran’a ortak koşmadan inanamamaktadırlar (Kuran, 2:170). Aşağıda ilgili ayetlerde bazıları paylaşılmıştır.</p>
+<blockquote>
+<p>(Kuran, 6:145) De ki: <strong>Bana vahyolunanda</strong>, (bu haram dediklerinizi) yiyen kimse için <strong>haram edilmiş bir şey bulamıyorum</strong>. Ancak leş, yahut akıtılmış kan, yahut domuz eti -ki pistir- ya da Allah’tan başkası adına boğazlanmış bir fısk (murdar olmuş hayvan) olursa başka (bunlar haramdır). Ama kim çaresiz kalırsa, (başkasının hakkına) saldırmamak ve (zorunluluk) sınırı(nı) aşmamak üzere (bunlardan yiyebilir). Çünkü Rabbin bağışlayandır, esirgeyendir.</p>
+</blockquote>
+<blockquote>
+<p>(Kuran, 46:9) De ki: “Ben türedi bir elçi değilim. Bana ve size ne yapılacağını da bilmem. <strong>Ben sadece bana vahyedilene uyuyorum ve ben apaçık bir uyarıcıdan başka bir şey değilim.</strong>”</p>
+</blockquote>
+<blockquote>
+<p>(Kuran, 6:116) Yerdekilerin ekserisine uyarsan seni Allah yolundan saptırırlar, onlar sırf zann ardında gider ve sade atarlar.</p>
+</blockquote>
+<blockquote>
+<p>(Kuran, 2:170) Onlara: “Allah’ın indirdiğine uyun!” dense, “Hayır, biz atalarımızı üzerinde bulduğumuz(yol)a uyarız!” derler. Peki ama, ataları bir şey düşünmeyen, doğru yolu bulamayan kimseler olsalar da mı (atalarının yoluna uyacaklar)?</p>
+</blockquote>
+<p>Ana konuya geri dönersek, eğer sadece Kuran’ı İslam’ın kaynağı olarak alırsanız, o zaman masum birine şiddet uygulayamazsınız. Kuran’ın şiddete izin verdiği tek durum, kendini savunma biçiminde olabilir. Bireyin kendini savunması veya bir topluluk ya da ülke gibi bir toplumun kendini savunması. Ve kendini savunma, tüm insanlığın evrensel bir hakkıdır. Savunma olmadan şiddet emrettiği iddia edilen tek ayetler, çoğunlukla yanlış yorumlanmıştır, çevirisi açık olmasına rağmen.</p>
+<blockquote>
+<p>SİZE savaş açanlara karşı Allah yolunda savaşın, ama (amacınızı aşıp) saldırganlık yapmayın; doğrusu Allah saldırganları sevmez. (2:190)</p>
+</blockquote>
+<blockquote>
+<p>Onları karşılaştığınız her yerde öldürün ve sizi sürdükleri yerden siz de onları sürün; zaten zulüm ve baskı, öldürmekten daha kötüdür. Onlar size savaş açmadıkça Mescid-i Harâm civarında onlarla savaşmayın; ama eğer sizinle savaşırlarsa onları öldürün; hakikati inkar edenlerin cezası böyle verilecektir. (2:191)</p>
+</blockquote>
+<p>Görüldüğü üzere, Allah’ın Müslümanlara “Allah yolunda, sadece <strong>size savaş açanlarla</strong> savaşın” diyerek kendilerini savunmalarını emrettiği açıktır. Geçmişte Müslüman devletlerin bu ayetle uyumlu olmayan uygulamaları, Kuran ile ilgili değil, kendi geleneksel inançları ya da politik kararları ile ilgilidir.</p>
+<p>En çok yanlış anlaşılan diğer bir ayet şunlardır:</p>
+<blockquote>
+<p>Ancak müşriklerden sizinle antlaşma yapan sonra da hiç kusur etmeyen ve sizin aleyhinize hiç kimseye arka çıkmayanlar, bunun dışındadır. Siz de onlarla olan antlaşmalarınıza süresi bitinceye kadar uyun. Muhakkak ki Allah, kendisinden hakkıyla sakınanları sever. (Kuran 9:4, kuranmeali.com, M.Türk)</p>
+</blockquote>
+<blockquote>
+<p>Şu mühlet olarak verilen aylar bitince o müşrikleri nerede bulursanız bütün köşe başlarını tutarak onlarla ya savaşın² ya yakalayıp (esir alın) ya da (yurtlarında) hapsedin. Yok, eğer tevbe eder, namazı dosdoğru ve devamlı kılar ve zekâtı da verirlerse (o zaman) onları serbest bırakın. Çünkü Allah gerçekten çok bağışlayıp, çok esirgeyendir. (Kuran 9:5)</p>
+</blockquote>
+<p>Bu iki ayetten görüldüğü gibi, Allah bize sadece bir bağlam içinde bilgi verir. İlk olarak, 9:4 ayetiyle ilgili olarak, Müslümanlar ile bir topluluk içindeki müşrikler arasında bir antlaşma varsa, Müslümanların buna uyması gerekmektedir. Günümüzde bir ülke içinde, herhangi bir inançtan diğer insanlarla bir vatandaşlık antlaşması altındayız. Dolayısıyla, tüm Müslümanların, ülke çoğunlukla Müslüman bir ülke olsa bile, bunu saygıyla karşılaması gerekir. O ülkeyi ziyaret eden herkes de ziyaretçi antlaşması altında sayılır ve böylece Müslümanların, her iki taraf da antlaşmalarına saygı gösterdikleri sürece, dünyadaki tüm insanlarla barış içinde yaşamaları gerekir. Bu, bu ayetten günümüz için çıkarabileceğimiz genel kuraldır, benim mütevazı görüşüme göre. Dahası, ayetlerde, Allah bize ilk Müslüman toplulukla birlikte yaşayan belirli bir müşrik topluluğu hakkında bilgi verir. Bu, önlerinde “the” belirteci olduğu ve onların o zamanda haklarında bahsedilen “o müşrikler” olarak bahsedildiği için böyledir. Dolayısıyla, ayet tüm müşrikler hakkında değil, o zaman Müslümanlarla antlaşmalarının her maddesine uymayan belirli bir müşrik grubu hakkında bilgi vermektedir. Bu, bazı Müslümanların veya önyargılı olan bazı gayrimüslimlerin ayetin anlamını farklı yorumlama girişimlerine rağmen, açıkça kendini savunmayı, haklarını korumayı tanımlar. Sonuç olarak, bu ayetten genel olarak gayrimüslimlere karşı şiddet çıkarımı yapmak mümkün değildir.</p>
+<p>İkinci olarak, (9:5) ayetiyle ilgili olarak, Allah, Müslüman topluluğuyla antlaşmayı ihlal edenlere üç seçenek sunar: öldürmek, yakalamak ve kuşatmak. Öldürülen herhangi birinin yakalanamayacağı veya kuşatılamayacağı mantıklı bir şekilde anlaşılabilir. Dolayısıyla, antlaşmayı ihlal edenlerle başa çıkmak için Müslüman yasal yetkililere bırakılan seçeneklerin bunlar olduğu kolayca anlaşılabilir. Bu ayet, modern kurallarla mükemmel bir şekilde uyumludur. Modern bir ülkede bir terörist kişi veya grup olduğunu hayal edin. Yasal yetkililer hemen oraya gelir ve en iyi seçeneklerini seçip uygular. Seçenekleri, o anda duruma bağlı olarak onları öldürmek, yakalamak veya kuşatmaktır. Bu ayet, Müslümanlara benzer şekilde hareket etme yetkisi verir. Aksi takdirde, Müslümanlar, hatta düşük düzeydeki yasal yetkililer bile, Kuran’da şiddete karşı birçok ayet olduğu için, herhangi birini öldürmekte tereddüt ederlerdi. Hatta şu açık ayet bile var:</p>
+<blockquote>
+<p>İşte bu olaydan dolayı Biz, İsrâil oğullarına: “<strong>Kim bir kimseyi öldürmeye veya yeryüzünde bozgunculuk çıkarmaya karşılık olmaksızın, (haksız yere) bir cana kıyarsa bütün insanları öldürmüş, her kim de bir canı kurtarırsa bütün insanları, kurtarmış gibi olur.</strong>” hükmünü bildirdik. Şüphesiz Peygamberlerimiz, onlara apaçık deliller getirdiler; ama onlardan pek çoğu, bundan sonra yine yeryüzünde aşırı giderek yoldan çıktılar. (Kuran 5:32).</p>
+</blockquote>
+<p>Bu bağlamda İsrail olsa da, biz Müslümanların tüm ayetlerden dersler alması gerekmektedir.Ayetler bize inmiştir. Bu nedenle, ilgili bölümü tekrar kalın harflerle okuyalım: “<strong>…Kim bir kimseyi öldürmeye veya yeryüzünde bozgunculuk çıkarmaya karşılık olmaksızın, (haksız yere) bir cana kıyarsa bütün insanları öldürmüş, her kim de bir canı kurtarırsa bütün insanları, kurtarmış gibi olur….</strong>”.</p>
+<p>Bu ayeti ve diğerlerini okuyan herhangi bir Müslüman, Allah bize kendimizi savunma emri veren diğer ayetleri bildirmediği takdirde, hiç kimseyi öldüremeyecekti. Bu uzun bir konu ve şimdilik burada bırakıyorum.</p>
+<p>Bu ayetleri, Müslümanların Kuran’a göre her zaman barışçıl bir şekilde davranması gerektiğini kanıtlamak için sunacağım.</p>
+<blockquote>
+<p>Allah, size Kitapta (daha önce): “Allah’ın âyetlerinin inkâr edildiğini ve onların alaya alındığını işittiğiniz zaman, başka bir konuya geçinceye kadar onlarla bir arada oturmamanızı, yoksa sizin de onlar gibi olacağınızı” bildirmişti.¹ Şüphesiz Allah münâfıkların ve kâfirlerin hepsini, cehennemde bir araya getirecektir. (Kuran 4:140).</p>
+</blockquote>
+<blockquote>
+<p>Âyetlerimiz hakkında ileri geri konuşanları gördüğün zaman derhal onlardan uzaklaş ki onlar, ondan başka bir söze dalsınlar. Eğer şeytan sana bunu unutturursa hatırladıktan sonra sakın o zalimler topluluğuyla birlikte oturma. (Kuran 6:68).</p>
+</blockquote>
+<p>Görüldüğü gibi iki farklı ama benzer ayet var ve her ikisinde de Allah, Müslümanlara barışçıl bir şekilde davranmalarını ve İslam’a hakaret edilse bile herhangi bir şiddet eylemi gerçekleştirmemelerini emrediyor. Allah ayrıca, Müslümanlara, hakaret eden insanlar yanlışlarını bırakana kadar sadece onlardan uzak durmalarını emreder ve hakaret etmeyi bıraktıklarında onlarla tekrar etkileşime girmelerini yasaklamaz. Bu, hakaretin önemsiz olduğu için değil, bizim değil, Allah’ın onları ahirette cezalandıracağı içindir (Allah’tan af dilememişse). Peki, aşağıdaki ayetlerde, Allah, en aşırı durumda bile, yani Allah’a ve Elçi’ye hakaret edenlere karşı herhangi bir şiddet emretmiyor, bu da yukarıda alıntıladığım önceki ayetler 4:140 ve 6:68 ile uyumlu, ne düşünüyorsunuz?</p>
+<blockquote>
+<p>Münâfıklar gönüllerinden geçeni kendilerine bütünüyle haber verecek, aleyhlerine bir sûrenin inmesinden çekiniyorlar. (Ey Muhammed! Sen de onlara): “Siz alay edin bakalım. Allah, sizin o çekindiğiniz şeyi, kesinlikle ortaya çıkaracaktır.” de. (Kuran 9:64).</p>
+</blockquote>
+<blockquote>
+<p>Eğer onlara sorarsan, “Biz sadece lafa dalmış, kendi aramızda şakalaşıyorduk.” derler. Sen de: “Yani siz Allah’la, âyetleriyle ve Peygamberiyle mi alay ediyorsunuz?” de. (Kuran 9:65).</p>
+</blockquote>
+<blockquote>
+<p>“Siz îman ettikten sonra tekrar kâfir olduğunuz için boşu boşuna özür dileyip durmayın. Her ne kadar içinizden bir kısmını affetsek bile suçlarında ısrar eden günâhkârlara, mutlaka azap edeceğiz. (Kuran 9:66).</p>
+</blockquote>
+<p>Bu ayetler, Allah’ın, Allah hakkında alay edenler için bile herhangi bir dünyevi ceza emretmediğini, ancak 9:68 ayetinde cehennem ateşiyle onları uyarmasını çok açık bir şekilde gösteriyor. Ancak, biz Müslümanlar da insanız ve bu dünyada barışçıl bir şekilde tepkilerimizi ifade edebiliriz, çünkü bu da yasaklanmamıştır. Kuran’ı takip eden herkes, kendini savunma dışında hiçbir sebep olmadan şiddet uygulayamaz. Ancak, daha önce de söylediğim gibi, geleneksel Müslüman inancı, inançları için başka kaynakları da kabul eder ve bu, bazılarının uygulamada farklı uygulamalarına yol açabilir.</p>
+<p>Bu konuyu eğitimli ve barışçıl olan ama çoğunluk gibi geleneksel Müslüman inancını takip eden arkadaşlarıma açıkladığımda, “Kuran’da da şiddet için bazı ayetler var ve sadece iddia edilen hadis raporları değil” diyorlar. Bu, geleneksel Müslümanların ortalama üstü bilgili olan arkadaşlarımın verdiği cevap. Çoğu Müslüman gerçekten Kuran’ı bilmiyor, çünkü, daha önce açıkladığım gibi, geleneksel Müslüman inancı ile Kuran arasında bir uçurum var. Din hakkında bilgi almak için alimleri veya imamları dinledikleri için Kuran’ı iyi bilmiyorlar. Bu alimler, Kuran’ı diğer iki kaynakla birleştirdiklerinde, sonuç sadece Kuran değil, o eski kitaplarda yazılı olan diğer sayısız şey oluyor. Geleneksel Müslüman inancının alimleri bile yukarıda paylaştığım ayetleri kavrayamıyorlar, o zaman sıradan bir Müslüman nasıl yapabilir? Geleneksel Müslüman bir inanca sahip olduğumda, bu soruyu tanınmış bir alime sormuştum. Tarihi göz önünde bulundurarak, İslam’ın barış din olduğunu nasıl söyleyebiliriz diye sordum. O, oldukça ılımlı alimlerden biri olarak, “bu büyük bir yalan!” diye cevap verdi. Çünkü o ılımlıydı, yanlış olarak gördüğü şeyleri itiraf etmeye biraz daha cesareti vardı. Onu dinleyen herkes, barışçıl geleneksel Müslümanlardı, ama hiçbirimiz onun cevabına karşı çıkamamıştık. Çünkü biz sıradan Müslümanlar, çocukluğumuzdan beri geleneksel Müslüman inancıyla beyin yıkamaya maruz kaldığımız için Kuran’ı gerçekten bilmiyoruz. Bu bölümde yazdığım geleneksel Müslüman inancı hakkındaki şeyleri düşünmek dahi çok zor ortalama bir geleneksel Müslüman için. Bu bölümde, umarım, tüm bu bilgileri okuduktan sonra zihinleri tetiklenir ve uyarılarımı göz önünde bulundurarak Kuran’ı tekrar okurlar. Bana değil, Kuran aracılığıyla Allah’a inanın. Ve lütfen Allah’ın sözleri olan Kuran’a ve kendi aklınıza, geleneksel imamlara ve alimlere güvendiğinizden daha fazla güvenin.</p>
+</div>
+<div id="fw-ageforthy" class="section level3 unnumbered hasAnchor">
+<h3>40 Yaşımda, Kuran’ın Müslümanı Oldum<a href="tartışmalar-ve-telif-hakları.html#fw-ageforthy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ne yazık ki, ben de Türkiye’deki çoğu Türk insanı gibi geleneksel Hanefi mezhebini (Türkçede mezhep olarak adlandırılır) takip eden geleneksel sıradan Müslümanlardan biriydim. Neyse ki, geçen yıl (Bu kitabı ilk yazdığım zaman 2019’du) internet üzerinden bazı aydınlatıcı alimleri okuyup dinledikten sonra, İslam dininin kaynağının yalnız Kuran olduğu mesajıyla karşılaştım. Hemen bu fikre atlamadım ama bu, beni bu konuda araştırma yapmaya teşvik etti. Müslümanlar olarak hepimizin aynı Kuran’ı olması nedeniyle bu çok zor değildi. Kuran’ı, yıllar boyunca yetiştirildiğim ve yaşadığım güçlü inançlarıma karşı olduğu için kabul etmek zor olan bu iddiaları ayetler üzerinde test ederek tekrar okudum. Ancak, Allah’ın ne söylediğini ve bizden ne yapmamızı istediğini öğrenmek ve anlamak için Kuran’ı okuduktan sonra, 2019 yılında Ramazan’dan biraz önce 40 yaşlarımdayken, inancımı düzelttim ve <strong>İslam dinimin kaynağı olarak yalnızca Kuran’ı kabul ettim</strong>. Bundan sonra, İslami hayatımdaki her şey daha mantıklı, rasyonel, pratik ve günlük hayatla uyumlu görünmeye başladı. İslam’ı yaşamak, reddedemeyeceğiniz ya da tamamen kabul edemeyeceğiniz şeyleri göz ardı etmeden oldukça kolay ve yaşanabilir hale geldi. Ancak, o zaman durumumun ne kadar yalnız olduğunu fark ettim. Çevremdeki insanlarla fikirlerimi açıkça tartıştığımda, çoğunlukla sanki İslam’ı terk etmişim gibi davranıldı. Ama ne olursa olsun, Allah’ın beni bu saf mesaja yönlendirdiği için çok mutluyum. Çünkü hayatımda ilk kez, Allah’ın benden ne yapmamı istediğini emin olarak biliyor ve hissediyorum. Bundan önce, alimlerin ağızlarına ve imamların vaazlarına bakıyor ve onların söylediklerine göre sınırlı ve anlattıkları kadarıyla yönlendiriliyordum. Allah’ın benden ne yapmamı istediğini anlamak için her zaman bu ‘alim’ aracılarım vardı. Bu kitabın konusu bu olmadığı için, bu konuda çok fazla detaya girmeyeceğim. Ancak şu ana kadar, manevi hayatımdan çok memnunum ve önceki hayatımda sahip olduğum yanlış inançlar ve uygulamalar için tövbe ettim. Kuran’ı okuduğumda, sanki Allah ile konuşuyormuş gibi hissediyorum ve okuduğumda Allah’ın bana ne söylediğini anladığımı ve buna göre düşündüğümü bildiğimde kalbim sevinçle doluyor. Bu ayeti eskiden de biliyordum ama şimdi anlamının şahidi oluyorum:</p>
+<blockquote>
+<p>İşte bunlar, îman eden ve kalpleri Allah’ın zikriyle huzur bulanlardır. Şunu iyi bilin ki; kalpler sadece Allah’ı anmakla huzur bulur. (Kuran 13:28).</p>
+</blockquote>
+<p>Bu durumla ilgili paylaşmak istediğim son bir şey var. 19 sistemini uzun yıllar önce duymuştum, ancak Arapça bilmediğim ve bu konuya çok ilgi duymadığım için, kendim araştırıp üzerindeki bazı önceden var olan iddiaları test edebileceğimi hiç düşünmemiştim. Ancak, inancımı arındırdıktan ve İslam dinimin tek kaynağı olarak Kuran’ı kabul ettikten ve geçmişim için tövbe ettikten sonra, Kuran’a daha fazla ilgi duymaya başladım. Şu anda bir veri bilimciyim ve veriler üzerinde uğraşabilme yeteneğine sahibim, ancak Arapça metin verileri üzerinde çalışma konusunda önceki bir deneyimim yoktu. Kuran metni üzerine bazı eğitimler olup olmadığını görmek için bir Google araması yaptım ve R dilinde bir tane buldum. Bir deneme yaptım ve bazı hipotezler kurdum ve bazı başarılar gözlemledim. Daha sonra daha fazla hipotez ileri sürdüm, daha fazla kod delili gözlemledim ve bu kitabı yazmaya karar verdim. Bunu burada açıklamamın nedeni, subjektif görüşüme göre, Allah bana bu delilleri göstermiş olabilir ve İslam inancımı arındırdıktan sonra böyle bir kitap yazmama izin vermiş olabilir. İnsani günahlarımın arınmasından bahsetmiyorum, kabul ettiğim ve takip ettiğim geleneksel Müslüman inancından bahsediyorum.</p>
+</div>
+<div id="fw-discoverydate" class="section level3 unnumbered hasAnchor">
+<h3>Bu Sistemin Keşif Tarihi<a href="tartışmalar-ve-telif-hakları.html#fw-discoverydate" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bu kitapta sunduğum 19 tabanlı sistemi ilk olarak 2019’un başlarında keşfettim. Bu gerçeği sadece Allah ve ben kesin olarak bilebiliriz. Bu yüzden, bu konuda bana inanmak zorunda değilsiniz. Ancak, bu kitabın keşfi ve yayım tarihi ilginç bir 19 tabanlı örüntüye sahip olduğu için, bunu da burada paylaşmak istiyorum. Daha önce de belirttiğim gibi, tarihi raporlara göre, Kuran’ın vahyi yaklaşık 22 yıl sürdü ve 632 yılında tamamlandı. 19 tabanlı sistem, Kuran’ın tam metni üzerine olduğu için, referans olarak tamamlanma tarihi 632’yi aldım.</p>
+<blockquote>
+<p>2019 - 632 = 1387</p>
+</blockquote>
+<blockquote>
+<p>1387 = 19x73</p>
+</blockquote>
+<blockquote>
+<p>1+3+8+7=19</p>
+</blockquote>
+<p>Bu kitapta sunduğum 19 Sisteminin keşif ve yayım tarihleriyle ilgili olarak iki 19 tabanlı ilişki olduğunu görüyoruz.</p>
+<p>Ayrıca, keşfettiğim sistemin literatüre girişi tarihi açısından bakarsak, yine ilginç bir 19 tabanlı ilişki var. 2019’a girdiğimizde, bu 19 tabanlı sistemi keşfetmemiştim ve bu konuda bir kitap da yoktu. Temelde, ben de dahil olmak üzere dünyada hiç kimse bu konuda bilgi sahibi değildi. Ancak 2019 sona erdiğinde, Kuran’ın tam metninin gerçek 19 tabanlı kodlama sistemi, tarafımdan keşfedildi ve bu kitapta mucizevi delilleri yayımlandı. O zaman 2019’un son tarihine bakalım.</p>
+<p>Bu tarihi Amerikan tarzında yazarsak (keşif ABD’de yapıldığı için):</p>
+<p>2019’un son tarihi 12-31-2019’dur ve bu tarih tek başına da aşağıdaki gibi <strong>üç</strong> 19 tabanlı ilişkiye sahiptir. Onların klasik eklemlenmesi (birleştirilmesi) bize tek bir temsil numarası verir:</p>
+<blockquote>
+<p>12312019 / 19 = 648001 (Ayrıca 6+4+8+1=19!) and</p>
+</blockquote>
+<blockquote>
+<p>1+2+3+1+2+0+1+9 = 19!</p>
+</blockquote>
+<p>Aynı tarihte üç 19 tabanlı ilişki gözlemledik. Eğer herhangi biri tarihin sıralaması konusunda itiraz ederse, işte bu tarihi dünyanın geri kalanını göz önünde bulundurarak yazmanın alternatif bir yolu. Bu da 19 tabanlı bir ilişkiye sahip:</p>
+<blockquote>
+<p>31122019 / 19 = 1638001 (Yine 1+6+3+8+1=19! ve 3+1+1+2+2+0+1+9 = 19!)</p>
+</blockquote>
+<p>Yine, aynı tarihte ikisi aynı üç 19 tabanlı ilişki gözlemledik, bu da toplamda 4 yapıyor. Bu, sadece 2019’un başlangıcı ve sonu arasında, bu yeni 19 Sisteminin ve kitabının edebiyata girişiyle ilgili olarak tarihsel olarak ilginç bir ilişkiyi gösterebilecek ilginç bir gerçektir.</p>
+</div>
+<div id="fw-relvves" class="section level3 unnumbered hasAnchor">
+<h3>İlgili Bazı Ayetler<a href="tartışmalar-ve-telif-hakları.html#fw-relvves" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>İşte Kuran’ın metnindeki 19 tabanlı kodlama sistemine ilişkin olabilecek içerik ve numaralarıyla bazı ayetler.</p>
+<p>Müslümanlar kesinlikle, Kuran’ın Allah tarafından vaat edildiği gibi değişmeden, bozulmadan ve korunarak geldiğine inanır.</p>
+<blockquote>
+<p>O Zikri (Kitap)ı biz indirdik biz; ve O’nun koruyucusu da elbette biziz! (Kuran 15:9)</p>
+</blockquote>
+<p>Bu ayet, toplam 6348 ayetin 1824. ayetidir. 1824 sayısı da 19’a bölünebilir, çünkü 1824/19 = 96’dır. Dahası, Kuran veya Kitap yerine, Allah, sözlü olarak ezberlenen ve okunan Kuran’ı ifade eden Zikir, Hatırlatıcı veya Okuma (Arapça: الذكر) kelimesini kullanır. Burada iki mucizevi işaret var. İlk olarak, Kuran günümüze kadar esas olarak ezberleme yoluyla aktarılmıştır. Bilinen tam bir ilk yazılı kopya yoktur, ancak dünya çapında on binlerce insan, tarihi bir gelenek olarak Kuran’ı tamamen ezberlemiştir. İkinci işaret, harekesiz Zikir kelimesinin şekli (Arapça: الذكر), Kuran’da tam olarak 19 kez kullanılmıştır. Bunu <a href="TextRules.html#textTMuw">3.1.5.1</a> Bölümünde dinamik tablo, Tablo <a href="TextRules.html#fig:uwords-table99">3.1</a> ile test edebilirsiniz. Arapça kelimeyi kopyalayıp tablonun arama kutusuna yapıştırın ve Kuran’daki kelime sayısını görün.</p>
+<blockquote>
+<p>Bâtıl ona, ne önünden gelebilir ne de arkasından. Hakîm ve Hamîd Allah’tan bir indirmedir o. (Kuran 41:42).</p>
+</blockquote>
+<p>Allah, Kuran’a ne önünden ne de arkasından batılın yaklaşamayacağını bize bildirir. Hatırlarsanız, sunduğum delillerden bazıları doğrudan göstergelere (soldan sağa) dayanıyordu ve bazıları Arapça’da olduğu gibi tersten (sağdan sola). 4142’nin de 19 ile bölünebilir olması sebebiyle bunun 19 tabanlı kodlama sistemi için bir işaret olabileceğini düşündüm.</p>
+<p>Bir de şu var, anlamıyla çok alakalı numaralandırmaya sahip:</p>
+<blockquote>
+<p>Bilsin diye ki, onlar Rablerinin elçiliklerini yerine getirmişlerdir. Allah onlarda bulunan her şeyi kuşatmış ve her şeyi bir bir saymıştır. (Kuran 72:28).</p>
+</blockquote>
+<p>Bu ayette ilginç bir 19 işareti var. 7228’in rakamlarının toplamı 19 ediyor. Ancak, bu sadece ilginç bir işaret olabilir çünkü genel olarak böyle bir kural hiçbir yerde tanımlanmamıştır ve biz asla böyle bir bağlantıyı kesin olarak iddia edemeyiz ve her zaman olduğu gibi en iyi Allah bilir.</p>
+<p>Bu, 19 tabanlı kodlama sistemi için anahtar ayettir.</p>
+<blockquote>
+<p>Üzerinde ondokuz. (Kuran 74:30)</p>
+</blockquote>
+<p>Bu ayetin ilginç bir yanı, bu ayetin bulunduğu bölümün ilk ayeti şu şekilde:</p>
+<blockquote>
+<p>Ey bürünen (Müddessir)! (Kuran 74:1)</p>
+</blockquote>
+<p>Parantez içindekiler, tercüme değil, tercümanın (Dr. Ghali, quran.com’dan) varsaydığı anlamdır. Yani, bu bölümün ilk ayeti esasen “Ey örtünmüş olan” şeklindedir. Geleneksel yorum farklı olsa da, bu ayetin Kuran’ın metnindeki henüz gizli (örtünmüş) 19 tabanlı kodlama sistemine de atıfta bulunabileceğini öne sürüyorum. Allah her zaman olduğu gibi en iyi bilendir ve bunu olası yorumlardan biri olarak değerlendiriyorum.</p>
+<p>Bunu düşünmemin üç nedeni var. Birincisi, bu, Kuran’ın metnindeki 19 tabanlı sistemi Kuran’ın içeriğiyle bağdaştırabilecek “Üzerinde ondokuz.” (74:30) ayetinin gözlemlendiği bölümün ilk ayetidir. Ayrıca “Ey örtünmüş olan” ayetinin literal anlamı, Kuran’ın metnindeki bilinmeyen 19 tabanlı sistemle mükemmel bir şekilde uyumlu gibi görünüyor. İkincisi, bölüm ve ayet endekslerine (74:1) klasik birleştirme kodlama işlemi yaptığımızda, 741 elde ediyoruz ve bu da 19 ile bölünebilir olup, bu yorumu destekleyen bir işaret olarak duruyor. Üçüncü neden, bu ayetin <em>muteşabih</em> tipinde bir ayet olmasıdır, bu da anlamının doğrudan açık olmayabileceği ve diğer ilgili ayetlere veya evrensel gerçek bilgiye yönelik yorumlar gerektirebileceği anlamına gelir.</p>
+<p>Kuran’da Allah, Kuran’da iki tür ayet olduğunu bildirir. Birincisi (muhkem), Kitabın temelleri olan açık vahiyler ya da ana ayetler. İkincisi, mecazi olanlar yani ana ayetlerin benzeşenleri ki Allah anlamlarını en iyi bilir ve bazı ilimde derinleşmiş olanlar tarafından muhkam ayetlerle olan bağlantıları göz önünde bulundurularak anlaşılabilirler.</p>
+<blockquote>
+<p>(Kuran 3:7) Kitap’ı sana indiren O’dur: Onun ayetlerinden bir kısmı muhkemlerdir ki; onlar Kitap’ın anasıdır. Diğer ayetlerse müteşâbihlerdir. Şu var ki, kalplerinde bir eğrilik ve bozukluk bulunanlar, fitne aramak, onun teviline öncelik tanımak için Kitap’ın sadece müteşâbih kısmının ardına düşerler. Onun tevilini ise bir Allah bilir, bir de ilimde derinleşmiş olanlar. Bunlar, “Ona inandık, hepsi Rabbimizin katındandır.” derler. Gönül ve akıl sahiplerinden başkası gereğince düşünemez.</p>
+</blockquote>
+<p>Özellikle, bu çağda tanık olduğumuz evrensel bilimsel ile ilgili ayetler, bu tür mecazi ayet örneklerini daha iyi anlamamıza yardımcı oluyor. Bu farklı bir konu ve ben sadece <em>bildiğim kadarıyla</em> özetlemeye çalıştım. Bu konuda ilgileniyorsanız, kendi araştırmanızı yapmaktan çekinmeyin. Ben uzman bir alim değil, sıradan bir Müslümanım ve bu konudaki anlayışlarım bunlardır.</p>
+<p>Bu iki ayet de ilgili olabilir. 74:31 ve 74:35 ayetleri de Kuran’ın metni üzerinde bir 19 Sistemi işlevini açıklıyor olabilir gibi görünüyor.</p>
+<blockquote>
+<p>Biz o ateşin muhafızlarını hep melekler yaptık. Bunların sayılarını da ancak kâfirler için bir imtihan kıldık ki, kendilerine kitap verilenler kesin bilgi edinsinler, iman edenlerin de imanı artsın. Kendilerine kitap verilenler ve müminler şüpheye düşmesinler. Kalplerinde hastalık bulunanlarla kâfirler de: “Allah bu misalle ne demek istedi?” desinler. İşte böyle, Allah dilediğini şaşırtır, dilediğini de yola getirir. Rabbinin ordularını ancak Rabbin bilir. Bu, insanlar için uyarıdan başka bir şey değildir. (Kuran 74:31)</p>
+</blockquote>
+<blockquote>
+<p>Ki o gerçekten en büyüklerden biridir. (Kuran 74:35)</p>
+</blockquote>
+<p>Allah en iyi bilendir ama bunlar Kuran’ın metnindeki 19 tabanlı sistemle ilgili olabilir. Ayrıca, anlamının yanı sıra, 74:35 ayetinde de bu işaret bulunmaktadır: 7+4+3+5=19.</p>
+<p>Bu da, Allah’tan gelen işaretleri reddeden kişiyle ilgilidir.</p>
+<blockquote>
+<p>Bizim mesajlarımızın doğruluğunu inkara şartlanmış olanlar ise kötülüğe batmış kimselerdir. (Kuran 90:19).</p>
+</blockquote>
+<p>İçerik, Allah’ın işaretlerini reddedenleri uyarıyor. O zaman, bu ayette bir işaret görmekten şaşırmamalıyız. Şöyle bir şey nasıl olur: 9+0+1+9=19.</p>
+<p>Acaba 19 tabanlı sistem, inanmayanların Kuran’a inanmasına yardımcı olabilir mi?</p>
+<blockquote>
+<p>Ve insanların dalga dalga Allah’ın dinine girdiklerini gördüğünde, (Kuran 110:2).</p>
+</blockquote>
+<p>Doğrudan bir ilişki olduğundan emin değilim ama 1102 (110:2), 19’un katıdır ve bu ilişki için en azından bir işaret vardır.</p>
+<p><strong>90. Bölüm:</strong> Bu bölüm, benzersiz bir 19 tabanlı özelliğe sahip olduğu için dikkatimi çekti. Temelde bu sayı beni önce bu bölüme yönlendirdi. Bu bölümün harf sayısı 361. Bu, ya harf sayısı ya da Kuran’daki her iki metin türünde de kelime sayısı olarak, 19’un iki kere katı olan tek bölümdür. Numaralandırılmış ayetlerdeki genel ayet indeksine baktığımda, bu da 6042 ve 19x318 olarak 19’un katıdır. Şimdi bu bölümün 19. ayetine bakalım:</p>
+<blockquote>
+<p>Bizim mesajlarımızın doğruluğunu inkara şartlanmış olanlar ise kötülüğe batmış kimselerdir. (Kuran 90:19).</p>
+</blockquote>
+<p>Bu 90:19 ayetinin rakamlarının toplamına da dikkat edin, bu da 9+0+1+9=19 ediyor.
+Ayrıca bu özel ayetin 6 ayeti ve 32 harfi var, bu da toplamda 38 (19x2) ediyor.</p>
+<p>Bu küçük bölümdeki tüm ayetlerin ve sayıların sadece gerçekler olduğunu ve deliller olmadığını, benim subjektif yorumlarım olarak değerlendirilmesi gerektiğini unutmayın.</p>
+</div>
+<div id="fw-science" class="section level3 unnumbered hasAnchor">
+<h3>Kuran’ın Diğer Bilimsel İlgili Mucizeleri ve Diğer İlginç Gerçekler<a href="tartışmalar-ve-telif-hakları.html#fw-science" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Kuran’daki 19 tabanlı kodlama sistemini, kendi kanaatim sonucu mucizeler olarak değerlendiriyorum, ancak Kuran’da tanık olunabilecek tek mucize bu değildir. Ayrıca içinde birçok bilimsel olarak ilgili mucizevi bilgi bulunmaktadır. Hızlı bir internet araştırması yaparsanız, birçok örnek görebilirsiniz. Ben bunlardan birini <em>demir</em> hakkında ayrı bir bölüm olarak kitabımda <a href="Othercodes.html#iron">6.1</a> bölümünde zaten paylaştım. İlginç bulduğum bazılarını daha paylaşacağım. Birçok örnek var ama en dikkat çekici olanlar evrenin genişlemesi, embriyonun gelişimi, demirin atom numarası ve indirildiğinin belirtilmesi, parmak uçlarının benzersizliği ve bunlar hakkında kendi araştırmanızı yapmanızı önerdiğim birçok başka örnek var. Bunlar, Kuran’daki bilimsel olarak mucizevi ifadeler olarak kabul eden birçok web sitesi ve kitapta zaten var.</p>
+<p>Bir diğer ilginç bilinen gerçek, ışığın saniyede 299792 kilometre hızla seyahat etmesidir. 299792’nin rakam toplamı 38’dir ve bu 19’un katıdır.</p>
+<p>Veya, bir röntgen görüntüsüne bakarak elinizdeki kemikleri sayarsanız, 19 kemik olduğunu görürsünüz.</p>
+</div>
+<div id="fw-Copyrights" class="section level3 unnumbered hasAnchor">
+<h3>Bu kitabın telif hakları<a href="tartışmalar-ve-telif-hakları.html#fw-Copyrights" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tüm haklar öndurum olarak saklıdır. Ancak, bu kitabın internet e-kitap veya basılı kağıt kopya formundan veya bu kitaptan genel olarak herhangi bir olası biçimde asla yayın telif ücreti almayacağımı beyan ederim. Bu, bu kitap üzerinden hiçbir şekilde para kazanmayacağım anlamına gelir. Ayrıca, ailem veya soyum veya akrabalarım veya başka herhangi bir kişinin de bu kitap temelinde herhangi bir şekilde para kazanma hakkı olmadığını ve olmayacağını beyan ederim. Bu kitabı sadece Allah rızası için yazdım ve Allah’tan başka kimseden başka bir beklentim yok. Herkes bu kitabı kendi diline çevirebilir ve tamamen doğru bir şekilde ve kitabın <strong>tamamını</strong> olduğu gibi ve kısmi olarak değil, tam olarak çevirdikleri sürece yayınlayabilir. Kitabın parçalarını veya kısmen yayınlamaya izin vermiyorum. Yine, İngilizce orijinalinden çevirinin doğru olmadığını düşünen herkes, yayıncıyı kendi ülkelerinde mahkemeye götürebilir ve mahkeme tarafından düzeltilmesini sağlayabilir. Bu nedenle, bu çeviri kontrol sürecini iyi insanlara bırakıyorum çünkü bu kitap, tüm insanlık yararına yazılmış bir kitaptır. Hiçbir yayıncı, bu kitabı kendileri çevirseler bile, bu kitabın hiçbir özel yayın hakkına sahip olamaz. Kitabı çeviren herkes, bu kitaptan herhangi bir telif hakkı veya telif ücreti veya başka herhangi bir hak talebinde bulunmayacaklarını da kabul etmiş olurlar. Kısacası, dünyada hiç kimse bu kitaptan telif hakkı veya telif ücreti veya benim hukukçu olmadığım için bilemeyeceğim başka herhangi bir şekilde para kazanamaz. Ancak, bu kitabı yayınlamak isteyen herhangi bir yayıncı, kitabı istedikleri ücretle satabilir ve bundan kâr edeip para kazanabilir. Bazı yayıncıların bu kitabı basılı kağıt kopyalar olarak yayınlamakla ilgilenmelerini sağlamak için yayıncılara bu esnekliği sağlıyorum. Yine de kitabın tamamını olduğu gibi yayınlamalı veya hiç yayınlamamalıdırlar. Kitabın hiçbir bölümünü atlayamazlar veya sansürleyemezler, tek bir sayfa veya harf bile olsa bu şart aşılamaz. Aksi takdirde yayınlama hakları yoktur. Ayrıca, hiçbir hükümet veya evrendeki başka bir otorite, bu kitabın haklarına herhangi bir şekilde ve herhangi bir zamanda sahip olamaz. Gelecekte herhangi bir varlık böyle bir girişimde bulunursa, böyle bir girişimi reddederim. Bu kitap, evrendeki tüm insanlık içindir ve hiçbir otorite, herhangi bir şekilde sahip olamaz. Herhangi bir varlık veya hükümet, bu kitabın herhangi bir bölümünü sınırlamaya veya sansürlemeye çalışırsa, kitabın parçalarını herhangi bir şekilde yayınlamalarına izin vermem. Kısacası, ya kitabın tamamını olduğu gibi yayınlayabilirsiniz ya da hiçbirini. Bu kitabın telif haklarıyla ilgili yukarıda belirtilen haklara bir istisna vardır. Bu kitabın İngilizce ve Türkçe <strong>basılı kağıt kopya</strong> yayınlarında, bu kitabın İngilizce orijinalini ve Türkçe çevirisini, 2033 sonuna kadar olan 10 yıllık süre boyunca iznim olmadan yayınlama haklarını vermiyorum. Bu, ilgilenenler olması durumunda saygın bir yayıncı seçebilmem için yapılmıştır. Yine, bu İngilizce basılı sürüm ve Türkçe çeviri için bile, ben veya ailem veya akrabalarım veya başka herhangi bir kişi, kitabın telif hakkından veya telif ücretinden para kazanamaz ve ben veya başka herhangi bir kişi yayın telif ücreti talep edemez. 10 yıllık süre sonrasında, isteyen herkes kitabı herhangi bir değişiklik yapmadan tam olarak olduğu gibi yayınlayabilir. Eğer, sonraki 10 yıl içinde hayatta değilsem ve henüz anlaşmalar yapılmamışsa, bu 10 yıllık süre koşulu otomatik olarak sona erer ve herhangi bir yayıncı, önceki koşullara göre yayınlayabilir. Tüm koşullar, telif haklarıyla ilgili zaten beyan edilenler dışında, kendim tarafından değiştirilebilir. Burada ve öncelikle 2019’da ve şimdi 2023’te, bu telif haklarını zaten serbest bıraktığımı ve gelecekte herhangi bir nedenle bunu değiştiremeyeceğimi beyan ederim.</p>
+<p>Bu kitabın internet versiyonun her zaman ücretsiz olarak erişilebilir olacağını beyan ediyorum. Herhangi bir kişi, bu kitabın internet sürümünü kendi internet sitelerinde şu şartlarla yayımlayabilir: Bu kitap, Kuran ayetlerinin öğretileriyle çelişen herhangi bir içeriğe sahip bir internet sitesinde yayımlanamaz. Bu kitabın yayımlandığı internet sitesinde uygunsuz reklamlara veya eylemlere izin verilmez. Bu kitap yalnızca olduğu gibi tümüyle yayımlanabilir. Kitabın parçalarının herhangi bir sitede yayımlanmasına izin vermiyorum. Çünkü bu, tüm kitabın bütünlüğünü bozar. Hatta tek bir sayfası ya da kelimesi dahi atlanamaz veya sansürlenemez. Bu kitapla birlikte Kuran’la çelişen, uygunsuz reklamlar gösterilemez.</p>
+</div>
+<div id="fw-acknowledgements" class="section level3 unnumbered hasAnchor">
+<h3>Atıflar ve son notlar<a href="tartışmalar-ve-telif-hakları.html#fw-acknowledgements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Analiz için R programlama dilini (<a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a>) kullandım. Ayrıca şu R paketlerini kullandım: gmp <span class="citation">(<a href="#ref-Rgmp">Lucas et al. 2019</a>)</span>, data.table <span class="citation">(<a href="#ref-datatableRef">Dowle and Srinivasan 2019</a>)</span>, DT <span class="citation">(<a href="#ref-DTref">Xie, Cheng, and Tan 2019</a>)</span>, tokenizers <span class="citation">(<a href="#ref-tokenizersRef">Mullen et al. 2018</a>)</span>, stringr <span class="citation">(<a href="#ref-stringrREF">Wickham 2019</a>)</span>. Bu kitabı, bu güzel şekilde yazmak için Bookdown R paketini <span class="citation">(<a href="#ref-BookdownREF">Xie 2016</a>)</span> kullandım. Kuran ayetlerinin çevirisi için kuranmeali.com’u kullandım.
+Bu kitap ilk olarak 07 Eylül 2019’da www.bookdown.org’da yayımlandı. Hafifçe revize edilmiş sürümü 31 Aralık 2019’da www.bookdown.org’da güncellenerek yayımlandı.
+Daha sonra, 27 Kasım 2020 tarihinde delillerin bölüm indekslerini değiştiren büyük bir revizyon yaptım. Bu kitabın son güncellemesini ise 5 Aralık 2023’te yaptım.
+Kitabı çok uzun yapmamak için bazı büyük sayılar bu kitapta yer almamaktadır. Ancak, bu kitabın github sayfasında delillerin ve diğer materyallerin bazı büyük sayılarını <a href="https://github.com/quran2019/Quran19" class="uri">https://github.com/quran2019/Quran19</a> adresinde sunuyorum. Herkes bu materyalleri kolayca indirebilir.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-datatableRef" class="csl-entry">
+Dowle, Matt, and Arun Srinivasan. 2019. <em>Data.table: Extension of ‘Data.frame‘</em>. <a href="https://CRAN.R-project.org/package=data.table">https://CRAN.R-project.org/package=data.table</a>.
+</div>
+<div id="ref-Rgmp" class="csl-entry">
+Lucas, Antoine, Immanuel Scholz, Rainer Boehme, Sylvain Jasson, and Martin Maechler. 2019. <em>Gmp: Multiple Precision Arithmetic</em>. <a href="https://CRAN.R-project.org/package=gmp">https://CRAN.R-project.org/package=gmp</a>.
+</div>
+<div id="ref-tokenizersRef" class="csl-entry">
+Mullen, Lincoln A., Kenneth Benoit, Os Keyes, Dmitry Selivanov, and Jeffrey Arnold. 2018. <span>“Fast, Consistent Tokenization of Natural Language Text.”</span> <em>Journal of Open Source Software</em> 3: 655. <a href="https://doi.org/10.21105/joss.00655">https://doi.org/10.21105/joss.00655</a>.
+</div>
+<div id="ref-stringrREF" class="csl-entry">
+Wickham, Hadley. 2019. <em>Stringr: Simple, Consistent Wrappers for Common String Operations</em>. <a href="https://CRAN.R-project.org/package=stringr">https://CRAN.R-project.org/package=stringr</a>.
+</div>
+<div id="ref-BookdownREF" class="csl-entry">
+Xie, Yihui. 2016. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. Chapman; Hall/CRC.
+</div>
+<div id="ref-DTref" class="csl-entry">
+Xie, Yihui, Joe Cheng, and Xianying Tan. 2019. <em>DT: A Wrapper of the JavaScript Library ’DataTables’</em>. <a href="https://CRAN.R-project.org/package=DT">https://CRAN.R-project.org/package=DT</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Othercodes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="text110.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Kuran19.pdf", "Kuran19.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
